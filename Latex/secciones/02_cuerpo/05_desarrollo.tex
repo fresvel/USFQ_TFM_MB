@@ -1,0 +1,437 @@
+% DESARROLLO DEL PROYECTO Y RESULTADOS
+
+\section{Desarrollo del proyecto y resultados}
+
+
+
+\subsection{Planteamiento del problema}
+
+La calidad del aire constituye un problema técnico, sanitario y de gestión pública cuya complejidad supera la mera medición puntual de contaminantes. La evidencia reciente muestra que la exposición prolongada a contaminantes atmosféricos sigue asociándose a una carga global elevada de enfermedad y mortalidad: distintos antecedentes reportan alrededor de siete millones de muertes a escala mundial vinculadas a la exposición prolongada a material particulado y otros contaminantes del aire \cite[p.~1]{ART07}, mientras que otros trabajos sitúan en 4.2 millones las muertes prematuras asociadas a contaminación atmosférica exterior \cite[p.~1]{ART04}. Esta magnitud confirma que el problema tiene impacto en la vigilancia ambiental y además exige mecanismos de evaluación y alerta que puedan traducir datos técnicos en decisiones funcionales oportunas para reducir exposición y riesgo.
+
+Dentro de ese escenario, el índice de calidad del aire (AQI) se ha consolidado como uno de los principales instrumentos para interpretar el estado del aire y comunicarlo a autoridades y ciudadanía. Sin embargo, la literatura especializada también señala que persisten diferencias relevantes en contaminantes considerados, métodos de cálculo, escalas de agregación y criterios de interpretación entre modelos de AQI. La revisión crítica de modelos AQI desarrollados entre 1960 y 2021 concluye, de forma explícita, que todavía se requiere un modelo más confiable, extensible y comparable para apoyar programas estratégicos de abatimiento de la contaminación y preservar la salud pública \cite[p.~1]{ART01}. Esta necesidad se vuelve más evidente en contextos urbanos con alta presión ambiental; por ejemplo, en dicha revisión se reporta que Delhi registró en 2019 una concentración media diaria de PM$_{2.5}$ de 98.6~\(\mu g/m^3\), equivalente a diez veces la recomendación de la OMS \cite[p.~2]{ART01}. En consecuencia, el problema va más allá de captar datos; se evidencia la necesidad de convertirlos en evaluaciones consistentes, comparables y útiles para la toma de decisiones.
+
+En respuesta a esta necesidad, los trabajos recientes han incorporado lógica difusa, IoT y arquitecturas distribuidas para clasificación, monitoreo y predicción de calidad del aire. No obstante, el análisis de antecedentes muestra que estos avances siguen siendo parciales y heterogéneos. Existen propuestas basadas en datasets abiertos que reconocen la necesidad de ampliar su validación a otras localizaciones para reducir sesgo geográfico \cite[p.~7]{ART04}; otras implementaciones priorizan el monitoreo y control local, pero declaran que no generaron ni analizaron datasets para validar su comportamiento de manera reproducible \cite[p.~10]{ART05}; y trabajos centrados en redes WSN mejoran eficiencia de red, retardo o entrega de paquetes, pero concentran la optimización en la infraestructura de transmisión más que en la validación comparable de modelos predictivos sobre datos reutilizables \cite[pp.~1,4]{ART08}. Esta diversidad confirma que el campo está activo, pero también que la trazabilidad del dato, la comparabilidad de evaluación y la transferencia de resultados entre contextos siguen siendo insuficientes.
+
+La revisión sistemática desarrollada en este trabajo refuerza esa misma lectura. En el corpus analizado predominan estudios sustentados en adquisición directa por sensores, mientras la utilización exclusiva de datos públicos es excepcional; además, la mayor parte de las propuestas trabaja con conjuntos reducidos de contaminantes y con énfasis mayor en clasificación o alertamiento, no en predicción robusta y externamente comparable. Los estudios orientados a predicción, aunque técnicamente prometedores, continúan concentrados en escenarios acotados y con validaciones parciales. Por ejemplo, algunos trabajos combinan datos de pocos sitios urbanos y rurales con validación adicional sobre subconjuntos de datasets de referencia \cite[pp.~3--4]{A135}, \cite[p.~2]{A144}; otros reportan predicción a 24 horas, pero dentro de entornos interiores específicos \cite[p.~1]{A157}; y propuestas recientes con alto ajuste estadístico plantean como trabajo futuro la colaboración entre múltiples ciudades, lo que evidencia que la validación interurbana sigue sin resolverse de manera sólida \cite[p.~5]{A028}. En contraste, casos como \cite[p.~2]{A084} muestran el valor de entrenar y depurar modelos neuro-difusos sobre datos multi-localización del mundo real, pero este tipo de aproximación todavía no representa la práctica dominante.
+
+En funciones metodológicas y de ingeniería, el problema central radica en la ausencia de una solución que integre, en un mismo marco reproducible, cuatro componentes que suelen aparecer desacoplados: una fuente de datos abiertos trazable y suficientemente robusta, un proceso de preparación y control de calidad de datos documentado, un núcleo de inferencia difusa auditable para interpretar riesgo, y una validación comparable que permita verificar estabilidad del desempeño fuera del contexto inicial. Cuando alguno de estos componentes falta, el resultado puede ser útil como prototipo local, pero no como base confiable para una solución transferible y reutilizable en otros escenarios urbanos.
+
+Con base en ello, el problema que aborda esta investigación se define como la necesidad de un módulo de monitoreo de calidad del aire que, apoyado en datos abiertos de redes de monitoreo ambiental, permita evaluar riesgo y generar alertas mediante inferencia difusa bajo un esquema técnicamente trazable, reproducible y con capacidad de validación en escenarios urbanos. La delimitación de este problema y la lectura crítica de la evidencia revisada se sostienen, además, en el checklist de calidad aplicado a los estudios del corpus, presentado en el Anexo~\ref{ane:anexo_checklist_calidad}, y en el diccionario operativo de extracción utilizado para sistematizar variables, enfoques y decisiones de diseño, incluido en el Anexo~\ref{ane:anexo_diccionario_extraccion}. Esta formulación se alinea de manera directa con los objetivos del trabajo: caracterizar la evidencia disponible, diseñar una arquitectura funcional coherente con los vacíos detectados, implementar el módulo propuesto e introducir una validación que considere la utilidad práctica del modelo como sistema de apoyo a la decisión.
+
+
+\subsection{Metodología}
+
+\subsubsection{Enfoque y tipo de investigación}
+El presente trabajo se enmarca en una investigación aplicada orientada al desarrollo de una solución tecnológica para un problema real. El enfoque metodológico combina una revisión sistemática de la literatura, utilizada para fundamentar el problema y derivar criterios de diseño, y una lógica de investigación basada en diseño de artefacto, consistente con los principios de \emph{Design Science Research}, donde el conocimiento se materializa mediante la definición, construcción y evaluación de una solución útil frente a una necesidad identificada \cite[pp.~75--77]{METDSR01}, \cite[pp.~46,55--56]{METDSRM01}. La validación del módulo se formula como una evaluación empírica del artefacto centrada en la utilidad, la calidad y el desempeño de la solución desarrollada.
+
+\subsubsection{Diseño metodológico del estudio}
+El estudio se organiza en fases metodológicas claramente definidas para garantizar coherencia y trazabilidad entre los objetivos planteados y las actividades desarrolladas. La secuencia articula el proceso de revisión sistemática con la lógica propuesta por DSRM para investigación basada en diseño \cite[pp.~46,71]{METDSRM01}. La primera fase cumple la función de fundamentación y delimitación del problema. Las fases posteriores se orientan a la definición de la solución, la construcción del artefacto, su demostración funcional y su evaluación. Las fases del estudio son las siguientes:
+
+\begin{enumerate}
+  \item Revisión sistemática del estado del arte.
+  \item Diseño del módulo de monitoreo.
+  \item Implementación del módulo propuesto.
+  \item Validación del módulo propuesto.
+\end{enumerate}
+
+La relación con DSRM se utiliza aquí como marco de organización del estudio. La fase 1, basada en revisión sistemática, cumple la función de identificar y justificar el problema y aporta la base para definir los objetivos de la solución. La fase 2 corresponde a la definición de esos objetivos y al diseño conceptual del artefacto. La fase 3 corresponde a la construcción del artefacto e incorpora una demostración funcional inicial de su operabilidad. La fase 4 corresponde a la evaluación del módulo implementado. El paso de comunicación de DSRM se concreta en la memoria del TFM y en el manuscrito derivado de la revisión sistemática \cite[pp.~51--56]{METDSRM01}.
+
+\subsubsection{1: Revisión sistemática del estado del arte}
+
+La revisión sistemática constituye la primera fase metodológica del TFM. Su función fue identificar el problema, caracterizar el estado del arte reciente y derivar criterios de diseño para el artefacto desarrollado en las fases posteriores. Aunque la revisión forma parte del presente trabajo, su desarrollo completo se consolidó en un manuscrito independiente enviado a evaluación. En esta memoria se conserva únicamente el nivel de detalle necesario para explicar su papel metodológico; la síntesis de hallazgos resultantes se presenta en el Capítulo 3.
+
+El protocolo de revisión se estructuró mediante el modelo PICo y la guía PRISMA 2020 \cite{prisma2020}, siguiendo además las recomendaciones de Kitchenham para revisiones en ingeniería de software y sistemas \cite{kitchenham2007}. La delimitación PICo permitió definir con precisión el fenómeno de interés, el enfoque metodológico y el contexto de aplicación, manteniendo consistencia con el problema del TFM.
+
+\input{assets/tablas/02_cuerpo/05_desarrollo/pico_air_quality.tex}
+
+A partir de esta delimitación se formuló la pregunta de revisión: ¿cómo se utilizan los sistemas de inferencia basados en lógica difusa en plataformas de monitoreo en tiempo real para evaluar la calidad del aire urbano y los riesgos asociados? Esta pregunta se operacionalizó mediante tres directrices analíticas: variables y contaminantes utilizados, criterios de diseño de los modelos difusos y características de las plataformas de monitoreo en tiempo real.
+
+La búsqueda bibliográfica se ejecutó en Scopus, Web of Science e IEEE Xplore. Se restringió a publicaciones en inglés entre 2021 y 2026 y a documentos arbitrados con relación directa con monitoreo de calidad del aire, lógica difusa y operación en tiempo real. La construcción de la cadena de búsqueda siguió la estructura PICo y combinó términos del dominio atmosférico, del enfoque difuso y del contexto de plataforma mediante bloques lógicos equivalentes entre bases. El objetivo de esta fase fue recuperar un conjunto suficientemente amplio para caracterizar el campo, pero lo bastante acotado para sostener una evaluación detallada y trazable.
+
+La selección de estudios siguió el flujo PRISMA 2020, con fases de identificación, depuración de duplicados, cribado por título y resumen, recuperación de texto completo, elegibilidad e inclusión final. La elegibilidad se definió con base en la relación efectiva del estudio con tres dimensiones: datos y variables de calidad del aire, uso central de lógica difusa y presencia de plataforma o sistema de monitoreo. El corpus final quedó constituido por 19 estudios primarios. Los artefactos metodológicos y de respaldo de esta fase se consolidaron en el manuscrito del SLR y en su repositorio asociado.
+
+\subsubsection{Evaluación de Calidad}
+La evaluación de calidad se diseñó para valorar la solidez metodológica de los estudios incluidos y para apoyar la interpretación posterior de la evidencia. El instrumento se construyó a partir del bloque cuantitativo propuesto por Kitchenham \cite{kitchenham2007}, seleccionando únicamente ítems pertinentes para la pregunta de revisión, el tipo de evidencia reportada y el dominio analizado. El resultado fue un checklist de 30 ítems, organizado en un núcleo común y componentes específicos según subtipo de estudio cuantitativo.
+
+Cada estudio se clasificó previamente según su naturaleza metodológica y se evaluó únicamente con los ítems aplicables. La codificación utilizó las categorías \texttt{Yes}, \texttt{Partial}, \texttt{No}, \texttt{Unclear} y \texttt{N/A}, con respaldo por página para cada decisión. La puntuación agregada se empleó para distinguir evidencia de calidad alta, media o baja, pero no como criterio de exclusión automática. Su función fue orientar la lectura crítica de los hallazgos y detectar posibles sesgos de diseño, ejecución, análisis o reporte.
+
+\subsubsection{Extracción de datos}
+La extracción de datos se definió antes del análisis y se orientó a responder de forma directa la pregunta principal y las tres directrices de la revisión. La matriz final integró metadatos bibliográficos, variables y contaminantes, características del enfoque difuso, arquitectura y operación de plataforma, resultados reportados y trazabilidad metodológica. Antes de la extracción definitiva se realizó un piloto para estabilizar definiciones operacionales, reducir ambigüedad semántica y eliminar campos redundantes. Como resultado de ese ajuste, la matriz final quedó estructurada en 48 columnas analíticas.
+
+La extracción se ejecutó artículo por artículo, con un catálogo controlado para variables categóricas y con registro explícito de evidencia por página para cada afirmación analítica. Esta decisión permitió mantener una relación verificable entre síntesis e información de origen. La consistencia de la matriz se comprobó mediante controles estructurales, normalización semántica y auditoría cruzada contra los PDFs de los estudios incluidos.
+
+\subsubsection{Análisis y Síntesis de Datos}
+El análisis se desarrolló en una secuencia de preparación, descripción, identificación de patrones, construcción de perfiles e integración narrativa. En la fase de preparación se normalizaron categorías y se consolidó la matriz de extracción. En la fase descriptiva se calcularon frecuencias y distribuciones por dimensión analítica. En la fase relacional se emplearon tablas cruzadas y matrices de coocurrencia para identificar configuraciones recurrentes entre variables, modelos difusos y plataformas. Posteriormente, estos patrones se sintetizaron en perfiles comparables de diseño y operación.
+
+La implementación analítica se realizó con Python, principalmente mediante \texttt{pandas}, \texttt{matplotlib} y \texttt{seaborn}. Este flujo permitió mantener consistencia entre procesamiento, visualización y redacción de resultados. La salida sustantiva de esta fase se recoge en el Capítulo 3, donde se presentan los hallazgos del estado del arte y sus implicaciones para el diseño del módulo propuesto.
+
+
+
+
+\subsubsection{2: Diseño del módulo de monitoreo}
+Esta fase se inscribe en el segundo paso de DSRM, \emph{define the objectives of a solution}, y recoge además la parte inicial del tercer paso, \emph{design and development}, en lo relativo a la formulación conceptual del artefacto \cite[pp.~52--55]{METDSRM01}. Su función es establecer, con base en la fase 1, qué debe resolver el módulo y bajo qué condiciones debe hacerlo. Esta fase convierte los hallazgos del estado del arte en requisitos explícitos de solución.
+
+El trabajo de diseño se desarrolla sobre cuatro decisiones principales:
+\begin{enumerate}
+\item \textbf{Delimitación del alcance funcional del módulo}. En esta decisión se distinguen las funciones que forman parte del artefacto: adquisición de datos, consolidación del estado de calidad del aire, evaluación difusa del riesgo y generación de alertas.
+\item \textbf{Definición del flujo lógico de procesamiento}. En este punto se identifica el recorrido de los datos desde la fuente de entrada hasta la salida final y se fijan los puntos donde el sistema debe conservar trazabilidad documental.
+\item \textbf{Precisión de la estructura de entradas y salidas}. Esta decisión incluye la definición de contaminantes, covariables, variables derivadas y categorías de riesgo que deberán integrarse en el módulo.
+\item \textbf{Selección del esquema de inferencia y de los criterios de diseño}. Aquí se determina el tipo de inferencia difusa y las condiciones de diseño del artefacto, de modo que la propuesta responda al objetivo del TFM y a los vacíos identificados en comparabilidad, auditabilidad e integración operativa.
+\end{enumerate}
+
+Como producto de esta fase se obtiene una especificación de diseño. Esa especificación debe dejar definidos el alcance del artefacto, la arquitectura funcional, el papel de la fuente de datos, el criterio de construcción de la salida y las condiciones que guiarán la implementación y la validación posterior. Su función dentro del estudio es reducir ambigüedad entre la evidencia revisada y el desarrollo técnico del módulo \cite[pp.~84--85]{METDSR01}.
+
+\subsubsection{3: Implementación del módulo propuesto}
+Esta fase desarrolla el núcleo del tercer paso de DSRM, \emph{design and development}, y enlaza con el cuarto paso, \emph{demonstration}, mediante una verificación funcional inicial del artefacto \cite[pp.~55--56]{METDSRM01}. Su función es convertir la especificación definida en la fase 2 en un módulo ejecutable. En esta etapa se construyen e integran los componentes del sistema bajo un criterio de continuidad operativa y reproducibilidad técnica.
+
+La implementación comprende las siguientes tareas:
+\begin{enumerate}
+\item \textbf{Selección y configuración de tecnologías de soporte}. Esta tarea fija la base técnica sobre la que se ejecutará el módulo.
+\item \textbf{Construcción del mecanismo de adquisición y preparación de datos}. Aquí se implementan las funciones de consulta, transformación, control de calidad y estructuración de la entrada.
+\item \textbf{Codificación del núcleo de inferencia}. En esta tarea se materializan las variables, reglas y salidas del componente difuso.
+\item \textbf{Integración del flujo completo de ejecución}. En este punto se enlazan adquisición, procesamiento, inferencia y salida dentro de un único recorrido funcional.
+\item \textbf{Definición de reglas operativas de ejecución}. Esta tarea incluye tratamiento de errores, registro de metadatos y trazabilidad de la ejecución.
+\end{enumerate}
+
+El objetivo metodológico de la fase es disponer de un artefacto funcional cuya ejecución pueda repetirse bajo las mismas condiciones y con resultados consistentes.
+
+La demostración funcional se ubica al cierre de esta fase. Su propósito es comprobar que el módulo ejecuta el recorrido completo previsto en el diseño, desde la recuperación de datos hasta la emisión de una salida interpretable. Esta demostración no sustituye la evaluación formal, pero aporta evidencia de factibilidad técnica y permite identificar fallos de integración antes de la fase de validación \cite[p.~85]{METDSR01}.
+
+\subsubsection{4: Validación del módulo propuesto}
+Esta fase corresponde al quinto paso de DSRM, \emph{evaluation} \cite[p.~56]{METDSRM01}. Su propósito es determinar si el módulo satisface los objetivos fijados en la fase 2 y si su comportamiento resulta útil, consistente y técnicamente adecuado para el problema abordado. La validación se organiza como una evaluación empírica del artefacto, orientada a comprobar el comportamiento del sistema bajo condiciones de uso definidas de antemano.
+
+La evaluación se estructura mediante escenarios representativos del funcionamiento esperado del módulo:
+\begin{enumerate}
+\item \textbf{Condiciones nominales de operación}. Se comprueba el comportamiento del sistema cuando los datos se encuentran dentro de rangos esperados.
+\item \textbf{Situaciones cercanas o superiores a umbrales de alerta}. Se verifica la coherencia entre las condiciones observadas y la respuesta de riesgo emitida por el módulo.
+\item \textbf{Casos con variaciones en completitud o calidad del dato}. Se observa la estabilidad del sistema ante faltantes, cobertura parcial o disponibilidad incompleta de contaminantes.
+\end{enumerate}
+
+Cada escenario se ejecuta sobre una ventana temporal explícita y con documentación de la fuente utilizada, de la cobertura efectiva de datos y de las reglas de selección del conjunto evaluado. Este procedimiento es necesario porque la propuesta depende de datos abiertos y, por tanto, la validez de la evaluación depende tanto del motor difuso como de la calidad y trazabilidad de la entrada.
+
+La validación considera cuatro dimensiones de análisis:
+\begin{enumerate}
+\item \textbf{Completitud funcional del pipeline}. Se verifica la capacidad del sistema para recorrer todas sus etapas y producir una salida.
+\item \textbf{Coherencia entre condiciones observadas y respuesta del módulo}. Se analiza la correspondencia entre la entrada y la clasificación o alerta emitida.
+\item \textbf{Desempeño operativo}. Se registra el tiempo de respuesta y la estabilidad básica de ejecución.
+\item \textbf{Reproducibilidad}. Se comprueba la estabilidad de la salida cuando se repiten las mismas condiciones de entrada y procesamiento.
+\end{enumerate}
+
+El resultado esperado de esta fase es una base empírica suficiente para juzgar el comportamiento del artefacto e introducir ajustes cuando sea necesario \cite[pp.~86--87]{METDSR01}.
+
+\subsubsection{Consideraciones finales de la metodología}
+La secuencia metodológica del TFM se organizó mediante una planificación temporal por fases, articulando revisión sistemática, diseño del módulo, implementación, validación y redacción final. La Figura~\ref{fig:roadmap_tfm} resume esta organización entre mediados de octubre de 2025 y mediados de abril de 2026, identificando la duración relativa de cada bloque, sus solapes principales y los hitos del proceso.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{metodología/roadmap_tfm.png}
+\caption{Roadmap temporal del TFM por fases, actividades e hitos principales. Elaboración propia.}
+\label{fig:roadmap_tfm}
+\end{figure}
+
+Este esquema cumple una función metodológica de trazabilidad. Sitúa cada fase dentro del desarrollo global del trabajo, identifica dependencias entre actividades y hace visible la superposición parcial entre síntesis, diseño, construcción y cierre documental. En el tramo final del estudio, esta planificación también sirve como base para interpretar el alcance efectivo del trabajo, sus limitaciones y las extensiones posibles del módulo propuesto.
+
+
+
+\subsection{Desarrollo del proyecto}
+
+\subsubsection{Propuesta del módulo}
+La propuesta técnica del TFM se materializó en un prototipo ejecutable denominado \textit{AQRisk}. El artefacto implementa un módulo híbrido para monitoreo de calidad del aire, evaluación de riesgo y generación de alertas sobre datos abiertos. Su diseño conserva una base normativa explícita para el cálculo del estado del aire y añade una capa de inferencia difusa para ajustar la severidad operativa del episodio.
+
+La decisión central del diseño fue separar dos problemas. El primero consiste en consolidar el estado base del aire con una referencia regulatoria trazable. El segundo consiste en interpretar ese estado cuando aparecen concurrencia entre contaminantes, persistencia temporal o condiciones ambientales de contexto. Esta separación mantiene comparabilidad externa y deja trazable el aporte del módulo en la parte de interpretación y alertamiento.
+
+\subsubsection{Arquitectura funcional del módulo}
+El prototipo implementado se organiza en cinco capas funcionales encadenadas. La Figura~\ref{fig:capas_modulo} resume esta arquitectura.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\textwidth]{propuesta/fig01_capas_modulo.png}
+\caption{Arquitectura funcional implementada del módulo AQRisk. Elaboración propia.}
+\label{fig:capas_modulo}
+\end{figure}
+
+\begin{enumerate}
+\item \textbf{Consolidación normativa}. Esta capa fija el estado base del episodio sobre una referencia regulatoria explícita. A partir de series horarias por contaminante, selecciona la ventana aplicable para cada parámetro, calcula los subíndices con \textit{breakpoints} EPA/AQS y resuelve el AQI global por dominancia. Su función es producir una base comparable y externamente interpretable antes de cualquier modulación difusa.
+\item \textbf{Variables auxiliares}. Sobre ese estado base, la arquitectura deriva dos señales agregadas con significado operacional distinto: persistencia, para representar continuidad temporal del deterioro, y concurrencia, para representar presión multicontaminante efectiva. Estas variables no sustituyen al AQI ni a los contaminantes criterio; actúan como entradas auxiliares para enriquecer la lectura del episodio.
+\item \textbf{Inferencia difusa principal}. La base principal recibe AQI base, concurrencia y persistencia como entradas separadas y las evalúa mediante una malla Mamdani de 54 reglas, cuyo detalle completo se presenta en el Anexo~\ref{ane:anexo_reglas_principales}. En esta capa se concentra la interpretación del riesgo, ya que el motor transforma un estado normativo puntual en una salida graduada, auditable y trazable en términos de activación de reglas.
+\item \textbf{Capa contextual basada en reglas}. Después de la inferencia principal, la arquitectura incorpora una modulación discreta por temperatura y humedad. Esta capa permanece desacoplada del motor principal y solo interviene cuando existe contexto ambiental disponible y el episodio ya muestra compromiso suficiente. Su papel es ajustar la severidad final sin alterar la lógica normativa ni difusa que produjo la salida base.
+\item \textbf{Alertamiento y salida}. La última capa traduce el resultado del recorrido completo a una salida operativa. Aquí se fija la categoría final, se compone el mensaje interpretable y se serializa la corrida en JSON con trazas de cálculo, reglas activadas, cobertura y metadatos de contexto. Esta salida es la base común para CLI, API e interfaz web.
+\end{enumerate}
+
+La arquitectura por capas aporta explicabilidad técnica. Cada bloque resuelve una función específica y conserva trazabilidad del paso anterior. Esta organización facilita la verificación del comportamiento del sistema y evita mezclar cálculo normativo, lógica difusa y composición de la salida dentro de una sola etapa.
+
+\subsubsection{Arquitectura de software y flujo de ejecución}
+La implementación del sistema se realizó en Python mediante una arquitectura modular monoproceso. La estructura del paquete separa modelos de dominio, ingesta, procesamiento, cálculo AQI, motor difuso, alertamiento, orquestación e interfaz de línea de comandos. Esta decisión reduce complejidad accidental y deja preparada una migración posterior a servicios independientes si el trabajo lo requiere.
+
+El flujo de ejecución del prototipo se presenta en la Figura~\ref{fig:pipeline_prototipo}, en donde se muestra que el sistema opera como una secuencia desacoplada de transformación de datos. El recorrido comienza con la definición explícita del contexto de ejecución, porque modo, estación, ventana temporal y umbral de cobertura condicionan qué observaciones pueden entrar al análisis. A partir de ahí, el sistema consulta sensores por \textit{location\_id}, recupera series horarias recientes y las estandariza en una forma común de trabajo, lo que permite tratar de manera homogénea contaminantes con unidades, disponibilidad y ventanas regulatorias distintas.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{propuesta/fig02_pipeline_prototipo.png}
+\caption{Flujo de ejecución del prototipo implementado. Elaboración propia.}
+\label{fig:pipeline_prototipo}
+\end{figure}
+
+
+Sobre esa base homogénea, el pipeline separa tres decisiones técnicas. La primera es normativa: calcular cobertura efectiva, construir subíndices por contaminante y consolidar el AQI base. La segunda es analítica: derivar concurrencia y persistencia como variables agregadas que resumen coexistencia multicontaminante y continuidad temporal del episodio. La tercera es interpretativa: ejecutar el motor Mamdani, aplicar la capa contextual cuando corresponde y componer la respuesta final. Esta organización hace visible dónde termina la consolidación regulatoria y dónde empieza la modulación del riesgo.
+
+El resultado del recorrido entrega una categoría final; pero además, el pipeline genera una salida JSON trazable que conserva subíndices, variable dominante, cobertura, variables auxiliares, reglas activadas, regla contextual evaluada y estado final del alertamiento. Por ello, la misma ejecución puede exponerse por CLI, por contenedor Docker, por API HTTP o por la interfaz web sin perder consistencia entre cálculo interno, evidencia visual y salida operativa.
+
+\subsubsection{Fuente de datos, variables y criterios normativos}
+La fuente operativa principal del prototipo es \textit{OpenAQ}, utilizada como plataforma abierta de consulta programática de mediciones y metadatos de estaciones \cite{DATA_OPENAQ}. El módulo recupera mediciones por estación, sensor y ventana temporal. La fuente se usa como repositorio de observaciones y no como proveedor de un índice final ya resuelto.
+
+La capa normativa del módulo se apoya de forma explícita en la tabla vigente de \textit{AQI Breakpoints} de \textit{EPA/AQS} \cite{DATA_EPA_AQS_BREAKPOINTS}. A partir de esa referencia se implementaron los contaminantes criterio PM$_{2.5}$, PM$_{10}$, CO, NO$_2$, O$_3$ y SO$_2$, junto con sus ventanas regulatorias y categorías del índice. El Anexo~\ref{ane:anexo_breakpoints_epa} recoge los tramos oficiales utilizados por el prototipo. La versión actual del prototipo utiliza:
+\begin{enumerate}
+\item PM$_{2.5}$ con promedio móvil de 24 horas, porque la referencia regulatoria para este contaminante parte de exposición diaria acumulada y no de una observación instantánea.
+\item PM$_{10}$ con promedio de 24 horas, bajo la misma lógica de exposición integrada sobre un día completo.
+\item CO con promedio de 8 horas, dado que la norma EPA/AQS evalúa este contaminante sobre una ventana subdiaria sostenida.
+\item NO$_2$ con valor horario, ya que el prototipo utiliza el tramo de 1 hora definido por la tabla regulatoria implementada.
+\item O$_3$ con evaluación sobre 8 horas y, cuando el tramo normativo lo exige, contraste adicional con 1 hora; el subíndice final se resuelve con la ventana aplicable al episodio observado.
+\item SO$_2$ con contraste entre valor horario y promedio de 24 horas, porque la norma distingue situaciones de exposición aguda y acumulada según el nivel detectado.
+\end{enumerate}
+
+El tratamiento de ventanas parciales se resuelve mediante un umbral mínimo de cobertura del 80\%. Cuando la ventana no está completa, el módulo admite cálculo si la cobertura supera ese umbral y deja registro de la condición aplicada. Esta decisión conserva utilidad operativa sobre datos abiertos sin ocultar la completitud efectiva de la serie.
+
+El prototipo admite además temperatura y humedad como variables de contexto. Estas variables no participan en la consolidación del AQI y tampoco sustituyen a los contaminantes criterio. Su función es modular la salida del riesgo cuando ya existe un episodio comprometido. La variable CO$_2$ no se incorporó al núcleo porque su uso en los antecedentes revisados se concentra en calidad de aire interior y escenarios IAQ, no en el núcleo regulatorio urbano \cite{A135,A165,A167}.
+
+Sobre esa base, el módulo deriva las siguientes variables internas:
+\begin{itemize}
+\item \textbf{AQI global}, como estado base consolidado del episodio y punto de entrada normativo para la inferencia posterior.
+\item \textbf{Contaminante dominante}, para identificar qué subíndice gobierna la clasificación base y cuál variable explica el deterioro principal del episodio.
+\item \textbf{Persistencia temporal}, calculada sobre estados AQI sucesivos del propio módulo para representar continuidad del deterioro y distinguir episodios sostenidos de picos aislados.
+\item \textbf{Concurrencia}, definida como proximidad relativa entre varios subíndices y el dominante, con el fin de capturar presión multicontaminante efectiva.
+\item \textbf{Cobertura global}, como indicador de completitud de la entrada realmente utilizada, separado de la malla difusa y conservado como señal de calidad del dato.
+\end{itemize}
+
+La salida final del prototipo conserva la taxonomía EPA: \textit{Good}, \textit{Moderate}, \textit{Unhealthy for Sensitive Groups}, \textit{Unhealthy}, \textit{Very Unhealthy} y \textit{Hazardous}. El resultado se expresa junto con la alerta textual, el AQI base y la lista de reglas activadas.
+
+\subsubsection{Transición entre capas y variables derivadas}
+La transición entre la capa normativa y la capa de interpretación se resuelve mediante una secuencia explícita de derivaciones. Primero, cada contaminante criterio se transforma en un subíndice AQI con \textit{breakpoints} EPA/AQS. Para cada contaminante \(p\), la formulación implementada sigue:
+\begin{equation}
+I_p=\frac{I_{Hi}-I_{Lo}}{BP_{Hi}-BP_{Lo}}\left(C_p-BP_{Lo}\right)+I_{Lo},
+\end{equation}
+donde \(C_p\) es la concentración representativa del contaminante en la ventana regulatoria aplicable, \(BP_{Lo}\) y \(BP_{Hi}\) son los \textit{breakpoints} del tramo, e \(I_{Lo}\) e \(I_{Hi}\) son los límites del subíndice en ese tramo. La formulación y sus componentes ya fueron introducidos en la Ecuación~\ref{eq:aqi_interp_epa} del marco teórico, mientras que los valores concretos de \textit{breakpoints} implementados por la propuesta se toman de la tabla \textit{EPA/AQS} \cite{DATA_EPA_AQS_BREAKPOINTS}. En esta implementación, las concentraciones representativas se obtienen con ventanas diferenciadas: 24 h para PM$_{2.5}$ y PM$_{10}$, 8 h para CO, valor horario para NO$_2$, comparación entre 8 h y 1 h para O$_3$, y comparación entre 1 h y 24 h para SO$_2$.
+
+Una vez calculados los subíndices, el estado base del episodio queda determinado por el contaminante dominante:
+\begin{equation}
+AQI_{global}=\max\left(I_{pm25},I_{pm10},I_{co},I_{no2},I_{o3},I_{so2}\right).
+\end{equation}
+
+El contaminante asociado a ese máximo se registra como dominante y pasa a gobernar la categoría base del episodio. Sobre ese estado base, el prototipo deriva dos variables auxiliares antes de entrar al motor \textit{Mamdani}. La primera es la concurrencia multi-contaminante. Para calcularla se fija un umbral de cercanía respecto del dominante:
+\begin{equation}
+threshold=\max\left(25,\ 0.8\cdot AQI_{dominante}\right).
+\end{equation}
+Luego, para cada contaminante adicional \(i\), se define una cercanía normalizada:
+\begin{equation}
+closeness_i=clamp\left(\frac{AQI_i-threshold}{AQI_{dominante}-threshold},0,1\right).
+\end{equation}
+La puntuación final de concurrencia queda dada por:
+\begin{equation}
+concurrence=\min\left(100,\ \frac{\sum_i closeness_i}{3}\cdot 100\right).
+\end{equation}
+Esta formulación conserva una escala de 0 a 100 y resume cuántos contaminantes adicionales quedan realmente cerca del dominante, sin introducirlos como entradas independientes de la malla principal.
+
+La segunda variable auxiliar es la persistencia temporal. El prototipo construye una historia corta de estados base del propio módulo y, a partir de ella, calcula:
+\begin{equation}
+window\_mean=\frac{1}{n}\sum_{t=1}^{n}AQI_t,
+\end{equation}
+\begin{equation}
+exceedances=\left|\left\{AQI_t: AQI_t\geq 100\right\}\right|,
+\end{equation}
+\begin{equation}
+persistence=\min\left(100,\ \frac{window\_mean}{3}+15\cdot exceedances\right).
+\end{equation}
+Con ello, la persistencia no representa duración cronológica estricta, sino continuidad reciente del deterioro del AQI base en una escala operativa de 0 a 100.
+
+En esta transición también se calcula la cobertura global de la entrada. Sin embargo, la cobertura no entra a la malla difusa principal; se conserva como indicador de completitud de datos y como criterio de cautela en la salida.
+
+\subsubsection{Núcleo de evaluación y motor difuso}
+El núcleo de evaluación del prototipo se organiza en dos niveles de decisión. El primero es determinista y produce el estado base del aire. El segundo es difuso y ajusta ese estado en función de variables agregadas. La Figura~\ref{fig:estructura_decision} resume esta estructura.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{propuesta/fig03_estructura_decision.png}
+\caption{Estructura de decisión implementada en el núcleo de evaluación del módulo. Elaboración propia.}
+\label{fig:estructura_decision}
+\end{figure}
+
+El motor principal se implementó con inferencia \textit{Mamdani}. La elección respondió a interpretabilidad, auditabilidad y control directo sobre las funciones de pertenencia y la base de reglas. La malla principal quedó definida sobre tres variables:
+\begin{enumerate}
+\item \textbf{AQI base} con seis categorías EPA.
+\item \textbf{Concurrencia} con tres niveles: baja, media y alta.
+\item \textbf{Persistencia} con tres niveles: baja, media y alta.
+\end{enumerate}
+
+Esta combinación produce una base completa de 54 reglas. La Tabla~\ref{tab:reglas_principales_resumen} resume la lógica por bloques y el detalle completo se presenta en el Anexo~\ref{ane:anexo_reglas_principales}, Tabla~\ref{tab:anexo_reglas_principales_54}. La decisión de utilizar una malla completa y no una base reducida busca exhaustividad de cobertura, también es consistente con antecedentes que documentan bases explícitas de 36 y 64 reglas cuando el sistema difuso trabaja sobre entradas instrumentales directas \cite{A114,A165,A167}.
+
+\input{assets/tablas/02_cuerpo/05_desarrollo/reglas_principales_resumen.tex}
+
+La capa contextual se resolvió con una base independiente de 9 reglas sobre temperatura y humedad. Esta capa no es difusa: clasifica ambas variables mediante cortes crisp y consulta una matriz \(3\times 3\) para decidir si propone o no un escalado de una categoría. Su papel es modular la salida principal cuando el riesgo base ya se encuentra comprometido y el contexto ambiental resulta menos favorable. La Tabla~\ref{tab:reglas_contextuales} presenta esta base.
+
+\input{assets/tablas/02_cuerpo/05_desarrollo/reglas_contextuales.tex}
+
+El mecanismo de inferencia del motor principal utiliza implicación por mínimo, agregación por máximo y defuzzificación por centroide discreto en el rango 0--500. La etiqueta principal se obtiene mediante bandas equivalentes a la taxonomía EPA. Después, la capa contextual crisp decide si mantiene esa salida o la escala una categoría adicional. Este diseño permite explicar qué regla difusa se activó, qué regla contextual se evaluó y cómo se obtuvo la categoría final.
+
+\subsubsection{Implementación del prototipo}
+El prototipo se implementó en Python 3.12 bajo el paquete \texttt{aqrisk}. La estructura del software separa las responsabilidades principales:
+\begin{itemize}
+\item \texttt{domain}: modelos de datos y estructuras del recorrido.
+\item \texttt{ingestion}: cliente de OpenAQ y construcción de series por sensor.
+\item \texttt{processing}: cobertura, persistencia, concurrencia y ajuste contextual.
+\item \texttt{aqi}: cálculo del AQI base con ventanas regulatorias.
+\item \texttt{fuzzy}: funciones de pertenencia, matriz de reglas y motor Mamdani.
+\item \texttt{alerting}: composición de la alerta y de la cautela operativa.
+\item \texttt{application}: orquestación del pipeline.
+\item \texttt{interfaces}: interfaz de línea de comandos.
+\end{itemize}
+
+La ejecución local puede realizarse directamente en Python o mediante Docker. Sobre ese núcleo se implementó además una API HTTP y una interfaz web orientada a control, visualización, explicabilidad y revisión histórica de corridas. La interfaz permite seleccionar entradas, consultar escenarios, visualizar subíndices, reglas activadas, curvas de pertenencia y comparación entre ejecuciones. La gestión de usuarios, roles y administración todavía no forma parte del alcance actual.
+
+\subsubsection{Estrategia de verificación del artefacto}
+La verificación actual del prototipo se centró en completitud del pipeline, coherencia de la salida, trazabilidad de reglas y estabilidad básica de ejecución. Para ello se implementó una suite automatizada que ya cubre el pipeline y el contrato HTTP básico de la API, además de escenarios controlados orientados a validar activación de reglas y comportamiento contextual. También se ejecutó un escenario \textit{mock} con cobertura total y disponibilidad completa de contaminantes criterio para comprobar la integración de las cinco capas.
+
+\subsection{Resultados}
+La construcción del prototipo permitió cerrar un primer artefacto funcional alineado con la metodología del TFM. El módulo ya ejecuta ingestión, normalización, control de cobertura, cálculo normativo del AQI, derivación de persistencia y concurrencia, inferencia Mamdani, ajuste contextual y composición de la alerta. Sobre este núcleo se integró una capa web de supervisión que consume la API del sistema y expone paneles de dashboard, trazabilidad, explicabilidad y evaluación.
+
+La Tabla~\ref{tab:validacion_prototipo_actual} resume la verificación funcional actual.
+
+\input{assets/tablas/02_cuerpo/05_desarrollo/validacion_prototipo_actual.tex}
+
+La validación de esta etapa combinó tres fuentes de evidencia. La primera fue la suite automatizada actual, que ya cubre pipeline y API HTTP. La segunda fueron corridas reales sobre \textit{OpenAQ}, seleccionadas por estabilidad y valor analítico en la ventana de 24 horas consultada. La tercera fueron escenarios controlados, utilizados solo cuando era necesario mostrar comportamientos que las estaciones reales no ofrecieron de forma reproducible en esta iteración. Para la parte real se conservaron tres ubicaciones útiles: \textit{Hospital General de México} (\texttt{location\_id=1134}), \textit{Parque O'Higgins} en Santiago (\texttt{25}) y \textit{SAN BORJA} en Lima (\texttt{2402}). Como casos controlados se mantuvieron \textit{urban\_escalation}, para documentar un escalado contextual efectivo, y \textit{diffuse\_overlap}, para documentar una activación múltiple de reglas en el motor principal.
+
+El \textit{dashboard} actúa como punto de entrada de esa lectura. La Figura~\ref{fig:ui_dashboard_mock_controlled} muestra la vista principal con una corrida controlada completa. El bloque superior concentra el estado del backend, las ayudas de lectura y la exportación de evidencia. El panel de control consolida la selección de modo, escenario o estación, ventana temporal y cobertura mínima. La tarjeta de lectura ejecutiva resume AQI dominante, riesgo final, cobertura y efecto de la capa contextual. Esta síntesis permite decidir si la corrida requiere una auditoría más detallada en \textit{Trazabilidad}, una revisión interna del razonamiento en \textit{Explicabilidad} o una comparación con el histórico en \textit{Evaluación}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{propuesta/ui_dashboard_mock_controlled_user.png}
+\caption{Vista principal del \textit{dashboard} para la corrida controlada \textit{diffuse\_overlap}. La captura deja visibles el panel de control, la lectura ejecutiva del episodio y el resumen de la corrida, que sirven como punto de entrada antes de abrir las vistas analíticas. Elaboración propia.}
+\label{fig:ui_dashboard_mock_controlled}
+\end{figure}
+
+Los colores del \textit{dashboard} siguen una convención estable para reducir ambigüedad entre vistas. El azul identifica la base normativa y las magnitudes ligadas al AQI o a la corrida actual. El naranja se reserva para la concurrencia y, en comparaciones históricas, para la corrida de referencia. El rojo representa persistencia o presión acumulada. El verde se usa para la salida final, la cobertura útil y los estados resueltos por la capa contextual. Esta codificación se repite en gráficas, tarjetas y comparaciones para que la semántica visual se mantenga al pasar de \textit{Dashboard} a \textit{Explicabilidad} o \textit{Evaluación}.
+
+A partir de esa vista general, el ejemplo de la Figura~\ref{fig:ui_dashboard_synthesis_mock} resume tres lecturas que justifican la arquitectura propuesta. La subfigura~\ref{fig:ui_dashboard_subindices_mock} mantiene explícita la base normativa: O$_3$ domina el episodio y supera el umbral 100, mientras PM$_{2.5}$ queda en una banda inferior y el resto de contaminantes no compite por la dominancia. La subfigura~\ref{fig:ui_dashboard_base_vs_final_mock} muestra que el artefacto obtiene un valor específico del AQI base; en el que, al implementar reglas crisp de contexto,reexpresa la escala de salida final del sistema. La subfigura~\ref{fig:ui_dashboard_auxiliary_mock} deja visibles las variables auxiliares con un papel separado: la persistencia añade memoria temporal, la concurrencia mide coexistencia efectiva y la cobertura se conserva como control de calidad de datos fuera de la malla difusa. Esa separación es una ventaja del diseño implementado, porque evita mezclar evidencia normativa, modulación difusa y calidad del dato en un único indicador opaco.
+
+\begin{figure}[H]
+\centering
+\begin{subfigure}[t]{0.47\textwidth}
+\centering
+\includegraphics[width=\textwidth]{propuesta/ui_dashboard_auxiliary_mock.png}
+\caption{Entradas auxiliares del motor difuso.}
+\label{fig:ui_dashboard_auxiliary_mock}
+\end{subfigure}
+\hfill
+\begin{subfigure}[t]{0.47\textwidth}
+\centering
+\includegraphics[width=\textwidth]{propuesta/ui_dashboard_base_vs_final_mock.png}
+\caption{Escala AQI base frente a salida difusa.}
+\label{fig:ui_dashboard_base_vs_final_mock}
+\end{subfigure}
+
+\vspace{0.8em}
+
+\begin{subfigure}[t]{\textwidth}
+\centering
+\includegraphics[width=\textwidth]{propuesta/ui_dashboard_subindices_mock.png}
+\caption{Subíndices AQI y umbrales normativos.}
+\label{fig:ui_dashboard_subindices_mock}
+\end{subfigure}
+
+\caption{Lectura analítica del \textit{dashboard} sobre la corrida controlada \textit{urban\_escalation}. Las subfiguras condensan la base normativa del episodio, la reexpresión de esa base en la escala de salida del sistema y el papel de las variables auxiliares que enriquecen la decisión. Elaboración propia.}
+\label{fig:ui_dashboard_synthesis_mock}
+\end{figure}
+
+A partir de la Figura~\ref{fig:ui_dashboard_synthesis_mock}, el resto de resultados se organiza por la pregunta que responde cada vista. \textit{Trazabilidad} y \textit{Explicabilidad} se apoyan en \textit{diffuse\_overlap}, porque ese escenario activa varias reglas con fuerzas distintas dentro del motor principal. \textit{Evaluación} utiliza \textit{urban\_escalation}, ya que en ese caso la capa contextual sí altera la salida final y el escalado se vuelve observable.
+
+La \textit{Trazabilidad} expone el recorrido completo de la decisión y es la vista más útil para distinguir capas. El ejemplo de la Figura~\ref{fig:ui_traceability_diffuse_overlap_modal} deja leer cómo se resuelve la evaluación mostrada. La ruta de decisión fija el orden del proceso. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{propuesta/ui_traceability_diffuse_overlap_modal.png}
+\caption{Modal de \textit{Trazabilidad} para el escenario controlado \textit{diffuse\_overlap}. La captura muestra cuatro reglas de la base principal con fuerzas de disparo distintas y, en paralelo, una regla contextual crisp evaluada sin escalado, lo que permite separar con claridad inferencia difusa principal y modulación contextual posterior. Elaboración propia.}
+\label{fig:ui_traceability_diffuse_overlap_modal}
+\end{figure}
+
+El bloque de entradas y salidas permite comprobar que el episodio parte de un AQI global 93, con concurrencia 4.66 y persistencia 31.00, y que tanto la salida principal como la salida final permanecen en \textit{moderate}. Esta combinación ya anticipa una propiedad importante: el caso no está dominado por concurrencia alta, sino por un AQI situado en zona de transición y una persistencia con solape parcial entre \textit{low} y \textit{medium}. Debajo, las cuatro reglas activadas confirman esa lectura. Domina \texttt{R\_moderate\_low\_low}, pero convive con tres reglas secundarias que introducen contribuciones moderadas y \textit{unhealthy\_sensitive\_groups}. En paralelo, la regla contextual \texttt{CTX\_normal\_medium} aparece evaluada sin escalado. La figura documenta qué módulos existen: muestra que la salida \textit{moderate} surge de una agregación con solape real en la base difusa y que la capa crisp posterior queda visible, separada y sin efecto sobre este episodio.
+
+La vista de \textit{Explicabilidad} se apoya aquí en una única corrida controlada: \textit{diffuse\_overlap}. Este escenario es el más útil para inspección interna porque mantiene una salida final estable, pero activa cuatro reglas de la base principal con fuerzas distintas. La Figura~\ref{fig:ui_explainability_rules_diffuse_overlap} muestra que el peso dominante se concentra en \texttt{R\_moderate\_low\_low}, mientras tres reglas de menor intensidad mantienen abierta la transición hacia categorías más severas. Esa distribución importa porque traduce la intuición del episodio a términos verificables: el sistema reconoce una base todavía moderada, pero no completamente limpia, y por eso no reduce la decisión a una sola etiqueta crisp desde el inicio.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\textwidth]{propuesta/ui_explainability_rules_diffuse_overlap.png}
+\caption{Distribución de reglas activadas en la corrida controlada \textit{diffuse\_overlap}. La evaluación muestra cuatro reglas efectivamente disparadas, con una regla dominante y tres aportes secundarios, lo que confirma que el motor principal combina zonas de solape en lugar de colapsar a una única regla. Elaboración propia.}
+\label{fig:ui_explainability_rules_diffuse_overlap}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{subfigure}[t]{0.48\textwidth}
+\centering
+\includegraphics[width=\textwidth]{propuesta/ui_explainability_aggregation_diffuse_overlap.png}
+\caption{Agregación difusa y \textit{score} principal.}
+\label{fig:ui_explainability_aggregation_diffuse_overlap}
+\end{subfigure}
+\hfill
+\begin{subfigure}[t]{0.48\textwidth}
+\centering
+\includegraphics[width=\textwidth]{propuesta/ui_explainability_membership_aqi_diffuse_overlap.png}
+\caption{Funciones de pertenencia del AQI.}
+\label{fig:ui_explainability_aqi_diffuse_overlap}
+\end{subfigure}
+
+\vspace{0.8em}
+
+\begin{subfigure}[t]{0.48\textwidth}
+\centering
+\includegraphics[width=\textwidth]{propuesta/ui_explainability_membership_concurrence_diffuse_overlap.png}
+\caption{Funciones de pertenencia de concurrencia.}
+\label{fig:ui_explainability_concurrence_diffuse_overlap}
+\end{subfigure}
+\hfill
+\begin{subfigure}[t]{0.48\textwidth}
+\centering
+\includegraphics[width=\textwidth]{propuesta/ui_explainability_membership_persistence_diffuse_overlap.png}
+\caption{Funciones de pertenencia de persistencia.}
+\label{fig:ui_explainability_persistence_diffuse_overlap}
+\end{subfigure}
+\caption{Lectura interna de la corrida \textit{diffuse\_overlap}. Las subfiguras muestran la evaluación que se está explicando: la agregación del motor principal y la posición del episodio dentro de las tres variables lingüísticas que alimentan la inferencia. Elaboración propia.}
+\label{fig:ui_explainability_overlap_subfigs}
+\end{figure}
+
+Las subfiguras de la Figura~\ref{fig:ui_explainability_overlap_subfigs} completan esa lectura. La agregación difusa muestra cómo esos cuatro disparos se combinan en una única superficie y convergen en un \textit{score} compatible con la etiqueta \textit{moderate}. Las curvas de AQI, concurrencia y persistencia explican por qué ocurre esa combinación: el AQI cae en el borde entre \textit{moderate} y \textit{unhealthy\_sensitive\_groups}, la concurrencia queda anclada en \textit{low} y la persistencia aporta una transición entre \textit{low} y \textit{medium}. La ventaja de la implementación propuesta aparece justamente ahí: la salida depende del contaminante dominante y de una composición interpretable entre severidad normativa, coexistencia efectiva y continuidad temporal.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{propuesta/ui_explainability_mock_controlled_cropped.png}
+\caption{Modal de \textit{Explicabilidad} para el escenario controlado \textit{urban\_escalation}. La vista resume la inferencia principal y documenta por separado la capa contextual crisp mediante bandas, términos activos, matriz de reglas \(3\times 3\) y guardarraíl particulado. Elaboración propia.}
+\label{fig:ui_explainability_mock_controlled}
+\end{figure}
+
+En la Figura~\ref{fig:ui_explainability_mock_controlled} se muestra la explicabilidad de la etapa final de la capa contextual basada en reglas, pero para este ejemplo se mantiene \textit{urban\_escalation} solo para documentar la capa contextual crisp. En esta vista ya no se discute la inferencia principal, sino el mecanismo posterior que decide si se escala o no la salida. La imagen muestra temperatura 31 y humedad 76, combinación que activa la celda \texttt{CTX\_high\_high}. El guardarraíl particulado permite el ajuste y la salida contextual queda marcada como \textit{aplicado}. La utilidad analítica de esta figura demuestra que el escalado final puede justificarse con reglas discretas explícitas y valores observables, sin ocultar el punto de decisión dentro del motor principal.
+
+El modal de \textit{Evaluación} cierra la lectura al comparar salida principal y salida final. La Figura~\ref{fig:ui_evaluation_context_mock_controlled} utiliza la evaluación controlada \textit{urban\_escalation} porque en ese caso la salida final sí se separa de la salida principal y el efecto del ajuste contextual queda visible de forma directa.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\textwidth]{propuesta/ui_evaluation_context_mock_controlled.png}
+\caption{Comparación entre salida principal y salida final en la evaluación controlada \textit{urban\_escalation}. La figura muestra explícitamente la evaluación presentada en este bloque: la capa contextual eleva la salida final respecto de la salida principal y hace visible el efecto del escalado sobre un episodio diseñado para activar esa condición. Elaboración propia.}
+\label{fig:ui_evaluation_context_mock_controlled}
+\end{figure}
+
+La evidencia reunida permitió verificar cinco hechos alineados con los objetivos del TFM. El primero es que el módulo implementado ya integra base normativa, inferencia difusa, capa contextual y alertamiento en un flujo trazable de extremo a extremo. El segundo es que las corridas reales sobre distintas estaciones producen episodios diferenciados y, por tanto, ya habilitan comparación entre múltiples ciudades, aunque esa comparación todavía no constituya una evaluación extensa de desempeño. El tercero es que el escenario controlado sigue siendo necesario para documentar una alerta más severa y un escalado contextual efectivo, porque esa combinación no apareció de forma reproducible en las estaciones consultadas. El cuarto es que \textit{diffuse\_overlap} demuestra un comportamiento genuinamente difuso, con varias reglas activadas y fuerzas distintas dentro de la malla principal. El quinto es que la implementación propuesta depende del contaminante dominante e incorpora concurrencia y persistencia como entradas auxiliares interpretables, lo que refuerza la evaluación del riesgo y mejora la capacidad explicativa del artefacto.
+
+\subsection{Discusión}
+
+Los resultados presentados permiten discutir el alcance real del artefacto implementado y situarlo frente a los antecedentes comparables revisados en el SLR. La lectura comparativa se organiza alrededor de variables, arquitectura, implementación y validación, a la luz de los criterios de diseño fijados para este estudio. Desde esa base, la discusión siguiente examina qué aspectos de la propuesta responden de manera consistente a la evidencia previa, qué decisiones la distinguen dentro del campo y qué limitaciones siguen abiertas para etapas posteriores.
+
+La caracterización del campo y la traducción de esa evidencia a decisiones concretas de diseño quedan reflejadas en la selección de variables y fuentes del prototipo. El núcleo regulatorio utiliza los seis contaminantes criterio del AQI y reserva temperatura y humedad para una capa contextual separada. Esa elección se alinea con trabajos urbanos que emplean conjuntos amplios de contaminantes y covariables ambientales, como el marco de predicción AQI presentado por Haidar y cols., basado en NO$_2$, O$_3$, PM$_{10}$, PM$_{2.5}$, CO, SO$_2$, temperatura, humedad, presión y UV sobre datos públicos \cite[pp.~3--4]{A028}. También mantiene un punto de contacto con las propuestas de Saini y cols. y de Zareb y cols. en el uso de temperatura y humedad como variables relevantes del entorno \cite[pp.~3--5]{A135}, \cite[pp.~2--3,~5]{A167}. La diferencia aparece en el propósito: los trabajos de Saini y cols. y de Zareb y cols. operan en calidad del aire interior y privilegian pronóstico de PM$_{2.5}$ o estimación AQI/IAQ en espacios domésticos \cite[pp.~1,~3--5]{A135}, \cite[pp.~1,~3--5]{A167}; Kowalski y cols. se concentran en ajuste de PM$_{2.5}$ frente a estación de referencia y no en alertamiento urbano \cite[pp.~5--6]{A084}. En ese contexto, la propuesta articula datos abiertos urbanos y semántica normativa EPA/AQS en un módulo orientado a riesgo actual. El coste de esa decisión es que prescinde de variables frecuentes en sistemas indoor, como CO$_2$ o TVOC, y por ello cubre menos condiciones de confort o ventilación que algunos antecedentes \cite[pp.~3--5]{A135}, \cite[p.~1]{A165}.
+
+El diseño arquitectónico también queda respaldado por la comparación con los antecedentes. La implementación comparte con los trabajos de Sung y cols., Istiqomah y cols. y Zareb y cols. la idea de tratar el monitoreo como un flujo operativo y no como una fórmula aislada: esos trabajos integran adquisición, inferencia y visualización en arquitecturas IoT con sensores, conectividad y alarmamiento \cite[pp.~7,~11--15,~24]{A114}, \cite[pp.~1--2,~5--6]{A165}, \cite[pp.~2--3,~5]{A167}. El contraste aparece en la estructura de decisión. Sung y cols. combinan Mamdani y aprendizaje por refuerzo profundo para control industrial de aire acondicionado y buzzer en fábrica \cite[pp.~1,~7--10,~16--23]{A114}; Istiqomah y cols. utilizan Tsukamoto sobre CO, CO$_2$ y CH$_4$ con alerta local transmitida por LoRa \cite[pp.~2--6]{A165}; Zareb y cols. emplean un FIS tipo 1 para calibración de sensores y estimación AQI indoor \cite[pp.~1,~3--5]{A167}. La propuesta adopta otra solución: separa consolidación normativa AQI, variables auxiliares, inferencia Mamdani principal, capa contextual crisp y alertamiento. Esta partición mejora auditabilidad y permite mostrar por separado regla difusa, regla contextual y efecto final de cada capa. De ahí surge una trazabilidad del razonamiento más fuerte. El precio a pagar es la dependencia de la calidad y cobertura de fuentes abiertas, mientras los antecedentes instrumentados controlan directamente sensores, frecuencia de muestreo y contexto de despliegue \cite[pp.~3--4]{A028}, \cite[pp.~1--2,~5]{A167}.
+
+La implementación del módulo también puede leerse a la luz de antecedentes que ya ofrecían plataforma operativa. Saini y cols. publican resultados en el portal \textit{Vayuveda} y articulan red IoT, portal web y pronóstico casi en tiempo real \cite[pp.~3--4,~9--11]{A135}. Sung y cols. reportan integración con Firebase, aplicación móvil y sitio web para supervisión y control \cite[pp.~1,~11--15]{A114}. Zareb y cols. usan Google Sheets y una aplicación web ligera para seguimiento del dispositivo indoor \cite[pp.~2--3,~5]{A167}. La implementación se acerca a esas propuestas en la entrega de un artefacto ejecutable con interfaz de usuario. La diferencia relevante está en el tipo de interfaz implementada: el frontend actual expone \textit{dashboard}, trazabilidad, explicabilidad y evaluación sobre la misma corrida. Ese rasgo se aprecia con mayor claridad frente a los trabajos de Haidar y cols. y Kowalski y cols. Haidar y cols. reportan un marco híbrido ANFIS+ML+BMN para predicción AQI urbana, pero no documentan una interfaz operativa equivalente ni un despliegue reproducible con API, historiales y auditoría de reglas \cite[pp.~1,~4--5]{A028}. Kowalski y cols. priorizan reducción explicable de reglas dentro de ANFIS para ajuste de PM$_{2.5}$, con una contribución fuerte en interpretabilidad del modelo, aunque sin presentar una plataforma de monitoreo y alertamiento de extremo a extremo \cite[pp.~1--5,~8--10]{A084}. En consecuencia, la propuesta integra explicabilidad del modelo dentro de un artefacto operativo. A la vez, su persistencia histórica aún es básica y no ofrece actuación física ni administración completa de plataforma, capacidades que sí aparecen en sistemas IoT instrumentados como el de Sung y cols. \cite[pp.~11--15]{A114}.
+
+La validación es el punto donde la comparación exige mayor precisión metodológica. Los antecedentes reportan validaciones cuantitativas fuertes, pero sobre salidas distintas a las de esta propuesta. Haidar y cols. informan \(R^2\) y MSE en diez particiones aleatorizadas para predicción AQI \cite[pp.~4--5]{A028}. Kowalski y cols. evalúan MAE, RMSE y correlación de Pearson en múltiples localizaciones para ajuste de PM$_{2.5}$ \cite[pp.~6,~9--12]{A084}. Sung y cols. añaden exactitud, pérdida, memoria e inferencia en milisegundos para un sistema de control industrial \cite[pp.~16--25]{A114}. Istiqomah y cols. reportan exactitud de 92.4\% con la segunda base de reglas Tsukamoto \cite[pp.~4--6]{A165}. La implementación presentada no persigue una salida predictiva ni una calibración de sensor; su validación se centra en coherencia de la salida, activación de reglas, utilidad operativa de la interfaz y contraste entre corridas reales y escenarios controlados. Esta elección mantiene correspondencia con un módulo orientado a evaluación actual del riesgo y alertamiento. El beneficio inmediato es la coherencia entre objetivo, arquitectura y evidencia presentada. La deuda pendiente es una evaluación comparativa extensa entre múltiples estaciones, particiones temporales y métricas agregadas del tipo usado por Haidar y cols. o Kowalski y cols. \cite[pp.~4--5]{A028}, \cite[pp.~9--12]{A084}. En conjunto, la discusión muestra que la propuesta avanza sobre una zona menos explotada del campo: módulos urbanos explicables apoyados en datos abiertos y diseñados para auditoría operativa, aunque todavía con margen claro de fortalecimiento en validación externa y persistencia de largo plazo.
+
+La integración con \textit{OpenAQ} quedó validada a nivel de código, configuración y cliente de consulta. El prototipo recupera estaciones por \textit{location\_id}, consulta sensores asociados y construye series horarias por parámetro. Las corridas reales también hicieron visible una limitación importante: no toda estación con sensores publicados produce una ventana útil para el modelo. Un ejemplo es \textit{Adrogué} en Buenos Aires (\texttt{2847298}), cuya ficha expone PM$_{2.5}$, PM$_{10}$, temperatura y humedad relativa en \textit{OpenAQ}, pero cuya ventana consultada devolvió series vacías, cobertura global nula y una categoría \textit{sin\_datos}. Esa restricción forma parte del comportamiento real del sistema sobre datos abiertos vivos y debe conservarse explícitamente en la evaluación.
+
+En el estado actual del trabajo, el resultado principal no es todavía una comparación extensa de desempeño entre múltiples estaciones. El resultado alcanzado es la construcción de un artefacto ejecutable, trazable y explicable, con base normativa explícita, base principal de 54 reglas, capa contextual de 9 reglas, API HTTP, despliegue en contenedores e interfaz web funcional lista para etapas posteriores de validación comparativa y consolidación operativa.
