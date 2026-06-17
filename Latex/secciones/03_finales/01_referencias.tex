@@ -1,11 +1,14 @@
-% REFERENCIAS
+\section{REFERENCIAS}
 
-\section{Referencias}
+\USFQNotaPlantilla{Citar las fuentes utilizadas como referencias en el estilo elegido. Esta plantilla conserva APA mediante BibTeX y \texttt{apacite}. Reemplace o elimine la referencia de ejemplo cuando existan citas reales del trabajo.}
 
-\vspace{-2cm}
 \begingroup
-\renewcommand{\refname}{}
-\setlength{\parskip}{0.8\baselineskip}
+\makeatletter
+\def\st@rtbibsection{}
+\makeatother
+\ifUSFQIncluirReferenciaEjemplo
+  \nocite{kitchenham2007}
+\fi
 \bibliographystyle{apacite}
-\bibliography{bibliografia}
+\bibliography{assets/bibliografia}
 \endgroup

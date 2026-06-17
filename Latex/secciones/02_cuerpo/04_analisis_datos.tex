@@ -1,0 +1,35 @@
+\section{ANÁLISIS DE DATOS}
+
+\USFQNotaPlantilla{El análisis es la parte más compleja y detallada del trabajo. Es donde se presentan los aportes del autor al tema investigado. Esta sección debe desarrollarse una vez que los datos han sido recolectados, los que deben ser presentados de manera organizada, clara y detallada. Los análisis de los resultados se deben presentar de manera descriptiva narrativa y textual y pueden tener transcripciones, gráficos o tablas que los acompañen y complementen. Es importante resaltar que estas transcripciones, gráficos o tablas no deben reemplazar la descripción de los análisis. No se deben utilizar frases simples como: ``Los resultados se pueden ver en la Tabla 1''; se debe presentar siempre un análisis completo de manera textual. Esta sección puede estar dividida en subtítulos.}
+
+\subsection{Presentación de resultados}
+
+\USFQCampo{Describir los resultados principales de forma narrativa y analítica. Las tablas y figuras deben acompañar el análisis, no sustituirlo.}
+
+\begin{longtblr}[
+  caption={\USFQCampo{Título de la tabla, autodescriptivo e independiente del texto}},
+  label={tab:ejemplo_usfq}
+]{
+  width=\textwidth,
+  colspec={X[1.1,l] X[1,l] X[1.4,l]},
+}
+\textbf{Variable} & \textbf{Resultado} & \textbf{Interpretación} \\
+\USFQCampo{Variable 1} & \USFQCampo{Resultado} & \USFQCampo{Interpretación del resultado} \\
+\USFQCampo{Variable 2} & \USFQCampo{Resultado} & \USFQCampo{Interpretación del resultado} \\
+\end{longtblr}
+
+\begin{figure}[H]
+  \centering
+  \fbox{%
+    \parbox[c][5cm][c]{0.82\textwidth}{%
+      \centering
+      \USFQCampo{Colocar la imagen en \texttt{assets/figuras/} y reemplazar este recuadro por \texttt{\textbackslash includegraphics}.}
+    }%
+  }
+  \caption{\USFQCampo{Título de la figura, autodescriptivo e independiente del texto}}
+  \label{fig:ejemplo_usfq}
+\end{figure}
+
+\subsection{Interpretación de resultados}
+
+\USFQCampo{Relacionar los hallazgos con la pregunta de investigación, la metodología y la literatura revisada.}

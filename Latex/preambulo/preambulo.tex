@@ -1,278 +1,261 @@
-\usepackage[a4paper,margin=3cm]{geometry}
+\usepackage[
+  a4paper,
+  top=2.86cm,
+  bottom=0.50cm,
+  left=2.50cm,
+  right=2.25cm,
+  headheight=15pt,
+  headsep=0.55cm,
+  footskip=5pt
+]{geometry}
+
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{newtxtext,newtxmath}
+\else
+  \usepackage{fontspec}
+  \IfFontExistsTF{Times New Roman}
+    {\setmainfont{Times New Roman}}
+    {\setmainfont[
+      Path=docker/fonts/,
+      UprightFont=times.ttf,
+      BoldFont=timesbd.ttf,
+      ItalicFont=timesi.ttf,
+      BoldItalicFont=timesbi.ttf
+    ]{Times New Roman}}
+\fi
+
+\usepackage[spanish,provide=*]{babel}
 \usepackage{setspace}
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{xcolor}
 \usepackage{titlesec}
-\usepackage{titlecaps}
 \usepackage{tocloft}
 \usepackage{caption}
 \usepackage{subcaption}
-\usepackage{capt-of}
 \usepackage{tabularray}
-\usepackage{textcomp}
-\usepackage{tikz}
-\usepackage{eso-pic}
-\usepackage{lastpage}
-\usepackage{iftex}
-\usepackage[spanish]{babel}
+\usepackage{booktabs}
 \usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{indentfirst}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{ragged2e}
+\usepackage{hyperref}
+\usepackage{bookmark}
+\usepackage[notocbib]{apacite}
+\providecommand{\sptext}[1]{\textsuperscript{#1}}
 
-% Rutas base para imágenes
-\graphicspath{{assets/figuras/}{assets/figuras/branding/}}
+\graphicspath{{assets/figuras/}{assets/figuras/usfq/}}
+
+\definecolor{USFQPlaceholderRed}{HTML}{FF0000}
+\colorlet{USFQPLACEHOLDERRED}{USFQPlaceholderRed}
+\definecolor{USFQTableHead}{HTML}{D9D9D9}
+\definecolor{USFQLink}{HTML}{1F4E79}
 
 
-% === Selector de fuentes ===
-% true  -> usa Arial/Cambria/Calibri (igual a la plantilla Word)
-% false -> usa fuentes por defecto de LaTeX
-\newif\ifviufonts
-\viufontstrue
+\newif\ifUSFQMostrarCampos
+\USFQMostrarCampostrue
 
-\newcommand{\ViuCambria}{\rmfamily}
-\newcommand{\ViuCalibri}{\sffamily}
+\newif\ifUSFQIncluirReferenciaEjemplo
+\USFQIncluirReferenciaEjemplotrue
 
-\ifviufonts
-  \ifXeTeX
-    \usepackage{fontspec}
-    \setmainfont{Arial}
-    \setsansfont{Arial}
-    \newfontfamily\ViuCambriaFamily{Cambria}
-    \newfontfamily\ViuCalibriFamily{Calibri}
-    \renewcommand{\ViuCambria}{\ViuCambriaFamily}
-    \renewcommand{\ViuCalibri}{\ViuCalibriFamily}
-    \renewcommand\familydefault{\sfdefault}
+\newcommand{\USFQCampo}[1]{%
+  \ifUSFQMostrarCampos
+    \textcolor{USFQPlaceholderRed}{#1}%
+  \else
+    #1%
   \fi
-  \ifLuaTeX
-    \usepackage{fontspec}
-    \setmainfont{Arial}
-    \setsansfont{Arial}
-    \newfontfamily\ViuCambriaFamily{Cambria}
-    \newfontfamily\ViuCalibriFamily{Calibri}
-    \renewcommand{\ViuCambria}{\ViuCambriaFamily}
-    \renewcommand{\ViuCalibri}{\ViuCalibriFamily}
-    \renewcommand\familydefault{\sfdefault}
-  \fi
-\fi
+}
 
-\definecolor{VIUORANGE}{HTML}{ED7D31}
+\newcommand{\USFQNotaPlantilla}[1]{%
+  \begin{quote}
+    \itshape #1
+  \end{quote}
+}
 
-\setcounter{secnumdepth}{2}
+\input{config/datos.tex}
+
+\setcounter{secnumdepth}{0}
 \setcounter{tocdepth}{2}
 
-% Spacing config generated from config/spacing.yml
-\input{config/spacing.generated.tex}
+\doublespacing
+\setlength{\parindent}{1.25cm}
+\setlength{\parskip}{0pt}
+\raggedbottom
+\sloppy
 
-\setstretch{1.2}
-% Espacio visible entre párrafos (sin sangría cuando hay parskip)
-\setlength{\parindent}{\VIUParagraphIndent}
-\setlength{\parskip}{\VIUParagraphSkip}
-\AtBeginDocument{%
-  % Reafirma tras paquetes/estilos que puedan sobrescribirlo
-  \setlength{\parindent}{\VIUParagraphIndent}%
-  \setlength{\parskip}{\VIUParagraphSkip}%
-}
-% Permite cortes de palabra y mejor ajuste en textos justificados
-\tolerance=1000
-\emergencystretch=1em
-\hyphenpenalty=200
-\exhyphenpenalty=200
+\titleformat{\section}[block]
+  {\normalfont\bfseries\centering\fontsize{12}{14}\selectfont}
+  {}
+  {0pt}
+  {\MakeUppercase}
 
-% Quitar numeración/encabezados por defecto (usamos overlay)
-\makeatletter
-\def\ps@plain{%
-  \let\@oddhead\@empty
-  \let\@evenhead\@empty
-  \let\@oddfoot\@empty
-  \let\@evenfoot\@empty}
-\makeatother
-
-% Estilos de títulos
-\titleformat{\section}
-  {\normalfont\fontsize{22}{26}\selectfont}
-  {\thesection.}
-  {0.8em}
+\titleformat{\subsection}[block]
+  {\normalfont\bfseries\raggedright\fontsize{12}{14}\selectfont}
+  {}
+  {0pt}
   {}
 
-\titleformat{\subsection}
-  {\normalfont\fontsize{16}{19}\selectfont}
-  {\thesubsection.}
-  {1.0em}
+\titleformat{\subsubsection}[runin]
+  {\normalfont\bfseries\fontsize{12}{14}\selectfont}
   {}
+  {0pt}
+  {\hspace{\parindent}}
+  [.]
 
-\titlespacing*{\section}{0pt}{\VIUSectionBeforeSkip}{\VIUSectionAfterSkip}
-\titlespacing*{\subsection}{0pt}{\VIUSubsectionBeforeSkip}{\VIUSubsectionAfterSkip}
-\VIUApplyOptionalSpacing
+\titleformat{\paragraph}[runin]
+  {\normalfont\bfseries\itshape\fontsize{12}{14}\selectfont}
+  {}
+  {0pt}
+  {\hspace{\parindent}}
+  [.]
 
-% Ajuste fino de separación título <-> header
-\newcommand{\VIUTitlePad}{\vspace*{\VIUSectionTitlePadLen}}
-\let\VIUOrigSection\section
-\let\VIUOrigSubsection\subsection
+\titleformat{\subparagraph}[runin]
+  {\normalfont\itshape\fontsize{12}{14}\selectfont}
+  {}
+  {0pt}
+  {\hspace{\parindent}}
+  [.]
 
-% Título en estilo "Title Case" con exclusión de artículos y preposiciones frecuentes
-\Addlcwords{a al ante bajo cabe con contra de del desde durante e el en entre hacia hasta la las lo los mediante o para por según sin so sobre tras u y}
-\newcommand{\VIUTitleCase}[1]{\titlecap{#1}}
+\titlespacing*{\section}{0pt}{0pt}{1.0\baselineskip}
+\titlespacing*{\subsection}{0pt}{1.0\baselineskip}{0.4\baselineskip}
+\titlespacing*{\subsubsection}{0pt}{0.8\baselineskip}{0.5em}
+\titlespacing*{\paragraph}{0pt}{0.8\baselineskip}{0.5em}
+\titlespacing*{\subparagraph}{0pt}{0.8\baselineskip}{0.5em}
+
+\fancypagestyle{usfq}{%
+  \fancyhf{}%
+  \fancyhead[R]{\fontsize{12}{14}\selectfont\thepage}%
+  \renewcommand{\headrulewidth}{0pt}%
+  \renewcommand{\footrulewidth}{0pt}%
+}
+
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \fancyhead[R]{\fontsize{12}{14}\selectfont\thepage}%
+  \renewcommand{\headrulewidth}{0pt}%
+  \renewcommand{\footrulewidth}{0pt}%
+}
+
+\fancypagestyle{emptyusfq}{%
+  \fancyhf{}%
+  \renewcommand{\headrulewidth}{0pt}%
+  \renewcommand{\footrulewidth}{0pt}%
+}
+
+\renewcommand{\contentsname}{TABLA DE CONTENIDO}
+\renewcommand{\listtablename}{ÍNDICE DE TABLAS}
+\renewcommand{\listfigurename}{ÍNDICE DE FIGURAS}
+\renewcommand{\figurename}{Figura}
+\renewcommand{\tablename}{Tabla}
+\addto\captionsspanish{%
+  \renewcommand{\contentsname}{TABLA DE CONTENIDO}%
+  \renewcommand{\listtablename}{ÍNDICE DE TABLAS}%
+  \renewcommand{\listfigurename}{ÍNDICE DE FIGURAS}%
+  \renewcommand{\figurename}{Figura}%
+  \renewcommand{\tablename}{Tabla}%
+}
 \AtBeginDocument{%
-  \pdfstringdefDisableCommands{%
-    \def\titlecap#1{#1}%
-    \def\VIUTitleCase#1{#1}%
-  }%
+  \renewcommand{\contentsname}{TABLA DE CONTENIDO}%
+  \renewcommand{\listtablename}{ÍNDICE DE TABLAS}%
+  \renewcommand{\listfigurename}{ÍNDICE DE FIGURAS}%
+  \renewcommand{\figurename}{Figura}%
+  \renewcommand{\tablename}{Tabla}%
 }
 
-\makeatletter
-\renewcommand{\section}{%
-  \VIUTitlePad%
-  \@ifstar{\VIUSectionStarInternal}{\VIUSectionInternal}%
-}
-\newcommand{\VIUSectionInternal}[1]{\VIUOrigSection{\VIUTitleCase{#1}}}
-\newcommand{\VIUSectionStarInternal}[1]{\VIUOrigSection*{\VIUTitleCase{#1}}}
-
-\renewcommand{\subsection}{%
-  \@ifstar{\VIUSubsectionStarInternal}{\VIUSubsectionInternal}%
-}
-\newcommand{\VIUSubsectionInternal}[1]{\VIUOrigSubsection{\VIUTitleCase{#1}}}
-\newcommand{\VIUSubsectionStarInternal}[1]{\VIUOrigSubsection*{\VIUTitleCase{#1}}}
-\makeatother
-
-% Secciones sin numerar con sangría como en Word
-\newcommand{\VIUSectionStar}[1]{%
-  \VIUTitlePad%
-  \VIUOrigSection*{\hspace{0.65cm}\VIUTitleCase{#1}}%
-  \addcontentsline{toc}{section}{\VIUTitleCase{#1}}%
-}
-
-% TOC
-\newcommand{\VIUIndexTitleFont}{\ViuCambria\fontsize{24}{28}\selectfont}
-\renewcommand{\contentsname}{Índice}
-\renewcommand{\cfttoctitlefont}{\VIUIndexTitleFont}
-\renewcommand{\cftaftertoctitle}{\par\vspace{0.2cm}}
-\renewcommand{\cftdotsep}{4}
+\renewcommand{\cfttoctitlefont}{\hfill\normalfont\bfseries\fontsize{12}{14}\selectfont}
+\renewcommand{\cftaftertoctitle}{\hfill\par\vspace{0.5\baselineskip}}
+\renewcommand{\cftlottitlefont}{\hfill\normalfont\bfseries\fontsize{12}{14}\selectfont}
+\renewcommand{\cftafterlottitle}{\hfill\par\vspace{0.5\baselineskip}}
+\renewcommand{\cftloftitlefont}{\hfill\normalfont\bfseries\fontsize{12}{14}\selectfont}
+\renewcommand{\cftafterloftitle}{\hfill\par\vspace{0.5\baselineskip}}
+\renewcommand{\cftdotsep}{2}
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
 \renewcommand{\cftsubsecleader}{\cftdotfill{\cftdotsep}}
-\renewcommand{\cftsecaftersnum}{.}
-\setlength{\cftsecnumwidth}{1.8em}
 \setlength{\cftsecindent}{0pt}
-\renewcommand{\cftsubsecaftersnum}{.}
-\setlength{\cftsubsecnumwidth}{2.4em}
-\setlength{\cftsubsecindent}{0.38cm}
-\setlength{\cftbeforesecskip}{0.3\baselineskip}
-\renewcommand{\cftsecfont}{\normalfont}
+\setlength{\cftsecnumwidth}{0pt}
+\setlength{\cftsubsecindent}{1.25cm}
+\setlength{\cftsubsecnumwidth}{0pt}
+\setlength{\cftbeforesecskip}{0.25\baselineskip}
+\renewcommand{\cftsecfont}{\normalfont\bfseries}
 \renewcommand{\cftsubsecfont}{\normalfont}
-\renewcommand{\cftsecpagefont}{\normalfont}
+\renewcommand{\cftsecpagefont}{\normalfont\bfseries}
 \renewcommand{\cftsubsecpagefont}{\normalfont}
-
-% Listas (dinámicas)
-\renewcommand{\listfigurename}{Índice de Figuras}
-\renewcommand{\listtablename}{Índice de Tablas}
-\renewcommand{\cftloftitlefont}{\VIUIndexTitleFont}
-\renewcommand{\cftlottitlefont}{\VIUIndexTitleFont}
-\setlength{\cftbeforeloftitleskip}{0pt}
-\setlength{\cftafterloftitleskip}{0.2cm}
-\setlength{\cftbeforelottitleskip}{0pt}
-\setlength{\cftafterlottitleskip}{0.2cm}
-\renewcommand{\cftfigpresnum}{}
-\renewcommand{\cftfigaftersnum}{.}
-\setlength{\cftfignumwidth}{2.4em}
-\setlength{\cftfigindent}{0pt}
-\renewcommand{\cftfigleader}{\cftdotfill{\cftdotsep}}
-\renewcommand{\cftfigfont}{\normalfont}
-\renewcommand{\cftfigpagefont}{\normalfont}
-\renewcommand{\cfttabpresnum}{}
-\renewcommand{\cfttabaftersnum}{.}
-\setlength{\cfttabnumwidth}{2.4em}
 \setlength{\cfttabindent}{0pt}
+\setlength{\cfttabnumwidth}{4em}
 \renewcommand{\cfttableader}{\cftdotfill{\cftdotsep}}
-\renewcommand{\cfttabfont}{\normalfont}
-\renewcommand{\cfttabpagefont}{\normalfont}
+\setlength{\cftfigindent}{0pt}
+\setlength{\cftfignumwidth}{4em}
+\renewcommand{\cftfigleader}{\cftdotfill{\cftdotsep}}
 
-% Etiquetas de figuras y tablas
-\renewcommand{\figurename}{Ilustración}
-\renewcommand{\tablename}{Tabla}
 \captionsetup{
-  font=footnotesize,
-  labelfont=normalfont,
+  font=normalsize,
+  labelfont=bf,
   textfont=normalfont,
   labelsep=period,
-  justification=centering
-}
-\captionsetup[table]{
-  font=footnotesize,
-  labelfont=it,
-  textfont=it,
-  labelsep=period,
-  justification=centering
+  justification=centering,
+  singlelinecheck=false
 }
 
-% Estilo global de tablas (tabularray)
 \UseTblrLibrary{booktabs}
 \SetTblrInner[tblr,longtblr]{%
-  hlines={0.4pt,VIUORANGE},
-  %vlines={0.4pt,VIUORANGE},
-  vline{1}={0.4pt,VIUORANGE},
-  vline{Z}={0.4pt,VIUORANGE},
-  rowsep=2pt,
-  colsep=6pt,
-  row{1-Z}={font=\footnotesize},
-  row{1}={bg=VIUORANGE, fg=white, font=\footnotesize\bfseries},
-  rowhead={1}
+  hlines={0.4pt,black},
+  vlines={0.4pt,black},
+  rowsep=3pt,
+  colsep=5pt,
+  row{1}={font=\bfseries,bg=USFQTableHead},
+  rowhead=1
+}
+\SetTblrStyle{caption}{font=\normalsize}
+\SetTblrStyle{caption-tag}{font=\bfseries\normalsize}
+\SetTblrStyle{caption-sep}{font=\bfseries\normalsize}
+\SetTblrStyle{caption-text}{font=\normalsize}
+
+\setlist[itemize]{leftmargin=1.25cm,itemsep=0pt,topsep=0.25\baselineskip}
+\setlist[enumerate]{leftmargin=1.25cm,itemsep=0pt,topsep=0.25\baselineskip}
+
+\newcounter{usfqanexo}
+\renewcommand{\theusfqanexo}{\Alph{usfqanexo}}
+\newcommand{\listanexosname}{ÍNDICE DE ANEXOS}
+
+\makeatletter
+\newcommand{\listofanexos}{%
+  \section{\listanexosname}%
+  \@starttoc{loa}%
+}
+\newcommand*{\l@usfqanexo}{\@dottedtocline{1}{0pt}{5.8em}}
+\makeatother
+
+\newcommand{\USFQAnexo}[2]{%
+  \clearpage
+  \refstepcounter{usfqanexo}%
+  \phantomsection
+  \section*{ANEXO \theusfqanexo: #1}%
+  \addcontentsline{toc}{section}{ANEXO \theusfqanexo: #1}%
+  \addcontentsline{loa}{usfqanexo}{ANEXO \theusfqanexo: #1}%
+  \label{#2}%
 }
 
-% Caption de tabularray con etiqueta fija en español
-\DefTblrTemplate{caption-tag}{default}{Tabla\hspace{0.25em}\thetable}
-\DefTblrTemplate{caption-sep}{default}{.\enskip}
-\DefTblrTemplate{caption-text}{default}{\InsertTblrText{caption}}
-\SetTblrStyle{caption-tag}{font=\footnotesize\itshape}
-\SetTblrStyle{caption-sep}{font=\footnotesize\itshape}
-\SetTblrStyle{caption-text}{font=\footnotesize\itshape}
-\SetTblrStyle{caption}{halign=c}
-
-% Ubicar caption al final de la tabla (no arriba)
-\DefTblrTemplate{firsthead}{default}{}
-\DefTblrTemplate{middlehead,lasthead}{default}{
-  \UseTblrTemplate{conthead}{default}
-}
-\DefTblrTemplate{firstfoot,middlefoot}{default}{
-  \UseTblrTemplate{contfoot}{default}
-}
-\DefTblrTemplate{lastfoot}{default}{
-  \UseTblrTemplate{caption}{default}
-  \UseTblrTemplate{note}{default}
-  \UseTblrTemplate{remark}{default}
+\newcommand{\USFQPortadaLinea}[2]{%
+  {\fontsize{#1}{\numexpr#1+3\relax}\selectfont #2\par}%
 }
 
-% Viñetas
-\renewcommand{\labelitemi}{\raisebox{0.15ex}{\scalebox{0.9}{$\bullet$}}}
-\renewcommand{\labelitemii}{\raisebox{0.15ex}{\scalebox{0.85}{$\circ$}}}
-
-\setlist[itemize]{leftmargin=1.2em}
-\setlist[itemize,2]{leftmargin=1.8em}
-\setlist[enumerate]{leftmargin=1.4em}
-
-% Cabecera/pie para páginas 2+
-% Posicionamiento absoluto del logo y pie (páginas 2+)
-\AddToShipoutPictureFG{%
-  \ifnum\value{page}>1
-    \begin{tikzpicture}[remember picture,overlay]
-      \node[anchor=north west] at ([xshift=0.87cm,yshift=-0.92cm]current page.north west)
-        {\includegraphics[width=4.56cm]{viu-header.png}};
-      \node[anchor=south west] at ([xshift=16.68cm,yshift=0.33cm]current page.south west)
-        {\color{black}\fontsize{9}{11}\selectfont\thepage\ de \pageref{LastPage}};
-    \end{tikzpicture}
-  \fi
+\newcommand{\USFQFirmaLinea}[1]{%
+  \noindent\begin{tabular}{@{}p{0.42\textwidth}p{0.50\textwidth}@{}}
+    #1 & \hrulefill
+  \end{tabular}\par
 }
 
-% Caja informativa
-\definecolor{VIUINFO}{HTML}{E6B5B5}
-\newcommand{\VIUInfoBox}[1]{%
-  \begingroup
-  \setlength{\fboxsep}{10pt}%
-  \noindent\colorbox{VIUINFO}{%
-    \parbox{\dimexpr\textwidth-2\fboxsep\relax}{\itshape #1}%
-  }%
-  \endgroup
+\hypersetup{
+  colorlinks=true,
+  linkcolor=USFQLink,
+  citecolor=USFQLink,
+  urlcolor=USFQLink,
+  pdfauthor={\USFQAutorPlano},
+  pdftitle={\USFQTituloPlano}
 }
-
-% Hipervínculos en índices y referencias
-\usepackage{hyperref}
-\VIUApplyLinkColors
-\usepackage{bookmark}
-\usepackage{apacite}

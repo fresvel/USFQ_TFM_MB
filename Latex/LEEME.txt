@@ -1,10 +1,25 @@
-PLANTILLA DE MEMORIA TFM
+PLANTILLA TFM USFQ
 
-Modifica las plantillas incluidas en los directorios:
-- secciones
-- tablas
-- algoritmos
+Edita primero config/datos.tex. Los campos marcados en rojo deben
+reemplazarse por la información definitiva antes de entregar el trabajo.
 
-Para compilar el documento, ejecuta "make" dentro del repositorio.
+Estructura:
+- main.tex: documento maestro.
+- preambulo/preambulo.tex: formato USFQ, bibliografia, tablas e indices.
+- secciones/00_guia: hoja de instrucciones de la plantilla Word.
+- secciones/01_preliminares: portada, aprobacion, derechos, resumen,
+  abstract e indices.
+- secciones/02_cuerpo: introduccion, revision de literatura, metodologia,
+  analisis y conclusiones.
+- secciones/03_finales: referencias, indice de anexos y anexos.
+- assets/bibliografia.bib: base BibTeX para referencias APA.
+- assets/figuras: imagenes propias del nuevo documento.
+- assets/tablas: tablas extensas con longtblr/tabularray.
 
-Para limpiar la compilación, ejecuta "make clean" dentro del repositorio.
+Para ocultar la hoja de guia, cambia \USFQIncluirGuiatrue por
+\USFQIncluirGuiafalse en preambulo/preambulo.tex.
+
+Para compilar, ejecuta make dentro de Latex.
+Para limpiar la compilacion, ejecuta make clean dentro de Latex.
+
+build/ y out/ son artefactos generados y quedan ignorados por Git.
