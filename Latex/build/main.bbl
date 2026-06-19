@@ -1,34 +1,571 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
-Kitchenham%
-\ \BBA {} Charters%
-}{%
-Kitchenham%
-\ \BBA {} Charters%
-}{%
-{\protect \APACyear {2007}}%
+Acosta%
+\ \protect \BOthers {.}}{%
+Acosta%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2022}}%
 }]{%
-kitchenham2007}
+Acosta_2022}
 \APACinsertmetastar {%
-kitchenham2007}%
+Acosta_2022}%
 \begin{APACrefauthors}%
-Kitchenham, B.%
-\BCBT {}\ \BBA {} Charters, S.%
+Acosta, N.%
+, Bautista, M\BPBI A.%
+, Waddell, B\BPBI J.%
+, McCalder, J.%
+, Beaudet, A\BPBI B.%
+, Man, L.%
+\BDBL {}Parkins, M\BPBI D.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2007}{}{}.
+\APACrefYearMonthDay{2022}{}{}.
 \newblock
-\APACrefbtitle {Guidelines for Performing Systematic Literature Reviews in
-  Software Engineering} {Guidelines for performing systematic literature
-  reviews in software engineering}\ \APACbVolEdTR{}{\BTR{}\ \BNUM\
-  EBSE-2007-01}.
+{\BBOQ}\APACrefatitle {Longitudinal {SARS-CoV-2} {RNA} wastewater monitoring
+  across a range of scales correlates with total and regional {COVID-19} burden
+  in a well-defined urban population} {Longitudinal {SARS-CoV-2} {RNA}
+  wastewater monitoring across a range of scales correlates with total and
+  regional {COVID-19} burden in a well-defined urban population}.{\BBCQ}
 \newblock
-\APACaddressInstitution{Durham, United Kingdom}{Keele University and Durham
-  University}.
+\APACjournalVolNumPages{Water Research}{220}{}{118611}.
 \newblock
-\APACrefnote{Version 2.3}
+\begin{APACrefURL} \url{https://doi.org/10.1016/j.watres.2022.118611}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.watres.2022.118611} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Ahmed%
+\ \protect \BOthers {.}}{%
+Ahmed%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+Ahmed_2020}
+\APACinsertmetastar {%
+Ahmed_2020}%
+\begin{APACrefauthors}%
+Ahmed, W.%
+, Angel, N.%
+, Edson, J.%
+, Bibby, K.%
+, Bivins, A.%
+, O'Brien, J\BPBI W.%
+\BDBL {}Mueller, J\BPBI F.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {First confirmed detection of {SARS-CoV-2} in untreated
+  wastewater in Australia: A proof of concept for the wastewater surveillance
+  of {COVID-19} in the community} {First confirmed detection of {SARS-CoV-2} in
+  untreated wastewater in australia: A proof of concept for the wastewater
+  surveillance of {COVID-19} in the community}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Science of The Total Environment}{728}{}{138764}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1016/j.scitotenv.2020.138764}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.scitotenv.2020.138764} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Asghar%
+\ \protect \BOthers {.}}{%
+Asghar%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2014}}%
+}]{%
+Asghar_2014}
+\APACinsertmetastar {%
+Asghar_2014}%
+\begin{APACrefauthors}%
+Asghar, H.%
+, Diop, O\BPBI M.%
+, Weldegebriel, G.%
+, Malik, F.%
+, Shetty, S.%
+, El~Bassioni, L.%
+\BDBL {}Lowther, S\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Environmental surveillance for polioviruses in the
+  Global Polio Eradication Initiative} {Environmental surveillance for
+  polioviruses in the global polio eradication initiative}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Infectious Diseases}{210}{suppl
+  1}{S294--S303}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1093/infdis/jiu384} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1093/infdis/jiu384} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Bottcher%
+\ \protect \BOthers {.}}{%
+Bottcher%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2025}}%
+}]{%
+Bottcher_2025}
+\APACinsertmetastar {%
+Bottcher_2025}%
+\begin{APACrefauthors}%
+Bottcher, S.%
+, Kreibich, J.%
+, Wilton, T.%
+, Saliba, V.%
+, Blomqvist, S.%
+, Al-Hello, H.%
+\BDBL {}Martin, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2025}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Detection of circulating vaccine-derived poliovirus type
+  2 ({cVDPV2}) in wastewater samples: A wake-up call, Finland, Germany, Poland,
+  Spain, the United Kingdom, 2024} {Detection of circulating vaccine-derived
+  poliovirus type 2 ({cVDPV2}) in wastewater samples: A wake-up call, finland,
+  germany, poland, spain, the united kingdom, 2024}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Euro Surveillance}{30}{3}{2500037}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.2807/1560-7917.ES.2025.30.3.2500037}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.2807/1560-7917.ES.2025.30.3.2500037}
+  \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Bubba%
+\ \protect \BOthers {.}}{%
+Bubba%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2023}}%
+}]{%
+Bubba_2023}
+\APACinsertmetastar {%
+Bubba_2023}%
+\begin{APACrefauthors}%
+Bubba, L.%
+, Benschop, K\BPBI S\BPBI M.%
+, Blomqvist, S.%
+, Duizer, E.%
+, Martin, J.%
+, Shaw, A\BPBI G.%
+\BDBL {}Harvala, H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Wastewater surveillance in Europe for non-polio
+  enteroviruses and beyond} {Wastewater surveillance in europe for non-polio
+  enteroviruses and beyond}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Microorganisms}{11}{10}{2496}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.3390/microorganisms11102496}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.3390/microorganisms11102496} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Child%
+\ \protect \BOthers {.}}{%
+Child%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2023}}%
+}]{%
+Child_2023}
+\APACinsertmetastar {%
+Child_2023}%
+\begin{APACrefauthors}%
+Child, H\BPBI T.%
+, Airey, G.%
+, Maloney, D\BPBI M.%
+, Parker, A.%
+, Wild, J.%
+, McGinley, S.%
+\BDBL {}Bassano, I.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Comparison of metagenomic and targeted methods for
+  sequencing human pathogenic viruses from wastewater} {Comparison of
+  metagenomic and targeted methods for sequencing human pathogenic viruses from
+  wastewater}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{mBio}{14}{6}{}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1128/mbio.01468-23} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1128/mbio.01468-23} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Crits-Christoph%
+\ \protect \BOthers {.}}{%
+Crits-Christoph%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2021}}%
+}]{%
+Crits_Christoph_2021}
+\APACinsertmetastar {%
+Crits_Christoph_2021}%
+\begin{APACrefauthors}%
+Crits-Christoph, A.%
+, Kantor, R\BPBI S.%
+, Olm, M\BPBI R.%
+, Whitney, O\BPBI N.%
+, Al-Shayeb, B.%
+, Lou, Y\BPBI C.%
+\BDBL {}Nelson, K\BPBI L.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Genome sequencing of sewage detects regionally prevalent
+  {SARS-CoV-2} variants} {Genome sequencing of sewage detects regionally
+  prevalent {SARS-CoV-2} variants}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{mBio}{12}{1}{}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1128/mBio.02703-20} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1128/mBio.02703-20} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Hughes%
+\ \protect \BOthers {.}}{%
+Hughes%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2022}}%
+}]{%
+Hughes_2022}
+\APACinsertmetastar {%
+Hughes_2022}%
+\begin{APACrefauthors}%
+Hughes, B.%
+, Duong, D.%
+, White, B\BPBI J.%
+, Wigginton, K\BPBI R.%
+, Chan, E\BPBI M\BPBI G.%
+, Wolfe, M\BPBI K.%
+\BCBL {}\ \BBA {} Boehm, A\BPBI B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2022}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Respiratory Syncytial Virus ({RSV}) {RNA} in wastewater
+  settled solids reflects {RSV} clinical positivity rates} {Respiratory
+  syncytial virus ({RSV}) {RNA} in wastewater settled solids reflects {RSV}
+  clinical positivity rates}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Environmental Science \& Technology
+  Letters}{9}{2}{173--178}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1021/acs.estlett.1c00963}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1021/acs.estlett.1c00963} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Le%
+\ \protect \BOthers {.}}{%
+Le%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2025}}%
+}]{%
+Le_2025}
+\APACinsertmetastar {%
+Le_2025}%
+\begin{APACrefauthors}%
+Le, D\BPBI B.%
+, Tometten, I.%
+, Luebke, N.%
+, Paluschinski, M.%
+, Schupp, A\BHBI K.%
+, Ehlkes, L.%
+\BDBL {}Walker, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2025}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Whole-genome nanopore sequencing and automatic
+  downstream analysis of respiratory syncytial virus using {RSVTyper}}
+  {Whole-genome nanopore sequencing and automatic downstream analysis of
+  respiratory syncytial virus using {RSVTyper}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Scientific Reports}{}{}{}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1038/s41598-025-20371-5}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1038/s41598-025-20371-5} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Medema%
+, Heijnen%
+, Elsinga%
+, Italiaander%
+\BCBL {}\ \BBA {} Brouwer%
+}{%
+Medema%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+Medema_2020}
+\APACinsertmetastar {%
+Medema_2020}%
+\begin{APACrefauthors}%
+Medema, G.%
+, Heijnen, L.%
+, Elsinga, G.%
+, Italiaander, R.%
+\BCBL {}\ \BBA {} Brouwer, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Presence of {SARS-Coronavirus-2} {RNA} in sewage and
+  correlation with reported {COVID-19} prevalence in the early stage of the
+  epidemic in The Netherlands} {Presence of {SARS-Coronavirus-2} {RNA} in
+  sewage and correlation with reported {COVID-19} prevalence in the early stage
+  of the epidemic in the netherlands}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Environmental Science \& Technology
+  Letters}{7}{7}{511--516}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1021/acs.estlett.0c00357}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1021/acs.estlett.0c00357} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Mejia~Calle%
+}{%
+Mejia~Calle%
+}{%
+{\protect \APACyear {2024}}%
+}]{%
+MejiaCalle_2024}
+\APACinsertmetastar {%
+MejiaCalle_2024}%
+\begin{APACrefauthors}%
+Mejia~Calle, P\BPBI E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2024}.
+\unskip\
+\newblock
+\APACrefbtitle {Analysis of {SARS-CoV-2} variants in wastewater from the
+  Metropolitan District of Quito using a passive sampling 3D printed device}
+  {Analysis of {SARS-CoV-2} variants in wastewater from the metropolitan
+  district of quito using a passive sampling 3d printed device}\
+  \APACtypeAddressSchool {Trabajo de titulacion de posgrado}{}{}.
+\unskip\
+\newblock
+\APACaddressSchool {Quito, Ecuador}{Universidad San Francisco de Quito USFQ}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Parkins%
+\ \protect \BOthers {.}}{%
+Parkins%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2023}}%
+}]{%
+Parkins_2023}
+\APACinsertmetastar {%
+Parkins_2023}%
+\begin{APACrefauthors}%
+Parkins, M\BPBI D.%
+, Lee, B\BPBI E.%
+, Acosta, N.%
+, Bautista, M.%
+, Hubert, C\BPBI R\BPBI J.%
+, Hrudey, S\BPBI E.%
+\BDBL {}Pang, X\BHBI L.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Wastewater-based surveillance as a tool for public
+  health action: {SARS-CoV-2} and beyond} {Wastewater-based surveillance as a
+  tool for public health action: {SARS-CoV-2} and beyond}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Clinical Microbiology Reviews}{37}{1}{}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1128/cmr.00103-22} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1128/cmr.00103-22} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Sangsanont%
+\ \protect \BOthers {.}}{%
+Sangsanont%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2022}}%
+}]{%
+Sangsanont_2022}
+\APACinsertmetastar {%
+Sangsanont_2022}%
+\begin{APACrefauthors}%
+Sangsanont, J.%
+, Rattanakul, S.%
+, Kongprajug, A.%
+, Chyerochana, N.%
+, Sresung, M.%
+, Sriporatana, N.%
+\BDBL {}Sirikanchana, K.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2022}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{SARS-CoV-2} {RNA} surveillance in large to small
+  centralized wastewater treatment plants preceding the third {COVID-19}
+  resurgence in Bangkok, Thailand} {{SARS-CoV-2} {RNA} surveillance in large to
+  small centralized wastewater treatment plants preceding the third {COVID-19}
+  resurgence in bangkok, thailand}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Science of The Total Environment}{809}{}{151169}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1016/j.scitotenv.2021.151169}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.scitotenv.2021.151169} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Shaw%
+\ \protect \BOthers {.}}{%
+Shaw%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2022}}%
+}]{%
+Shaw_2022}
+\APACinsertmetastar {%
+Shaw_2022}%
+\begin{APACrefauthors}%
+Shaw, A\BPBI G.%
+, Cooper, L\BPBI V.%
+, Gumede, N.%
+, Bandyopadhyay, A\BPBI S.%
+, Grassly, N\BPBI C.%
+\BCBL {}\ \BBA {} Blake, I\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2022}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Time taken to detect and respond to polio outbreaks in
+  Africa and the potential impact of direct molecular detection and nanopore
+  sequencing} {Time taken to detect and respond to polio outbreaks in africa
+  and the potential impact of direct molecular detection and nanopore
+  sequencing}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{The Journal of Infectious Diseases}{226}{3}{453--462}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1093/infdis/jiab518}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1093/infdis/jiab518} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Sims%
+\ \BBA {} Kasprzyk-Hordern%
+}{%
+Sims%
+\ \BBA {} Kasprzyk-Hordern%
+}{%
+{\protect \APACyear {2020}}%
+}]{%
+Sims_2020}
+\APACinsertmetastar {%
+Sims_2020}%
+\begin{APACrefauthors}%
+Sims, N.%
+\BCBT {}\ \BBA {} Kasprzyk-Hordern, B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Future perspectives of wastewater-based epidemiology:
+  Monitoring infectious disease spread and resistance to the community level}
+  {Future perspectives of wastewater-based epidemiology: Monitoring infectious
+  disease spread and resistance to the community level}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Environment International}{139}{}{105689}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1016/j.envint.2020.105689}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.envint.2020.105689} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Zurbriggen%
+\ \protect \BOthers {.}}{%
+Zurbriggen%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2008}}%
+}]{%
+Zurbriggen_2008}
+\APACinsertmetastar {%
+Zurbriggen_2008}%
+\begin{APACrefauthors}%
+Zurbriggen, S.%
+, Tobler, K.%
+, Abril, C.%
+, Diedrich, S.%
+, Ackermann, M.%
+, Pallansch, M\BPBI A.%
+\BCBL {}\ \BBA {} Metzler, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2008}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Isolation of Sabin-like polioviruses from wastewater in
+  a country using inactivated polio vaccine} {Isolation of sabin-like
+  polioviruses from wastewater in a country using inactivated polio
+  vaccine}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Applied and Environmental
+  Microbiology}{74}{18}{5608--5614}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1128/AEM.02764-07} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1128/AEM.02764-07} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}

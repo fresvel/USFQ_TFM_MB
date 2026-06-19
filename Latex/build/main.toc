@@ -3,27 +3,47 @@
 \contentsline {section}{ABSTRACT}{8}{section*.2}%
 \contentsline {section}{INTRODUCCIÓN}{13}{section*.3}%
 \contentsline {subsection}{Antecedentes}{13}{subsection*.4}%
-\contentsline {subsection}{Justificación}{13}{subsection*.5}%
-\contentsline {subsection}{Pregunta de investigación e hipótesis}{13}{subsection*.6}%
-\contentsline {subsection}{Propósito y estructura del estudio}{13}{subsection*.7}%
-\contentsline {section}{REVISIÓN DE LA LITERATURA}{14}{section*.8}%
-\contentsline {subsection}{Parámetros de búsqueda y selección}{14}{subsection*.9}%
-\contentsline {subsection}{Estructura de la revisión}{14}{subsection*.10}%
-\contentsline {subsection}{Síntesis de literatura}{14}{subsection*.11}%
-\contentsline {section}{METODOLOGÍA Y DISEÑO DE LA INVESTIGACIÓN}{15}{section*.12}%
-\contentsline {subsection}{Justificación de la metodología}{15}{subsection*.13}%
-\contentsline {subsection}{Herramientas de investigación}{15}{subsection*.14}%
-\contentsline {subsection}{Participantes, muestras o documentos}{15}{subsection*.15}%
-\contentsline {subsection}{Recolección y análisis de datos}{15}{subsection*.16}%
-\contentsline {section}{ANÁLISIS DE DATOS}{16}{section*.17}%
-\contentsline {subsection}{Presentación de resultados}{16}{subsection*.18}%
-\contentsline {subsection}{Interpretación de resultados}{17}{subsection*.20}%
-\contentsline {section}{CONCLUSIONES}{18}{section*.21}%
-\contentsline {subsection}{Respuesta a la pregunta de investigación}{18}{subsection*.22}%
-\contentsline {subsection}{Limitaciones}{18}{subsection*.23}%
-\contentsline {subsection}{Importancia y recomendaciones}{18}{subsection*.24}%
-\contentsline {section}{REFERENCIAS}{19}{section*.25}%
-\contentsline {section}{ÍNDICE DE ANEXOS}{20}{section*.26}%
-\contentsline {section}{ANEXO A: \textcolor {USFQPlaceholderRed}{TÍTULO}}{21}{section*.27}%
-\contentsline {section}{ANEXO B: \textcolor {USFQPlaceholderRed}{TÍTULO}}{22}{section*.28}%
-\contentsline {section}{ANEXO C: \textcolor {USFQPlaceholderRed}{TÍTULO}}{23}{section*.29}%
+\contentsline {subsection}{Problemática}{14}{subsection*.5}%
+\contentsline {subsection}{Justificación}{16}{subsection*.6}%
+\contentsline {subsection}{Problema de investigación, pregunta y objetivos}{17}{subsection*.7}%
+\contentsline {subsection}{Propósito y estructura del estudio}{18}{subsection*.8}%
+\contentsline {section}{CONTEXTO Y MARCO TEÓRICO}{20}{section*.9}%
+\contentsline {subsection}{Vigilancia epidemiológica}{20}{subsection*.10}%
+\contentsline {subsubsection}{Importancia y aplicaciones}{20}{subsubsection*.11}%
+\contentsline {subsubsection}{Vigilancia basada en aguas residuales}{20}{subsubsection*.12}%
+\contentsline {subsubsection}{Muestreo pasivo}{20}{subsubsection*.13}%
+\contentsline {subsection}{Virus de interés}{20}{subsection*.14}%
+\contentsline {subsubsection}{SARS-CoV-2}{20}{subsubsection*.15}%
+\contentsline {subsubsection}{Virus sincitial respiratorio (RSV)}{20}{subsubsection*.16}%
+\contentsline {subsubsection}{Poliovirus}{21}{subsubsection*.17}%
+\contentsline {subsection}{Técnicas de detección molecular}{21}{subsection*.18}%
+\contentsline {subsubsection}{RT-qPCR}{21}{subsubsection*.19}%
+\contentsline {subsubsection}{PCR múltiple}{21}{subsubsection*.20}%
+\contentsline {subsection}{Secuenciación y caracterización genómica}{21}{subsection*.21}%
+\contentsline {subsubsection}{Nanopore (ONT)}{21}{subsubsection*.22}%
+\contentsline {subsubsection}{Illumina}{21}{subsubsection*.23}%
+\contentsline {subsubsection}{Variabilidad genética y vigilancia genómica}{21}{subsubsection*.24}%
+\contentsline {subsection}{Herramientas de análisis bioinformático}{21}{subsection*.25}%
+\contentsline {subsubsection}{Procesamiento de secuencias}{21}{subsubsection*.26}%
+\contentsline {subsubsection}{Identificación de variantes y linajes}{22}{subsubsection*.27}%
+\contentsline {subsubsection}{Interpretación de resultados y limitaciones}{22}{subsubsection*.28}%
+\contentsline {subsection}{Contexto epidemiológico del estudio}{22}{subsection*.29}%
+\contentsline {subsubsection}{Situación en Ecuador}{22}{subsubsection*.30}%
+\contentsline {subsubsection}{Justificación del estudio}{22}{subsubsection*.31}%
+\contentsline {section}{METODOLOGÍA Y DISEÑO DE LA INVESTIGACIÓN}{23}{section*.32}%
+\contentsline {subsection}{Justificación de la metodología}{23}{subsection*.33}%
+\contentsline {subsection}{Herramientas de investigación}{23}{subsection*.34}%
+\contentsline {subsection}{Participantes, muestras o documentos}{23}{subsection*.35}%
+\contentsline {subsection}{Recolección y análisis de datos}{24}{subsection*.36}%
+\contentsline {section}{ANÁLISIS DE DATOS}{25}{section*.37}%
+\contentsline {subsection}{Presentación de resultados}{25}{subsection*.38}%
+\contentsline {subsection}{Interpretación de resultados}{26}{subsection*.40}%
+\contentsline {section}{CONCLUSIONES}{27}{section*.41}%
+\contentsline {subsection}{Respuesta a la pregunta de investigación}{27}{subsection*.42}%
+\contentsline {subsection}{Limitaciones}{27}{subsection*.43}%
+\contentsline {subsection}{Importancia y recomendaciones}{27}{subsection*.44}%
+\contentsline {section}{REFERENCIAS}{28}{section*.45}%
+\contentsline {section}{ÍNDICE DE ANEXOS}{31}{section*.46}%
+\contentsline {section}{ANEXO A: \textcolor {USFQPlaceholderRed}{TÍTULO}}{32}{section*.47}%
+\contentsline {section}{ANEXO B: \textcolor {USFQPlaceholderRed}{TÍTULO}}{33}{section*.48}%
+\contentsline {section}{ANEXO C: \textcolor {USFQPlaceholderRed}{TÍTULO}}{34}{section*.49}%

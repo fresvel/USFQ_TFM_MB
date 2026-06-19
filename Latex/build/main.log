@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.27)  17 JUN 2026 17:10
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.27)  19 JUN 2026 18:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -733,18 +733,18 @@ LaTeX Font Info:    ... okay on input line 6.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(71.13188pt, 462.3573pt, 64.01869pt)
-* v-part:(T,H,B)=(81.3749pt, 749.44559pt, 14.22636pt)
+* v-part:(T,H,B)=(81.3749pt, 692.54007pt, 71.13188pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=462.3573pt
-* \textheight=749.44559pt
+* \textheight=692.54007pt
 * \oddsidemargin=-1.1381pt
 * \evensidemargin=-1.1381pt
 * \topmargin=-21.54419pt
 * \headheight=15.0pt
 * \headsep=15.6491pt
 * \topskip=12.0pt
-* \footskip=5.0pt
+* \footskip=28.45274pt
 * \marginparwidth=35.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
@@ -853,7 +853,12 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 [2
 
-] (./secciones/01_preliminares/03_derechos_autor.tex)
+] (./secciones/01_preliminares/03_derechos_autor.tex
+Underfull \hbox (badness 1303) in paragraph at lines 9--9
+[]|\TU/TimesNewRoman(0)/m/n/12 Nombre del estudiante: []Eliana Yadira
+ []
+
+)
 
 [3
 
@@ -877,15 +882,15 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 [8
 
-] (./secciones/01_preliminares/09_tabla_contenido.tex (build/main.toc)
+] (./secciones/01_preliminares/09_tabla_contenido.tex (build/main.toc
+
+[9
+
+])
 \tf@toc=\write3
 \openout3 = `main.toc'.
 
 )
-
-[9
-
-]
 
 [10] (./secciones/01_preliminares/10_indice_tablas.tex (build/main.lot)
 \tf@lot=\write4
@@ -904,70 +909,96 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 [12
 
 ]) (./secciones/02_cuerpo/00_main.tex
-(./secciones/02_cuerpo/01_introduccion.tex)
+(./secciones/02_cuerpo/01_introduccion.tex
 
 [13
 
-] (./secciones/02_cuerpo/02_revision_literatura.tex)
+]
 
-[14
+[14]
 
-] (./secciones/02_cuerpo/03_metodologia_diseno.tex)
+[15]
 
-[15
+[16]
 
-] (./secciones/02_cuerpo/04_analisis_datos.tex)
+[17])
 
-[16
+[18]
+
+[19] (./secciones/02_cuerpo/02_revision_literatura.tex
+
+[20
 
 ]
 
-[17] (./secciones/02_cuerpo/05_conclusiones.tex)
+[21])
 
-[18
+[22] (./secciones/02_cuerpo/03_metodologia_diseno.tex)
+
+[23
+
+]
+
+[24] (./secciones/02_cuerpo/04_analisis_datos.tex
+
+[25
+
+])
+
+[26] (./secciones/02_cuerpo/05_conclusiones.tex)
+
+[27
 
 ]) (./secciones/03_finales/00_main.tex
-(./secciones/03_finales/01_referencias.tex (build/main.bbl))
+(./secciones/03_finales/01_referencias.tex (build/main.bbl
 
-[19
+[28
 
-] (./secciones/03_finales/02_indice_anexos.tex (build/main.loa)
+]
+
+[29]))
+
+[30] (./secciones/03_finales/02_indice_anexos.tex (build/main.loa)
 \tf@loa=\write6
 \openout6 = `main.loa'.
 
 )
 
-[20
+[31
 
 ] (./secciones/03_finales/03_anexos_i.tex
 Package hyperref Info: bookmark level for unknown usfqanexo defaults to 0 on in
 put line 3.
 
 
-[21
+[32
 
 
 ]
 
-[22
+[33
 
 ]))
 
-[23
+[34
 
 ] (build/main.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-07-19>
  ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 20445 strings out of 468457
- 407103 string characters out of 5445913
- 891924 words of memory out of 5000000
- 48573 multiletter control sequences out of 15000+600000
+ 20510 strings out of 468457
+ 408158 string characters out of 5445913
+ 899139 words of memory out of 5000000
+ 48638 multiletter control sequences out of 15000+600000
  633061 words of font info for 85 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 78i,12n,110p,1328b,607s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 78i,13n,110p,1206b,607s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on build/main.pdf (23 pages).
+Output written on build/main.pdf (34 pages).
