@@ -10,40 +10,40 @@
 \contentsline {section}{CONTEXTO Y MARCO TEÓRICO}{20}{section*.9}%
 \contentsline {subsection}{Vigilancia epidemiológica}{20}{subsection*.10}%
 \contentsline {subsubsection}{Importancia y aplicaciones}{20}{subsubsection*.11}%
-\contentsline {subsubsection}{Vigilancia basada en aguas residuales}{20}{subsubsection*.12}%
-\contentsline {subsubsection}{Muestreo pasivo}{20}{subsubsection*.13}%
-\contentsline {subsection}{Virus de interés}{20}{subsection*.14}%
-\contentsline {subsubsection}{SARS-CoV-2}{20}{subsubsection*.15}%
-\contentsline {subsubsection}{Virus sincitial respiratorio (RSV)}{20}{subsubsection*.16}%
-\contentsline {subsubsection}{Poliovirus}{21}{subsubsection*.17}%
-\contentsline {subsection}{Técnicas de detección molecular}{21}{subsection*.18}%
-\contentsline {subsubsection}{RT-qPCR}{21}{subsubsection*.19}%
-\contentsline {subsubsection}{PCR múltiple}{21}{subsubsection*.20}%
-\contentsline {subsection}{Secuenciación y caracterización genómica}{21}{subsection*.21}%
-\contentsline {subsubsection}{Nanopore (ONT)}{21}{subsubsection*.22}%
-\contentsline {subsubsection}{Illumina}{21}{subsubsection*.23}%
-\contentsline {subsubsection}{Variabilidad genética y vigilancia genómica}{21}{subsubsection*.24}%
-\contentsline {subsection}{Herramientas de análisis bioinformático}{21}{subsection*.25}%
-\contentsline {subsubsection}{Procesamiento de secuencias}{21}{subsubsection*.26}%
-\contentsline {subsubsection}{Identificación de variantes y linajes}{22}{subsubsection*.27}%
-\contentsline {subsubsection}{Interpretación de resultados y limitaciones}{22}{subsubsection*.28}%
-\contentsline {subsection}{Contexto epidemiológico del estudio}{22}{subsection*.29}%
-\contentsline {subsubsection}{Situación en Ecuador}{22}{subsubsection*.30}%
-\contentsline {subsubsection}{Justificación del estudio}{22}{subsubsection*.31}%
-\contentsline {section}{METODOLOGÍA Y DISEÑO DE LA INVESTIGACIÓN}{23}{section*.32}%
-\contentsline {subsection}{Justificación de la metodología}{23}{subsection*.33}%
-\contentsline {subsection}{Herramientas de investigación}{23}{subsection*.34}%
-\contentsline {subsection}{Participantes, muestras o documentos}{23}{subsection*.35}%
-\contentsline {subsection}{Recolección y análisis de datos}{24}{subsection*.36}%
-\contentsline {section}{ANÁLISIS DE DATOS}{25}{section*.37}%
-\contentsline {subsection}{Presentación de resultados}{25}{subsection*.38}%
-\contentsline {subsection}{Interpretación de resultados}{26}{subsection*.40}%
-\contentsline {section}{CONCLUSIONES}{27}{section*.41}%
-\contentsline {subsection}{Respuesta a la pregunta de investigación}{27}{subsection*.42}%
-\contentsline {subsection}{Limitaciones}{27}{subsection*.43}%
-\contentsline {subsection}{Importancia y recomendaciones}{27}{subsection*.44}%
-\contentsline {section}{REFERENCIAS}{28}{section*.45}%
-\contentsline {section}{ÍNDICE DE ANEXOS}{31}{section*.46}%
-\contentsline {section}{ANEXO A: \textcolor {USFQPlaceholderRed}{TÍTULO}}{32}{section*.47}%
-\contentsline {section}{ANEXO B: \textcolor {USFQPlaceholderRed}{TÍTULO}}{33}{section*.48}%
-\contentsline {section}{ANEXO C: \textcolor {USFQPlaceholderRed}{TÍTULO}}{34}{section*.49}%
+\contentsline {subsubsection}{Vigilancia basada en aguas residuales}{21}{subsubsection*.12}%
+\contentsline {subsubsection}{Muestreo pasivo}{22}{subsubsection*.13}%
+\contentsline {subsection}{Virus de interés}{22}{subsection*.14}%
+\contentsline {subsubsection}{SARS-CoV-2}{22}{subsubsection*.15}%
+\contentsline {subsubsection}{Virus sincitial respiratorio (RSV)}{23}{subsubsection*.16}%
+\contentsline {subsubsection}{Poliovirus}{24}{subsubsection*.17}%
+\contentsline {subsection}{Técnicas de detección molecular}{25}{subsection*.18}%
+\contentsline {subsubsection}{RT-qPCR}{25}{subsubsection*.19}%
+\contentsline {subsubsection}{PCR múltiple}{26}{subsubsection*.20}%
+\contentsline {subsection}{Secuenciación y caracterización genómica}{26}{subsection*.21}%
+\contentsline {subsubsection}{Nanopore (ONT)}{26}{subsubsection*.22}%
+\contentsline {subsubsection}{Illumina}{27}{subsubsection*.23}%
+\contentsline {subsubsection}{Variabilidad genética y vigilancia genómica}{28}{subsubsection*.24}%
+\contentsline {subsection}{Herramientas de análisis bioinformático}{29}{subsection*.25}%
+\contentsline {subsubsection}{Procesamiento de secuencias}{29}{subsubsection*.26}%
+\contentsline {subsubsection}{Identificación de variantes y linajes}{29}{subsubsection*.27}%
+\contentsline {subsubsection}{Interpretación de resultados y limitaciones}{30}{subsubsection*.28}%
+\contentsline {subsection}{Contexto epidemiológico del estudio}{31}{subsection*.29}%
+\contentsline {subsubsection}{Situación en Ecuador}{31}{subsubsection*.30}%
+\contentsline {subsubsection}{Justificación del estudio}{32}{subsubsection*.31}%
+\contentsline {section}{METODOLOGÍA Y DISEÑO DE LA INVESTIGACIÓN}{34}{section*.32}%
+\contentsline {subsection}{Justificación de la metodología}{34}{subsection*.33}%
+\contentsline {subsection}{Herramientas de investigación}{34}{subsection*.34}%
+\contentsline {subsection}{Participantes, muestras o documentos}{34}{subsection*.35}%
+\contentsline {subsection}{Recolección y análisis de datos}{35}{subsection*.36}%
+\contentsline {section}{ANÁLISIS DE DATOS}{36}{section*.37}%
+\contentsline {subsection}{Presentación de resultados}{36}{subsection*.38}%
+\contentsline {subsection}{Interpretación de resultados}{37}{subsection*.40}%
+\contentsline {section}{CONCLUSIONES}{38}{section*.41}%
+\contentsline {subsection}{Respuesta a la pregunta de investigación}{38}{subsection*.42}%
+\contentsline {subsection}{Limitaciones}{38}{subsection*.43}%
+\contentsline {subsection}{Importancia y recomendaciones}{38}{subsection*.44}%
+\contentsline {section}{REFERENCIAS}{39}{section*.45}%
+\contentsline {section}{ÍNDICE DE ANEXOS}{42}{section*.46}%
+\contentsline {section}{ANEXO A: \textcolor {USFQPlaceholderRed}{TÍTULO}}{43}{section*.47}%
+\contentsline {section}{ANEXO B: \textcolor {USFQPlaceholderRed}{TÍTULO}}{44}{section*.48}%
+\contentsline {section}{ANEXO C: \textcolor {USFQPlaceholderRed}{TÍTULO}}{45}{section*.49}%

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.27)  19 JUN 2026 18:50
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.27)  19 JUN 2026 19:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -931,74 +931,92 @@ Underfull \hbox (badness 1303) in paragraph at lines 9--9
 
 ]
 
-[21])
+[21]
 
-[22] (./secciones/02_cuerpo/03_metodologia_diseno.tex)
+[22]
 
-[23
+[23]
+
+[24]
+
+[25]
+
+[26]
+
+[27]
+
+[28]
+
+[29]
+
+[30]
+
+[31])
+
+[32]
+
+[33] (./secciones/02_cuerpo/03_metodologia_diseno.tex)
+
+[34
 
 ]
 
-[24] (./secciones/02_cuerpo/04_analisis_datos.tex
+[35] (./secciones/02_cuerpo/04_analisis_datos.tex
 
-[25
+[36
 
 ])
 
-[26] (./secciones/02_cuerpo/05_conclusiones.tex)
+[37] (./secciones/02_cuerpo/05_conclusiones.tex)
 
-[27
+[38
 
 ]) (./secciones/03_finales/00_main.tex
 (./secciones/03_finales/01_referencias.tex (build/main.bbl
 
-[28
+[39
 
 ]
 
-[29]))
+[40]))
 
-[30] (./secciones/03_finales/02_indice_anexos.tex (build/main.loa)
+[41] (./secciones/03_finales/02_indice_anexos.tex (build/main.loa)
 \tf@loa=\write6
 \openout6 = `main.loa'.
 
 )
 
-[31
+[42
 
 ] (./secciones/03_finales/03_anexos_i.tex
 Package hyperref Info: bookmark level for unknown usfqanexo defaults to 0 on in
 put line 3.
 
 
-[32
+[43
 
 
 ]
 
-[33
+[44
 
 ]))
 
-[34
+[45
 
 ] (build/main.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-07-19>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 20510 strings out of 468457
- 408158 string characters out of 5445913
- 899139 words of memory out of 5000000
- 48638 multiletter control sequences out of 15000+600000
+ 20513 strings out of 468457
+ 408194 string characters out of 5445913
+ 897139 words of memory out of 5000000
+ 48641 multiletter control sequences out of 15000+600000
  633061 words of font info for 85 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  78i,13n,110p,1206b,607s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on build/main.pdf (34 pages).
+Output written on build/main.pdf (45 pages).

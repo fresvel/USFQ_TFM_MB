@@ -252,6 +252,34 @@ Crits-Christoph, A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Dash%
+, Elkins%
+\BCBL {}\ \BBA {} Al-Snan%
+}{%
+Dash%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2024}}%
+}]{%
+Dash_2024}
+\APACinsertmetastar {%
+Dash_2024}%
+\begin{APACrefauthors}%
+Dash, H\BPBI R.%
+, Elkins, K\BPBI M.%
+\BCBL {}\ \BBA {} Al-Snan, N\BPBI R.%
+\end{APACrefauthors}%
+\ (\BEDS).
+\unskip\
+\newblock
+\APACrefYear{2024}.
+\newblock
+\APACrefbtitle {Next Generation Sequencing ({NGS}) Technology in {DNA}
+  Analysis} {Next generation sequencing ({NGS}) technology in {DNA} analysis}.
+\newblock
+\APACaddressPublisher{London, United Kingdom}{Academic Press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Hughes%
 \ \protect \BOthers {.}}{%
 Hughes%
