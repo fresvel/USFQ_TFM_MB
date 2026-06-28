@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.27)  28 JUN 2026 21:47
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.27)  28 JUN 2026 22:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1022,31 +1022,35 @@ File: assets/figuras/metodologia/rt_qpcr.png Graphic file (type bmp)
 
 [53]
 
-[54]))
+[54]
 
-[55] (./secciones/03_finales/02_indice_anexos.tex (build/main.loa)
+[55]
+
+[56]))
+
+[57] (./secciones/03_finales/02_indice_anexos.tex (build/main.loa)
 \tf@loa=\write6
 \openout6 = `main.loa'.
 
 )
 
-[56
+[58
 
 ] (./secciones/03_finales/03_anexos_i.tex
 Package hyperref Info: bookmark level for unknown usfqanexo defaults to 0 on in
 put line 3.
 
 
-[57
+[59
 
 
 ]
 
-[58
+[60
 
 ]))
 
-[59
+[61
 
 ] (build/main.aux)
  ***********
@@ -1059,12 +1063,12 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 20904 strings out of 468457
- 417579 string characters out of 5445913
+ 20937 strings out of 468457
+ 418098 string characters out of 5445913
  908139 words of memory out of 5000000
- 49025 multiletter control sequences out of 15000+600000
+ 49058 multiletter control sequences out of 15000+600000
  644456 words of font info for 115 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 78i,13n,118p,1396b,1223s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 78i,13n,118p,1566b,1223s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on build/main.pdf (59 pages).
+Output written on build/main.pdf (61 pages).

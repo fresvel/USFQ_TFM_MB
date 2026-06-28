@@ -12,20 +12,20 @@
 \contentsline {subsubsection}{Importancia y aplicaciones}{20}{subsubsection*.11}%
 \contentsline {subsubsection}{Vigilancia basada en aguas residuales}{21}{subsubsection*.12}%
 \contentsline {subsubsection}{Muestreo pasivo}{22}{subsubsection*.13}%
-\contentsline {subsection}{Virus de interés}{22}{subsection*.14}%
-\contentsline {subsubsection}{SARS-CoV-2}{22}{subsubsection*.15}%
-\contentsline {subsubsection}{Virus sincitial respiratorio (RSV)}{23}{subsubsection*.16}%
-\contentsline {subsubsection}{Poliovirus}{24}{subsubsection*.17}%
-\contentsline {subsection}{Técnicas de detección molecular}{25}{subsection*.18}%
-\contentsline {subsubsection}{RT-qPCR}{25}{subsubsection*.19}%
-\contentsline {subsubsection}{PCR múltiple}{26}{subsubsection*.20}%
-\contentsline {subsection}{Secuenciación y caracterización genómica}{26}{subsection*.21}%
-\contentsline {subsubsection}{Nanopore (ONT)}{26}{subsubsection*.22}%
-\contentsline {subsubsection}{Illumina}{27}{subsubsection*.23}%
+\contentsline {subsection}{Virus de interés}{23}{subsection*.14}%
+\contentsline {subsubsection}{SARS-CoV-2}{23}{subsubsection*.15}%
+\contentsline {subsubsection}{Virus sincitial respiratorio (RSV)}{24}{subsubsection*.16}%
+\contentsline {subsubsection}{Poliovirus}{25}{subsubsection*.17}%
+\contentsline {subsection}{Técnicas de detección molecular}{26}{subsection*.18}%
+\contentsline {subsubsection}{RT-qPCR}{26}{subsubsection*.19}%
+\contentsline {subsubsection}{PCR múltiple}{27}{subsubsection*.20}%
+\contentsline {subsection}{Secuenciación y caracterización genómica}{27}{subsection*.21}%
+\contentsline {subsubsection}{Nanopore (ONT)}{27}{subsubsection*.22}%
+\contentsline {subsubsection}{Illumina}{28}{subsubsection*.23}%
 \contentsline {subsubsection}{Variabilidad genética y vigilancia genómica}{28}{subsubsection*.24}%
 \contentsline {subsection}{Herramientas de análisis bioinformático}{29}{subsection*.25}%
 \contentsline {subsubsection}{Procesamiento de secuencias}{29}{subsubsection*.26}%
-\contentsline {subsubsection}{Identificación de variantes y linajes}{29}{subsubsection*.27}%
+\contentsline {subsubsection}{Identificación de variantes y linajes}{30}{subsubsection*.27}%
 \contentsline {subsubsection}{Interpretación de resultados y limitaciones}{30}{subsubsection*.28}%
 \contentsline {subsection}{Contexto epidemiológico del estudio}{31}{subsection*.29}%
 \contentsline {subsubsection}{Situación en Ecuador}{31}{subsubsection*.30}%
@@ -55,7 +55,7 @@
 \contentsline {subsection}{Limitaciones}{51}{subsection*.60}%
 \contentsline {subsection}{Importancia y recomendaciones}{51}{subsection*.61}%
 \contentsline {section}{REFERENCIAS}{52}{section*.62}%
-\contentsline {section}{ÍNDICE DE ANEXOS}{56}{section*.63}%
-\contentsline {section}{ANEXO A: \textcolor {USFQPlaceholderRed}{TÍTULO}}{57}{section*.64}%
-\contentsline {section}{ANEXO B: \textcolor {USFQPlaceholderRed}{TÍTULO}}{58}{section*.65}%
-\contentsline {section}{ANEXO C: \textcolor {USFQPlaceholderRed}{TÍTULO}}{59}{section*.66}%
+\contentsline {section}{ÍNDICE DE ANEXOS}{58}{section*.63}%
+\contentsline {section}{ANEXO A: \textcolor {USFQPlaceholderRed}{TÍTULO}}{59}{section*.64}%
+\contentsline {section}{ANEXO B: \textcolor {USFQPlaceholderRed}{TÍTULO}}{60}{section*.65}%
+\contentsline {section}{ANEXO C: \textcolor {USFQPlaceholderRed}{TÍTULO}}{61}{section*.66}%

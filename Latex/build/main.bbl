@@ -218,6 +218,39 @@ Bubba, L.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Chan%
+\ \BBA {} Boehm%
+}{%
+Chan%
+\ \BBA {} Boehm%
+}{%
+{\protect \APACyear {2025}}%
+}]{%
+Chan_2025}
+\APACinsertmetastar {%
+Chan_2025}%
+\begin{APACrefauthors}%
+Chan, E\BPBI M\BPBI G.%
+\BCBT {}\ \BBA {} Boehm, A\BPBI B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2025}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Respiratory virus season surveillance in the {United
+  States} using wastewater metrics, 2023--2024} {Respiratory virus season
+  surveillance in the {United States} using wastewater metrics,
+  2023--2024}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{ACS ES\&T Water}{5}{2}{985--992}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1021/acsestwater.4c01013}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1021/acsestwater.4c01013} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Child%
 \ \protect \BOthers {.}}{%
 Child%
@@ -352,6 +385,41 @@ Hughes, B.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Karthikeyan%
+\ \protect \BOthers {.}}{%
+Karthikeyan%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2022}}%
+}]{%
+Karthikeyan_2022}
+\APACinsertmetastar {%
+Karthikeyan_2022}%
+\begin{APACrefauthors}%
+Karthikeyan, S.%
+, Levy, J\BPBI I.%
+, De~Hoff, P.%
+, Humphrey, G.%
+, Birmingham, A.%
+, Jepsen, K.%
+\BDBL {}Knight, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2022}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Wastewater sequencing reveals early cryptic {SARS-CoV-2}
+  variant transmission} {Wastewater sequencing reveals early cryptic
+  {SARS-CoV-2} variant transmission}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Nature}{609}{}{101--108}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1038/s41586-022-05049-6}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1038/s41586-022-05049-6} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Kilpatrick%
 \ \protect \BOthers {.}}{%
 Kilpatrick%
@@ -383,6 +451,114 @@ Kilpatrick, D\BPBI R.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1016/j.jviromet.2011.03.020} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Kissova%
+\ \protect \BOthers {.}}{%
+Kissova%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2022}}%
+}]{%
+Kissova_2022}
+\APACinsertmetastar {%
+Kissova_2022}%
+\begin{APACrefauthors}%
+Kissova, R.%
+, Pastuchova, K.%
+, Lengyelova, V.%
+, Svitok, M.%
+, Mikas, J.%
+, Klement, C.%
+\BCBL {}\ \BBA {} Bopegamage, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2022}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {History of the wastewater assessment of polio and
+  non-polio enteroviruses in the {Slovak} {Republic} in 1963--2019} {History of
+  the wastewater assessment of polio and non-polio enteroviruses in the
+  {Slovak} {Republic} in 1963--2019}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Viruses}{14}{8}{1599}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.3390/v14081599} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.3390/v14081599} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Klapsa%
+\ \protect \BOthers {.}}{%
+Klapsa%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2022}}%
+}]{%
+Klapsa_2022}
+\APACinsertmetastar {%
+Klapsa_2022}%
+\begin{APACrefauthors}%
+Klapsa, D.%
+, Wilton, T.%
+, Zealand, A.%
+, Bujaki, E.%
+, Saxentoff, E.%
+, Troman, C.%
+\BDBL {}Martin, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2022}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Sustained detection of type 2 poliovirus in {London}
+  sewage between {February} and {July}, 2022, by enhanced environmental
+  surveillance} {Sustained detection of type 2 poliovirus in {London} sewage
+  between {February} and {July}, 2022, by enhanced environmental
+  surveillance}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{The Lancet}{400}{10362}{1531--1538}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1016/S0140-6736(22)01804-9}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/S0140-6736(22)01804-9} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+L{\"a}nsivaara%
+\ \protect \BOthers {.}}{%
+L{\"a}nsivaara%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2024}}%
+}]{%
+Lansivaara_2024}
+\APACinsertmetastar {%
+Lansivaara_2024}%
+\begin{APACrefauthors}%
+L{\"a}nsivaara, A.%
+, Lehto, K\BHBI M.%
+, Hyder, R.%
+, Luomala, O.%
+, Lipponen, A.%
+, Hokaj{\"a}rvi, A\BHBI M.%
+\BDBL {}Oikarinen, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Wastewater-based surveillance of respiratory syncytial
+  virus epidemic at the national level in {Finland}} {Wastewater-based
+  surveillance of respiratory syncytial virus epidemic at the national level in
+  {Finland}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{ACS ES\&T Water}{4}{6}{2403--2411}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1021/acsestwater.3c00752}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1021/acsestwater.3c00752} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -419,6 +595,35 @@ Le, D\BPBI B.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1038/s41598-025-20371-5} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Mart{\'i}n%
+}{%
+Mart{\'i}n%
+}{%
+{\protect \APACyear {2016}}%
+}]{%
+Martin_2016}
+\APACinsertmetastar {%
+Martin_2016}%
+\begin{APACrefauthors}%
+Mart{\'i}n, J.%
+\end{APACrefauthors}%
+\ (\BED).
+\unskip\
+\newblock
+\APACrefYear{2016}.
+\newblock
+\APACrefbtitle {Poliovirus: Methods and Protocols} {Poliovirus: Methods and
+  protocols}\ (\BVOL\ 1387).
+\newblock
+\APACaddressPublisher{New York}{Humana Press, Springer}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1007/978-1-4939-3292-4}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1007/978-1-4939-3292-4} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -487,6 +692,70 @@ Mejia~Calle, P\BPBI E.%
 \unskip\
 \newblock
 \APACaddressSchool {Quito, Ecuador}{Universidad San Francisco de Quito USFQ}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Mercier%
+\ \protect \BOthers {.}}{%
+Mercier%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2025}}%
+}]{%
+Mercier_2025}
+\APACinsertmetastar {%
+Mercier_2025}%
+\begin{APACrefauthors}%
+Mercier, {\'E}.%
+, Fullarton, J\BPBI R.%
+, Paes, B\BPBI A.%
+, Keary, I\BPBI P.%
+, Rodgers-Gray, B\BPBI S.%
+, Thampi, N.%
+\BCBL {}\ \BBA {} Delatolla, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2025}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Cost-effectiveness of wastewater and environmental
+  monitoring of respiratory syncytial virus to guide universal infant
+  immunoprophylaxis in {Canada}} {Cost-effectiveness of wastewater and
+  environmental monitoring of respiratory syncytial virus to guide universal
+  infant immunoprophylaxis in {Canada}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Medical Economics}{28}{1}{354--362}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1080/13696998.2025.2473810}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1080/13696998.2025.2473810} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Murray%
+, Rosenthal%
+\BCBL {}\ \BBA {} Pfaller%
+}{%
+Murray%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2021}}%
+}]{%
+Murray_2021}
+\APACinsertmetastar {%
+Murray_2021}%
+\begin{APACrefauthors}%
+Murray, P\BPBI R.%
+, Rosenthal, K\BPBI S.%
+\BCBL {}\ \BBA {} Pfaller, M\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2021}.
+\newblock
+\APACrefbtitle {Microbiolog{\'i}a M{\'e}dica} {Microbiolog{\'i}a m{\'e}dica}\
+  (\PrintOrdinal{9}\ \BEd).
+\newblock
+\APACaddressPublisher{Barcelona, Espa{\~n}a}{Elsevier}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -589,6 +858,41 @@ Parkins, M\BPBI D.%
 \begin{APACrefURL} \url{https://doi.org/10.1128/cmr.00103-22} \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1128/cmr.00103-22} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Roldan-Hernandez%
+\ \BBA {} Boehm%
+}{%
+Roldan-Hernandez%
+\ \BBA {} Boehm%
+}{%
+{\protect \APACyear {2023}}%
+}]{%
+RoldanHernandez_2023}
+\APACinsertmetastar {%
+RoldanHernandez_2023}%
+\begin{APACrefauthors}%
+Roldan-Hernandez, L.%
+\BCBT {}\ \BBA {} Boehm, A\BPBI B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Adsorption of respiratory syncytial virus, rhinovirus,
+  {SARS-CoV-2}, and {F+} bacteriophage {MS2} {RNA} onto wastewater solids from
+  raw wastewater} {Adsorption of respiratory syncytial virus, rhinovirus,
+  {SARS-CoV-2}, and {F+} bacteriophage {MS2} {RNA} onto wastewater solids from
+  raw wastewater}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Environmental Science \&
+  Technology}{57}{36}{13346--13355}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1021/acs.est.3c03376}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1021/acs.est.3c03376} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -811,6 +1115,82 @@ Yang, C\BHBI F.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1016/0168-1702(91)90107-7} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Zambrana%
+\ \protect \BOthers {.}}{%
+Zambrana%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2024}}%
+}]{%
+Zambrana_2024}
+\APACinsertmetastar {%
+Zambrana_2024}%
+\begin{APACrefauthors}%
+Zambrana, W.%
+, Huang, C.%
+, Solis, D.%
+, Sahoo, M\BPBI K.%
+, Pinsky, B\BPBI A.%
+\BCBL {}\ \BBA {} Boehm, A\BPBI B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Spatial and temporal variation in respiratory syncytial
+  virus ({RSV}) subtype {RNA} in wastewater and relation to clinical specimens}
+  {Spatial and temporal variation in respiratory syncytial virus ({RSV})
+  subtype {RNA} in wastewater and relation to clinical specimens}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{mSphere}{9}{7}{e00224-24}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1128/msphere.00224-24}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1128/msphere.00224-24} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Zulli%
+, Varkila%
+, Parsonnet%
+, Wolfe%
+\BCBL {}\ \BBA {} Boehm%
+}{%
+Zulli%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2024}}%
+}]{%
+Zulli_2024}
+\APACinsertmetastar {%
+Zulli_2024}%
+\begin{APACrefauthors}%
+Zulli, A.%
+, Varkila, M\BPBI R\BPBI J.%
+, Parsonnet, J.%
+, Wolfe, M\BPBI K.%
+\BCBL {}\ \BBA {} Boehm, A\BPBI B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Observations of respiratory syncytial virus ({RSV})
+  nucleic acids in wastewater solids across the {United States} in the
+  2022--2023 season: Relationships with {RSV} infection positivity and
+  hospitalization rates} {Observations of respiratory syncytial virus ({RSV})
+  nucleic acids in wastewater solids across the {United States} in the
+  2022--2023 season: Relationships with {RSV} infection positivity and
+  hospitalization rates}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{ACS ES\&T Water}{4}{4}{1657--1667}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1021/acsestwater.3c00725}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1021/acsestwater.3c00725} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
