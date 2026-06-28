@@ -31,19 +31,31 @@
 \contentsline {subsubsection}{Situación en Ecuador}{31}{subsubsection*.30}%
 \contentsline {subsubsection}{Justificación del estudio}{32}{subsubsection*.31}%
 \contentsline {section}{METODOLOGÍA Y DISEÑO DE LA INVESTIGACIÓN}{34}{section*.32}%
-\contentsline {subsection}{Justificación de la metodología}{34}{subsection*.33}%
-\contentsline {subsection}{Herramientas de investigación}{34}{subsection*.34}%
-\contentsline {subsection}{Participantes, muestras o documentos}{34}{subsection*.35}%
-\contentsline {subsection}{Recolección y análisis de datos}{35}{subsection*.36}%
-\contentsline {section}{ANÁLISIS DE DATOS}{36}{section*.37}%
-\contentsline {subsection}{Presentación de resultados}{36}{subsection*.38}%
-\contentsline {subsection}{Interpretación de resultados}{37}{subsection*.40}%
-\contentsline {section}{CONCLUSIONES}{38}{section*.41}%
-\contentsline {subsection}{Respuesta a la pregunta de investigación}{38}{subsection*.42}%
-\contentsline {subsection}{Limitaciones}{38}{subsection*.43}%
-\contentsline {subsection}{Importancia y recomendaciones}{38}{subsection*.44}%
-\contentsline {section}{REFERENCIAS}{39}{section*.45}%
-\contentsline {section}{ÍNDICE DE ANEXOS}{42}{section*.46}%
-\contentsline {section}{ANEXO A: \textcolor {USFQPlaceholderRed}{TÍTULO}}{43}{section*.47}%
-\contentsline {section}{ANEXO B: \textcolor {USFQPlaceholderRed}{TÍTULO}}{44}{section*.48}%
-\contentsline {section}{ANEXO C: \textcolor {USFQPlaceholderRed}{TÍTULO}}{45}{section*.49}%
+\contentsline {subsection}{Justificación y diseño del estudio}{34}{subsection*.33}%
+\contentsline {subsection}{Área y periodo de estudio}{35}{subsection*.35}%
+\contentsline {subsection}{Estrategia de muestreo pasivo}{35}{subsection*.36}%
+\contentsline {subsection}{Diseño temporal y distribución de las muestras}{36}{subsection*.38}%
+\contentsline {subsection}{Conservación y recuperación de muestras retrospectivas}{37}{subsection*.39}%
+\contentsline {subsection}{Preconcentración viral}{38}{subsection*.40}%
+\contentsline {subsection}{Extracción de ARN}{39}{subsection*.42}%
+\contentsline {subsection}{Detección molecular de SARS-CoV-2 por RT-qPCR}{40}{subsection*.44}%
+\contentsline {subsection}{Amplificación genómica multiplex de SARS-CoV-2}{41}{subsection*.46}%
+\contentsline {subsection}{Detección y amplificación de poliovirus por PCR anidada de VP1}{43}{subsection*.47}%
+\contentsline {subsection}{Detección y amplificación de RSV por PCR multiplex}{44}{subsection*.48}%
+\contentsline {subsection}{Electroforesis y criterios de selección para secuenciación}{44}{subsection*.49}%
+\contentsline {subsection}{Preparación de bibliotecas y secuenciación por nanoporos}{45}{subsection*.50}%
+\contentsline {subsection}{Procesamiento y análisis bioinformático}{47}{subsection*.51}%
+\contentsline {subsection}{Controles de calidad, controles experimentales e interpretación}{47}{subsection*.52}%
+\contentsline {subsection}{Consideraciones éticas y de bioseguridad}{48}{subsection*.53}%
+\contentsline {section}{ANÁLISIS DE DATOS}{49}{section*.54}%
+\contentsline {subsection}{Presentación de resultados}{49}{subsection*.55}%
+\contentsline {subsection}{Interpretación de resultados}{50}{subsection*.57}%
+\contentsline {section}{CONCLUSIONES}{51}{section*.58}%
+\contentsline {subsection}{Respuesta a la pregunta de investigación}{51}{subsection*.59}%
+\contentsline {subsection}{Limitaciones}{51}{subsection*.60}%
+\contentsline {subsection}{Importancia y recomendaciones}{51}{subsection*.61}%
+\contentsline {section}{REFERENCIAS}{52}{section*.62}%
+\contentsline {section}{ÍNDICE DE ANEXOS}{56}{section*.63}%
+\contentsline {section}{ANEXO A: \textcolor {USFQPlaceholderRed}{TÍTULO}}{57}{section*.64}%
+\contentsline {section}{ANEXO B: \textcolor {USFQPlaceholderRed}{TÍTULO}}{58}{section*.65}%
+\contentsline {section}{ANEXO C: \textcolor {USFQPlaceholderRed}{TÍTULO}}{59}{section*.66}%

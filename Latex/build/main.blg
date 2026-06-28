@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99e (TeX Live 2026)
+This is BibTeX, Version 0.99d (TeX Live 2025)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: build/main.aux
 The style file: apacite.bst
@@ -13,44 +13,44 @@ Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: assets/bibliografia.bib
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
-You've used 17 entries,
+You've used 26 entries,
             6951 wiz_defined-function locations,
-            1416 strings with 18398 characters,
-and the built_in function-call counts, 48465 in all, are:
-= -- 5680
-> -- 422
-< -- 2770
-+ -- 3194
-- -- 34
-* -- 3506
-:= -- 9555
-add.period$ -- 59
-call.type$ -- 17
-change.case$ -- 289
+            1482 strings with 21440 characters,
+and the built_in function-call counts, 69189 in all, are:
+= -- 8147
+> -- 597
+< -- 3898
++ -- 4408
+- -- 60
+* -- 4929
+:= -- 13524
+add.period$ -- 92
+call.type$ -- 26
+change.case$ -- 442
 chr.to.int$ -- 0
-cite$ -- 34
-duplicate$ -- 1505
-empty$ -- 1595
-format.name$ -- 870
-if$ -- 8341
+cite$ -- 52
+duplicate$ -- 2116
+empty$ -- 2341
+format.name$ -- 1212
+if$ -- 12070
 int.to.chr$ -- 0
-int.to.str$ -- 51
+int.to.str$ -- 78
 missing$ -- 0
-newline$ -- 532
-num.names$ -- 137
-pop$ -- 600
+newline$ -- 782
+num.names$ -- 209
+pop$ -- 1132
 preamble$ -- 1
-purify$ -- 68
+purify$ -- 104
 quote$ -- 0
-skip$ -- 2559
+skip$ -- 3524
 stack$ -- 0
-substring$ -- 3417
-swap$ -- 792
-text.length$ -- 34
+substring$ -- 4717
+swap$ -- 1118
+text.length$ -- 56
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 1424
+type$ -- 2144
 warning$ -- 0
-while$ -- 285
+while$ -- 401
 width$ -- 0
-write$ -- 693
+write$ -- 1008

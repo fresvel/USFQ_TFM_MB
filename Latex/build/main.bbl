@@ -75,6 +75,41 @@ Ahmed, W.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Arita%
+\ \protect \BOthers {.}}{%
+Arita%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2015}}%
+}]{%
+Arita_2015}
+\APACinsertmetastar {%
+Arita_2015}%
+\begin{APACrefauthors}%
+Arita, M.%
+, Kilpatrick, D\BPBI R.%
+, Nakamura, T.%
+, Burns, C\BPBI C.%
+, Bukbuk, D.%
+, Oderinde, S\BPBI B.%
+\BDBL {}Shimizu, H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Development of an efficient entire-capsid-coding-region
+  amplification method for direct detection of poliovirus from stool extracts}
+  {Development of an efficient entire-capsid-coding-region amplification method
+  for direct detection of poliovirus from stool extracts}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Clinical Microbiology}{53}{1}{73--78}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1128/JCM.02384-14} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1128/JCM.02384-14} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Asghar%
 \ \protect \BOthers {.}}{%
 Asghar%
@@ -317,6 +352,40 @@ Hughes, B.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Kilpatrick%
+\ \protect \BOthers {.}}{%
+Kilpatrick%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2011}}%
+}]{%
+Kilpatrick_2011}
+\APACinsertmetastar {%
+Kilpatrick_2011}%
+\begin{APACrefauthors}%
+Kilpatrick, D\BPBI R.%
+, Iber, J\BPBI C.%
+, Chen, Q.%
+, Ching, K.%
+, Yang, S\BHBI J.%
+, De, L.%
+\BDBL {}Kew, O.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Poliovirus serotype-specific {VP1} sequencing primers}
+  {Poliovirus serotype-specific {VP1} sequencing primers}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Virological Methods}{174}{1-2}{128--130}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1016/j.jviromet.2011.03.020}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.jviromet.2011.03.020} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Le%
 \ \protect \BOthers {.}}{%
 Le%
@@ -421,6 +490,74 @@ Mejia~Calle, P\BPBI E.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+{New England Biolabs}%
+}{%
+{New England Biolabs}%
+}{%
+{\protect \APACyear {2020}}%
+}]{%
+NEB_2020}
+\APACinsertmetastar {%
+NEB_2020}%
+\begin{APACrefauthors}%
+{New England Biolabs}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Instruction Manual: Luna {SARS-CoV-2} {RT-qPCR}
+  Multiplex Assay Kit} {Instruction manual: Luna {SARS-CoV-2} {RT-qPCR}
+  multiplex assay kit}{\BBCQ}\ [\bibcomputersoftwaremanual].
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{New England Biolabs}%
+}{%
+{New England Biolabs}%
+}{%
+{\protect \APACyear {2021}}%
+}]{%
+NEB_2021}
+\APACinsertmetastar {%
+NEB_2021}%
+\begin{APACrefauthors}%
+{New England Biolabs}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Instruction Manual: {NEBNext} {ARTIC} {SARS-CoV-2}
+  {RT-PCR} Module} {Instruction manual: {NEBNext} {ARTIC} {SARS-CoV-2} {RT-PCR}
+  module}{\BBCQ}\ [\bibcomputersoftwaremanual].
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{Oxford Nanopore Technologies}%
+}{%
+{Oxford Nanopore Technologies}%
+}{%
+{\protect \APACyear {2025}}%
+}]{%
+ONT_2025}
+\APACinsertmetastar {%
+ONT_2025}%
+\begin{APACrefauthors}%
+{Oxford Nanopore Technologies}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2025}{}{}.
+\newblock
+\APACrefbtitle {Ligation Sequencing Amplicons -- Native Barcoding Kit 96 {V14}
+  ({SQK-NBD114.96}).} {Ligation sequencing amplicons -- native barcoding kit 96
+  {V14} ({SQK-NBD114.96}).}
+\newblock
+\begin{APACrefURL} \url{https://nanoporetech.com} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Parkins%
 \ \protect \BOthers {.}}{%
 Parkins%
@@ -493,9 +630,11 @@ Sangsanont, J.%
 
 \bibitem [\protect \citeauthoryear {%
 Shaw%
-\ \protect \BOthers {.}}{%
+, Cooper%
+\BCBL {}\ \protect \BOthers {.}}{%
 Shaw%
-\ \protect \BOthers {.}}{%
+, Cooper%
+\BCBL {}\ \protect \BOthers {.}}{%
 {\protect \APACyear {2022}}%
 }]{%
 Shaw_2022}
@@ -525,6 +664,83 @@ Shaw, A\BPBI G.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1093/infdis/jiab518} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Shaw%
+, Majumdar%
+\BCBL {}\ \protect \BOthers {.}}{%
+Shaw%
+, Majumdar%
+\BCBL {}\ \protect \BOthers {.}}{%
+{\protect \APACyear {2022}}%
+}]{%
+Shaw_2022_protocol}
+\APACinsertmetastar {%
+Shaw_2022_protocol}%
+\begin{APACrefauthors}%
+Shaw, A\BPBI G.%
+, Majumdar, M.%
+, Troman, C.%
+, O'Toole, A.%
+, Akello, J.%
+, Bujaki, E.%
+\BDBL {}Grassly, N\BPBI C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2022}{}{}.
+\newblock
+\APACrefbtitle {Nested {VP1} {PCR} and Nanopore Sequencing from Stool and {ES}
+  Samples v1.2 (Direct Detection of Poliovirus by Nanopore Sequencing,
+  {DDNS}).} {Nested {VP1} {PCR} and nanopore sequencing from stool and {ES}
+  samples v1.2 (direct detection of poliovirus by nanopore sequencing,
+  {DDNS}).}
+\newblock
+\APAChowpublished {protocols.io}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.17504/protocols.io.81wgbpkmovpk/v3}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{Poliovirus Sequencing Consortium, version 3}
+\newblock
+\begin{APACrefDOI} \doi{10.17504/protocols.io.81wgbpkmovpk/v3} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Shaw%
+\ \protect \BOthers {.}}{%
+Shaw%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+Shaw_2020}
+\APACinsertmetastar {%
+Shaw_2020}%
+\begin{APACrefauthors}%
+Shaw, A\BPBI G.%
+, Majumdar, M.%
+, Troman, C.%
+, O'Toole, A.%
+, Benny, B.%
+, Abraham, D.%
+\BDBL {}Blake, I\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Rapid and sensitive direct detection and identification
+  of poliovirus from stool and environmental surveillance samples using
+  nanopore sequencing} {Rapid and sensitive direct detection and identification
+  of poliovirus from stool and environmental surveillance samples using
+  nanopore sequencing}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Clinical Microbiology}{58}{9}{e00920-20}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1128/JCM.00920-20} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1128/JCM.00920-20} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -561,6 +777,43 @@ Sims, N.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Yang%
+, De%
+, Holloway%
+, Pallansch%
+\BCBL {}\ \BBA {} Kew%
+}{%
+Yang%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1991}}%
+}]{%
+Yang_1991}
+\APACinsertmetastar {%
+Yang_1991}%
+\begin{APACrefauthors}%
+Yang, C\BHBI F.%
+, De, L.%
+, Holloway, B\BPBI P.%
+, Pallansch, M\BPBI A.%
+\BCBL {}\ \BBA {} Kew, O\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1991}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Detection and identification of vaccine-related
+  polioviruses by the polymerase chain reaction} {Detection and identification
+  of vaccine-related polioviruses by the polymerase chain reaction}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Virus Research}{20}{2}{159--179}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1016/0168-1702(91)90107-7}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/0168-1702(91)90107-7} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Zurbriggen%
 \ \protect \BOthers {.}}{%
 Zurbriggen%
@@ -594,6 +847,27 @@ Zurbriggen, S.%
 \begin{APACrefURL} \url{https://doi.org/10.1128/AEM.02764-07} \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1128/AEM.02764-07} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{Zymo Research}%
+}{%
+{Zymo Research}%
+}{%
+{\protect \APACyear {2023}}%
+}]{%
+Zymo_2023}
+\APACinsertmetastar {%
+Zymo_2023}%
+\begin{APACrefauthors}%
+{Zymo Research}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Quick-RNA} Viral Kit Instruction Manual} {{Quick-RNA}
+  viral kit instruction manual}{\BBCQ}\ [\bibcomputersoftwaremanual].
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}

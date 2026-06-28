@@ -1,21 +1,252 @@
 \section{METODOLOGÍA Y DISEÑO DE LA INVESTIGACIÓN}
 
-\USFQNotaPlantilla{Esta sección debe contener: explicación de la metodología que se utilizará de acuerdo con las preguntas de investigación planteadas; explicación clara de por qué la metodología elegida responde a la pregunta de investigación; detalle de la herramienta de investigación, por ejemplo encuesta, experimento, entrevistas, documentos o estudio de caso; información sobre participantes si aplica; descripción de cómo se recolectaron los datos; explicación de cómo fueron analizados los datos y los sistemas de criterios y codificación aplicados.}
+\subsection{Justificación y diseño del estudio}
 
-\USFQNotaPlantilla{Un aspecto clave de esta sección es que deben proveer todas las descripciones necesarias para que el estudio pueda ser replicado de la manera más fidedigna posible, de tal manera que se puedan revisar los resultados sin infringir sesgos metodológicos.}
+El estudio adoptó un diseño observacional, descriptivo y longitudinal de vigilancia genómica basada en aguas residuales, aplicado a la detección y caracterización molecular de SARS-CoV-2, poliovirus y virus sincitial respiratorio (RSV) en el influente de la Planta de Tratamiento de Aguas Residuales (PTAR) Quitumbe. La vigilancia basada en aguas residuales analiza muestras de alcantarillado o influentes de plantas de tratamiento para identificar marcadores biológicos asociados con una población conectada a la red sanitaria, lo que permite obtener señales agregadas de circulación viral fuera del circuito clínico \cite{Sims_2020,Parkins_2023}. Esta aproximación responde a la pregunta de investigación porque integra material genético excretado por individuos sintomáticos, presintomáticos y asintomáticos, y habilita la detección de presencia, tendencias temporales y diversidad genética de los virus seleccionados a escala comunitaria \cite{Parkins_2023,Bubba_2023}.
 
-\subsection{Justificación de la metodología}
+El flujo metodológico combinó muestreo pasivo, preconcentración viral, extracción de ARN, detección molecular, amplificación dirigida, secuenciación por nanoporos y análisis bioinformático (Figura~\ref{fig:metodologia_general}). Este esquema reprodujo y amplió el antecedente local desarrollado en la PTAR Quitumbe para SARS-CoV-2, que demostró la factibilidad de recolectar material viral mediante un dispositivo pasivo impreso en 3D y de asignar linajes virales por secuenciación Oxford Nanopore \cite{MejiaCalle_2024}.
 
-\USFQCampo{Explicar la metodología seleccionada y justificar su correspondencia con la pregunta de investigación.}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.95\textwidth]{metodologia/metodologia_general.png}
+  \caption{Esquema general de la metodología de vigilancia genómica de virus patógenos en aguas residuales de la PTAR Quitumbe.}
+  \label{fig:metodologia_general}
+\end{figure}
 
-\subsection{Herramientas de investigación}
+\subsection{Área y periodo de estudio}
 
-\USFQCampo{Describir los instrumentos, procedimientos, experimentos, entrevistas, documentos, protocolos o herramientas utilizadas.}
+El estudio se desarrolló en la PTAR Quitumbe, ubicada en el Distrito Metropolitano de Quito, Ecuador. El punto de muestreo correspondió al pozo de entrada del influente, antes de la adición de cualquier producto químico o tratamiento, con el fin de capturar la señal viral de la población contribuyente sin interferencia de procesos de depuración. Este sitio centinela recibe aguas residuales procedentes de once barrios del sur de Quito, con un caudal reportado de 75~L/s \cite{MejiaCalle_2024}. La recolección se realizó de forma semanal durante 56 semanas consecutivas, entre el 14 de abril de 2025 y el 10 de mayo de 2026.
 
-\subsection{Participantes, muestras o documentos}
+\subsection{Estrategia de muestreo pasivo}
 
-\USFQCampo{Si aplica, indicar número de participantes, criterios de selección, variables demográficas relevantes y límites del estudio. Si no aplica, describir la muestra documental, experimental o de laboratorio.}
+La recolección de muestras empleó un dispositivo de muestreo pasivo tipo torpedo, que incorporaba en su interior gasas, una membrana de nailon y un hisopo como materiales adsorbentes del material viral suspendido en el flujo. El dispositivo se fijó con correas a una manguera presente en el pozo de entrada para evitar su desprendimiento y permaneció sumergido durante 24 horas, generando una muestra integrada en el tiempo \cite{MejiaCalle_2024}. Transcurrido el periodo de exposición, el dispositivo se retiró cuidadosamente, se colocó en una bolsa ziploc para su transporte y conservación, y se registró la fecha de colocación y de retiro (Figura~\ref{fig:dispositivo}). El muestreo pasivo se seleccionó por su utilidad operativa en sitios con limitaciones de infraestructura y por su capacidad de capturar partículas virales durante un intervalo prolongado sin requerir equipos automáticos de muestreo compuesto \cite{Parkins_2023}.
 
-\subsection{Recolección y análisis de datos}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.95\textwidth]{metodologia/dispositivo.png}
+  \caption{Procedimiento de muestreo pasivo con dispositivo tipo torpedo en el pozo de entrada de la PTAR Quitumbe.}
+  \label{fig:dispositivo}
+\end{figure}
 
-\USFQCampo{Detallar origen de los datos, características de la muestra, prueba piloto si corresponde, procedimientos de análisis, criterios de codificación y controles de calidad.}
+\subsection{Diseño temporal y distribución de las muestras}
+
+El esquema de análisis se organizó en dos fases. Durante las semanas 1 a 42, las muestras semanales se procesaron únicamente para la detección de SARS-CoV-2. A partir de la semana 43 y hasta la semana 56, las muestras se analizaron de forma simultánea para SARS-CoV-2, poliovirus y RSV. Con el fin de ampliar la cobertura temporal del análisis de poliovirus y RSV hacia periodos previos a la incorporación de estos virus al flujo prospectivo, se recuperaron muestras retrospectivas conservadas correspondientes a las semanas 17 a 20 y 34 a 37.
+
+El análisis de poliovirus y RSV abarcó 22 muestras en total, conformadas por 14 muestras prospectivas, una por cada semana del periodo comprendido entre las semanas 43 y 56, y 8 muestras retrospectivas, una por cada semana de los periodos 17--20 y 34--37 (Tabla~\ref{tab:diseno_temporal}). La selección de estos periodos retrospectivos permitió evaluar la presencia viral en intervalos previos sin asumir una distribución no documentada entre semanas adicionales.
+
+\begin{longtblr}[
+  caption={Diseño temporal y distribución de las muestras analizadas para poliovirus y RSV},
+  label={tab:diseno_temporal}
+]{
+  width=\textwidth,
+  colspec={X[1.1,l] X[1.2,l] X[0.8,c] X[1.1,l]},
+}
+\textbf{Fase} & \textbf{Semanas} & \textbf{N.º muestras} & \textbf{Virus analizados} \\
+Prospectiva (SARS-CoV-2) & 1--42 & --- & SARS-CoV-2 \\
+Prospectiva (multipatógeno) & 43--56 & 14 & SARS-CoV-2, poliovirus, RSV \\
+Retrospectiva conservada & 17--20 & 4 & Poliovirus, RSV \\
+Retrospectiva conservada & 34--37 & 4 & Poliovirus, RSV \\
+\textbf{Total poliovirus y RSV} & & \textbf{22} & \\
+\end{longtblr}
+
+\subsection{Conservación y recuperación de muestras retrospectivas}
+
+Las muestras retrospectivas de las semanas 17 a 20 y 34 a 37 se conservaron para su análisis posterior de poliovirus y RSV mediante tres métodos de preservación: solución DNA/RNA Shield 2X, solución salina tamponada con fosfato (PBS) y congelación del ARN. Estos métodos se aplicaron exclusivamente a las muestras retrospectivas destinadas al análisis de poliovirus y RSV, con el objetivo de preservar la integridad del material genético hasta su procesamiento. La recuperación de estas muestras conservadas permitió incorporar al estudio periodos previos a la fase prospectiva multipatógeno.
+
+\subsection{Preconcentración viral}
+
+La preconcentración de partículas virales se realizó mediante precipitación con polietilenglicol (PEG). Se preparó una solución 2X disolviendo 20~g de PEG y 3,48~g de NaCl en 200~mL de agua libre de nucleasas, seguida de esterilización en autoclave. Aproximadamente 4~g de la muestra, conformada por la gasa, la membrana y el hisopo, se colocaron en una bolsa estéril, a la que se añadieron 10~mL de dPBS 10X y 5~\textmu L de Tween 20. Las muestras se homogenizaron en un Stomacher durante 2 minutos a 200~rpm. El sobrenadante se transfirió a tubos de 10~mL y se centrifugó a 400~rpm durante 10 minutos. Se recuperaron aproximadamente 9~mL del sobrenadante, al cual se añadió 1,8~\textmu L de la solución 2X de PEG. Las muestras se conservaron a 4~°C durante 24 horas y se sometieron a una segunda centrifugación a 400~rpm durante 15 minutos. El sobrenadante se eliminó y el pellet se resuspendió en 300~\textmu L de DNA/RNA Shield 2X (Figura~\ref{fig:preconcentracion}) \cite{MejiaCalle_2024}.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.92\textwidth]{metodologia/preconcentracion.png}
+  \caption{Procedimiento de preconcentración viral mediante precipitación con polietilenglicol (PEG).}
+  \label{fig:preconcentracion}
+\end{figure}
+
+\subsection{Extracción de ARN}
+
+La extracción de ARN se realizó con el kit Quick-RNA Viral (Zymo Research), siguiendo el protocolo del fabricante \cite{Zymo_2023}. Se mezclaron 200~\textmu L de muestra con 400~\textmu L de Viral RNA Buffer y se homogenizaron mediante vórtex. La mezcla se transfirió a columnas Zymo-Spin IC y se centrifugó durante 2 minutos a 13\,000~rpm. Las columnas se lavaron dos veces con 500~\textmu L de Viral Wash Buffer, con centrifugación bajo las mismas condiciones en cada paso. A continuación, se añadieron 500~\textmu L de etanol (95--100~\%) y se centrifugó durante 1 minuto. Las columnas se transfirieron a tubos Eppendorf estériles de 1,5~mL y el ARN se eluyó con 20~\textmu L de agua libre de DNasa y RNasa (Figura~\ref{fig:extraccion}). Como control positivo de extracción se utilizaron hisopados faríngeos. Esta extracción constituyó el procedimiento común para los tres virus analizados, incluida la detección de poliovirus en aguas residuales.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.95\textwidth]{metodologia/extraccion_ARN.png}
+  \caption{Procedimiento de extracción de ARN viral con el kit Quick-RNA Viral (Zymo Research).}
+  \label{fig:extraccion}
+\end{figure}
+
+\subsection{Detección molecular de SARS-CoV-2 por RT-qPCR}
+
+La detección de SARS-CoV-2 se realizó mediante RT-qPCR con el ensayo multiplex Luna SARS-CoV-2 RT-qPCR (New England Biolabs), siguiendo las especificaciones del fabricante \cite{NEB_2020}. Las reacciones se prepararon en un volumen final de 20~\textmu L e incorporaron ARN de la muestra, reactivos de transcripción reversa y mezclas de cebadores y sondas específicas para los genes N1, N2 y RP, marcados con los fluoróforos HEX, FAM y Cy5, respectivamente (Tabla~\ref{tab:rtqpcr_reactivos}). El programa térmico incluyó etapas de prevención de arrastre, transcripción reversa, desnaturalización inicial y amplificación cíclica, ejecutadas en un termociclador Bio-Rad (Tabla~\ref{tab:rtqpcr_ciclos}, Figura~\ref{fig:rtqpcr}). Los genes N1 y N2 se emplean de forma amplia como blancos de detección de SARS-CoV-2 en aguas residuales, mientras que el control RP verifica la integridad del procesamiento \cite{Ahmed_2020,MejiaCalle_2024}.
+
+\begin{longtblr}[
+  caption={Mezcla de reacción para la RT-qPCR de diagnóstico de SARS-CoV-2},
+  label={tab:rtqpcr_reactivos}
+]{
+  width=0.8\textwidth,
+  colspec={X[2,l] X[1,c]},
+}
+\textbf{Reactivo} & \textbf{1 Rx (\textmu L)} \\
+Agua libre de nucleasas & 11 \\
+Luna Probe One-Step 4X Mix & 5 \\
+Cebador/sonda & 2 \\
+Total & 18 + 2 \textmu L de muestra (ARN) \\
+\end{longtblr}
+
+\begin{longtblr}[
+  caption={Condiciones de termociclado para la RT-qPCR de SARS-CoV-2},
+  label={tab:rtqpcr_ciclos}
+]{
+  width=\textwidth,
+  colspec={X[2,l] X[1,c] X[1.4,c] X[0.7,c]},
+}
+\textbf{Etapa del ciclo} & \textbf{Temperatura} & \textbf{Tiempo} & \textbf{Ciclos} \\
+Prevención de arrastre & 25~°C & 30 segundos & 1 \\
+Transcripción reversa & 55~°C & 10 minutos & 1 \\
+Desnaturalización inicial & 95~°C & 1 minuto & 1 \\
+Desnaturalización & 95~°C & 10 segundos & 45 \\
+Extensión & 60~°C & 30 segundos (+ lectura de placa) & 45 \\
+\end{longtblr}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.95\textwidth]{metodologia/rt_qpcr.png}
+  \caption{Fundamento de la RT-qPCR de diagnóstico de SARS-CoV-2: preparación de la reacción, transcripción reversa con amplificación cíclica y análisis de las curvas de amplificación.}
+  \label{fig:rtqpcr}
+\end{figure}
+
+\subsection{Amplificación genómica multiplex de SARS-CoV-2}
+
+La amplificación del genoma de SARS-CoV-2 se realizó mediante PCR multiplex basada en el módulo NEBNext ARTIC SARS-CoV-2 RT-PCR, con inclusión de controles positivos y negativos para verificar la validez de los resultados y descartar contaminación \cite{NEB_2021}. El ADN complementario (ADNc) se sintetizó a partir del ARN viral con LunaScript RT SuperMix (Tabla~\ref{tab:cdna_mezcla} y Tabla~\ref{tab:cdna_ciclos}). El ADNc se amplificó con esquemas de cebadores ARTIC o VarSkip distribuidos en dos pools complementarios (A y B), que en conjunto cubren el genoma viral mediante amplicones solapados (Tabla~\ref{tab:pool_mezcla}). Las reacciones de ambos pools se combinaron por muestra y se amplificaron bajo condiciones térmicas específicas en un termociclador Thermo Fisher Scientific (Tabla~\ref{tab:pool_ciclos}). La amplificación dirigida por paneles de amplicones aumenta la probabilidad de recuperar información genómica a partir de muestras con ARN degradado o baja abundancia relativa, característica frecuente en aguas residuales \cite{Child_2023,Crits_Christoph_2021}.
+
+\begin{longtblr}[
+  caption={Mezcla de reacción para la síntesis de ADNc de SARS-CoV-2},
+  label={tab:cdna_mezcla}
+]{
+  width=0.8\textwidth,
+  colspec={X[2,l] X[1,c]},
+}
+\textbf{Componente} & \textbf{Volumen} \\
+Muestra de ARN & 8 \textmu L \\
+LunaScript RT SuperMix & 2 \textmu L \\
+Volumen total & 10 \textmu L \\
+\end{longtblr}
+
+\begin{longtblr}[
+  caption={Condiciones de termociclado para la síntesis de ADNc},
+  label={tab:cdna_ciclos}
+]{
+  width=\textwidth,
+  colspec={X[2,l] X[1,c] X[1.2,c]},
+}
+\textbf{Etapa del ciclo} & \textbf{Temperatura} & \textbf{Tiempo} \\
+Alineamiento de cebadores & 25~°C & 2 minutos \\
+Síntesis de ADNc & 55~°C & 20 minutos \\
+Inactivación térmica & 95~°C & 1 minuto \\
+Mantenimiento (hold) & 4~°C & $\infty$ \\
+\end{longtblr}
+
+\begin{longtblr}[
+  caption={Mezcla de reacción para los pools A y B con cebadores ARTIC o VarSkip},
+  label={tab:pool_mezcla}
+]{
+  width=0.85\textwidth,
+  colspec={X[2,l] X[1,c]},
+}
+\textbf{Componente} & \textbf{Volumen} \\
+ADNc (paso previo) & 4,5 \textmu L \\
+Q5 Hot Start High-Fidelity 2X Master Mix & 6,25 \textmu L \\
+ARTIC/VarSkip SARS-CoV-2 Primer Mix 1/2 & 1,75 \textmu L \\
+Volumen total & 12,5 \textmu L \\
+\end{longtblr}
+
+\begin{longtblr}[
+  caption={Condiciones de termociclado para la PCR multiplex de SARS-CoV-2},
+  label={tab:pool_ciclos}
+]{
+  width=\textwidth,
+  colspec={X[2,l] X[1,c] X[1.2,c] X[0.7,c]},
+}
+\textbf{Etapa del ciclo} & \textbf{Temperatura} & \textbf{Tiempo} & \textbf{Ciclos} \\
+Desnaturalización inicial & 98~°C & 30 segundos & 1 \\
+Desnaturalización & 95~°C & 15 segundos & 35 \\
+Alineamiento / extensión & 63~°C & 5 minutos & 35 \\
+Mantenimiento (hold) & 4~°C & $\infty$ & 1 \\
+\end{longtblr}
+
+\subsection{Detección y amplificación de poliovirus por PCR anidada de VP1}
+
+La detección de poliovirus se realizó sobre las mismas muestras de aguas residuales, tras la preconcentración con PEG y la extracción de ARN descritas previamente. La caracterización molecular siguió el protocolo de detección directa de poliovirus por secuenciación Nanopore (DDNS), que amplifica la región VP1 mediante una PCR anidada \cite{Shaw_2020,Shaw_2022_protocol}. La región VP1 es la diana de referencia para diferenciar poliovirus Sabin-like, poliovirus salvaje y poliovirus derivados de vacuna, así como para establecer relaciones genéticas entre eventos de detección ambiental \cite{Asghar_2014,Zurbriggen_2008}.
+
+La primera ronda de la PCR anidada empleó cebadores pan-enterovirus dirigidos a las regiones 5'NTR y Cre, con el fin de amplificar de forma amplia el material de enterovirus presente en la muestra \cite{Arita_2015}. La segunda ronda amplificó específicamente la región VP1 mediante los cebadores Y7 \cite{Kilpatrick_2011} y Q8 \cite{Yang_1991}, que pueden incorporar códigos de barras para simplificar la preparación de bibliotecas \cite{Shaw_2020,Shaw_2022_protocol}. Los productos de cada ronda se evaluaron por electroforesis para confirmar la amplificación antes de avanzar a la secuenciación. Este enfoque molecular directo reduce los tiempos de confirmación frente a los flujos tradicionales de aislamiento viral y resulta adecuado para vigilancia ambiental con baja tasa de detección clínica \cite{Shaw_2022}.
+
+\subsection{Detección y amplificación de RSV por PCR multiplex}
+
+La detección de RSV empleó una PCR multiplex con esquemas de cebadores tipo ARTIC orientados a la amplificación del genoma completo, en un procedimiento análogo al aplicado a SARS-CoV-2. Se utilizaron cebadores específicos para los dos subtipos del virus, RSV-A y RSV-B, distribuidos en pools de amplicones solapados que cubren la totalidad del genoma viral. La estrategia de amplicones solapados con secuenciación por nanoporos ha sido validada para genomas completos de RSV en muestras clínicas y ambientales, y permite recuperar información genómica de muestras con cargas variables \cite{Le_2025}. La inclusión de cebadores para RSV-A y RSV-B atiende la diversidad de subtipos y clados, que requiere referencias adecuadas para evitar la pérdida de lecturas durante el mapeo \cite{Le_2025}. Los productos de amplificación se evaluaron por electroforesis, y la intensidad de las bandas obtenidas determinó la selección de las muestras que se enviaron a secuenciación.
+
+\subsection{Electroforesis y criterios de selección para secuenciación}
+
+Los productos de amplificación se evaluaron mediante electroforesis en gel de agarosa al 1,5~\%, preparado disolviendo 1,5~g de agarosa en 100~mL de tampón TBE, al cual se añadió 1~\textmu L de SYBR Safe como agente intercalante para la visualización del ADN. El gel se dividió en dos secciones para cargar de forma independiente los productos correspondientes a los pools A y B de cada muestra. Las muestras se mezclaron con Blue Juice antes de la carga, con el fin de aumentar su densidad y facilitar el seguimiento de la migración. Por cada pozo se cargaron 3~\textmu L del producto de PCR y 0,8~\textmu L de Blue Juice, y se utilizó un marcador de peso molecular cargando 1,25~\textmu L para la referencia de tamaño en ambos pools.
+
+La selección de las muestras destinadas a secuenciación se basó en la visualización de bandas de amplificación en el gel y en los valores de ciclo umbral (Cq) obtenidos por RT-qPCR. Las muestras con amplificación insuficiente o con valores de Cq tardíos se descartaron o se reprocesaron, dado que la baja carga viral limita la recuperación de información genómica útil \cite{MejiaCalle_2024,Child_2023}.
+
+\subsection{Preparación de bibliotecas y secuenciación por nanoporos}
+
+La secuenciación de los amplicones se realizó con la tecnología Oxford Nanopore mediante el kit Native Barcoding Kit 96 V14 (SQK-NBD114.96) y celdas de flujo R10.4.1 \cite{ONT_2025}. Los amplicones se sometieron a reparación de extremos (end-repair) y adición de adenina (dA-tailing) para acondicionar los extremos del ADN. A cada muestra se le ligó un código de barras nativo único, seguido de la detención de la reacción y la purificación con perlas AMPure XP. Las muestras con código de barras se agruparon (pooling) y se ligaron los adaptadores de secuenciación, con un segundo paso de limpieza enriquecido para fragmentos cortos (Tabla~\ref{tab:libreria_endprep}--Tabla~\ref{tab:libreria_adaptadores}). La biblioteca final se cuantificó y se ajustó a la concentración recomendada para la carga.
+
+La celda de flujo SpotON se cebó con una mezcla de priming que incluyó Flow Cell Flush, Flow Cell Tether y BSA, y la biblioteca se cargó por el puerto SpotON. La secuenciación se ejecutó en dispositivos GridION, MinION o PromethION, con adquisición de datos en tiempo real mediante el software MinKNOW, lo que habilitó el basecalling, la demultiplexación y el análisis bioinformático posterior \cite{ONT_2025,Dash_2024}. Para poliovirus, la preparación de bibliotecas siguió las indicaciones específicas del protocolo DDNS aplicables a los amplicones de VP1 \cite{Shaw_2020,Shaw_2022_protocol}.
+
+\begin{longtblr}[
+  caption={Condiciones de end-prep para la preparación de bibliotecas},
+  label={tab:libreria_endprep}
+]{
+  width=0.8\textwidth,
+  colspec={X[2,l] X[1.4,c]},
+}
+\textbf{Reactivo} & \textbf{1 Rx (\textmu L)} \\
+Buffer & 1,2 \\
+Enzyme & 0,5 \\
+H\textsubscript{2}O & 4,3 \\
+Total & 6 + 2 (pool A) + 2 (pool B) \\
+\end{longtblr}
+
+\begin{longtblr}[
+  caption={Condiciones de barcoding para la preparación de bibliotecas},
+  label={tab:libreria_barcoding}
+]{
+  width=0.8\textwidth,
+  colspec={X[2,l] X[1,c]},
+}
+\textbf{Reactivo} & \textbf{1 Rx (\textmu L)} \\
+Blunt TA & 5 \\
+Barcode & 1,25 \\
+End prep (muestra) & 3,75 \\
+Total & 10 \\
+\end{longtblr}
+
+\begin{longtblr}[
+  caption={Condiciones de ligación de adaptadores de secuenciación},
+  label={tab:libreria_adaptadores}
+]{
+  width=0.8\textwidth,
+  colspec={X[2,l] X[1,c]},
+}
+\textbf{Reactivo} & \textbf{1 Rx (\textmu L)} \\
+Buffer & 10 \\
+Ligasa & 5 \\
+Native Adapter & 3 \\
+ADN eluido & 30 \\
+Total & 48 \\
+\end{longtblr}
+
+\subsection{Procesamiento y análisis bioinformático}
+
+El procesamiento inicial de los datos de secuenciación se realizó con la plataforma EPI2ME, que ejecutó el basecalling, la demultiplexación y la generación de secuencias consenso. Para SARS-CoV-2, la asignación de clados y linajes se efectuó con Nextclade, que diferenció subvariantes definidas por el sistema PANGO y clados filogenéticos de Nextstrain a partir de las secuencias obtenidas. En las muestras con cobertura suficiente se identificaron clados de Ómicron y subvariantes asociadas; en las muestras con baja carga viral, la secuencia consenso presentó un alto porcentaje de nucleótidos indeterminados (N), lo que impidió la asignación de clado o linaje. Para RSV, la identificación de subtipo, la selección de referencia y el análisis posterior se apoyaron en flujos automatizados de tipificación de genoma completo, mientras que para poliovirus el análisis se centró en la región VP1 para la caracterización intratípica \cite{Le_2025,Shaw_2020}. La interpretación de las secuencias consideró la cobertura, la profundidad por posición y el porcentaje de nucleótidos indeterminados, dado que la tasa de error de la secuenciación por nanoporos y la complejidad de la matriz ambiental exigen control de calidad y profundidad suficiente \cite{Dash_2024,Child_2023}.
+
+\subsection{Controles de calidad, controles experimentales e interpretación}
+
+El procesamiento incorporó controles experimentales en cada etapa. Como control positivo de extracción y amplificación se utilizaron hisopados faríngeos con carga viral conocida, que generaron valores de Cq tempranos en la RT-qPCR. Como control negativo se incluyó un control sin molde (NTC) para detectar contaminación, y las PCR multiplex incorporaron controles positivos y negativos para verificar el desempeño de la reacción \cite{NEB_2021}. La interpretación de los resultados moleculares consideró los valores de Cq por fluoróforo, la presencia de bandas de amplificación en electroforesis y la coherencia entre réplicas. Los resultados con Cq tardíos se interpretaron con cautela, dado que la baja carga viral, la presencia de inhibidores y la degradación del ARN reducen el rendimiento de la amplificación y la secuenciación en aguas residuales \cite{Parkins_2023,MejiaCalle_2024}.
+
+\subsection{Consideraciones éticas y de bioseguridad}
+
+El estudio analizó muestras ambientales de aguas residuales recolectadas en el influente de la PTAR Quitumbe, sin recolección directa de datos personales ni de muestras humanas individuales con fines de identificación. El uso de hisopados faríngeos se limitó a controles positivos de laboratorio. El procesamiento de muestras se realizó bajo prácticas de bioseguridad acordes con la manipulación de material potencialmente infeccioso, con el uso de equipo de protección personal, cabinas de bioseguridad y descontaminación de superficies y residuos.
