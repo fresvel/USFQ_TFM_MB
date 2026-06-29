@@ -113,3 +113,31 @@ plt.tight_layout(); fig.savefig(OUT/"f4_conservacion.pdf", bbox_inches="tight");
 
 print("Figuras generadas en", OUT.resolve())
 for f in sorted(OUT.glob("*.pdf")): print(" -", f.name, f.stat().st_size,"B")
+
+# ---------- F5: Cq por semana (N1, N2) coloreado por estado ----------
+cq = pd.read_csv(D/"cq_sars_por_semana.csv")
+estado_color = {"determinado":"#74c476","no_determinado":"#fdae6b","no_secuenciado":"#9ecae1"}
+fig, ax = plt.subplots(figsize=(11,4.2))
+# franja de "determinables": las 6 muestras determinadas
+ax.axhspan(33, 36, color="#74c476", alpha=0.10, zorder=0)
+for gene, marker, lbl in [("N1","o","Gen N1 (HEX)"),("N2","s","Gen N2 (FAM)")]:
+    sub = cq.dropna(subset=[gene])
+    ax.scatter(sub.semana, sub[gene], marker=marker, s=70,
+               c=[estado_color[e] for e in sub.estado], edgecolor="k", lw=0.5,
+               label=lbl, zorder=3)
+    ax.plot(sub.semana, sub[gene], color="#cccccc", lw=0.8, zorder=1)
+ax.invert_yaxis()  # Cq bajo = más arriba (mayor carga)
+ax.set_xlabel("Semana de muestreo (2025)"); ax.set_ylabel("Valor de Cq")
+ax.set_title("Valores de Cq de SARS-CoV-2 por semana (genes N1 y N2)", fontsize=11, weight="bold")
+ax.set_xticks(range(2,33,2))
+from matplotlib.lines import Line2D
+leg1 = ax.legend(loc="upper right", fontsize=8, frameon=True, title="Marcador")
+ax.add_artist(leg1)
+est_handles=[Line2D([0],[0],marker='o',color='w',markerfacecolor=estado_color[k],markeredgecolor='k',
+             markersize=9,label=v) for k,v in
+             [("determinado","Linaje determinado"),("no_determinado","Secuenciado, no determinado"),
+              ("no_secuenciado","No secuenciado")]]
+ax.legend(handles=est_handles, loc="lower left", fontsize=8, frameon=True, title="Resultado")
+ax.text(0.5,34.5,"Rango de las muestras\ncon linaje determinado", fontsize=7.5, color="#3d8b3d", ha="left")
+plt.tight_layout(); fig.savefig(OUT/"f5_cq_sars.pdf", bbox_inches="tight"); plt.close(fig)
+print("F5 generada:", (OUT/"f5_cq_sars.pdf").stat().st_size, "B")

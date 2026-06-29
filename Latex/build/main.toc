@@ -50,17 +50,26 @@
 \contentsline {section}{ANÁLISIS DE DATOS}{49}{section*.56}%
 \contentsline {subsection}{Presentación de resultados}{49}{subsection*.57}%
 \contentsline {subsubsection}{Panorama general de muestras y secuenciación}{49}{subsubsection*.58}%
-\contentsline {subsubsection}{Dinámica temporal de SARS-CoV-2}{50}{subsubsection*.60}%
-\contentsline {subsubsection}{Poliovirus y enterovirus no polio}{51}{subsubsection*.62}%
-\contentsline {subsubsection}{Virus sincitial respiratorio}{52}{subsubsection*.63}%
-\contentsline {subsubsection}{Comparación temporal entre virus}{53}{subsubsection*.65}%
-\contentsline {subsection}{Interpretación de resultados}{54}{subsection*.67}%
-\contentsline {section}{CONCLUSIONES}{56}{section*.68}%
-\contentsline {subsection}{Respuesta a la pregunta de investigación}{56}{subsection*.69}%
-\contentsline {subsection}{Limitaciones}{56}{subsection*.70}%
-\contentsline {subsection}{Importancia y recomendaciones}{56}{subsection*.71}%
-\contentsline {section}{REFERENCIAS}{57}{section*.72}%
-\contentsline {section}{ÍNDICE DE ANEXOS}{63}{section*.73}%
-\contentsline {section}{ANEXO A: \textcolor {USFQPlaceholderRed}{TÍTULO}}{64}{section*.74}%
-\contentsline {section}{ANEXO B: \textcolor {USFQPlaceholderRed}{TÍTULO}}{65}{section*.75}%
-\contentsline {section}{ANEXO C: \textcolor {USFQPlaceholderRed}{TÍTULO}}{66}{section*.76}%
+\contentsline {subsubsection}{Cuantificación molecular por RT-qPCR}{50}{subsubsection*.60}%
+\contentsline {subsubsection}{Dinámica temporal de SARS-CoV-2}{51}{subsubsection*.62}%
+\contentsline {subsubsection}{Poliovirus y enterovirus no polio}{53}{subsubsection*.64}%
+\contentsline {subsubsection}{Virus sincitial respiratorio}{53}{subsubsection*.65}%
+\contentsline {subsubsection}{Comparación temporal entre virus}{54}{subsubsection*.67}%
+\contentsline {subsection}{Síntesis de los resultados}{55}{subsection*.69}%
+\contentsline {section}{DISCUSIÓN}{56}{section*.70}%
+\contentsline {subsection}{Detección molecular en una matriz ambiental compleja}{56}{subsection*.71}%
+\contentsline {subsection}{Carga viral, valores de Cq y rendimiento de la secuenciación}{56}{subsection*.72}%
+\contentsline {subsection}{Linajes de SARS-CoV-2 y contexto epidemiológico}{57}{subsection*.73}%
+\contentsline {subsection}{Ausencia de poliovirus y detección de enterovirus no polio}{58}{subsection*.74}%
+\contentsline {subsection}{Señal de RSV sin caracterización genómica}{58}{subsection*.75}%
+\contentsline {subsection}{Conservación de muestras retrospectivas como factor crítico}{59}{subsection*.76}%
+\contentsline {subsection}{Alcances y limitaciones del esquema multipatógeno}{59}{subsection*.77}%
+\contentsline {section}{CONCLUSIONES}{60}{section*.78}%
+\contentsline {subsection}{Respuesta a la pregunta de investigación}{60}{subsection*.79}%
+\contentsline {subsection}{Limitaciones}{60}{subsection*.80}%
+\contentsline {subsection}{Importancia y recomendaciones}{61}{subsection*.81}%
+\contentsline {section}{REFERENCIAS}{62}{section*.82}%
+\contentsline {section}{ÍNDICE DE ANEXOS}{68}{section*.83}%
+\contentsline {section}{ANEXO A: \textcolor {USFQPlaceholderRed}{TÍTULO}}{69}{section*.84}%
+\contentsline {section}{ANEXO B: \textcolor {USFQPlaceholderRed}{TÍTULO}}{70}{section*.85}%
+\contentsline {section}{ANEXO C: \textcolor {USFQPlaceholderRed}{TÍTULO}}{71}{section*.86}%

@@ -183,6 +183,44 @@ Bottcher, S.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Bruno%
+\ \protect \BOthers {.}}{%
+Bruno%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2025}}%
+}]{%
+Bruno_2025}
+\APACinsertmetastar {%
+Bruno_2025}%
+\begin{APACrefauthors}%
+Bruno, A.%
+, de Mora, D.%
+, Rojas-Estevez, P.%
+, Ruiz-Moreno, H\BPBI A.%
+, Guzman-Otazo, J.%
+, C{\'a}ceres, O.%
+\BDBL {}Garcia-Bereguiain, M\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2025}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Genomic surveillance of {SARS-CoV-2} in the Andean
+  Community (2020--2024): integrating regional sequencing efforts from
+  Colombia, Ecuador, Peru, and Bolivia through {ORAS-CONHU} program} {Genomic
+  surveillance of {SARS-CoV-2} in the andean community (2020--2024):
+  integrating regional sequencing efforts from colombia, ecuador, peru, and
+  bolivia through {ORAS-CONHU} program}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Frontiers in Public Health}{13}{}{1623413}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.3389/fpubh.2025.1623413}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.3389/fpubh.2025.1623413} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Bubba%
 \ \protect \BOthers {.}}{%
 Bubba%
@@ -382,6 +420,40 @@ Hughes, B.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1021/acs.estlett.1c00963} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Islam%
+\ \protect \BOthers {.}}{%
+Islam%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2025}}%
+}]{%
+Islam_2025}
+\APACinsertmetastar {%
+Islam_2025}%
+\begin{APACrefauthors}%
+Islam, M\BPBI S.%
+, Jaman, A.%
+, Ahmmed, N.%
+, Arbin, A\BPBI N.%
+, Khondaker, J\BPBI A.%
+, Ali, M\BPBI T.%
+\BDBL {}Mubarak, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2025}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Emerging {SARS-CoV-2} Omicron subvariants in 2025:
+  clinical impacts and public health challenges} {Emerging {SARS-CoV-2} omicron
+  subvariants in 2025: clinical impacts and public health challenges}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Biosciences and Public Health}{1}{2}{1--16}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.5455/JBPH.2025.06} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.5455/JBPH.2025.06} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

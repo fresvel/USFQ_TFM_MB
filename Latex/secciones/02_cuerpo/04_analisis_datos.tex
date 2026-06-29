@@ -30,6 +30,32 @@ RSV & 22 & 4 & 0 & 4 & 18 \\
   \label{fig:f3_rendimiento}
 \end{figure}
 
+\subsubsection{Cuantificación molecular por RT-qPCR}
+
+La RT-qPCR de SARS-CoV-2 detectó material viral en la mayoría de las muestras semanales de 2025, con valores de Cq generalmente tardíos, propios de aguas residuales con baja carga y ARN fragmentado (Figura~\ref{fig:f5_cq}). Los genes N1 y N2 mostraron amplificación en un rango amplio de Cq, y varias muestras presentaron amplificación de un solo gen o ausencia de señal en ambos. El valor de Cq se relacionó de forma directa con el éxito posterior de la caracterización genómica (Tabla~\ref{tab:cq_resumen}). Las seis muestras que permitieron asignar linaje concentraron los valores de Cq más bajos del gen N1, con una media de 34,0 y un rango de 33,1 a 35,8. Las muestras secuenciadas sin caracterización presentaron una media de Cq más alta (36,6) y un rango más disperso (33,9 a 42,3), mientras que la muestra de la semana 4, con un Cq de 42,9, no avanzó a secuenciación. Este gradiente muestra que la ventana de caracterización genómica se ubicó en las semanas con mayor carga viral, durante el inicio del muestreo.
+
+\begin{longtblr}[
+  caption={Valores de Cq del gen N1 de SARS-CoV-2 según el resultado de la secuenciación},
+  label={tab:cq_resumen}
+]{
+  width=\textwidth,
+  colspec={X[2,l] X[0.8,c] X[1.1,c] X[1,c]},
+}
+\textbf{Resultado de la secuenciación} & \textbf{n} & \textbf{Cq N1 (rango)} & \textbf{Cq N1 medio} \\
+Linaje determinado & 6 & 33,1--35,8 & 34,0 \\
+Secuenciado, sin determinar & 15 & 33,9--42,3 & 36,6 \\
+No secuenciado (con Cq registrado) & 1 & 42,9 & 42,9 \\
+\end{longtblr}
+
+\noindent\footnotesize{Las semanas 15, 18, 19, 20, 22, 26, 27 y 31 no presentaron amplificación detectable de los genes N1 ni N2. Valores de Cq reconstruidos a partir de la bitácora de laboratorio; para las semanas medidas en más de una corrida se utilizó la corrida con mayor número de blancos detectados.}\normalsize
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{resultados/f5_cq_sars.pdf}
+  \caption{Valores de Cq de SARS-CoV-2 por semana para los genes N1 (HEX) y N2 (FAM). El eje vertical está invertido, de modo que los valores más altos corresponden a mayor carga viral. El color indica el resultado de la secuenciación; la banda verde señala el rango de Cq de las muestras con linaje determinado.}
+  \label{fig:f5_cq}
+\end{figure}
+
 \subsubsection{Dinámica temporal de SARS-CoV-2}
 
 La caracterización genómica de SARS-CoV-2 se concentró en las semanas tempranas del muestreo. Las seis muestras con asignación de linaje correspondieron a las semanas 3 a 9 (28 de abril al 15 de junio de 2025) y revelaron una sucesión de linajes dentro de la familia Ómicron (Tabla~\ref{tab:linajes_sars}, Figura~\ref{fig:f2_linajes}). El clado 24A predominó entre las semanas 3 y 8, con los linajes JN.1, LZ.5 y LU.2.1.1, y en la semana 9 se identificó el clado 24H con el linaje LF.7.1.3. La detección de JN.1 en aguas residuales de Quito coincide con el antecedente local, que reportó este linaje en la PTAR Quitumbe antes de su identificación clínica \cite{MejiaCalle_2024}, y con la capacidad descrita de la secuenciación de aguas residuales para identificar variantes regionalmente prevalentes \cite{Crits_Christoph_2021}.
@@ -57,7 +83,7 @@ La caracterización genómica de SARS-CoV-2 se concentró en las semanas tempran
   \label{fig:f2_linajes}
 \end{figure}
 
-A partir de la semana 10 se mantuvo el esfuerzo de secuenciación, pero las muestras dejaron de rendir caracterización: 17 muestras secuenciadas entre las semanas 10 y 32 generaron consenso con alto porcentaje de nucleótidos indeterminados, sin permitir la asignación de clado o linaje. Esta brecha entre la detección y la caracterización es coherente con la baja carga viral y la cobertura insuficiente descritas para muestras ambientales con valores de Cq tardíos \cite{MejiaCalle_2024,Parkins_2023}, y con la dificultad de recuperar genomas completos a partir de matrices dominadas por material no viral \cite{Child_2023}.
+Las semanas con linaje determinado coincidieron con los valores de Cq más bajos del periodo (Figura~\ref{fig:f5_cq}). A partir de la semana 10 se mantuvo el esfuerzo de secuenciación, pero las muestras dejaron de rendir caracterización: 17 muestras secuenciadas entre las semanas 10 y 32 generaron consenso con alto porcentaje de nucleótidos indeterminados, sin permitir la asignación de clado o linaje. Esta brecha entre la detección y la caracterización es coherente con la baja carga viral y la cobertura insuficiente descritas para muestras ambientales con valores de Cq tardíos \cite{MejiaCalle_2024,Parkins_2023}, y con la dificultad de recuperar genomas completos a partir de matrices dominadas por material no viral \cite{Child_2023}.
 
 \subsubsection{Poliovirus y enterovirus no polio}
 
@@ -101,12 +127,6 @@ La distribución temporal de los resultados muestra ventanas de análisis con es
   \label{fig:f1_heatmap}
 \end{figure}
 
-\subsection{Interpretación de resultados}
+\subsection{Síntesis de los resultados}
 
-Los resultados responden de forma parcial a la pregunta de investigación. La evidencia molecular y genómica fue recuperable para SARS-CoV-2 en las semanas con mayor carga viral, donde la secuenciación Oxford Nanopore permitió asignar linajes de Ómicron y reconstruir su sucesión temporal. Para poliovirus, la evidencia molecular confirmó la presencia de enterovirus en la matriz, sin detección de poliovirus, y para RSV se obtuvo señal de secuenciación sin caracterización genómica. Este patrón cumple el objetivo de caracterizar las señales virales cuando la calidad de los datos lo permite y delimita el alcance del análisis multipatógeno en una matriz ambiental compleja.
-
-La limitación principal fue la baja carga viral recuperada y su efecto sobre la cobertura de secuenciación. La brecha entre detección y caracterización observada en SARS-CoV-2 desde la semana 10, y la ausencia de caracterización en RSV, concuerdan con la relación descrita entre carga viral, valores de Cq y rendimiento genómico en aguas residuales \cite{MejiaCalle_2024,Parkins_2023}. El requerimiento de carga elevada para recuperar genomas completos de RSV explica la falta de caracterización pese a la detección de señal \cite{Le_2025}. La elección de métodos dirigidos por amplicones, frente a la metagenómica, favoreció la recuperación de virus específicos, aunque permaneció condicionada por la abundancia relativa del blanco en la muestra \cite{Child_2023}.
-
-El desempeño de las muestras retrospectivas constituye un hallazgo metodológico. Las 16 muestras conservadas en Shield 2X y en ARN a −20~°C no rindieron secuencia en poliovirus ni en RSV, lo que sugiere degradación o carga insuficiente durante el almacenamiento y limita el uso de estos esquemas de conservación para análisis genómico diferido. Este resultado coincide con la sensibilidad del rendimiento a la integridad del ARN y a la eficiencia de recuperación señalada para el muestreo pasivo \cite{MejiaCalle_2024}.
-
-La detección de Coxsackie A en ausencia de poliovirus aporta una lectura positiva sobre la utilidad del esquema. El flujo recuperó y caracterizó un enterovirus no polio desde aguas residuales, lo que respalda la vigilancia ambiental de enterovirus como complemento de la vigilancia clínica, en especial donde la circulación de poliovirus es nula o silenciosa \cite{Bubba_2023,Asghar_2014}. La evidencia local sostiene la factibilidad de un esquema multipatógeno en la PTAR Quitumbe y, al mismo tiempo, identifica la carga viral y la conservación de muestras como los factores que condicionan la caracterización genómica en este tipo de vigilancia.
+La evidencia molecular y genómica fue recuperable para SARS-CoV-2 en las semanas con mayor carga viral, donde la secuenciación Oxford Nanopore permitió asignar linajes de Ómicron y reconstruir su sucesión temporal. Para poliovirus, la evidencia molecular confirmó la presencia de enterovirus en la matriz, sin detección de poliovirus, y para RSV se obtuvo señal de secuenciación sin caracterización genómica. Las muestras retrospectivas conservadas no rindieron secuencia en ninguno de los dos virus. La interpretación de estos hallazgos frente a la pregunta de investigación y la literatura se desarrolla en el capítulo de discusión.
