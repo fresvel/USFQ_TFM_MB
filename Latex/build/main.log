@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.27)  28 JUN 2026 22:06
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.27)  29 JUN 2026 00:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -923,13 +923,13 @@ Underfull \hbox (badness 1303) in paragraph at lines 9--9
 
 [17])
 
-[18]
+[18] (./secciones/02_cuerpo/02_revision_literatura.tex
 
-[19] (./secciones/02_cuerpo/02_revision_literatura.tex
-
-[20
+[19
 
 ]
+
+[20]
 
 [21]
 
@@ -947,47 +947,47 @@ Underfull \hbox (badness 1303) in paragraph at lines 9--9
 
 [28]
 
-[29]
+[29])
 
 [30]
 
-[31])
-
-[32]
-
-[33] (./secciones/02_cuerpo/03_metodologia_diseno.tex
+[31] (./secciones/02_cuerpo/03_metodologia_diseno.tex
 File: assets/figuras/metodologia/metodologia_general.png Graphic file (type bmp
 )
 <assets/figuras/metodologia/metodologia_general.png>
 
 
-[34
+[32
 
 ]
 
-[35]
+[33]
 File: assets/figuras/metodologia/dispositivo.png Graphic file (type bmp)
 <assets/figuras/metodologia/dispositivo.png>
 
 
-[36]
+[34]
 
-[37]
+[35]
 File: assets/figuras/metodologia/preconcentracion.png Graphic file (type bmp)
 <assets/figuras/metodologia/preconcentracion.png>
 
 
-[38]
+[36]
 File: assets/figuras/metodologia/extraccion_ARN.png Graphic file (type bmp)
 <assets/figuras/metodologia/extraccion_ARN.png>
+
+
+[37]
+
+[38]
+File: assets/figuras/metodologia/rt_qpcr.png Graphic file (type bmp)
+<assets/figuras/metodologia/rt_qpcr.png>
 
 
 [39]
 
 [40]
-File: assets/figuras/metodologia/rt_qpcr.png Graphic file (type bmp)
-<assets/figuras/metodologia/rt_qpcr.png>
-
 
 [41]
 
@@ -995,62 +995,58 @@ File: assets/figuras/metodologia/rt_qpcr.png Graphic file (type bmp)
 
 [43]
 
-[44]
+[44])
 
 [45]
 
-[46])
+[46] (./secciones/02_cuerpo/04_analisis_datos.tex
 
-[47]
-
-[48] (./secciones/02_cuerpo/04_analisis_datos.tex
-
-[49
+[47
 
 ])
 
-[50] (./secciones/02_cuerpo/05_conclusiones.tex)
+[48] (./secciones/02_cuerpo/05_conclusiones.tex)
 
-[51
+[49
 
 ]) (./secciones/03_finales/00_main.tex
 (./secciones/03_finales/01_referencias.tex (build/main.bbl
 
-[52
+[50
 
 ]
 
+[51]
+
+[52]
+
 [53]
 
-[54]
+[54]))
 
-[55]
-
-[56]))
-
-[57] (./secciones/03_finales/02_indice_anexos.tex (build/main.loa)
+[55] (./secciones/03_finales/02_indice_anexos.tex (build/main.loa)
 \tf@loa=\write6
 \openout6 = `main.loa'.
 
 )
 
-[58
+[56
 
 ] (./secciones/03_finales/03_anexos_i.tex
 Package hyperref Info: bookmark level for unknown usfqanexo defaults to 0 on in
 put line 3.
 
 
-[59
+[57
 
 
 ]
 
-[60
+[58
 
 ]))
 
-[61
+[59
 
 ] (build/main.aux)
  ***********
@@ -1071,4 +1067,4 @@ Here is how much of TeX's memory you used:
  1348 hyphenation exceptions out of 8191
  78i,13n,118p,1566b,1223s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on build/main.pdf (61 pages).
+Output written on build/main.pdf (59 pages).
