@@ -26,7 +26,7 @@ pol  = pd.read_csv(D/"poliovirus.csv")
 rsv  = pd.read_csv(D/"rsv.csv")
 lon  = pd.read_csv(D/"vigilancia_long.csv")
 
-# ---------- F1: mapa de calor temporal semana x virus ----------
+# ---------- F1: mapa de calor temporal semana x virus (dos paneles apilados) ----------
 virus_order = ["SARS-CoV-2","Poliovirus","RSV"]
 code = {s:i for i,s in enumerate(ORDER)}
 grid = np.zeros((3,56), dtype=int)  # default 0 = No analizado
@@ -34,17 +34,21 @@ for _,r in lon.iterrows():
     vi = virus_order.index(r["virus"]); wk=int(r["semana"])-1
     grid[vi,wk] = code.get(r["estado"], 1)
 cmap = ListedColormap([COL[s] for s in ORDER])
-fig,ax = plt.subplots(figsize=(12,2.7))
-ax.imshow(grid, aspect="auto", cmap=cmap, vmin=0, vmax=len(ORDER)-1,
-          extent=[0.5,56.5,2.5,-0.5], interpolation="nearest")
-ax.set_yticks([0,1,2]); ax.set_yticklabels(virus_order)
-ax.set_xticks(range(1,57,3)); ax.set_xticklabels(range(1,57,3))
-ax.set_xlabel("Semana de muestreo (sem. 1 = 14 abr 2025 … sem. 56 = 10 may 2026)")
-for x in np.arange(0.5,57,1): ax.axvline(x,color="white",lw=0.4)
-for y in [0.5,1.5]: ax.axhline(y,color="white",lw=2)
-ax.set_title("Estado de detección y secuenciación por virus y semana", fontsize=11, weight="bold")
+fig, axes = plt.subplots(2,1, figsize=(11,5.4))
+segments = [(1,28,"Semanas 1–28 (abr – oct 2025)"),
+            (29,56,"Semanas 29–56 (nov 2025 – may 2026)")]
+for ax,(w0,w1,lbl) in zip(axes, segments):
+    sub = grid[:, w0-1:w1]
+    ax.imshow(sub, aspect="auto", cmap=cmap, vmin=0, vmax=len(ORDER)-1,
+              extent=[w0-0.5, w1+0.5, 2.5, -0.5], interpolation="nearest")
+    ax.set_yticks([0,1,2]); ax.set_yticklabels(virus_order)
+    ax.set_xticks(range(w0, w1+1)); ax.set_xticklabels(range(w0,w1+1), fontsize=8)
+    for x in np.arange(w0-0.5, w1+1, 1): ax.axvline(x,color="white",lw=0.5)
+    for y in [0.5,1.5]: ax.axhline(y,color="white",lw=2)
+    ax.set_xlabel(lbl)
+axes[0].set_title("Estado de detección y secuenciación por virus y semana", fontsize=11, weight="bold")
 handles=[Patch(facecolor=COL[s],edgecolor="#888",label=s) for s in ORDER]
-ax.legend(handles=handles, bbox_to_anchor=(0.5,-0.38), loc="upper center",
+axes[1].legend(handles=handles, bbox_to_anchor=(0.5,-0.55), loc="upper center",
           ncol=3, frameon=False, fontsize=8)
 plt.tight_layout()
 fig.savefig(OUT/"f1_heatmap_temporal.pdf", bbox_inches="tight"); plt.close(fig)
