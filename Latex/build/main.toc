@@ -41,21 +41,21 @@
 \contentsline {subsection}{Detección molecular de SARS-CoV-2 por RT-qPCR}{38}{subsection*.44}%
 \contentsline {subsection}{Amplificación genómica multiplex de SARS-CoV-2}{39}{subsection*.46}%
 \contentsline {subsection}{Detección y amplificación de poliovirus por PCR anidada de VP1}{41}{subsection*.47}%
-\contentsline {subsection}{Detección y amplificación de RSV por PCR multiplex}{42}{subsection*.48}%
-\contentsline {subsection}{Electroforesis y criterios de selección para secuenciación}{42}{subsection*.49}%
-\contentsline {subsection}{Preparación de bibliotecas y secuenciación por nanoporos}{43}{subsection*.50}%
-\contentsline {subsection}{Procesamiento y análisis bioinformático}{45}{subsection*.51}%
-\contentsline {subsection}{Controles de calidad, controles experimentales e interpretación}{45}{subsection*.52}%
-\contentsline {subsection}{Consideraciones éticas y de bioseguridad}{46}{subsection*.53}%
-\contentsline {section}{ANÁLISIS DE DATOS}{47}{section*.54}%
-\contentsline {subsection}{Presentación de resultados}{47}{subsection*.55}%
-\contentsline {subsection}{Interpretación de resultados}{48}{subsection*.57}%
-\contentsline {section}{CONCLUSIONES}{49}{section*.58}%
-\contentsline {subsection}{Respuesta a la pregunta de investigación}{49}{subsection*.59}%
-\contentsline {subsection}{Limitaciones}{49}{subsection*.60}%
-\contentsline {subsection}{Importancia y recomendaciones}{49}{subsection*.61}%
-\contentsline {section}{REFERENCIAS}{50}{section*.62}%
-\contentsline {section}{ÍNDICE DE ANEXOS}{56}{section*.63}%
-\contentsline {section}{ANEXO A: \textcolor {USFQPlaceholderRed}{TÍTULO}}{57}{section*.64}%
-\contentsline {section}{ANEXO B: \textcolor {USFQPlaceholderRed}{TÍTULO}}{58}{section*.65}%
-\contentsline {section}{ANEXO C: \textcolor {USFQPlaceholderRed}{TÍTULO}}{59}{section*.66}%
+\contentsline {subsection}{Detección y amplificación de RSV por PCR multiplex}{42}{subsection*.49}%
+\contentsline {subsection}{Electroforesis y criterios de selección para secuenciación}{44}{subsection*.51}%
+\contentsline {subsection}{Preparación de bibliotecas y secuenciación por nanoporos}{44}{subsection*.52}%
+\contentsline {subsection}{Procesamiento y análisis bioinformático}{46}{subsection*.53}%
+\contentsline {subsection}{Controles de calidad, controles experimentales e interpretación}{46}{subsection*.54}%
+\contentsline {subsection}{Consideraciones éticas y de bioseguridad}{47}{subsection*.55}%
+\contentsline {section}{ANÁLISIS DE DATOS}{48}{section*.56}%
+\contentsline {subsection}{Presentación de resultados}{48}{subsection*.57}%
+\contentsline {subsection}{Interpretación de resultados}{49}{subsection*.59}%
+\contentsline {section}{CONCLUSIONES}{50}{section*.60}%
+\contentsline {subsection}{Respuesta a la pregunta de investigación}{50}{subsection*.61}%
+\contentsline {subsection}{Limitaciones}{50}{subsection*.62}%
+\contentsline {subsection}{Importancia y recomendaciones}{50}{subsection*.63}%
+\contentsline {section}{REFERENCIAS}{51}{section*.64}%
+\contentsline {section}{ÍNDICE DE ANEXOS}{57}{section*.65}%
+\contentsline {section}{ANEXO A: \textcolor {USFQPlaceholderRed}{TÍTULO}}{58}{section*.66}%
+\contentsline {section}{ANEXO B: \textcolor {USFQPlaceholderRed}{TÍTULO}}{59}{section*.67}%
+\contentsline {section}{ANEXO C: \textcolor {USFQPlaceholderRed}{TÍTULO}}{60}{section*.68}%

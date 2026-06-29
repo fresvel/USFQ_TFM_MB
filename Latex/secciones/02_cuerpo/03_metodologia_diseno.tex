@@ -178,11 +178,25 @@ Mantenimiento (hold) & 4~°C & $\infty$ & 1 \\
 
 La detección de poliovirus se realizó sobre las mismas muestras de aguas residuales, tras la preconcentración con PEG y la extracción de ARN descritas previamente. La caracterización molecular siguió el protocolo de detección directa de poliovirus por secuenciación Nanopore (DDNS), que amplifica la región VP1 mediante una PCR anidada \cite{Shaw_2020,Shaw_2022_protocol}. La región VP1 es la diana de referencia para diferenciar poliovirus Sabin-like, poliovirus salvaje y poliovirus derivados de vacuna, así como para establecer relaciones genéticas entre eventos de detección ambiental \cite{Asghar_2014,Zurbriggen_2008}.
 
-La primera ronda de la PCR anidada empleó cebadores pan-enterovirus dirigidos a las regiones 5'NTR y Cre, con el fin de amplificar de forma amplia el material de enterovirus presente en la muestra \cite{Arita_2015}. La segunda ronda amplificó específicamente la región VP1 mediante los cebadores Y7 \cite{Kilpatrick_2011} y Q8 \cite{Yang_1991}, que pueden incorporar códigos de barras para simplificar la preparación de bibliotecas \cite{Shaw_2020,Shaw_2022_protocol}. Los productos de cada ronda se evaluaron por electroforesis para confirmar la amplificación antes de avanzar a la secuenciación. Este enfoque molecular directo reduce los tiempos de confirmación frente a los flujos tradicionales de aislamiento viral y resulta adecuado para vigilancia ambiental con baja tasa de detección clínica \cite{Shaw_2022}.
+La primera ronda de la PCR anidada empleó cebadores pan-enterovirus dirigidos a las regiones 5'NTR y Cre, con el fin de amplificar de forma amplia el material de enterovirus presente en la muestra \cite{Arita_2015}. La segunda ronda amplificó específicamente la región VP1 mediante los cebadores Y7 \cite{Kilpatrick_2011} y Q8 \cite{Yang_1991}, que pueden incorporar códigos de barras para simplificar la preparación de bibliotecas \cite{Shaw_2020,Shaw_2022_protocol}. Los productos de cada ronda se evaluaron por electroforesis para confirmar la amplificación antes de avanzar a la secuenciación. Este enfoque molecular directo reduce los tiempos de confirmación frente a los flujos tradicionales de aislamiento viral y resulta adecuado para vigilancia ambiental con baja tasa de detección clínica \cite{Shaw_2022}. La Figura~\ref{fig:polio_flujo} resume el flujo aplicado a poliovirus, desde el procesamiento común de la muestra hasta la caracterización de la región VP1.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{metodologia/polio_flujo.pdf}
+  \caption{Flujo de trabajo para la detección y caracterización de poliovirus mediante PCR anidada de VP1 y secuenciación Nanopore (protocolo DDNS). En azul, las etapas compartidas con SARS-CoV-2 y RSV; en naranja, las etapas específicas de poliovirus.}
+  \label{fig:polio_flujo}
+\end{figure}
 
 \subsection{Detección y amplificación de RSV por PCR multiplex}
 
-La detección de RSV empleó una PCR multiplex con esquemas de cebadores tipo ARTIC orientados a la amplificación del genoma completo, en un procedimiento análogo al aplicado a SARS-CoV-2. Se utilizaron cebadores específicos para los dos subtipos del virus, RSV-A y RSV-B, distribuidos en pools de amplicones solapados que cubren la totalidad del genoma viral. La estrategia de amplicones solapados con secuenciación por nanoporos ha sido validada para genomas completos de RSV en muestras clínicas y ambientales, y permite recuperar información genómica de muestras con cargas variables \cite{Le_2025}. La inclusión de cebadores para RSV-A y RSV-B atiende la diversidad de subtipos y clados, que requiere referencias adecuadas para evitar la pérdida de lecturas durante el mapeo \cite{Le_2025}. Los productos de amplificación se evaluaron por electroforesis, y la intensidad de las bandas obtenidas determinó la selección de las muestras que se enviaron a secuenciación.
+La detección de RSV empleó una PCR multiplex con esquemas de cebadores tipo ARTIC orientados a la amplificación del genoma completo, en un procedimiento análogo al aplicado a SARS-CoV-2. Se utilizaron cebadores específicos para los dos subtipos del virus, RSV-A y RSV-B, distribuidos en pools de amplicones solapados que cubren la totalidad del genoma viral. La estrategia de amplicones solapados con secuenciación por nanoporos ha sido validada para genomas completos de RSV en muestras clínicas y ambientales, y permite recuperar información genómica de muestras con cargas variables \cite{Le_2025}. La inclusión de cebadores para RSV-A y RSV-B atiende la diversidad de subtipos y clados, que requiere referencias adecuadas para evitar la pérdida de lecturas durante el mapeo \cite{Le_2025}. Los productos de amplificación se evaluaron por electroforesis, y la intensidad de las bandas obtenidas determinó la selección de las muestras que se enviaron a secuenciación. La Figura~\ref{fig:rsv_flujo} resume el flujo aplicado a RSV.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{metodologia/rsv_flujo.pdf}
+  \caption{Flujo de trabajo para la detección y caracterización de RSV mediante PCR multiplex con cebadores ARTIC para RSV-A y RSV-B y secuenciación Nanopore. En azul, las etapas compartidas con SARS-CoV-2 y poliovirus; en verde, las etapas específicas de RSV.}
+  \label{fig:rsv_flujo}
+\end{figure}
 
 \subsection{Electroforesis y criterios de selección para secuenciación}
 

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.27)  29 JUN 2026 00:54
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.27)  29 JUN 2026 01:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -990,63 +990,71 @@ File: assets/figuras/metodologia/rt_qpcr.png Graphic file (type bmp)
 [40]
 
 [41]
+File: assets/figuras/metodologia/polio_flujo.pdf Graphic file (type pdf)
+<use assets/figuras/metodologia/polio_flujo.pdf>
+
 
 [42]
+File: assets/figuras/metodologia/rsv_flujo.pdf Graphic file (type pdf)
+<use assets/figuras/metodologia/rsv_flujo.pdf>
+
 
 [43]
 
-[44])
+[44]
 
 [45]
 
-[46] (./secciones/02_cuerpo/04_analisis_datos.tex
+[46])
 
-[47
+[47] (./secciones/02_cuerpo/04_analisis_datos.tex
+
+[48
 
 ])
 
-[48] (./secciones/02_cuerpo/05_conclusiones.tex)
+[49] (./secciones/02_cuerpo/05_conclusiones.tex)
 
-[49
+[50
 
 ]) (./secciones/03_finales/00_main.tex
 (./secciones/03_finales/01_referencias.tex (build/main.bbl
 
-[50
+[51
 
 ]
-
-[51]
 
 [52]
 
 [53]
 
-[54]))
+[54]
 
-[55] (./secciones/03_finales/02_indice_anexos.tex (build/main.loa)
+[55]))
+
+[56] (./secciones/03_finales/02_indice_anexos.tex (build/main.loa)
 \tf@loa=\write6
 \openout6 = `main.loa'.
 
 )
 
-[56
+[57
 
 ] (./secciones/03_finales/03_anexos_i.tex
 Package hyperref Info: bookmark level for unknown usfqanexo defaults to 0 on in
 put line 3.
 
 
-[57
+[58
 
 
 ]
 
-[58
+[59
 
 ]))
 
-[59
+[60
 
 ] (build/main.aux)
  ***********
@@ -1059,12 +1067,12 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 20937 strings out of 468457
- 418098 string characters out of 5445913
- 908139 words of memory out of 5000000
- 49058 multiletter control sequences out of 15000+600000
+ 20961 strings out of 468457
+ 419070 string characters out of 5445913
+ 909139 words of memory out of 5000000
+ 49080 multiletter control sequences out of 15000+600000
  644456 words of font info for 115 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  78i,13n,118p,1566b,1223s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on build/main.pdf (59 pages).
+Output written on build/main.pdf (60 pages).
