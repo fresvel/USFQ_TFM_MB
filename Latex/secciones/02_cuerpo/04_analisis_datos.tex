@@ -1,35 +1,112 @@
 \section{ANÁLISIS DE DATOS}
 
-\USFQNotaPlantilla{El análisis es la parte más compleja y detallada del trabajo. Es donde se presentan los aportes del autor al tema investigado. Esta sección debe desarrollarse una vez que los datos han sido recolectados, los que deben ser presentados de manera organizada, clara y detallada. Los análisis de los resultados se deben presentar de manera descriptiva narrativa y textual y pueden tener transcripciones, gráficos o tablas que los acompañen y complementen. Es importante resaltar que estas transcripciones, gráficos o tablas no deben reemplazar la descripción de los análisis. No se deben utilizar frases simples como: ``Los resultados se pueden ver en la Tabla 1''; se debe presentar siempre un análisis completo de manera textual. Esta sección puede estar dividida en subtítulos.}
-
 \subsection{Presentación de resultados}
 
-\USFQCampo{Describir los resultados principales de forma narrativa y analítica. Las tablas y figuras deben acompañar el análisis, no sustituirlo.}
+\subsubsection{Panorama general de muestras y secuenciación}
+
+El análisis molecular abarcó tres conjuntos de muestras de la PTAR Quitumbe. Para SARS-CoV-2 se procesaron 42 muestras semanales recolectadas entre las semanas 1 y 42 (14 de abril de 2025 al 1 de febrero de 2026). Para poliovirus y para RSV se analizaron 22 muestras cada uno, conformadas por 14 muestras prospectivas (semanas 43 a 56) y 8 muestras retrospectivas conservadas (semanas 17 a 20 y 34 a 37). El rendimiento de la secuenciación fue desigual entre los tres virus y entre los tipos de muestra (Tabla~\ref{tab:resumen_rendimiento}, Figura~\ref{fig:f3_rendimiento}).
+
+De las 42 muestras de SARS-CoV-2, 23 se sometieron a secuenciación y 6 permitieron asignar clado y linaje; las 17 restantes generaron secuencias sin caracterización por baja cobertura. En poliovirus, 2 de las 22 muestras produjeron secuencia caracterizable, ambas correspondientes a un enterovirus no polio. En RSV, 4 muestras se secuenciaron sin lograr la caracterización del subtipo. Las 16 muestras retrospectivas conservadas, repartidas entre poliovirus y RSV, no rindieron secuencia en ninguno de los dos métodos de preservación empleados.
 
 \begin{longtblr}[
-  caption={\USFQCampo{Título de la tabla, autodescriptivo e independiente del texto}},
-  label={tab:ejemplo_usfq}
+  caption={Resumen del esfuerzo y el rendimiento de la secuenciación por virus},
+  label={tab:resumen_rendimiento}
 ]{
   width=\textwidth,
-  colspec={X[1.1,l] X[1,l] X[1.4,l]},
+  colspec={X[1.3,l] X[1,c] X[1.1,c] X[1.2,c] X[1.2,c] X[1.2,c]},
 }
-\textbf{Variable} & \textbf{Resultado} & \textbf{Interpretación} \\
-\USFQCampo{Variable 1} & \USFQCampo{Resultado} & \USFQCampo{Interpretación del resultado} \\
-\USFQCampo{Variable 2} & \USFQCampo{Resultado} & \USFQCampo{Interpretación del resultado} \\
+\textbf{Virus} & \textbf{Muestras} & \textbf{Secuenc.} & \textbf{Con caracterización} & \textbf{Sin caracterización} & \textbf{No secuenc.} \\
+SARS-CoV-2 & 42 & 23 & 6 & 17 & 19 \\
+Poliovirus & 22 & 2 & 2\textsuperscript{*} & 0 & 20 \\
+RSV & 22 & 4 & 0 & 4 & 18 \\
+\end{longtblr}
+
+\noindent\footnotesize{\textsuperscript{*}Las dos muestras caracterizadas de poliovirus correspondieron a Coxsackie A, un enterovirus no polio.}\normalsize
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.62\textwidth]{resultados/f3_rendimiento.pdf}
+  \caption{Esfuerzo y rendimiento de la secuenciación por virus. Las barras muestran el número de muestras no secuenciadas, secuenciadas sin caracterización y secuenciadas con caracterización (Coxsackie A en el caso de poliovirus).}
+  \label{fig:f3_rendimiento}
+\end{figure}
+
+\subsubsection{Dinámica temporal de SARS-CoV-2}
+
+La caracterización genómica de SARS-CoV-2 se concentró en las semanas tempranas del muestreo. Las seis muestras con asignación de linaje correspondieron a las semanas 3 a 9 (28 de abril al 15 de junio de 2025) y revelaron una sucesión de linajes dentro de la familia Ómicron (Tabla~\ref{tab:linajes_sars}, Figura~\ref{fig:f2_linajes}). El clado 24A predominó entre las semanas 3 y 8, con los linajes JN.1, LZ.5 y LU.2.1.1, y en la semana 9 se identificó el clado 24H con el linaje LF.7.1.3. La detección de JN.1 en aguas residuales de Quito coincide con el antecedente local, que reportó este linaje en la PTAR Quitumbe antes de su identificación clínica \cite{MejiaCalle_2024}, y con la capacidad descrita de la secuenciación de aguas residuales para identificar variantes regionalmente prevalentes \cite{Crits_Christoph_2021}.
+
+\begin{longtblr}[
+  caption={Clados y linajes de SARS-CoV-2 identificados por semana de muestreo},
+  label={tab:linajes_sars}
+]{
+  width=0.8\textwidth,
+  colspec={X[1,c] X[1.3,c] X[1,c] X[1.2,c]},
+}
+\textbf{Semana} & \textbf{Inicio} & \textbf{Clado} & \textbf{Linaje} \\
+3 & 28/04/2025 & 24A & JN.1 \\
+5 & 12/05/2025 & 24A & LZ.5 \\
+6 & 19/05/2025 & 24A & JN.1 \\
+7 & 26/05/2025 & 24A & LZ.5 \\
+8 & 02/06/2025 & 24A & LU.2.1.1 \\
+9 & 09/06/2025 & 24H & LF.7.1.3 \\
 \end{longtblr}
 
 \begin{figure}[H]
   \centering
-  \fbox{%
-    \parbox[c][5cm][c]{0.82\textwidth}{%
-      \centering
-      \USFQCampo{Colocar la imagen en \texttt{assets/figuras/} y reemplazar este recuadro por \texttt{\textbackslash includegraphics}.}
-    }%
-  }
-  \caption{\USFQCampo{Título de la figura, autodescriptivo e independiente del texto}}
-  \label{fig:ejemplo_usfq}
+  \includegraphics[width=0.85\textwidth]{resultados/f2_linajes_sars.pdf}
+  \caption{Linajes de SARS-CoV-2 identificados en las muestras de aguas residuales de la PTAR Quitumbe entre las semanas 3 y 9. El color indica el clado de Nextstrain (24A y 24H).}
+  \label{fig:f2_linajes}
+\end{figure}
+
+A partir de la semana 10 se mantuvo el esfuerzo de secuenciación, pero las muestras dejaron de rendir caracterización: 17 muestras secuenciadas entre las semanas 10 y 32 generaron consenso con alto porcentaje de nucleótidos indeterminados, sin permitir la asignación de clado o linaje. Esta brecha entre la detección y la caracterización es coherente con la baja carga viral y la cobertura insuficiente descritas para muestras ambientales con valores de Cq tardíos \cite{MejiaCalle_2024,Parkins_2023}, y con la dificultad de recuperar genomas completos a partir de matrices dominadas por material no viral \cite{Child_2023}.
+
+\subsubsection{Poliovirus y enterovirus no polio}
+
+Ninguna de las 22 muestras analizadas para poliovirus rindió secuencia de poliovirus. Las dos muestras caracterizadas, correspondientes a las semanas 45 y 46 (febrero de 2026), se identificaron como Coxsackie A, un enterovirus no polio (Tabla~\ref{tab:polio_rsv_conservacion}). La ausencia de poliovirus concuerda con el contexto de un país que utiliza vacuna inactivada y sin circulación documentada del virus, condición en la que la detección ambiental de poliovirus es infrecuente y exige métodos sensibles \cite{Zurbriggen_2008,Asghar_2014}. La identificación de un enterovirus no polio confirma que el flujo de muestreo, concentración y amplificación recuperó material de enterovirus desde la matriz ambiental, en línea con el uso de las aguas residuales para la vigilancia de enterovirus no polio \cite{Bubba_2023}. Este hallazgo aporta valor a la vigilancia ambiental local, dado que la detección molecular directa permite reconocer circulación de enterovirus que la vigilancia clínica de parálisis flácida aguda no captura \cite{Asghar_2014,Bottcher_2025}.
+
+\subsubsection{Virus sincitial respiratorio}
+
+Para RSV, 4 de las 22 muestras se secuenciaron, todas prospectivas y correspondientes a las semanas 50, 52, 53 y 54 (marzo y abril de 2026). Ninguna permitió determinar el subtipo ni el clado (Tabla~\ref{tab:polio_rsv_conservacion}). El resultado es coherente con el requerimiento de carga viral elevada descrito para la recuperación de genomas completos de RSV, que alcanza cobertura alta en muestras con más de 10\,000 copias/mL \cite{Le_2025}. La detección de señal de RSV en aguas residuales, sin caracterización genómica, reproduce la asociación reportada entre el ARN de RSV en aguas residuales y la actividad respiratoria comunitaria, observada con técnicas de cuantificación más que de secuenciación \cite{Hughes_2022}.
+
+\begin{longtblr}[
+  caption={Muestras de poliovirus y RSV por tipo de muestra, método de conservación y desenlace},
+  label={tab:polio_rsv_conservacion}
+]{
+  width=\textwidth,
+  colspec={X[1,l] X[1.2,l] X[1.3,l] X[0.7,c] X[0.9,c] X[1.5,l]},
+}
+\textbf{Virus} & \textbf{Tipo} & \textbf{Conservación} & \textbf{n} & \textbf{Secuenc.} & \textbf{Desenlace} \\
+Poliovirus & Prospectiva & Fresca & 14 & 2 & Coxsackie A (sem. 45 y 46) \\
+Poliovirus & Retrospectiva & Shield 2X & 4 & 0 & Sin secuencia \\
+Poliovirus & Retrospectiva & ARN −20~°C & 4 & 0 & Sin secuencia \\
+RSV & Prospectiva & Fresca & 14 & 4 & Sin caracterización (sem. 50, 52--54) \\
+RSV & Retrospectiva & Shield 2X & 4 & 0 & Sin secuencia \\
+RSV & Retrospectiva & ARN −20~°C & 4 & 0 & Sin secuencia \\
+\end{longtblr}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{resultados/f4_conservacion.pdf}
+  \caption{Muestras de poliovirus y RSV según el método de conservación. Las muestras prospectivas frescas concentraron la totalidad de las secuenciaciones; las muestras retrospectivas conservadas en Shield 2X y en ARN a −20~°C no rindieron secuencia.}
+  \label{fig:f4_conservacion}
+\end{figure}
+
+\subsubsection{Comparación temporal entre virus}
+
+La distribución temporal de los resultados muestra ventanas de análisis con escaso solapamiento entre los tres virus (Figura~\ref{fig:f1_heatmap}). La caracterización de SARS-CoV-2 se concentró entre las semanas 3 y 9 de 2025, seguida de un periodo extenso de secuenciación sin caracterización hasta la semana 32. SARS-CoV-2 no se analizó entre las semanas 43 y 56, periodo en el que el flujo de trabajo se orientó a poliovirus y RSV. El análisis de poliovirus y RSV se ubicó en el tramo prospectivo de 2026 y en las semanas retrospectivas de agosto y diciembre de 2025. Los hallazgos caracterizables se distribuyeron en momentos distintos: los linajes de SARS-CoV-2 en el otoño austral de 2025, el enterovirus no polio en febrero de 2026 y la señal de RSV entre marzo y abril de 2026. Esta separación temporal limita la comparación directa de co-circulación entre los tres virus y restringe la lectura conjunta a la cobertura y el estado de detección por semana.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{resultados/f1_heatmap_temporal.pdf}
+  \caption{Estado de detección y secuenciación de SARS-CoV-2, poliovirus y RSV por semana de muestreo. Cada celda indica si el virus no se analizó, no se secuenció, se secuenció sin caracterización o se caracterizó (linaje en SARS-CoV-2, Coxsackie A en poliovirus).}
+  \label{fig:f1_heatmap}
 \end{figure}
 
 \subsection{Interpretación de resultados}
 
-\USFQCampo{Relacionar los hallazgos con la pregunta de investigación, la metodología y la literatura revisada.}
+Los resultados responden de forma parcial a la pregunta de investigación. La evidencia molecular y genómica fue recuperable para SARS-CoV-2 en las semanas con mayor carga viral, donde la secuenciación Oxford Nanopore permitió asignar linajes de Ómicron y reconstruir su sucesión temporal. Para poliovirus, la evidencia molecular confirmó la presencia de enterovirus en la matriz, sin detección de poliovirus, y para RSV se obtuvo señal de secuenciación sin caracterización genómica. Este patrón cumple el objetivo de caracterizar las señales virales cuando la calidad de los datos lo permite y delimita el alcance del análisis multipatógeno en una matriz ambiental compleja.
+
+La limitación principal fue la baja carga viral recuperada y su efecto sobre la cobertura de secuenciación. La brecha entre detección y caracterización observada en SARS-CoV-2 desde la semana 10, y la ausencia de caracterización en RSV, concuerdan con la relación descrita entre carga viral, valores de Cq y rendimiento genómico en aguas residuales \cite{MejiaCalle_2024,Parkins_2023}. El requerimiento de carga elevada para recuperar genomas completos de RSV explica la falta de caracterización pese a la detección de señal \cite{Le_2025}. La elección de métodos dirigidos por amplicones, frente a la metagenómica, favoreció la recuperación de virus específicos, aunque permaneció condicionada por la abundancia relativa del blanco en la muestra \cite{Child_2023}.
+
+El desempeño de las muestras retrospectivas constituye un hallazgo metodológico. Las 16 muestras conservadas en Shield 2X y en ARN a −20~°C no rindieron secuencia en poliovirus ni en RSV, lo que sugiere degradación o carga insuficiente durante el almacenamiento y limita el uso de estos esquemas de conservación para análisis genómico diferido. Este resultado coincide con la sensibilidad del rendimiento a la integridad del ARN y a la eficiencia de recuperación señalada para el muestreo pasivo \cite{MejiaCalle_2024}.
+
+La detección de Coxsackie A en ausencia de poliovirus aporta una lectura positiva sobre la utilidad del esquema. El flujo recuperó y caracterizó un enterovirus no polio desde aguas residuales, lo que respalda la vigilancia ambiental de enterovirus como complemento de la vigilancia clínica, en especial donde la circulación de poliovirus es nula o silenciosa \cite{Bubba_2023,Asghar_2014}. La evidencia local sostiene la factibilidad de un esquema multipatógeno en la PTAR Quitumbe y, al mismo tiempo, identifica la carga viral y la conservación de muestras como los factores que condicionan la caracterización genómica en este tipo de vigilancia.

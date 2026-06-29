@@ -1,0 +1,115 @@
+"""Genera las figuras del capitulo de analisis a partir de los datasets CSV.
+Uso: python generar_figuras.py  (desde la raiz del repo)"""
+import matplotlib; matplotlib.use("Agg")
+import numpy as np, pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+from matplotlib.colors import ListedColormap
+from matplotlib.patches import Patch
+from pathlib import Path
+
+sns.set_theme(style="whitegrid", font_scale=0.95)
+D = Path("Latex/assets/datos")
+OUT = Path("Latex/assets/figuras/resultados"); OUT.mkdir(parents=True, exist_ok=True)
+
+COL = {
+    "No analizado":               "#e6e6e6",
+    "No secuenciado":             "#9ecae1",
+    "Secuenciado: no determinado":"#fdae6b",
+    "Secuenciado: determinado":   "#74c476",
+    "Secuenciado: Coxsackie A":   "#9e9ac8",
+}
+ORDER = list(COL.keys())
+
+sars = pd.read_csv(D/"sars_cov2.csv")
+pol  = pd.read_csv(D/"poliovirus.csv")
+rsv  = pd.read_csv(D/"rsv.csv")
+lon  = pd.read_csv(D/"vigilancia_long.csv")
+
+# ---------- F1: mapa de calor temporal semana x virus ----------
+virus_order = ["SARS-CoV-2","Poliovirus","RSV"]
+code = {s:i for i,s in enumerate(ORDER)}
+grid = np.zeros((3,56), dtype=int)  # default 0 = No analizado
+for _,r in lon.iterrows():
+    vi = virus_order.index(r["virus"]); wk=int(r["semana"])-1
+    grid[vi,wk] = code.get(r["estado"], 1)
+cmap = ListedColormap([COL[s] for s in ORDER])
+fig,ax = plt.subplots(figsize=(12,2.7))
+ax.imshow(grid, aspect="auto", cmap=cmap, vmin=0, vmax=len(ORDER)-1,
+          extent=[0.5,56.5,2.5,-0.5], interpolation="nearest")
+ax.set_yticks([0,1,2]); ax.set_yticklabels(virus_order)
+ax.set_xticks(range(1,57,3)); ax.set_xticklabels(range(1,57,3))
+ax.set_xlabel("Semana de muestreo (sem. 1 = 14 abr 2025 … sem. 56 = 10 may 2026)")
+for x in np.arange(0.5,57,1): ax.axvline(x,color="white",lw=0.4)
+for y in [0.5,1.5]: ax.axhline(y,color="white",lw=2)
+ax.set_title("Estado de detección y secuenciación por virus y semana", fontsize=11, weight="bold")
+handles=[Patch(facecolor=COL[s],edgecolor="#888",label=s) for s in ORDER]
+ax.legend(handles=handles, bbox_to_anchor=(0.5,-0.38), loc="upper center",
+          ncol=3, frameon=False, fontsize=8)
+plt.tight_layout()
+fig.savefig(OUT/"f1_heatmap_temporal.pdf", bbox_inches="tight"); plt.close(fig)
+
+# ---------- F2: linea de tiempo de linajes SARS-CoV-2 ----------
+det = sars[sars.estado=="determinado"].copy().sort_values("semana")
+cladecol = {"24A":"#3182bd","24H":"#de2d26"}
+fig,ax = plt.subplots(figsize=(7.5,3.3))
+ax.plot(det.semana, range(len(det)), color="#bbbbbb", lw=1.2, zorder=1)
+for i,(_,r) in enumerate(det.iterrows()):
+    ax.scatter(r.semana, i, s=180, color=cladecol.get(r.clado,"#666"), zorder=3, edgecolor="k", lw=0.5)
+    ax.text(r.semana+0.25, i, f"  {r.linaje}", va="center", ha="left", fontsize=10)
+ax.set_yticks(range(len(det))); ax.set_yticklabels([f"Sem. {w}" for w in det.semana])
+ax.set_xlim(2, 11); ax.set_xlabel("Semana de muestreo (abr – jun 2025)")
+ax.set_title("Linajes de SARS-CoV-2 identificados en aguas residuales", fontsize=11, weight="bold")
+handles=[Patch(facecolor=c,edgecolor="k",label=f"Clado {k}") for k,c in cladecol.items()]
+ax.legend(handles=handles, loc="lower right", frameon=True, fontsize=9)
+plt.tight_layout(); fig.savefig(OUT/"f2_linajes_sars.pdf", bbox_inches="tight"); plt.close(fig)
+
+# ---------- F3: esfuerzo y rendimiento de secuenciacion por virus ----------
+def counts(df, col):
+    return df[col].value_counts()
+rows=[]
+for v,df,col in [("SARS-CoV-2",sars,"estado"),("Poliovirus",pol,"hallazgo"),("RSV",rsv,"hallazgo")]:
+    n=len(df)
+    no_seq=(~df.secuenciado).sum()
+    if v=="SARS-CoV-2":
+        det_n=(df.estado=="determinado").sum(); nod=(df.estado=="no_determinado").sum(); cox=0
+    else:
+        det_n=0; nod=(df.hallazgo=="no_determinado").sum(); cox=df.hallazgo.str.contains("Coxsackie").sum()
+    rows.append(dict(virus=v, **{"No secuenciado":no_seq,"Secuenciado: no determinado":nod,
+                                 "Secuenciado: determinado":det_n,"Secuenciado: Coxsackie A":cox}))
+eff=pd.DataFrame(rows).set_index("virus")[["No secuenciado","Secuenciado: no determinado","Secuenciado: determinado","Secuenciado: Coxsackie A"]]
+fig,ax=plt.subplots(figsize=(6.5,4))
+bottom=np.zeros(len(eff))
+for s in eff.columns:
+    ax.bar(eff.index, eff[s], bottom=bottom, color=COL[s], label=s, edgecolor="white", lw=0.6)
+    for i,val in enumerate(eff[s]):
+        if val>0: ax.text(i, bottom[i]+val/2, int(val), ha="center", va="center", fontsize=9)
+    bottom+=eff[s].values
+ax.set_ylabel("Número de muestras"); ax.set_title("Esfuerzo y rendimiento de la secuenciación por virus", fontsize=11, weight="bold")
+ax.legend(bbox_to_anchor=(0.5,-0.12), loc="upper center", ncol=2, frameon=False, fontsize=8)
+plt.tight_layout(); fig.savefig(OUT/"f3_rendimiento.pdf", bbox_inches="tight"); plt.close(fig)
+
+# ---------- F4: polio/RSV por conservacion y desenlace ----------
+pr = pd.concat([pol.assign(grupo="Poliovirus"), rsv.assign(grupo="RSV")])
+cons_lbl={"fresca":"Fresca\n(prospectiva)","shield_2x":"Shield 2X\n(retrospectiva)","arn_-20C":"ARN −20 °C\n(retrospectiva)"}
+pr["cons"]=pr.conservacion.map(cons_lbl)
+pr["estado_simple"]=np.where(pr.secuenciado,"Secuenciada","No secuenciada")
+order_c=[cons_lbl["fresca"],cons_lbl["shield_2x"],cons_lbl["arn_-20C"]]
+fig,axes=plt.subplots(1,2,figsize=(9,3.8),sharey=True)
+for ax,(g,sub) in zip(axes, pr.groupby("grupo")):
+    tab=sub.groupby(["cons","estado_simple"]).size().unstack(fill_value=0).reindex(order_c)
+    for col_,c in [("No secuenciada","#9ecae1"),("Secuenciada","#74c476")]:
+        if col_ not in tab: tab[col_]=0
+    bottom=np.zeros(len(tab))
+    for col_,c in [("No secuenciada","#9ecae1"),("Secuenciada","#74c476")]:
+        ax.bar(tab.index, tab[col_], bottom=bottom, color=c, label=col_, edgecolor="white")
+        bottom+=tab[col_].values
+    ax.set_title(g, fontsize=11, weight="bold"); ax.set_xlabel("")
+    ax.tick_params(axis="x", labelsize=8)
+axes[0].set_ylabel("Número de muestras")
+axes[1].legend(loc="upper right", fontsize=8, frameon=True)
+fig.suptitle("Muestras de poliovirus y RSV por método de conservación", fontsize=11, weight="bold", y=1.02)
+plt.tight_layout(); fig.savefig(OUT/"f4_conservacion.pdf", bbox_inches="tight"); plt.close(fig)
+
+print("Figuras generadas en", OUT.resolve())
+for f in sorted(OUT.glob("*.pdf")): print(" -", f.name, f.stat().st_size,"B")

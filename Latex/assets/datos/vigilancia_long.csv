@@ -1,0 +1,87 @@
+virus,semana,fecha_inicio,tipo_muestra,conservacion,secuenciado,estado,resultado_raw
+Poliovirus,43,2026-02-02,prospectiva,fresca,False,No secuenciado,
+Poliovirus,44,2026-02-09,prospectiva,fresca,False,No secuenciado,
+Poliovirus,45,2026-02-16,prospectiva,fresca,True,Secuenciado: Coxsackie A,Coxsackie A
+Poliovirus,46,2026-02-23,prospectiva,fresca,True,Secuenciado: Coxsackie A,Coxsackie A
+Poliovirus,47,2026-03-02,prospectiva,fresca,False,No secuenciado,
+Poliovirus,48,2026-03-09,prospectiva,fresca,False,No secuenciado,
+Poliovirus,49,2026-03-16,prospectiva,fresca,False,No secuenciado,
+Poliovirus,50,2026-03-23,prospectiva,fresca,False,No secuenciado,
+Poliovirus,51,2026-03-30,prospectiva,fresca,False,No secuenciado,
+Poliovirus,52,2026-04-06,prospectiva,fresca,False,No secuenciado,
+Poliovirus,53,2026-04-13,prospectiva,fresca,False,No secuenciado,
+Poliovirus,54,2026-04-20,prospectiva,fresca,False,No secuenciado,
+Poliovirus,55,2026-04-27,prospectiva,fresca,False,No secuenciado,
+Poliovirus,56,2026-05-04,prospectiva,fresca,False,No secuenciado,
+Poliovirus,17,2025-08-04,retrospectiva,shield_2x,False,No secuenciado,
+Poliovirus,18,2025-08-11,retrospectiva,shield_2x,False,No secuenciado,
+Poliovirus,19,2025-08-18,retrospectiva,shield_2x,False,No secuenciado,
+Poliovirus,20,2025-08-25,retrospectiva,shield_2x,False,No secuenciado,
+Poliovirus,34,2025-12-01,retrospectiva,arn_-20C,False,No secuenciado,
+Poliovirus,35,2025-12-08,retrospectiva,arn_-20C,False,No secuenciado,
+Poliovirus,36,2025-12-15,retrospectiva,arn_-20C,False,No secuenciado,
+Poliovirus,37,2025-12-22,retrospectiva,arn_-20C,False,No secuenciado,
+RSV,43,2026-02-02,prospectiva,fresca,False,No secuenciado,
+RSV,44,2026-02-09,prospectiva,fresca,False,No secuenciado,
+RSV,45,2026-02-16,prospectiva,fresca,False,No secuenciado,
+RSV,46,2026-02-23,prospectiva,fresca,False,No secuenciado,
+RSV,47,2026-03-02,prospectiva,fresca,False,No secuenciado,
+RSV,48,2026-03-09,prospectiva,fresca,False,No secuenciado,
+RSV,49,2026-03-16,prospectiva,fresca,False,No secuenciado,
+RSV,50,2026-03-23,prospectiva,fresca,True,Secuenciado: no determinado,No se logra determinar
+RSV,51,2026-03-30,prospectiva,fresca,False,No secuenciado,
+RSV,52,2026-04-06,prospectiva,fresca,True,Secuenciado: no determinado,No se logra determinar
+RSV,53,2026-04-13,prospectiva,fresca,True,Secuenciado: no determinado,No se logra determinar
+RSV,54,2026-04-20,prospectiva,fresca,True,Secuenciado: no determinado,No se logra determinar
+RSV,55,2026-04-27,prospectiva,fresca,False,No secuenciado,
+RSV,56,2026-05-04,prospectiva,fresca,False,No secuenciado,
+RSV,17,2025-08-04,retrospectiva,shield_2x,False,No secuenciado,
+RSV,18,2025-08-11,retrospectiva,shield_2x,False,No secuenciado,
+RSV,19,2025-08-18,retrospectiva,shield_2x,False,No secuenciado,
+RSV,20,2025-08-25,retrospectiva,shield_2x,False,No secuenciado,
+RSV,34,2025-12-01,retrospectiva,arn_-20C,False,No secuenciado,
+RSV,35,2025-12-08,retrospectiva,arn_-20C,False,No secuenciado,
+RSV,36,2025-12-15,retrospectiva,arn_-20C,False,No secuenciado,
+RSV,37,2025-12-22,retrospectiva,arn_-20C,False,No secuenciado,
+SARS-CoV-2,1,2025-04-14,prospectiva,fresca,False,No secuenciado,
+SARS-CoV-2,2,2025-04-21,prospectiva,fresca,False,No secuenciado,
+SARS-CoV-2,3,2025-04-28,prospectiva,fresca,True,Secuenciado: determinado,Clado 24A; linaje JN.1
+SARS-CoV-2,4,2025-05-05,prospectiva,fresca,False,No secuenciado,
+SARS-CoV-2,5,2025-05-12,prospectiva,fresca,True,Secuenciado: determinado,Clado 24A; linaje LZ.5
+SARS-CoV-2,6,2025-05-19,prospectiva,fresca,True,Secuenciado: determinado,Clado 24A; linaje JN.1
+SARS-CoV-2,7,2025-05-26,prospectiva,fresca,True,Secuenciado: determinado,Clado 24A; linaje LZ.5
+SARS-CoV-2,8,2025-06-02,prospectiva,fresca,True,Secuenciado: determinado,Clado 24A; linaje LU.2.1.1
+SARS-CoV-2,9,2025-06-09,prospectiva,fresca,True,Secuenciado: determinado,Clado 24H; Linaje LF.7.1.3
+SARS-CoV-2,10,2025-06-16,prospectiva,fresca,True,Secuenciado: no determinado,No se logra determinar
+SARS-CoV-2,11,2025-06-23,prospectiva,fresca,True,Secuenciado: no determinado,No se logra determinar
+SARS-CoV-2,12,2025-06-30,prospectiva,fresca,True,Secuenciado: no determinado,No se logra determinar
+SARS-CoV-2,13,2025-07-07,prospectiva,fresca,True,Secuenciado: no determinado,No se logra determinar
+SARS-CoV-2,14,2025-07-14,prospectiva,fresca,True,Secuenciado: no determinado,No se logra determinar
+SARS-CoV-2,15,2025-07-21,prospectiva,fresca,True,Secuenciado: no determinado,No se logra determinar
+SARS-CoV-2,16,2025-07-28,prospectiva,fresca,True,Secuenciado: no determinado,No se logra determinar
+SARS-CoV-2,17,2025-08-04,prospectiva,fresca,True,Secuenciado: no determinado,No se logra determinar
+SARS-CoV-2,18,2025-08-11,prospectiva,fresca,False,No secuenciado,
+SARS-CoV-2,19,2025-08-18,prospectiva,fresca,False,No secuenciado,
+SARS-CoV-2,20,2025-08-25,prospectiva,fresca,False,No secuenciado,
+SARS-CoV-2,21,2025-09-01,prospectiva,fresca,True,Secuenciado: no determinado,No se logra determinar
+SARS-CoV-2,22,2025-09-08,prospectiva,fresca,False,No secuenciado,
+SARS-CoV-2,23,2025-09-15,prospectiva,fresca,True,Secuenciado: no determinado,No se logra determinar
+SARS-CoV-2,24,2025-09-22,prospectiva,fresca,True,Secuenciado: no determinado,No se logra determinar
+SARS-CoV-2,25,2025-09-29,prospectiva,fresca,True,Secuenciado: no determinado,No se logra determinar
+SARS-CoV-2,26,2025-10-06,prospectiva,fresca,False,No secuenciado,
+SARS-CoV-2,27,2025-10-13,prospectiva,fresca,False,No secuenciado,
+SARS-CoV-2,28,2025-10-20,prospectiva,fresca,True,Secuenciado: no determinado,No se logra determinar
+SARS-CoV-2,29,2025-10-27,prospectiva,fresca,True,Secuenciado: no determinado,No se logra determinar
+SARS-CoV-2,30,2025-11-03,prospectiva,fresca,True,Secuenciado: no determinado,No se logra determinar
+SARS-CoV-2,31,2025-11-10,prospectiva,fresca,True,Secuenciado: no determinado,No se logra determinar
+SARS-CoV-2,32,2025-11-17,prospectiva,fresca,True,Secuenciado: no determinado,No se logra determinar
+SARS-CoV-2,33,2025-11-24,prospectiva,fresca,False,No secuenciado,
+SARS-CoV-2,34,2025-12-01,prospectiva,fresca,False,No secuenciado,
+SARS-CoV-2,35,2025-12-08,prospectiva,fresca,False,No secuenciado,
+SARS-CoV-2,36,2025-12-15,prospectiva,fresca,False,No secuenciado,
+SARS-CoV-2,37,2025-12-22,prospectiva,fresca,False,No secuenciado,
+SARS-CoV-2,38,2025-12-29,prospectiva,fresca,False,No secuenciado,
+SARS-CoV-2,39,2026-01-05,prospectiva,fresca,False,No secuenciado,
+SARS-CoV-2,40,2026-01-12,prospectiva,fresca,False,No secuenciado,
+SARS-CoV-2,41,2026-01-19,prospectiva,fresca,False,No secuenciado,
+SARS-CoV-2,42,2026-01-26,prospectiva,fresca,False,No secuenciado,

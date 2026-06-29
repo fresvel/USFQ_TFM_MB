@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.27)  29 JUN 2026 01:14
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.27)  29 JUN 2026 02:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -900,36 +900,36 @@ Underfull \hbox (badness 1303) in paragraph at lines 9--9
 
 [11
 
-] (./secciones/01_preliminares/11_indice_figuras.tex (build/main.lof)
+] (./secciones/01_preliminares/11_indice_figuras.tex (build/main.lof
+
+[12
+
+])
 \tf@lof=\write5
 \openout5 = `main.lof'.
 
 )
 
-[12
-
-]) (./secciones/02_cuerpo/00_main.tex
+[13]) (./secciones/02_cuerpo/00_main.tex
 (./secciones/02_cuerpo/01_introduccion.tex
 
-[13
+[14
 
 ]
-
-[14]
 
 [15]
 
 [16]
 
-[17])
+[17]
 
-[18] (./secciones/02_cuerpo/02_revision_literatura.tex
+[18])
 
-[19
+[19] (./secciones/02_cuerpo/02_revision_literatura.tex
+
+[20
 
 ]
-
-[20]
 
 [21]
 
@@ -947,114 +947,138 @@ Underfull \hbox (badness 1303) in paragraph at lines 9--9
 
 [28]
 
-[29])
+[29]
 
-[30]
+[30])
 
-[31] (./secciones/02_cuerpo/03_metodologia_diseno.tex
+[31]
+
+[32] (./secciones/02_cuerpo/03_metodologia_diseno.tex
 File: assets/figuras/metodologia/metodologia_general.png Graphic file (type bmp
 )
 <assets/figuras/metodologia/metodologia_general.png>
 
 
-[32
+[33
 
 ]
 
-[33]
+[34]
 File: assets/figuras/metodologia/dispositivo.png Graphic file (type bmp)
 <assets/figuras/metodologia/dispositivo.png>
 
 
-[34]
-
 [35]
+
+[36]
 File: assets/figuras/metodologia/preconcentracion.png Graphic file (type bmp)
 <assets/figuras/metodologia/preconcentracion.png>
 
 
-[36]
+[37]
 File: assets/figuras/metodologia/extraccion_ARN.png Graphic file (type bmp)
 <assets/figuras/metodologia/extraccion_ARN.png>
 
 
-[37]
-
 [38]
+
+[39]
 File: assets/figuras/metodologia/rt_qpcr.png Graphic file (type bmp)
 <assets/figuras/metodologia/rt_qpcr.png>
 
 
-[39]
-
 [40]
 
 [41]
+
+[42]
 File: assets/figuras/metodologia/polio_flujo.pdf Graphic file (type pdf)
 <use assets/figuras/metodologia/polio_flujo.pdf>
 
 
-[42]
+[43]
 File: assets/figuras/metodologia/rsv_flujo.pdf Graphic file (type pdf)
 <use assets/figuras/metodologia/rsv_flujo.pdf>
 
-
-[43]
 
 [44]
 
 [45]
 
-[46])
+[46]
 
-[47] (./secciones/02_cuerpo/04_analisis_datos.tex
+[47])
 
-[48
+[48] (./secciones/02_cuerpo/04_analisis_datos.tex
+File: assets/figuras/resultados/f3_rendimiento.pdf Graphic file (type pdf)
+<use assets/figuras/resultados/f3_rendimiento.pdf>
 
-])
 
-[49] (./secciones/02_cuerpo/05_conclusiones.tex)
+[49
 
-[50
+]
+
+[50]
+File: assets/figuras/resultados/f2_linajes_sars.pdf Graphic file (type pdf)
+<use assets/figuras/resultados/f2_linajes_sars.pdf>
+
+
+[51]
+
+[52]
+File: assets/figuras/resultados/f4_conservacion.pdf Graphic file (type pdf)
+<use assets/figuras/resultados/f4_conservacion.pdf>
+File: assets/figuras/resultados/f1_heatmap_temporal.pdf Graphic file (type pdf)
+
+<use assets/figuras/resultados/f1_heatmap_temporal.pdf>
+
+
+[53]
+
+[54])
+
+[55] (./secciones/02_cuerpo/05_conclusiones.tex)
+
+[56
 
 ]) (./secciones/03_finales/00_main.tex
 (./secciones/03_finales/01_referencias.tex (build/main.bbl
 
-[51
+[57
 
 ]
 
-[52]
+[58]
 
-[53]
+[59]
 
-[54]
+[60]
 
-[55]))
+[61]))
 
-[56] (./secciones/03_finales/02_indice_anexos.tex (build/main.loa)
+[62] (./secciones/03_finales/02_indice_anexos.tex (build/main.loa)
 \tf@loa=\write6
 \openout6 = `main.loa'.
 
 )
 
-[57
+[63
 
 ] (./secciones/03_finales/03_anexos_i.tex
 Package hyperref Info: bookmark level for unknown usfqanexo defaults to 0 on in
 put line 3.
 
 
-[58
+[64
 
 
 ]
 
-[59
+[65
 
 ]))
 
-[60
+[66
 
 ] (build/main.aux)
  ***********
@@ -1067,12 +1091,12 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 20961 strings out of 468457
- 419070 string characters out of 5445913
- 909139 words of memory out of 5000000
- 49080 multiletter control sequences out of 15000+600000
- 644456 words of font info for 115 fonts, out of 8000000 for 9000
+ 21307 strings out of 468457
+ 427733 string characters out of 5445913
+ 918534 words of memory out of 5000000
+ 49416 multiletter control sequences out of 15000+600000
+ 649327 words of font info for 132 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 78i,13n,118p,1566b,1223s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 78i,13n,118p,1566b,1487s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on build/main.pdf (60 pages).
+Output written on build/main.pdf (66 pages).
