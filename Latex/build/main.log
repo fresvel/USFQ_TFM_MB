@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.27)  29 JUN 2026 14:42
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.27)  29 JUN 2026 19:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1009,92 +1009,96 @@ File: assets/figuras/metodologia/rsv_flujo.pdf Graphic file (type pdf)
 
 [47])
 
-[48] (./secciones/02_cuerpo/04_analisis_datos.tex
+[48]
+
+[49] (./secciones/02_cuerpo/04_analisis_datos.tex
 File: assets/figuras/resultados/f3_rendimiento.pdf Graphic file (type pdf)
 <use assets/figuras/resultados/f3_rendimiento.pdf>
 
 
-[49
+[50
 
 ]
 
-[50]
+[51]
 File: assets/figuras/resultados/f5_cq_sars.pdf Graphic file (type pdf)
 <use assets/figuras/resultados/f5_cq_sars.pdf>
 
 
-[51]
+[52]
 File: assets/figuras/resultados/f2_linajes_sars.pdf Graphic file (type pdf)
 <use assets/figuras/resultados/f2_linajes_sars.pdf>
 
 
-[52]
-
 [53]
+
+[54]
 File: assets/figuras/resultados/f4_conservacion.pdf Graphic file (type pdf)
 <use assets/figuras/resultados/f4_conservacion.pdf>
 
 
-[54]
+[55]
 File: assets/figuras/resultados/f1_heatmap_temporal.pdf Graphic file (type pdf)
 
 <use assets/figuras/resultados/f1_heatmap_temporal.pdf>
 )
 
-[55] (./secciones/02_cuerpo/05_discusion.tex
+[56] (./secciones/02_cuerpo/05_discusion.tex
 
-[56
+[57
 
 ]
 
-[57]
+[58]
 
-[58])
+[59])
 
-[59] (./secciones/02_cuerpo/06_conclusiones.tex
+[60] (./secciones/02_cuerpo/06_conclusiones.tex
 
-[60
+[61
 
 ])
 
-[61]) (./secciones/03_finales/00_main.tex
+[62]) (./secciones/03_finales/00_main.tex
 (./secciones/03_finales/01_referencias.tex (build/main.bbl
 
-[62
+[63
 
 ]
-
-[63]
 
 [64]
 
 [65]
 
-[66]))
+[66]
 
-[67] (./secciones/03_finales/02_indice_anexos.tex (build/main.loa)
+[67]
+
+[68]))
+
+[69] (./secciones/03_finales/02_indice_anexos.tex (build/main.loa)
 \tf@loa=\write6
 \openout6 = `main.loa'.
 
 )
 
-[68
+[70
 
 ] (./secciones/03_finales/03_anexos_i.tex
 Package hyperref Info: bookmark level for unknown usfqanexo defaults to 0 on in
 put line 3.
 
 
-[69
+[71
 
 
 ]
 
-[70
+[72
 
 ]))
 
-[71
+[73
 
 ] (build/main.aux)
  ***********
@@ -1107,12 +1111,12 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 21343 strings out of 468457
- 428638 string characters out of 5445913
- 910160 words of memory out of 5000000
- 49448 multiletter control sequences out of 15000+600000
+ 21361 strings out of 468457
+ 428866 string characters out of 5445913
+ 912874 words of memory out of 5000000
+ 49466 multiletter control sequences out of 15000+600000
  650486 words of font info for 135 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  78i,13n,118p,1918b,1487s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on build/main.pdf (71 pages).
+Output written on build/main.pdf (73 pages).

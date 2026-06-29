@@ -145,6 +145,42 @@ Asghar, H.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Barb{\'e}%
+\ \protect \BOthers {.}}{%
+Barb{\'e}%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2022}}%
+}]{%
+Barbe_2022}
+\APACinsertmetastar {%
+Barbe_2022}%
+\begin{APACrefauthors}%
+Barb{\'e}, L.%
+, Schaeffer, J.%
+, Besnard, A.%
+, Jousse, S.%
+, Wurtzer, S.%
+, Moulin, L.%
+\BDBL {}Desdouits, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2022}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{SARS-CoV-2} whole-genome sequencing using {Oxford
+  Nanopore} technology for variant monitoring in wastewaters} {{SARS-CoV-2}
+  whole-genome sequencing using {Oxford Nanopore} technology for variant
+  monitoring in wastewaters}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Frontiers in Microbiology}{13}{}{889811}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.3389/fmicb.2022.889811}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.3389/fmicb.2022.889811} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Bottcher%
 \ \protect \BOthers {.}}{%
 Bottcher%
@@ -383,6 +419,43 @@ Dash, H\BPBI R.%
   Analysis} {Next generation sequencing ({NGS}) technology in {DNA} analysis}.
 \newblock
 \APACaddressPublisher{London, United Kingdom}{Academic Press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Falman%
+, Fagnant-Sperati%
+, Kossik%
+, Boyle%
+\BCBL {}\ \BBA {} Meschke%
+}{%
+Falman%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2019}}%
+}]{%
+Falman_2019}
+\APACinsertmetastar {%
+Falman_2019}%
+\begin{APACrefauthors}%
+Falman, J\BPBI C.%
+, Fagnant-Sperati, C\BPBI S.%
+, Kossik, A\BPBI L.%
+, Boyle, D\BPBI S.%
+\BCBL {}\ \BBA {} Meschke, J\BPBI S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Evaluation of secondary concentration methods for
+  poliovirus detection in wastewater} {Evaluation of secondary concentration
+  methods for poliovirus detection in wastewater}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Food and Environmental Virology}{11}{1}{20--31}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1007/s12560-018-09364-y}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1007/s12560-018-09364-y} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -670,6 +743,40 @@ Le, D\BPBI B.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Lu%
+, Wang%
+, Sakthivel%
+\BCBL {}\ \protect \BOthers {.}}{%
+Lu%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+Lu_2020}
+\APACinsertmetastar {%
+Lu_2020}%
+\begin{APACrefauthors}%
+Lu, X.%
+, Wang, L.%
+, Sakthivel, S\BPBI K.%
+\BCBL {}\ \BOthersPeriod {.}\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{US CDC} real-time reverse transcription {PCR} panel for
+  detection of severe acute respiratory syndrome coronavirus 2} {{US CDC}
+  real-time reverse transcription {PCR} panel for detection of severe acute
+  respiratory syndrome coronavirus 2}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Emerging Infectious Diseases}{26}{8}{1654--1665}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.3201/eid2608.201246}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.3201/eid2608.201246} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Mart{\'i}n%
 }{%
 Mart{\'i}n%
@@ -875,6 +982,42 @@ NEB_2021}%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+O'Brien%
+\ \protect \BOthers {.}}{%
+O'Brien%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2021}}%
+}]{%
+OBrien_2021}
+\APACinsertmetastar {%
+OBrien_2021}%
+\begin{APACrefauthors}%
+O'Brien, M.%
+, Rundell, Z\BPBI C.%
+, Nemec, M\BPBI D.%
+, Langan, L\BPBI M.%
+, Back, J\BPBI A.%
+\BCBL {}\ \BBA {} Lugo, J\BPBI N.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A comparison of four commercially available {RNA}
+  extraction kits for wastewater surveillance of {SARS-CoV-2} in a college
+  population} {A comparison of four commercially available {RNA} extraction
+  kits for wastewater surveillance of {SARS-CoV-2} in a college
+  population}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Science of The Total Environment}{801}{}{149595}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1016/j.scitotenv.2021.149595}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.scitotenv.2021.149595} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 {Oxford Nanopore Technologies}%
 }{%
 {Oxford Nanopore Technologies}%
@@ -1002,6 +1145,40 @@ Sangsanont, J.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1016/j.scitotenv.2021.151169} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Schang%
+, Crosbie%
+, McCarthy%
+\BCBL {}\ \protect \BOthers {.}}{%
+Schang%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2021}}%
+}]{%
+Schang_2021}
+\APACinsertmetastar {%
+Schang_2021}%
+\begin{APACrefauthors}%
+Schang, C.%
+, Crosbie, N\BPBI D.%
+, McCarthy, D\BPBI T.%
+\BCBL {}\ \BOthersPeriod {.}\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Passive sampling of {SARS-CoV-2} for wastewater
+  surveillance} {Passive sampling of {SARS-CoV-2} for wastewater
+  surveillance}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Environmental Science \&
+  Technology}{55}{15}{10432--10441}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1021/acs.est.1c01530}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1021/acs.est.1c01530} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1150,6 +1327,29 @@ Sims, N.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1016/j.envint.2020.105689} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{World Health Organization}%
+}{%
+{World Health Organization}%
+}{%
+{\protect \APACyear {2020}}%
+}]{%
+WHO_2020}
+\APACinsertmetastar {%
+WHO_2020}%
+\begin{APACrefauthors}%
+{World Health Organization}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2020}.
+\newblock
+\APACrefbtitle {Laboratory Biosafety Manual} {Laboratory biosafety manual}\
+  (\PrintOrdinal{4th}\ \BEd).
+\newblock
+\APACaddressPublisher{Geneva}{World Health Organization}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
