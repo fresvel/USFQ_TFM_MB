@@ -1390,6 +1390,42 @@ Yang, C\BHBI F.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Yousif%
+\ \protect \BOthers {.}}{%
+Yousif%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2023}}%
+}]{%
+Yousif_2023}
+\APACinsertmetastar {%
+Yousif_2023}%
+\begin{APACrefauthors}%
+Yousif, M.%
+, Rachida, S.%
+, Taukobong, S.%
+, Ndlovu, N.%
+, Iwu-Jaja, C.%
+, Howard, W.%
+\BDBL {}McCarthy, K.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{SARS-CoV-2} genomic surveillance in wastewater as a
+  model for monitoring evolution of endemic viruses} {{SARS-CoV-2} genomic
+  surveillance in wastewater as a model for monitoring evolution of endemic
+  viruses}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Nature Communications}{14}{}{6325}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1038/s41467-023-41369-5}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1038/s41467-023-41369-5} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Zambrana%
 \ \protect \BOthers {.}}{%
 Zambrana%
