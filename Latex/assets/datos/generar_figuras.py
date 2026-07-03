@@ -133,7 +133,7 @@ for gene, marker, lbl in [("N1","o","Gen N1 (HEX)"),("N2","s","Gen N2 (FAM)")]:
 ax.invert_yaxis()  # Cq bajo = más arriba (mayor carga)
 ax.set_xlabel("Semana de muestreo (2025)"); ax.set_ylabel("Valor de Cq")
 ax.set_title("Valores de Cq de SARS-CoV-2 por semana (genes N1 y N2)", fontsize=11, weight="bold")
-ax.set_xticks(range(2,33,2))
+ax.set_xticks(range(2,39,2))
 from matplotlib.lines import Line2D
 leg1 = ax.legend(loc="upper right", fontsize=8, frameon=True, title="Marcador")
 ax.add_artist(leg1)
