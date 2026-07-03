@@ -12,7 +12,7 @@ fi
 mkdir -p "$BUILD_DIR" "$OUT_DIR"
 rm -f "$BUILD_DIR"/main.{aux,bbl,blg,loa,lof,log,lot,out,toc}
 
-docker run --rm -u "$(id -u)":"$(id -g)" -v "$(pwd)":/workdir -w /workdir "$IMAGE" \
+docker run --rm -e TZ=America/Guayaquil -u "$(id -u)":"$(id -g)" -v "$(pwd)":/workdir -w /workdir "$IMAGE" \
   bash -lc "xelatex -interaction=nonstopmode -halt-on-error -output-directory=$BUILD_DIR main.tex && \
   bibtex $BUILD_DIR/main && \
   xelatex -interaction=nonstopmode -halt-on-error -output-directory=$BUILD_DIR main.tex && \
