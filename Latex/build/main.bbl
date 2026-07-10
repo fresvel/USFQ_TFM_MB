@@ -846,9 +846,9 @@ Medema, G.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Mejia~Calle%
+Mej{\'i}a~Calle%
 }{%
-Mejia~Calle%
+Mej{\'i}a~Calle%
 }{%
 {\protect \APACyear {2024}}%
 }]{%
@@ -856,7 +856,7 @@ MejiaCalle_2024}
 \APACinsertmetastar {%
 MejiaCalle_2024}%
 \begin{APACrefauthors}%
-Mejia~Calle, P\BPBI E.%
+Mej{\'i}a~Calle, P\BPBI E.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
