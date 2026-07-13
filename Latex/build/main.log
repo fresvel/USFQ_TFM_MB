@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.27)  12 JUL 2026 22:47
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.27)  12 JUL 2026 23:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -938,126 +938,126 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 [27]
 
-[28])
+[28]
 
-[29] (./secciones/02_cuerpo/03_metodologia_diseno.tex
+[29])
+
+[30] (./secciones/02_cuerpo/03_metodologia_diseno.tex
 File: assets/figuras/metodologia/metodologia_general.png Graphic file (type bmp
 )
 <assets/figuras/metodologia/metodologia_general.png>
 
 
-[30
+[31
 
 ]
 
-[31]
+[32]
 File: assets/figuras/metodologia/dispositivo.png Graphic file (type bmp)
 <assets/figuras/metodologia/dispositivo.png>
 
 
-[32]
-
 [33]
+
+[34]
 File: assets/figuras/metodologia/preconcentracion.png Graphic file (type bmp)
 <assets/figuras/metodologia/preconcentracion.png>
 
 
-[34]
+[35]
 File: assets/figuras/metodologia/extraccion_ARN.png Graphic file (type bmp)
 <assets/figuras/metodologia/extraccion_ARN.png>
 
 
-[35]
-
 [36]
+
+[37]
 File: assets/figuras/metodologia/rt_qpcr.png Graphic file (type bmp)
 <assets/figuras/metodologia/rt_qpcr.png>
 
-
-[37]
 
 [38]
 
 [39]
 
 [40]
+
+[41]
 File: assets/figuras/metodologia/polio_flujo.pdf Graphic file (type pdf)
 <use assets/figuras/metodologia/polio_flujo.pdf>
 
 
-[41]
-
 [42]
+
+[43]
 File: assets/figuras/metodologia/rsv_flujo.pdf Graphic file (type pdf)
 <use assets/figuras/metodologia/rsv_flujo.pdf>
 
 
-[43]
-
 [44]
 
-[45])
+[45]
 
-[46]
+[46])
 
-[47] (./secciones/02_cuerpo/04_analisis_datos.tex
+[47]
+
+[48] (./secciones/02_cuerpo/04_analisis_datos.tex
 File: assets/figuras/resultados/f3_rendimiento.pdf Graphic file (type pdf)
 <use assets/figuras/resultados/f3_rendimiento.pdf>
 
 
-[48
+[49
 
 ]
 
-[49]
+[50]
 File: assets/figuras/resultados/f5_cq_sars.pdf Graphic file (type pdf)
 <use assets/figuras/resultados/f5_cq_sars.pdf>
 
 
-[50]
+[51]
 File: assets/figuras/resultados/f2_linajes_sars.pdf Graphic file (type pdf)
 <use assets/figuras/resultados/f2_linajes_sars.pdf>
 
 
-[51]
-
 [52]
+
+[53]
 File: assets/figuras/resultados/f4_conservacion.pdf Graphic file (type pdf)
 <use assets/figuras/resultados/f4_conservacion.pdf>
 
 
-[53]
+[54]
 File: assets/figuras/resultados/f1_heatmap_temporal.pdf Graphic file (type pdf)
 
 <use assets/figuras/resultados/f1_heatmap_temporal.pdf>
 
 
-[54])
+[55])
 
-[55] (./secciones/02_cuerpo/05_discusion.tex
+[56] (./secciones/02_cuerpo/05_discusion.tex
 
-[56
+[57
 
 ]
 
-[57]
+[58]
 
-[58])
+[59])
 
-[59] (./secciones/02_cuerpo/06_conclusiones.tex
+[60] (./secciones/02_cuerpo/06_conclusiones.tex
 
-[60
+[61
 
 ])
 
-[61]) (./secciones/03_finales/00_main.tex
+[62]) (./secciones/03_finales/00_main.tex
 (./secciones/03_finales/01_referencias.tex (build/main.bbl
 
-[62
+[63
 
 ]
-
-[63]
 
 [64]
 
@@ -1065,31 +1065,33 @@ File: assets/figuras/resultados/f1_heatmap_temporal.pdf Graphic file (type pdf)
 
 [66]
 
-[67]))
+[67]
 
-[68] (./secciones/03_finales/02_indice_anexos.tex (build/main.loa)
+[68]))
+
+[69] (./secciones/03_finales/02_indice_anexos.tex (build/main.loa)
 \tf@loa=\write6
 \openout6 = `main.loa'.
 
 )
 
-[69
+[70
 
 ] (./secciones/03_finales/03_anexos_i.tex
 Package hyperref Info: bookmark level for unknown usfqanexo defaults to 0 on in
 put line 3.
 
 
-[70
+[71
 
 
 ]
 
-[71
+[72
 
 ]))
 
-[72
+[73
 
 ] (build/main.aux)
  ***********
@@ -1106,4 +1108,4 @@ Here is how much of TeX's memory you used:
  1348 hyphenation exceptions out of 8191
  78i,13n,118p,1792b,1279s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on build/main.pdf (72 pages).
+Output written on build/main.pdf (73 pages).
