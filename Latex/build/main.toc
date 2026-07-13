@@ -46,7 +46,7 @@
 \contentsline {section}{RESULTADOS}{48}{section*.52}%
 \contentsline {subsection}{Cuantificación molecular por RT-qPCR}{49}{subsection*.54}%
 \contentsline {subsection}{Dinámica temporal de SARS-CoV-2}{50}{subsection*.56}%
-\contentsline {subsection}{Poliovirus y enterovirus de interés clínico}{52}{subsection*.58}%
+\contentsline {subsection}{Enterovirus y Poliovirus}{52}{subsection*.58}%
 \contentsline {subsection}{Virus sincitial respiratorio}{52}{subsection*.59}%
 \contentsline {subsection}{Comparación temporal entre virus}{54}{subsection*.61}%
 \contentsline {subsection}{Síntesis de los resultados}{55}{subsection*.63}%
