@@ -16,6 +16,7 @@ docker run --rm -e TZ=America/Guayaquil -u "$(id -u)":"$(id -g)" -v "$(pwd)":/wo
   bash -lc "xelatex -interaction=nonstopmode -halt-on-error -output-directory=$BUILD_DIR main.tex && \
   bibtex $BUILD_DIR/main && \
   xelatex -interaction=nonstopmode -halt-on-error -output-directory=$BUILD_DIR main.tex && \
+  xelatex -interaction=nonstopmode -halt-on-error -output-directory=$BUILD_DIR main.tex && \
   xelatex -interaction=nonstopmode -halt-on-error -output-directory=$BUILD_DIR main.tex"
 
 cp "$BUILD_DIR/main.pdf" "$OUT_DIR/main.pdf"

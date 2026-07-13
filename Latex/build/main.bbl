@@ -744,9 +744,7 @@ Le, D\BPBI B.%
 
 \bibitem [\protect \citeauthoryear {%
 Lu%
-, Wang%
-, Sakthivel%
-\BCBL {}\ \protect \BOthers {.}}{%
+\ \protect \BOthers {.}}{%
 Lu%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2020}}%
@@ -758,7 +756,11 @@ Lu_2020}%
 Lu, X.%
 , Wang, L.%
 , Sakthivel, S\BPBI K.%
-\BCBL {}\ \BOthersPeriod {.}\end{APACrefauthors}%
+, Whitaker, B.%
+, Murray, J.%
+, Kamili, S.%
+\BDBL {}Lindstrom, S.%
+\end{APACrefauthors}%
 \unskip\
 \newblock
 \APACrefYearMonthDay{2020}{}{}.
@@ -1149,9 +1151,7 @@ Sangsanont, J.%
 
 \bibitem [\protect \citeauthoryear {%
 Schang%
-, Crosbie%
-, McCarthy%
-\BCBL {}\ \protect \BOthers {.}}{%
+\ \protect \BOthers {.}}{%
 Schang%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2021}}%
@@ -1162,8 +1162,12 @@ Schang_2021}%
 \begin{APACrefauthors}%
 Schang, C.%
 , Crosbie, N\BPBI D.%
-, McCarthy, D\BPBI T.%
-\BCBL {}\ \BOthersPeriod {.}\end{APACrefauthors}%
+, Nolan, M.%
+, Poon, R.%
+, Wang, M.%
+, Jex, A.%
+\BDBL {}McCarthy, D\BPBI T.%
+\end{APACrefauthors}%
 \unskip\
 \newblock
 \APACrefYearMonthDay{2021}{}{}.
