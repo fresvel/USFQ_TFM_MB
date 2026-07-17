@@ -31,7 +31,7 @@
         <mxCell id="b7" value="&lt;b&gt;7. Bibliotecas y secuenciación Nanopore&lt;/b&gt;&lt;br&gt;Native Barcoding Kit (Oxford Nanopore)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;verticalAlign=middle;" parent="1" vertex="1">
           <mxGeometry x="40" y="640" width="320" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="b8" value="&lt;b&gt;8. Análisis bioinformático&lt;/b&gt;&lt;br&gt;EPI2ME: subgrupo (RSV-A / RSV-B)&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;verticalAlign=middle;" parent="1" vertex="1">
+        <mxCell id="b8" value="&lt;b&gt;8. Análisis bioinformático&lt;/b&gt;&lt;br&gt;RSVTyper: subtipo (RSV-A / RSV-B) y clados" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;verticalAlign=middle;" parent="1" vertex="1">
           <mxGeometry x="40" y="740" width="320" height="60" as="geometry" />
         </mxCell>
         <mxCell id="n5" value="Le et al. (2025)" style="text;html=1;align=left;fontSize=11;fontStyle=2;fontColor=#666666;" parent="1" vertex="1">
