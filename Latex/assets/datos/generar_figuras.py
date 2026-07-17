@@ -27,7 +27,8 @@ rsv  = pd.read_csv(D/"rsv.csv")
 lon  = pd.read_csv(D/"vigilancia_long.csv")
 
 # ---------- F1: mapa de calor temporal semana x virus (dos paneles apilados) ----------
-virus_order = ["SARS-CoV-2","Poliovirus","RSV"]
+virus_order = ["SARS-CoV-2","Poliovirus","RSV"]   # claves de vigilancia_long.csv: no tocar
+virus_lbl   = ["SARS-CoV-2","Enterovirus","RSV"]  # etiquetas mostradas en el eje
 code = {s:i for i,s in enumerate(ORDER)}
 grid = np.zeros((3,56), dtype=int)  # default 0 = No analizado
 for _,r in lon.iterrows():
@@ -41,7 +42,7 @@ for ax,(w0,w1,lbl) in zip(axes, segments):
     sub = grid[:, w0-1:w1]
     ax.imshow(sub, aspect="auto", cmap=cmap, vmin=0, vmax=len(ORDER)-1,
               extent=[w0-0.5, w1+0.5, 2.5, -0.5], interpolation="nearest")
-    ax.set_yticks([0,1,2]); ax.set_yticklabels(virus_order)
+    ax.set_yticks([0,1,2]); ax.set_yticklabels(virus_lbl)
     ax.set_xticks(range(w0, w1+1)); ax.set_xticklabels(range(w0,w1+1), fontsize=8)
     for x in np.arange(w0-0.5, w1+1, 1): ax.axvline(x,color="white",lw=0.5)
     for y in [0.5,1.5]: ax.axhline(y,color="white",lw=2)
@@ -72,7 +73,7 @@ plt.tight_layout(); fig.savefig(OUT/"f2_linajes_sars.pdf", bbox_inches="tight");
 def counts(df, col):
     return df[col].value_counts()
 rows=[]
-for v,df,col in [("SARS-CoV-2",sars,"estado"),("Poliovirus",pol,"hallazgo"),("RSV",rsv,"hallazgo")]:
+for v,df,col in [("SARS-CoV-2",sars,"estado"),("Enterovirus",pol,"hallazgo"),("RSV",rsv,"hallazgo")]:
     n=len(df)
     no_seq=(~df.secuenciado).sum()
     if v=="SARS-CoV-2":
@@ -94,7 +95,7 @@ ax.legend(bbox_to_anchor=(0.5,-0.12), loc="upper center", ncol=2, frameon=False,
 plt.tight_layout(); fig.savefig(OUT/"f3_rendimiento.pdf", bbox_inches="tight"); plt.close(fig)
 
 # ---------- F4: polio/RSV por conservacion y desenlace ----------
-pr = pd.concat([pol.assign(grupo="Poliovirus"), rsv.assign(grupo="RSV")])
+pr = pd.concat([pol.assign(grupo="Enterovirus"), rsv.assign(grupo="RSV")])
 cons_lbl={"fresca":"Fresca\n(prospectiva)","shield_2x":"Shield 2X\n(retrospectiva)","arn_-20C":"ARN −20 °C\n(retrospectiva)"}
 pr["cons"]=pr.conservacion.map(cons_lbl)
 pr["estado_simple"]=np.where(pr.secuenciado,"Secuenciada","No secuenciada")
@@ -112,7 +113,7 @@ for ax,(g,sub) in zip(axes, pr.groupby("grupo")):
     ax.tick_params(axis="x", labelsize=8)
 axes[0].set_ylabel("Número de muestras")
 axes[1].legend(loc="upper right", fontsize=8, frameon=True)
-fig.suptitle("Muestras de poliovirus y RSV por método de conservación", fontsize=11, weight="bold", y=1.02)
+fig.suptitle("Muestras de enterovirus y RSV por método de conservación", fontsize=11, weight="bold", y=1.02)
 plt.tight_layout(); fig.savefig(OUT/"f4_conservacion.pdf", bbox_inches="tight"); plt.close(fig)
 
 print("Figuras generadas en", OUT.resolve())

@@ -1,8 +1,8 @@
 \section{RESULTADOS}
 
-El análisis molecular abarcó tres conjuntos de muestras de la PTAR Quitumbe. Para SARS-CoV-2 se procesaron 42 muestras semanales recolectadas entre las semanas 1 y 42 (14 de abril de 2025 al 1 de febrero de 2026). Para poliovirus y para RSV se analizaron 22 muestras cada uno, conformadas por 14 muestras prospectivas (semanas 43 a 56) y 8 muestras retrospectivas conservadas (semanas 17 a 20 y 34 a 37). El rendimiento de la secuenciación fue desigual entre los tres virus y entre los tipos de muestra (Tabla~\ref{tab:resumen_rendimiento}, Figura~\ref{fig:f3_rendimiento}).
+El análisis molecular abarcó tres conjuntos de muestras de la PTAR Quitumbe. Para SARS-CoV-2 se procesaron 42 muestras semanales recolectadas entre las semanas 1 y 42 (14 de abril de 2025 al 1 de febrero de 2026). Para enterovirus y para RSV se analizaron 22 muestras cada uno, conformadas por 14 muestras prospectivas (semanas 43 a 56) y 8 muestras retrospectivas conservadas (semanas 17 a 20 y 34 a 37). El rendimiento de la secuenciación fue desigual entre los tres virus y entre los tipos de muestra (Tabla~\ref{tab:resumen_rendimiento}, Figura~\ref{fig:f3_rendimiento}).
 
-De las 42 muestras de SARS-CoV-2, 23 se sometieron a secuenciación y 6 permitieron asignar clado y linaje; las 17 restantes generaron secuencias sin caracterización por baja cobertura. En poliovirus, 2 de las 22 muestras produjeron secuencia caracterizable, ambas correspondientes a un enterovirus de interés clínico. En RSV, 4 muestras se secuenciaron sin lograr la caracterización del subgrupo. Las 16 muestras retrospectivas conservadas, repartidas entre poliovirus y RSV, no rindieron secuencia en ninguno de los dos métodos de preservación empleados.
+De las 42 muestras de SARS-CoV-2, 23 se sometieron a secuenciación y 6 permitieron asignar clado y linaje; las 17 restantes generaron secuencias sin caracterización por baja cobertura. En enterovirus, 2 de las 22 muestras produjeron secuencia caracterizable, ambas correspondientes a Coxsackie A; ninguna correspondió a poliovirus. En RSV, 4 muestras se secuenciaron sin lograr la caracterización del subgrupo. Las 16 muestras retrospectivas conservadas, repartidas entre enterovirus y RSV, no rindieron secuencia en ninguno de los dos métodos de preservación empleados.
 
 \begin{longtblr}[
   caption={Resumen del esfuerzo y el rendimiento de la secuenciación por virus},
@@ -17,7 +17,7 @@ Enterovirus & 22 & 2 & 2\textsuperscript{*} & 0 & 20 \\
 RSV & 22 & 4 & 0 & 4 & 18 \\
 \end{longtblr}
 
-\noindent\footnotesize{\textsuperscript{*}Las dos muestras caracterizadas de poliovirus correspondieron a Coxsackie A, un enterovirus de interés clínico.}\normalsize
+\noindent\footnotesize{\textsuperscript{*}Las dos muestras caracterizadas correspondieron a Coxsackie A, un enterovirus de interés clínico; no se detectó poliovirus.}\normalsize
 
 \begin{figure}[H]
   \centering
@@ -92,16 +92,16 @@ Dentro de este género, ninguna de las 22 muestras analizadas rindió secuencia 
 Para RSV, 4 de las 22 muestras se secuenciaron, todas prospectivas y correspondientes a las semanas 50, 52, 53 y 54 (marzo y abril de 2026). El análisis bioinformático con EPI2ME no encontró alineamiento con la referencia de RSV disponible en la plataforma, por lo que ninguna permitió determinar el subgrupo ni el clado (Tabla~\ref{tab:polio_rsv_conservacion}). El resultado es coherente con el requerimiento de carga viral elevada descrito para la recuperación de genomas completos de RSV, que alcanza una alta cobertura en muestras con más de 10\,000 copias/mL \cite{Le_2025}. La detección de la señal de RSV en aguas residuales, sin caracterización genómica, reproduce la asociación reportada entre el ARN de RSV en aguas residuales y la actividad respiratoria comunitaria, observada con técnicas de cuantificación más que con técnicas de secuenciación \cite{Hughes_2022}.
 
 \begin{longtblr}[
-  caption={Muestras de poliovirus y RSV por tipo de muestra, método de conservación y desenlace},
+  caption={Muestras de enterovirus y RSV por tipo de muestra, método de conservación y desenlace},
   label={tab:polio_rsv_conservacion}
 ]{
   width=\textwidth,
   colspec={X[1,l] X[1.2,l] X[1.3,l] X[0.7,c] X[0.9,c] X[1.5,l]},
 }
 \textbf{Virus} & \textbf{Tipo} & \textbf{Conservación} & \textbf{n} & \textbf{Secuenc.} & \textbf{Desenlace} \\
-Poliovirus & Prospectiva & Fresca & 14 & 2 & Coxsackie A (sem. 45 y 46) \\
-Poliovirus & Retrospectiva & Shield 2X & 4 & 0 & Sin secuencia \\
-Poliovirus & Retrospectiva & ARN −20~°C & 4 & 0 & Sin secuencia \\
+Enterovirus & Prospectiva & Fresca & 14 & 2 & Coxsackie A (sem. 45 y 46) \\
+Enterovirus & Retrospectiva & Shield 2X & 4 & 0 & Sin secuencia \\
+Enterovirus & Retrospectiva & ARN −20~°C & 4 & 0 & Sin secuencia \\
 RSV & Prospectiva & Fresca & 14 & 4 & Sin caracterización (sem. 50, 52--54) \\
 RSV & Retrospectiva & Shield 2X & 4 & 0 & Sin secuencia \\
 RSV & Retrospectiva & ARN −20~°C & 4 & 0 & Sin secuencia \\
@@ -110,7 +110,7 @@ RSV & Retrospectiva & ARN −20~°C & 4 & 0 & Sin secuencia \\
 \begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{resultados/f4_conservacion.pdf}
-  \caption{Muestras de poliovirus y RSV según el método de conservación. Las muestras prospectivas frescas concentraron la totalidad de las secuenciaciones; las muestras retrospectivas conservadas en Shield 2X y en ARN a −20~°C no rindieron secuencia.}
+  \caption{Muestras de enterovirus y RSV según el método de conservación. Las muestras prospectivas frescas concentraron la totalidad de las secuenciaciones; las muestras retrospectivas conservadas en Shield 2X y en ARN a −20~°C no rindieron secuencia.}
   \label{fig:f4_conservacion}
 \end{figure}
 
@@ -121,7 +121,7 @@ La distribución temporal de los resultados muestra ventanas de análisis con es
 \begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{resultados/f1_heatmap_temporal.pdf}
-  \caption{Estado de detección y secuenciación de SARS-CoV-2, poliovirus y RSV por semana de muestreo. El panel superior abarca las semanas 1 a 28 y el inferior las semanas 29 a 56. Cada celda indica si el virus no se analizó, no se secuenció, se secuenció sin caracterización o se caracterizó (linaje en SARS-CoV-2, Coxsackie A en poliovirus).}
+  \caption{Estado de detección y secuenciación de SARS-CoV-2, enterovirus y RSV por semana de muestreo. El panel superior abarca las semanas 1 a 28 y el inferior las semanas 29 a 56. Cada celda indica si el virus no se analizó, no se secuenció, se secuenció sin caracterización o se caracterizó (linaje en SARS-CoV-2, Coxsackie A en enterovirus).}
   \label{fig:f1_heatmap}
 \end{figure}
 
