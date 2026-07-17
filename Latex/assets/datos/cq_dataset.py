@@ -25,6 +25,8 @@ raw = [
  (28,6,37.34,'NA'),(29,6,36.37,37.28),(30,6,37.01,'NA'),(31,6,'NA','NA'),(32,6,36.37,39.46),
  # Analisis 7 (semanas 33-38) -- sin secuenciacion posterior (sin bandas visibles)
  (33,7,'NA',44.3),(34,7,38.96,'NA'),(35,7,39.21,'NA'),(36,7,40.49,40.13),(37,7,38.63,40.33),(38,7,38.53,'NA'),
+ # Analisis 8 (semanas 39-42) -- WW039-WW042; control + valido (Cy5 13.42, FAM 20.36, HEX 20.38), NTC sin amplificacion
+ (39,8,34.37,34.08),(40,8,38.07,'NA'),(41,8,36.42,38.63),(42,8,37.5,39.87),
 ]
 df = pd.DataFrame(raw, columns=["semana","prueba","N1_HEX","N2_FAM"])
 df.to_csv(OUT/"cq_crudo.csv", index=False)

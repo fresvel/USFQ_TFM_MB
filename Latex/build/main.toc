@@ -46,7 +46,7 @@
 \contentsline {subsection}{Cuantificación molecular por RT-qPCR}{51}{subsection*.53}%
 \contentsline {subsection}{Dinámica temporal de SARS-CoV-2}{52}{subsection*.55}%
 \contentsline {subsection}{\textit {Enterovirus}}{54}{subsection*.57}%
-\contentsline {subsection}{Virus sincitial respiratorio}{54}{subsection*.58}%
+\contentsline {subsection}{Virus sincitial respiratorio}{55}{subsection*.58}%
 \contentsline {subsection}{Comparación temporal entre virus}{56}{subsection*.60}%
 \contentsline {subsection}{Síntesis de los resultados}{57}{subsection*.62}%
 \contentsline {section}{DISCUSIÓN}{58}{section*.63}%
