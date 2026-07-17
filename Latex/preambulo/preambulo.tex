@@ -54,7 +54,7 @@
 
 \definecolor{USFQPlaceholderRed}{HTML}{FF0000}
 \colorlet{USFQPLACEHOLDERRED}{USFQPlaceholderRed}
-\definecolor{USFQTableHead}{HTML}{D9D9D9}
+\definecolor{USFQTableHead}{HTML}{F2F2F2}
 \definecolor{USFQLink}{HTML}{1F4E79}
 
 
@@ -206,9 +206,10 @@
 \SetTblrInner[tblr,longtblr]{%
   hlines={0.4pt,black},
   vlines={0.4pt,black},
-  rowsep=3pt,
-  colsep=5pt,
-  row{1}={font=\bfseries,bg=USFQTableHead},
+  rowsep=1pt,
+  colsep=3pt,
+  cells={font=\footnotesize},
+  row{1}={font=\bfseries\footnotesize,bg=USFQTableHead},
   rowhead=1
 }
 \SetTblrStyle{caption}{font=\normalsize}
