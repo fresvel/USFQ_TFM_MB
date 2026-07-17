@@ -96,10 +96,10 @@ plt.tight_layout(); fig.savefig(OUT/"f3_rendimiento.pdf", bbox_inches="tight"); 
 
 # ---------- F4: polio/RSV por conservacion y desenlace ----------
 pr = pd.concat([pol.assign(grupo="Enterovirus"), rsv.assign(grupo="RSV")])
-cons_lbl={"fresca":"Fresca\n(prospectiva)","shield_2x":"Shield 2X\n(retrospectiva)","arn_-20C":"ARN −20 °C\n(retrospectiva)"}
+cons_lbl={"fresca":"Fresca\n(prospectiva)","shield_2x":"Shield 2X\n(retrospectiva)","pbs_1x":"PBS 1X\n(retrospectiva)"}
 pr["cons"]=pr.conservacion.map(cons_lbl)
 pr["estado_simple"]=np.where(pr.secuenciado,"Secuenciada","No secuenciada")
-order_c=[cons_lbl["fresca"],cons_lbl["shield_2x"],cons_lbl["arn_-20C"]]
+order_c=[cons_lbl["fresca"],cons_lbl["shield_2x"],cons_lbl["pbs_1x"]]
 fig,axes=plt.subplots(1,2,figsize=(9,3.8),sharey=True)
 for ax,(g,sub) in zip(axes, pr.groupby("grupo")):
     tab=sub.groupby(["cons","estado_simple"]).size().unstack(fill_value=0).reindex(order_c)
@@ -134,7 +134,7 @@ for gene, marker, lbl in [("N1","o","Gen N1 (HEX)"),("N2","s","Gen N2 (FAM)")]:
 ax.invert_yaxis()  # Cq bajo = más arriba (mayor carga)
 ax.set_xlabel("Semana de muestreo (abr 2025 – ene 2026)"); ax.set_ylabel("Valor de Cq")
 ax.set_title("Valores de Cq de SARS-CoV-2 por semana (genes N1 y N2)", fontsize=11, weight="bold")
-ax.set_xticks(range(2,39,2))
+ax.set_xticks(range(2,43,2))
 from matplotlib.lines import Line2D
 leg1 = ax.legend(loc="upper right", fontsize=8, frameon=True, title="Marcador")
 ax.add_artist(leg1)

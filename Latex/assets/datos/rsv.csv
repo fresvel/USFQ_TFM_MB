@@ -17,7 +17,7 @@ semana,fecha_inicio,secuenciado,resultado_raw,tipo_muestra,conservacion,hallazgo
 18,2025-08-11,False,,retrospectiva,shield_2x,no_secuenciado,RSV
 19,2025-08-18,False,,retrospectiva,shield_2x,no_secuenciado,RSV
 20,2025-08-25,False,,retrospectiva,shield_2x,no_secuenciado,RSV
-34,2025-12-01,False,,retrospectiva,arn_-20C,no_secuenciado,RSV
-35,2025-12-08,False,,retrospectiva,arn_-20C,no_secuenciado,RSV
-36,2025-12-15,False,,retrospectiva,arn_-20C,no_secuenciado,RSV
-37,2025-12-22,False,,retrospectiva,arn_-20C,no_secuenciado,RSV
+34,2025-12-01,False,,retrospectiva,pbs_1x,no_secuenciado,RSV
+35,2025-12-08,False,,retrospectiva,pbs_1x,no_secuenciado,RSV
+36,2025-12-15,False,,retrospectiva,pbs_1x,no_secuenciado,RSV
+37,2025-12-22,False,,retrospectiva,pbs_1x,no_secuenciado,RSV
