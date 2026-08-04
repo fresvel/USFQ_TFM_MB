@@ -1,0 +1,23 @@
+semana,fecha_inicio,secuenciado,resultado_raw,tipo_muestra,conservacion,hallazgo,virus
+43,2026-02-02,False,,prospectiva,fresca,no_secuenciado,RSV
+44,2026-02-09,False,,prospectiva,fresca,no_secuenciado,RSV
+45,2026-02-16,False,,prospectiva,fresca,no_secuenciado,RSV
+46,2026-02-23,False,,prospectiva,fresca,no_secuenciado,RSV
+47,2026-03-02,False,,prospectiva,fresca,no_secuenciado,RSV
+48,2026-03-09,False,,prospectiva,fresca,no_secuenciado,RSV
+49,2026-03-16,False,,prospectiva,fresca,no_secuenciado,RSV
+50,2026-03-23,True,No se logra determinar,prospectiva,fresca,no_determinado,RSV
+51,2026-03-30,False,,prospectiva,fresca,no_secuenciado,RSV
+52,2026-04-06,True,No se logra determinar,prospectiva,fresca,no_determinado,RSV
+53,2026-04-13,True,No se logra determinar,prospectiva,fresca,no_determinado,RSV
+54,2026-04-20,True,No se logra determinar,prospectiva,fresca,no_determinado,RSV
+55,2026-04-27,False,,prospectiva,fresca,no_secuenciado,RSV
+56,2026-05-04,False,,prospectiva,fresca,no_secuenciado,RSV
+17,2025-08-04,False,,retrospectiva,shield_2x,no_secuenciado,RSV
+18,2025-08-11,False,,retrospectiva,shield_2x,no_secuenciado,RSV
+19,2025-08-18,False,,retrospectiva,shield_2x,no_secuenciado,RSV
+20,2025-08-25,False,,retrospectiva,shield_2x,no_secuenciado,RSV
+34,2025-12-01,False,,retrospectiva,pbs_1x,no_secuenciado,RSV
+35,2025-12-08,False,,retrospectiva,pbs_1x,no_secuenciado,RSV
+36,2025-12-15,False,,retrospectiva,pbs_1x,no_secuenciado,RSV
+37,2025-12-22,False,,retrospectiva,pbs_1x,no_secuenciado,RSV
