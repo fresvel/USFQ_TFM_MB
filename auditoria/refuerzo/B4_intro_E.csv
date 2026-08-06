@@ -1,0 +1,19 @@
+id,subseccion,idea,citas,veredicto,idea_real_fuente
+INTROE-SIT-01,Situacion en Ecuador,"MejiaCalle identifico linajes de Omicron por muestreo pasivo y Nanopore, con JN.1 en aguas antes que en clinica",MejiaCalle_2024,OK,
+INTROE-SIT-02,Situacion en Ecuador,"Carencia de informacion genomica clinica en Ecuador (datos desactualizados, carga irregular en repositorios)",MejiaCalle_2024,OK,"La fuente lo plantea sobre comparacion GISAID/CoVariants, no como enunciado general."
+INTROE-SIT-03,Situacion en Ecuador,WBS da estimaciones poblacionales menos sesgadas que la prueba clinica y a menor costo,Karthikeyan_2022,OK,
+INTROE-SIT-04,Situacion en Ecuador,RSV y poliovirus son objetivos documentados de vigilancia ambiental,Asghar_2014;Hughes_2022;Bottcher_2025,OK,
+INTROE-JUS-01,Justificacion,WBS flexible y economicamente viable; mas sostenible al integrar multiples blancos,Bubba_2023,OK,
+INTROE-JUS-02,Justificacion,"Costo-utilidad canadiense: vigilancia ambiental de RSV domino a la clinica en todos los escenarios, a CAD$12,31/lactante",Mercier_2025,OK,
+INTROE-JUS-03,Justificacion,"La vigilancia genomica de aguas es modelo para virus endemicos, recupera prevalencia de variantes sin muestras clinicas",Yousif_2023,OK,
+INTROE-JUS-04,Justificacion,La temporada de varios virus respiratorios puede seguirse conjunta en un mismo flujo,Chan_2025,OK,
+INTROE-JUS-05,Justificacion,El muestreo pasivo y Nanopore ya detectaron y caracterizaron SARS-CoV-2 en el sitio,MejiaCalle_2024,OK,
+INTROE-JUS-06,Justificacion,Existen metodos dirigidos/enriquecimiento para virus humanos en aguas y protocolos para RSV y poliovirus,Child_2023;Le_2025;Asghar_2014,OK,
+INTROE-JUS-07,Justificacion,Ampliar a RSV/poliovirus incorpora blancos al flujo validado SIN requerir infraestructura ni inversion adicional,Child_2023;Le_2025;Asghar_2014,PARCIAL,"'Sin inversion adicional' es inferencia del autor, no en las fuentes. Apoyar en Mercier ('using existing WEM infrastructure') o suavizar."
+INTROE-JUS-08,Justificacion,"Esquema ARTIC de RSV desarrollado con participacion de USFQ, compatible con Nanopore, produce genomas completos",Maloney_2025,PARCIAL,"USFQ es COAUTORA y valido/uso Nanopore (completitud 94,9/95,8%), pero el esquema ARTIC lo desarrolla Edimburgo (Rambaut). 'Desarrollado' sobreestima el rol."
+INTROE-JUS-09,Justificacion,El estudio aporta lectura poblacional que complementa la clinica en contexto de informacion genomica local limitada,Yousif_2023;Bruno_2025,OK,
+INTROE-JUS-10,Justificacion,"Instituciones de salud publica/saneamiento pueden evaluar sitios centinela, priorizar patogenos, planificar vigilancia en Quito",Parkins_2023;MejiaCalle_2024,OK,
+INTROE-JUS-11,Justificacion,Grupos vulnerables ante RSV y comunidades expuestas a polio silencioso o variantes de SARS,Hughes_2022;Bottcher_2025;Crits_Christoph_2021,OK,
+INTROE-PRO-01,Problema pregunta objetivos,Amplia de SARS hacia enterovirus y RSV por relevancia ambiental/respiratoria/comunitaria,MejiaCalle_2024;Asghar_2014;Hughes_2022;Le_2025,OK,
+INTROE-PRO-02,Problema pregunta objetivos,El poliovirus concentra el mayor interes sanitario y orienta la eleccion de VP1 como blanco,Asghar_2014,OK,
+INTROE-PRO-03,Problema pregunta objetivos,La deteccion y caracterizacion se interpretan segun posibilidades/limitaciones en matrices ambientales,Child_2023;Parkins_2023,OK,

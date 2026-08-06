@@ -459,6 +459,82 @@ Falman, J\BPBI C.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Geissler%
+, Berndt%
+, Herberger%
+, Wilms%
+\BCBL {}\ \BBA {} Dumke%
+}{%
+Geissler%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2025}}%
+}]{%
+Geissler_2025}
+\APACinsertmetastar {%
+Geissler_2025}%
+\begin{APACrefauthors}%
+Geissler, M.%
+, Berndt, H.%
+, Herberger, E.%
+, Wilms, K.%
+\BCBL {}\ \BBA {} Dumke, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2025}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Methodic aspects of influenza and respiratory syncytial
+  virus detection in raw wastewater and presence in treatment plants in
+  southeastern {Germany}} {Methodic aspects of influenza and respiratory
+  syncytial virus detection in raw wastewater and presence in treatment plants
+  in southeastern {Germany}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Scientific Reports}{15}{}{28194}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1038/s41598-025-13998-x}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1038/s41598-025-13998-x} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Haque%
+\ \protect \BOthers {.}}{%
+Haque%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2023}}%
+}]{%
+Haque_2023}
+\APACinsertmetastar {%
+Haque_2023}%
+\begin{APACrefauthors}%
+Haque, R.%
+, Hossain, M\BPBI E.%
+, Miah, M.%
+, Rahman, M.%
+, Amin, N.%
+, Rahman, Z.%
+\BDBL {}Rahman, M\BPBI Z.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Monitoring {SARS-CoV-2} variants in wastewater of
+  {Dhaka} {City}, {Bangladesh}: approach to complement public health
+  surveillance systems} {Monitoring {SARS-CoV-2} variants in wastewater of
+  {Dhaka} {City}, {Bangladesh}: approach to complement public health
+  surveillance systems}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Human Genomics}{17}{}{58}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1186/s40246-023-00505-4}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1186/s40246-023-00505-4} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Hughes%
 \ \protect \BOthers {.}}{%
 Hughes%
@@ -527,6 +603,44 @@ Islam, M\BPBI S.%
 \begin{APACrefURL} \url{https://doi.org/10.5455/JBPH.2025.06} \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.5455/JBPH.2025.06} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Itokawa%
+, Sekizuka%
+, Hashino%
+, Tanaka%
+\BCBL {}\ \BBA {} Kuroda%
+}{%
+Itokawa%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+Itokawa_2020}
+\APACinsertmetastar {%
+Itokawa_2020}%
+\begin{APACrefauthors}%
+Itokawa, K.%
+, Sekizuka, T.%
+, Hashino, M.%
+, Tanaka, R.%
+\BCBL {}\ \BBA {} Kuroda, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Disentangling primer interactions improves {SARS-CoV-2}
+  genome sequencing by multiplex tiling {PCR}} {Disentangling primer
+  interactions improves {SARS-CoV-2} genome sequencing by multiplex tiling
+  {PCR}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{PLOS ONE}{15}{9}{e0239403}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1371/journal.pone.0239403}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1371/journal.pone.0239403} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -743,6 +857,41 @@ Le, D\BPBI B.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Lesenfants%
+\ \protect \BOthers {.}}{%
+Lesenfants%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2026}}%
+}]{%
+Lesenfants_2026}
+\APACinsertmetastar {%
+Lesenfants_2026}%
+\begin{APACrefauthors}%
+Lesenfants, M.%
+, Suffredini, E.%
+, Mancini, P.%
+, Franco, A.%
+, Congiu, D.%
+, Richter, J.%
+\BDBL {}La~Rosa, G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2026}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Public health responses following identification of
+  poliovirus in wastewater} {Public health responses following identification
+  of poliovirus in wastewater}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{The Lancet Public Health}{11}{5}{e329--e342}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1016/S2468-2667(26)00051-4}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/S2468-2667(26)00051-4} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Lu%
 \ \protect \BOthers {.}}{%
 Lu%
@@ -779,6 +928,41 @@ Lu, X.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Maloney%
+\ \protect \BOthers {.}}{%
+Maloney%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2025}}%
+}]{%
+Maloney_2025}
+\APACinsertmetastar {%
+Maloney_2025}%
+\begin{APACrefauthors}%
+Maloney, D\BPBI M.%
+, Fernandes, G.%
+, Jasim, S.%
+, Williams, T.%
+, Namugenyi, S.%
+, Carr, M.%
+\BDBL {}Rambaut, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2025}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{ARTIC} {RSV} amplicon sequencing reveals global {RSV}
+  genotype dynamics} {{ARTIC} {RSV} amplicon sequencing reveals global {RSV}
+  genotype dynamics}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Wellcome Open Research}{10}{}{323}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.12688/wellcomeopenres.24311.1}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.12688/wellcomeopenres.24311.1} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Mart{\'i}n%
 }{%
 Mart{\'i}n%
@@ -805,6 +989,42 @@ Mart{\'i}n, J.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1007/978-1-4939-3292-4} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+M{\'a}s~Lago%
+\ \protect \BOthers {.}}{%
+M{\'a}s~Lago%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2003}}%
+}]{%
+MasLago_2003}
+\APACinsertmetastar {%
+MasLago_2003}%
+\begin{APACrefauthors}%
+M{\'a}s~Lago, P.%
+, Gary, H\BPBI E.%
+, Sarmientos~P{\'e}rez, L.%
+, C{\'a}ceres, V\BPBI M.%
+, Barrios~Olivera, J.%
+, Palomera~Puentes, R.%
+\BDBL {}Gonz{\'a}lez~Cruz, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2003}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Poliovirus detection in wastewater and stools following
+  an immunization campaign in {Havana}, {Cuba}} {Poliovirus detection in
+  wastewater and stools following an immunization campaign in {Havana},
+  {Cuba}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{International Journal of
+  Epidemiology}{32}{5}{772--777}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1093/ije/dyg185} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1093/ije/dyg185} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1020,6 +1240,42 @@ O'Brien, M.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+O'Reilly%
+, Allen%
+, Fine%
+\BCBL {}\ \BBA {} Asghar%
+}{%
+O'Reilly%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+OReilly_2020}
+\APACinsertmetastar {%
+OReilly_2020}%
+\begin{APACrefauthors}%
+O'Reilly, K\BPBI M.%
+, Allen, D\BPBI J.%
+, Fine, P.%
+\BCBL {}\ \BBA {} Asghar, H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The challenges of informative wastewater sampling for
+  {SARS-CoV-2} must be met: lessons from polio eradication} {The challenges of
+  informative wastewater sampling for {SARS-CoV-2} must be met: lessons from
+  polio eradication}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{The Lancet Microbe}{1}{5}{e189--e190}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1016/S2666-5247(20)30100-2}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/S2666-5247(20)30100-2} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 {Oxford Nanopore Technologies}%
 }{%
 {Oxford Nanopore Technologies}%
@@ -1113,6 +1369,45 @@ Roldan-Hernandez, L.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Ro{\v{z}}anec%
+, U{\v{c}}akar%
+, Steyer%
+, Pint{\'o}~Sol{\'e}%
+\BCBL {}\ \BBA {} Gali{\v{c}}i{\v{c}}%
+}{%
+Ro{\v{z}}anec%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2026}}%
+}]{%
+Rozanec_2026}
+\APACinsertmetastar {%
+Rozanec_2026}%
+\begin{APACrefauthors}%
+Ro{\v{z}}anec, J.%
+, U{\v{c}}akar, V.%
+, Steyer, A.%
+, Pint{\'o}~Sol{\'e}, R\BPBI M.%
+\BCBL {}\ \BBA {} Gali{\v{c}}i{\v{c}}, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2026}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Sampling schemes in poliovirus wastewater surveillance
+  studies from {European} countries and their comparison to other studies: a
+  literature review} {Sampling schemes in poliovirus wastewater surveillance
+  studies from {European} countries and their comparison to other studies: a
+  literature review}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Microorganisms}{14}{4}{861}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.3390/microorganisms14040861}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.3390/microorganisms14040861} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Sangsanont%
 \ \protect \BOthers {.}}{%
 Sangsanont%
@@ -1183,6 +1478,43 @@ Schang, C.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1021/acs.est.1c01530} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Seo%
+\ \protect \BOthers {.}}{%
+Seo%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2025}}%
+}]{%
+Seo_2025}
+\APACinsertmetastar {%
+Seo_2025}%
+\begin{APACrefauthors}%
+Seo, G\BPBI E.%
+, Mandes, R.%
+, Wright, N\BPBI D.%
+, Hawkins, J\BPBI P.%
+, Landgraff, A.%
+, Lidder, R.%
+\BDBL {}Majer, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2025}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Sporadic detection of vaccine-derived poliovirus type 2
+  using next-generation sequencing in {Canadian} wastewater in {August} of
+  2022} {Sporadic detection of vaccine-derived poliovirus type 2 using
+  next-generation sequencing in {Canadian} wastewater in {August} of
+  2022}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Scientific Reports}{15}{}{12913}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1038/s41598-025-92912-x}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1038/s41598-025-92912-x} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1334,6 +1666,80 @@ Sims, N.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Subedi%
+\ \BBA {} Burgard%
+}{%
+Subedi%
+\ \BBA {} Burgard%
+}{%
+{\protect \APACyear {2019}}%
+}]{%
+Subedi_2019}
+\APACinsertmetastar {%
+Subedi_2019}%
+\begin{APACrefauthors}%
+Subedi, B.%
+\BCBT {}\ \BBA {} Burgard, D\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Wastewater-Based Epidemiology as a Complementary
+  Approach to the Conventional Survey-Based Approach for the Estimation of
+  Community Consumption of Drugs} {Wastewater-based epidemiology as a
+  complementary approach to the conventional survey-based approach for the
+  estimation of community consumption of drugs}.{\BBCQ}
+\newblock
+\BIn{} B.~Subedi, D\BPBI A.~Burgard\BCBL {}\ \BBA {} B\BPBI G.~Loganathan\
+  (\BEDS), \APACrefbtitle {Wastewater-Based Epidemiology: Estimation of
+  Community Consumption of Drugs and Diets} {Wastewater-based epidemiology:
+  Estimation of community consumption of drugs and diets}\ (\BVOL\ 1319).
+\newblock
+\APACaddressPublisher{Washington, DC}{American Chemical Society}.
+\newblock
+\begin{APACrefDOI} \doi{10.1021/bk-2019-1319.ch001} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Toribio-Avedillo%
+, G{\'o}mez-G{\'o}mez%
+, Sala-Comorera%
+, Galofr{\'e}%
+\BCBL {}\ \BBA {} Muniesa%
+}{%
+Toribio-Avedillo%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2024}}%
+}]{%
+ToribioAvedillo_2024}
+\APACinsertmetastar {%
+ToribioAvedillo_2024}%
+\begin{APACrefauthors}%
+Toribio-Avedillo, D.%
+, G{\'o}mez-G{\'o}mez, C.%
+, Sala-Comorera, L.%
+, Galofr{\'e}, B.%
+\BCBL {}\ \BBA {} Muniesa, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Adapted methods for monitoring influenza virus and
+  respiratory syncytial virus in sludge and wastewater} {Adapted methods for
+  monitoring influenza virus and respiratory syncytial virus in sludge and
+  wastewater}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Science of the Total Environment}{918}{}{170636}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1016/j.scitotenv.2024.170636}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.scitotenv.2024.170636} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 {World Health Organization}%
 }{%
 {World Health Organization}%
@@ -1427,6 +1833,43 @@ Yousif, M.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1038/s41467-023-41369-5} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Zahmatkesh%
+, Sillanp{\"a}{\"a}%
+, Rezakhani%
+\BCBL {}\ \BBA {} Wang%
+}{%
+Zahmatkesh%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2022}}%
+}]{%
+Zahmatkesh_2022}
+\APACinsertmetastar {%
+Zahmatkesh_2022}%
+\begin{APACrefauthors}%
+Zahmatkesh, S.%
+, Sillanp{\"a}{\"a}, M.%
+, Rezakhani, Y.%
+\BCBL {}\ \BBA {} Wang, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2022}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Review of concerned {SARS-CoV-2} variants like {Alpha}
+  ({B.1.1.7}), {Beta} ({B.1.351}), {Gamma} ({P.1}), {Delta} ({B.1.617.2}), and
+  {Omicron} ({B.1.1.529})} {Review of concerned {SARS-CoV-2} variants like
+  {Alpha} ({B.1.1.7}), {Beta} ({B.1.351}), {Gamma} ({P.1}), {Delta}
+  ({B.1.617.2}), and {Omicron} ({B.1.1.529})}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Hazardous Materials Advances}{7}{}{100140}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1016/j.hazadv.2022.100140}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.hazadv.2022.100140} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

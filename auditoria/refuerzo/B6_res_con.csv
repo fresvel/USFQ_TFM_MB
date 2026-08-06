@@ -1,0 +1,30 @@
+id,subseccion,idea,citas,veredicto,idea_real_fuente
+CON-RES-01,Resumen,Clados 24A (JN.1/LZ.5/LU.2.1.1) y 24H (LF.7.1.3),MejiaCalle_2024;Crits_Christoph_2021,VAGA,Clados = salida Nextclade; citas no los contienen. Bruno menciona JN.1 dominante 2024.
+CON-RES-02,Resumen,PCR anidada caracterizo Coxsackievirus A en dos muestras,Bubba_2023;Asghar_2014,OK,
+CON-RES-03,Resumen,"RSV: senal en 4 muestras, cobertura insuficiente para subgrupo",Le_2025;Hughes_2022,OK,
+CON-LIM-01,Limitaciones,Cq altos -> cobertura insuficiente -> separa deteccion de caracterizacion,Parkins_2023;Child_2023,OK,
+CON-LIM-02,Limitaciones,Muestras retrospectivas (Shield 2X/PBS 1X) no rindieron secuencia -> degradacion,MejiaCalle_2024,PARCIAL,Buffers/fallo = dato propio; MejiaCalle da contexto.
+CON-LIM-03,Limitaciones,Diseno temporal con escaso solapamiento; SARS no analizado sem 43-56,(sin cita),SIN_FUENTE,
+CON-LIM-04,Limitaciones,Datos genomicos clinicos limitados de SARS en Ecuador restringieron la comparacion,Bruno_2025,PARCIAL,"Bruno no dice 'limitados'; usar 12.619/1,15%."
+CON-LIM-05,Limitaciones,22 muestras de un sitio; sesgos de paneles dirigidos afectan variantes de baja abundancia,Child_2023,PARCIAL,"Child respalda limite de metodos dirigidos, no textual el 'sesgo de baja abundancia'."
+CON-LIM-06,Limitaciones,"Cebadores VP1 amplificaron VP4, no confirmaron serotipo",(sin cita),SIN_FUENTE,
+CON-IMP-01,Importancia,3 virus con flujo comun confirma esquema multipatogeno y valor de la vigilancia ambiental,Bubba_2023;Asghar_2014;Parkins_2023,OK,
+CON-IMP-02,Importancia,Seleccionar por Cq y amplificar en PCR previa concentra el esfuerzo en muestras utiles,MejiaCalle_2024;Parkins_2023,OK,
+CON-IMP-03,Importancia,Lectura corta o enriquecimiento podrian mejorar recuperacion a baja carga,Child_2023,OK,
+CON-IMP-04,Importancia,"Mas muestras/replicas, integrar datos clinicos/repositorios, mantener VP1 fortalecen la vigilancia",Le_2025;Bruno_2025;Klapsa_2022,OK,
+RES-ENC-01,Encabezado,Conteos de muestras y rendimiento por virus,,SIN_FUENTE,
+RES-CUANT-01,Cuantificacion RT-qPCR,"Cq N1 por grupo (linaje 34,0; sin caract. 36,6; no secuenc. 38,5); solapamiento de rangos",,SIN_FUENTE,
+RES-SARS-01,Dinamica SARS,JN.1 en aguas de Quito coincide con antecedente local (antes que en clinica),MejiaCalle_2024,OK,
+RES-SARS-02,Dinamica SARS,La secuenciacion de aguas identifica variantes regionalmente prevalentes,Crits_Christoph_2021,OK,
+RES-SARS-03,Dinamica SARS,Brecha deteccion/caracterizacion coherente con baja carga y Cq tardios,MejiaCalle_2024,OK,
+RES-SARS-04,Dinamica SARS,Baja proporcion viral / cobertura insuficiente para Cq tardios,Parkins_2023,OK,
+RES-SARS-05,Dinamica SARS,Dificultad de recuperar genomas de matrices dominadas por material no viral,Child_2023,OK,
+RES-ENT-01,Enterovirus,"El flujo recupero enterovirus, en linea con vigilancia de enterovirus no polio",Bubba_2023,OK,
+RES-ENT-02,Enterovirus,Deteccion molecular directa capta enterovirus que la vigilancia de PFA no ve,Asghar_2014,PARCIAL,Asghar es estricto de poliovirus/WPV (PFA=vigilancia de polio); el texto lo generaliza a 'enterovirus'.
+RES-ENT-03,Enterovirus,Deteccion molecular directa capta enterovirus que la clinica no ve,Bottcher_2025,PARCIAL,"Bottcher es sobre cVDPV2 (poliovirus), no enterovirus no polio."
+RES-ENT-04,Enterovirus,Ausencia de poliovirus concuerda con pais IPV sin circulacion; deteccion infrecuente exige metodos sensibles,Zurbriggen_2008,OK,
+RES-ENT-05,Enterovirus,La deteccion ambiental de poliovirus es infrecuente y exige metodos sensibles,Asghar_2014,OK,
+RES-RSV-01,RSV,Ausencia de caracterizacion coherente con requerimiento de >10.000 copias/mL,Le_2025,OK,
+RES-RSV-02,RSV,"Senal de RSV sin caracterizacion reproduce asociacion via cuantificacion, no secuenciacion",Hughes_2022,OK,
+RES-COMP-01,Comparacion temporal,Ventanas con escaso solapamiento; SARS sem 3-9; enterovirus feb 2026; RSV mar-abr 2026,,SIN_FUENTE,
+RES-SINT-01,Sintesis,Recuperacion SARS en semanas de alta carga; Coxsackie A sin polio; RSV sin caract.; retrospectivas sin secuencia,,SIN_FUENTE,
