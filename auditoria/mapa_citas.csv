@@ -1,0 +1,58 @@
+clave,estado,categoria,archivo,nota
+Sims_2020,FALTA,sustantiva,,"Muy citada (definicion EBAR, senal poblacional). Sims & Kasprzyk-Hordern review. Conseguir."
+Ahmed_2020,FALTA,sustantiva,,"Muy citada (primera deteccion SARS en aguas, N1/N2). Conseguir."
+Medema_2020,FALTA,sustantiva,,"Citada (deteccion SARS Paises Bajos). Conseguir."
+Asghar_2014,FALTA,sustantiva,,"Muy citada (vigilancia ambiental de poliovirus / GPEI). Conseguir."
+Crits_Christoph_2021,FALTA,sustantiva,,"Citada (secuenciacion de aguas detecta variantes prevalentes). mBio open. Conseguir."
+Islam_2025,FALTA,sustantiva,,"Citada (linajes JN.1/clados 24A-24H, panorama global 2025). Conseguir."
+Lu_2020,FALTA,metodologia,,"Ensayo CDC N1/N2. Conseguir o tratar como primaria."
+Arita_2015,FALTA,metodologia,,"Cebadores pan-enterovirus 5'NTR/Cre. Conseguir."
+Kilpatrick_2011,FALTA,metodologia,,"Cebador Y7 (VP1). Conseguir."
+Yang_1991,FALTA,metodologia,,"Cebador Q8 (VP1). Conseguir."
+OBrien_2021,FALTA,metodologia,,"Comparacion extraccion ARN viral. Conseguir."
+Schang_2021,FALTA,metodologia,,"Validacion muestreo pasivo. Conseguir."
+NEB_2020,FABRICANTE,fabricante,,"New England Biolabs (protocolo online). OK sin PDF."
+NEB_2021,FABRICANTE,fabricante,,"New England Biolabs (protocolo online). OK sin PDF."
+ONT_2025,FABRICANTE,fabricante,,"Oxford Nanopore (protocolo online). OK sin PDF."
+Zymo_2023,FABRICANTE,fabricante,,"Zymo Research (protocolo kit). OK sin PDF."
+WHO_2020,OFICIAL,oficial,,"WHO bioseguridad (documento oficial online). OK."
+Bruno_2025,EN_REPO,sustantiva,Recursos/fuentes/Sars-cov2/bruno-2025-andean-community-sarscov2.pdf,"Descargado en esta auditoria; claim corregido."
+Acosta_2022,EN_REPO,sustantiva,Recursos/fuentes/libros/Longitudinal SARS-CoV-2 RNA wastewater monitoring across a -- Nicole Acosta;Maria A_ Bautista;Barbara J_ Waddell;Janine -- Suppl C, Vol_220 -- Water -- doi 10_1016_j_watres_2022_118611 -- cb2778624a78d6bdc1a432.pdf,
+Sangsanont_2022,EN_REPO,sustantiva,Recursos/fuentes/libros/SARS-CoV-2 RNA surveillance in large to small centralized -- Jatuwat Sangsanont, Surapong Rattanakul, Akechai Kongprajug, -- Suppl C, Vol_809 -- The -- doi 10_1016_j_scitotenv_2021_151169 -- 1c9f1ff4495830b7a49.pdf,
+Parkins_2023,EN_REPO,sustantiva,Recursos/fuentes/Sars-cov2/parkins-et-al-2023-wastewater-based-surveillance-as-a-tool-for-public-health-action-sars-cov-2-and-beyond.pdf,"Muy citada."
+MejiaCalle_2024,EN_REPO,sustantiva,Recursos/fuentes/Sars-cov2/00331348-Mejia Calle Paula Estefanía.pdf,"Antecedente local (tesis)."
+Karthikeyan_2022,EN_REPO,sustantiva,Recursos/fuentes/Sars-cov2/s41586-022-05049-6.pdf,"Freyja."
+Barbe_2022,EN_REPO,metodologia,Recursos/fuentes/Sars-cov2/fmicb-13-889811.pdf,
+Yousif_2023,EN_REPO,sustantiva,Recursos/fuentes/Sars-cov2/s41467-023-41369-5.pdf,
+Itokawa_2020,EN_REPO,metodologia,Recursos/fuentes/Sars-cov2/sars_cov.pdf,"Verificado en auditoria."
+Haque_2023,EN_REPO,sustantiva,Recursos/fuentes/Sars-cov2/s40246-023-00505-4.pdf,"Verificado en auditoria."
+Zahmatkesh_2022,EN_REPO,sustantiva,Recursos/fuentes/libros/Review of Concerned SARS-CoV-2 Variants Like Alpha -- Sasan Zahmatkesh;Mika Sillanpaa;Yousof Rezakhani;Chongqing -- Vol_7 -- Journal of Hazardous -- doi 10_1016_j_hazadv_2022_100140 -- 834cb653e5fc82eef9efd2eea.pdf,
+Chan_2025,EN_REPO,sustantiva,Recursos/fuentes/RSV/respiratory-virus-season-surveillance-in-the-united-states-using-wastewater-metrics-2023-2024.pdf,
+Hughes_2022,EN_REPO,sustantiva,Recursos/fuentes/RSV/respiratory-syncytial-virus-(rsv)-rna-in-wastewater-settled-solids-reflects-rsv-clinical-positivity-rates.pdf,"OJO: el matcher lo confundio con RoldanHernandez; confirmar."
+RoldanHernandez_2023,EN_REPO,sustantiva,Recursos/fuentes/RSV/adsorption-of-respiratory-syncytial-virus-rhinovirus-sars-cov-2-and-f-bacteriophage-ms2-rna-onto-wastewater-solids-from.pdf,
+Le_2025,EN_REPO,sustantiva,Recursos/fuentes/RSV/s41598-025-20371-5.pdf,"RSVTyper. Confirmar."
+Lansivaara_2024,EN_REPO,sustantiva,Recursos/fuentes/RSV/wastewater-based-surveillance-of-respiratory-syncytial-virus-epidemic-at-the-national-level-in-finland.pdf,
+Zambrana_2024,EN_REPO,sustantiva,Recursos/fuentes/RSV/zambrana-et-al-2024-spatial-and-temporal-variation-in-respiratory-syncytial-virus-(rsv)-subtype-rna-in-wastewater-and.pdf,
+Zulli_2024,EN_REPO,sustantiva,Recursos/fuentes/RSV/observations-of-respiratory-syncytial-virus-(rsv)-nucleic-acids-in-wastewater-solids-across-the-united-states-in-the.pdf,
+Mercier_2025,EN_REPO,sustantiva,Recursos/fuentes/RSV/Cost-effectiveness of wastewater and environmental monitoring of respiratory syncytial virus to guide universal infant immunoprophylaxis in Canada.pdf,"Verificado en auditoria."
+Geissler_2025,EN_REPO,sustantiva,Recursos/fuentes/RSV/s41598-025-13998-x.pdf,"Verificado en auditoria."
+ToribioAvedillo_2024,EN_REPO,sustantiva,Recursos/fuentes/RSV/1-s2.0-S0048969724007757-main.pdf,"Verificado en auditoria."
+Maloney_2025,EN_REPO,sustantiva,Recursos/fuentes/RSV/RSV_paper_Romel.pdf,"Verificado en auditoria (USFQ)."
+Zurbriggen_2008,EN_REPO,sustantiva,Recursos/fuentes/polio/zurbriggen-et-al-2008-isolation-of-sabin-like-polioviruses-from-wastewater-in-a-country-using-inactivated-polio-vaccine.pdf,
+Klapsa_2022,EN_REPO,sustantiva,Recursos/fuentes/polio/PIIS0140673622018049.pdf,
+Kissova_2022,EN_REPO,sustantiva,Recursos/fuentes/polio/viruses-14-01599.pdf,
+Bottcher_2025,EN_REPO,sustantiva,Recursos/fuentes/polio/eurosurv-30-3-1.pdf,
+Bubba_2023,EN_REPO,sustantiva,Recursos/fuentes/polio/microorganisms-11-02496-v2 (1).pdf,"Verificado por subagente."
+Martin_2016,EN_REPO,sustantiva,Recursos/fuentes/libros/Poliovirus_ Methods and Protocols (Methods in Molecular -- Javier Martín (eds_) -- Methods in Molecular Biology, Methods in Molecular Biology -- isbn13 9781493932917 -- b543683c74eda917e917a13243ed8e41 -- Ann’.pdf,
+Shaw_2020,EN_REPO,metodologia,Recursos/fuentes/polio/shaw-et-al-2020-rapid-and-sensitive-direct-detection-and-identification-of-poliovirus-from-stool-and-environmental.pdf,
+Shaw_2022,EN_REPO,sustantiva,Recursos/fuentes/polio/jiab518.pdf,
+Shaw_2022_protocol,DUDA,metodologia,Recursos/fuentes/polio/shaw-et-al-2020-rapid-and-sensitive-direct-detection-and-identification-of-poliovirus-from-stool-and-environmental.pdf,"Protocolo DDNS; puede ser el mismo Shaw_2020 o un protocols.io aparte. Verificar."
+Falman_2019,EN_REPO,metodologia,Recursos/fuentes/polio/s12560-018-09364-y.pdf,
+OReilly_2020,EN_REPO,sustantiva,Recursos/fuentes/polio/1-s2.0-S2666524720301002-main.pdf,"Verificado en auditoria."
+Rozanec_2026,EN_REPO,sustantiva,Recursos/fuentes/polio/microorganisms-14-00861.pdf,"Verificado en auditoria."
+Seo_2025,EN_REPO,sustantiva,Recursos/fuentes/polio/s41598-025-92912-x.pdf,"Verificado en auditoria."
+MasLago_2003,EN_REPO,sustantiva,Recursos/fuentes/polio/lago2003.pdf,"Verificado en auditoria."
+Lesenfants_2026,EN_REPO,sustantiva,Recursos/fuentes/polio/1-s2.0-S2468266726000514-main.pdf,"Verificado en auditoria."
+Murray_2021,EN_REPO,sustantiva,Recursos/fuentes/libros/BM Murray Microbiología Médica 9a_2021.pdf,
+Dash_2024,EN_REPO,sustantiva,Recursos/fuentes/libros/Next Generation Sequencing (NGS) Technology in DNA Analysis -- Hirak Ranjan Dash, Kelly M_ Elkins, Noora Rashid Al-Snan -- 2024 -- Elsevier Science & -- isbn13 9780323991445 -- 67dfb4eeb0228cb146f6f1ab569e2275 .pdf,"Verificado en auditoria."
+Subedi_2019,EN_REPO,sustantiva,Recursos/fuentes/libros/Wastewater-based epidemiology _ estimation of community -- American Chemical Society_ Division of Environmental -- ACS Symposium Series, ACS symposium -- isbn13 9780841234406 -- d2817c768d8b702fd4e8c6543846 (1).pdf,"Verificado en auditoria."
