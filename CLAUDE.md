@@ -52,6 +52,20 @@ These govern all prose you produce and override default writing behavior:
 >
 > En las redacciones solicitadas evita de manera estricta el uso de desviaciones generativas tales como: "no idea A sino idea B", "no solo idea A sino también idea B" y otras similares típicas de IA generativa. En su lugar utiliza ideas directas y descriptivas.
 
+### Continuidad y naturalidad (anti-detección de IA)
+
+Regla obtenida de la auditoría de detección de IA (Turnitin). El objetivo es que cada párrafo lea como un **argumento encadenado**, no como una lista de hechos yuxtapuestos. Aplica siempre lo siguiente:
+
+1. **Cadena causal, no listado de oraciones.** Cada oración debe ser consecuencia o desarrollo de la anterior, unida con subordinación real (`ya que`, `de modo que`, `como… por ello`, `pues`, `dado que… exige`). Prohibido encadenar hechos independientes con puntos seguidos sin relación explícita entre ellos.
+2. **Define antes de usar, y con cita.** No introduzcas un término o concepto (p. ej. "bioinformática", "plataforma de secuenciación") sin definirlo primero de forma referenciada. Tras un encabezado, escribe un **párrafo puente** que defina y encuadre el tema antes de entrar en subsecciones; nunca saltes de un `\subsection`/`\subsubsection` directo al detalle.
+3. **Sujetos y referencias concretas.** Prohibido el "back-reference" vago: nada de "la matriz descrita", "este enfoque", "dicho procesamiento" cuando el antecedente no está nombrado con claridad. Nombra el sujeto explícito ("las aguas residuales", "el procesamiento de secuencias").
+4. **Sin muletillas de IA.** Evita "Es importante destacar que", "Cabe señalar", "En este sentido", "Por otro lado" como relleno, y cualquier fórmula que no aporte contenido.
+5. **Sin `:` seguido de ideas sueltas en paralelo.** El patrón "X hace A, mientras que Y hace B" tras dos puntos es un marcador típico de IA. Sustitúyelo por oraciones con causa/consecuencia propias para cada elemento.
+6. **Listas dentro de la prosa.** Una enumeración larga va como inciso entre guiones (—…—) dentro de una oración con sentido, no como una oración-lista aislada.
+7. **Gramática limpia.** Sin comas empalmadas (dos oraciones independientes unidas por coma); usa subordinación o punto y coma.
+
+Metodología de trabajo para reducir detección: se revisa **un párrafo a la vez**, se muestra al usuario la sección detectada, se propone la corrección explicando qué patrón se ataca, y solo se aplica tras su aprobación (en `Latex/` y, si corresponde, en `IAFIX/`). Nunca inventar contenido para "sonar humano": los hechos y las citas se conservan.
+
 ## Commit conventions
 
 Commit messages in this repo are short and in Spanish (e.g. `metodologia`, `Introducción v1`). Match that style.
