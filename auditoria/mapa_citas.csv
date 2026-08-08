@@ -17,3 +17,4 @@ ONT_2025,FABRICANTE,fabricante,,Oxford Nanopore (protocolo online). OK sin PDF.
 Zymo_2023,FABRICANTE,fabricante,,Zymo Research (protocolo kit). OK sin PDF.
 WHO_2020,OFICIAL,oficial,,WHO bioseguridad (documento oficial online). OK.
 Bruno_2025,EN_REPO,sustantiva,Recursos/fuentes/Sars-cov2/bruno-2025-andean-community-sarscov2.pdf,Descargado en esta auditoria; claim corregido.
+MSP_2023,EN_REPO,sustantiva,Recursos/fuentes/polio/msp-ecuador-esquema-nacional-vacunacion-2023.pdf,"Fuente oficial MSP descargada y auditada en D2: Ecuador usa bOPV oral (6/18 meses y 5 anios) + IPV en hexavalente (2/4 meses). Corrige claim falso uso vacuna inactivada exclusiva."

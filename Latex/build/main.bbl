@@ -1099,6 +1099,35 @@ Mercier, {\'E}.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+{Ministerio de Salud P{\'u}blica del Ecuador}%
+}{%
+{Ministerio de Salud P{\'u}blica del Ecuador}%
+}{%
+{\protect \APACyear {2023}}%
+}]{%
+MSP_2023}
+\APACinsertmetastar {%
+MSP_2023}%
+\begin{APACrefauthors}%
+{Ministerio de Salud P{\'u}blica del Ecuador}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{}{}.
+\newblock
+\APACrefbtitle {Esquema Nacional de Vacunaci{\'o}n.} {Esquema nacional de
+  vacunaci{\'o}n.}
+\newblock
+\APAChowpublished {Ministerio de Salud P{\'u}blica del Ecuador, Quito}.
+\newblock
+\begin{APACrefURL}
+  \url{https://www.salud.gob.ec/wp-content/uploads/2025/10/ESQUEMA-VACUNACION1.oct_.23.pdf}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{Documento oficial}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Murray%
 , Rosenthal%
 \BCBL {}\ \BBA {} Pfaller%

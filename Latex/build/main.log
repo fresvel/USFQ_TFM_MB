@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.27)  7 AUG 2026 21:03
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.27)  7 AUG 2026 21:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1071,31 +1071,33 @@ File: assets/figuras/resultados/f1_heatmap_temporal.pdf Graphic file (type pdf)
 
 [69]
 
-[70]))
+[70]
 
-[71] (./secciones/03_finales/02_indice_anexos.tex (build/main.loa)
+[71]))
+
+[72] (./secciones/03_finales/02_indice_anexos.tex (build/main.loa)
 \tf@loa=\write6
 \openout6 = `main.loa'.
 
 )
 
-[72
+[73
 
 ] (./secciones/03_finales/03_anexos_i.tex
 Package hyperref Info: bookmark level for unknown usfqanexo defaults to 0 on in
 put line 3.
 
 
-[73
+[74
 
 
 ]
 
-[74
+[75
 
 ]))
 
-[75
+[76
 
 ] (build/main.aux)
  ***********
@@ -1104,12 +1106,12 @@ L3 programming layer <2025-07-19>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 21427 strings out of 468457
- 429986 string characters out of 5445913
- 915600 words of memory out of 5000000
- 49535 multiletter control sequences out of 15000+600000
- 650494 words of font info for 136 fonts, out of 8000000 for 9000
+ 21435 strings out of 468457
+ 430099 string characters out of 5445913
+ 915813 words of memory out of 5000000
+ 49540 multiletter control sequences out of 15000+600000
+ 650510 words of font info for 138 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  78i,13n,118p,1956b,1311s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on build/main.pdf (75 pages).
+Output written on build/main.pdf (76 pages).
