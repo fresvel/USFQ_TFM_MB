@@ -56,11 +56,11 @@
 \contentsline {subsection}{\textit {Enterovirus}}{59}{subsection*.67}%
 \contentsline {subsection}{RSV}{60}{subsection*.68}%
 \contentsline {subsection}{Conservación de muestras retrospectivas como factor crítico}{60}{subsection*.69}%
-\contentsline {section}{CONCLUSIONES}{61}{section*.70}%
-\contentsline {subsection}{Limitaciones del estudio}{61}{subsection*.71}%
-\contentsline {subsection}{Importancia y recomendaciones}{62}{subsection*.72}%
-\contentsline {section}{REFERENCIAS}{63}{section*.73}%
-\contentsline {section}{ÍNDICE DE ANEXOS}{72}{section*.74}%
-\contentsline {section}{ANEXO A: \textcolor {USFQPlaceholderRed}{TÍTULO}}{73}{section*.75}%
-\contentsline {section}{ANEXO B: \textcolor {USFQPlaceholderRed}{TÍTULO}}{74}{section*.76}%
-\contentsline {section}{ANEXO C: \textcolor {USFQPlaceholderRed}{TÍTULO}}{75}{section*.77}%
+\contentsline {section}{CONCLUSIONES}{62}{section*.70}%
+\contentsline {subsection}{Limitaciones del estudio}{62}{subsection*.71}%
+\contentsline {subsection}{Importancia y recomendaciones}{63}{subsection*.72}%
+\contentsline {section}{REFERENCIAS}{64}{section*.73}%
+\contentsline {section}{ÍNDICE DE ANEXOS}{73}{section*.74}%
+\contentsline {section}{ANEXO A: \textcolor {USFQPlaceholderRed}{TÍTULO}}{74}{section*.75}%
+\contentsline {section}{ANEXO B: \textcolor {USFQPlaceholderRed}{TÍTULO}}{75}{section*.76}%
+\contentsline {section}{ANEXO C: \textcolor {USFQPlaceholderRed}{TÍTULO}}{76}{section*.77}%
