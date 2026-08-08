@@ -572,40 +572,6 @@ Hughes, B.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Islam%
-\ \protect \BOthers {.}}{%
-Islam%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2025}}%
-}]{%
-Islam_2025}
-\APACinsertmetastar {%
-Islam_2025}%
-\begin{APACrefauthors}%
-Islam, M\BPBI S.%
-, Jaman, A.%
-, Ahmmed, N.%
-, Arbin, A\BPBI N.%
-, Khondaker, J\BPBI A.%
-, Ali, M\BPBI T.%
-\BDBL {}Mubarak, M.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2025}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Emerging {SARS-CoV-2} Omicron subvariants in 2025:
-  clinical impacts and public health challenges} {Emerging {SARS-CoV-2} omicron
-  subvariants in 2025: clinical impacts and public health challenges}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Journal of Biosciences and Public Health}{1}{2}{1--16}.
-\newblock
-\begin{APACrefURL} \url{https://doi.org/10.5455/JBPH.2025.06} \end{APACrefURL}
-\newblock
-\begin{APACrefDOI} \doi{10.5455/JBPH.2025.06} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Itokawa%
 , Sekizuka%
 , Hashino%
@@ -1201,42 +1167,6 @@ NEB_2021}%
 {\BBOQ}\APACrefatitle {Instruction Manual: {NEBNext} {ARTIC} {SARS-CoV-2}
   {RT-PCR} Module} {Instruction manual: {NEBNext} {ARTIC} {SARS-CoV-2} {RT-PCR}
   module}{\BBCQ}\ [\bibcomputersoftwaremanual].
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-O'Brien%
-\ \protect \BOthers {.}}{%
-O'Brien%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2021}}%
-}]{%
-OBrien_2021}
-\APACinsertmetastar {%
-OBrien_2021}%
-\begin{APACrefauthors}%
-O'Brien, M.%
-, Rundell, Z\BPBI C.%
-, Nemec, M\BPBI D.%
-, Langan, L\BPBI M.%
-, Back, J\BPBI A.%
-\BCBL {}\ \BBA {} Lugo, J\BPBI N.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2021}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {A comparison of four commercially available {RNA}
-  extraction kits for wastewater surveillance of {SARS-CoV-2} in a college
-  population} {A comparison of four commercially available {RNA} extraction
-  kits for wastewater surveillance of {SARS-CoV-2} in a college
-  population}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Science of The Total Environment}{801}{}{149595}.
-\newblock
-\begin{APACrefURL} \url{https://doi.org/10.1016/j.scitotenv.2021.149595}
-  \end{APACrefURL}
-\newblock
-\begin{APACrefDOI} \doi{10.1016/j.scitotenv.2021.149595} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
