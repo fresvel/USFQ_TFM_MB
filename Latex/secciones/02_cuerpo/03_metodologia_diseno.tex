@@ -42,15 +42,15 @@ El análisis de poliovirus y RSV abarcó 22 muestras en total, conformadas por 1
   colspec={X[1.1,l] X[1.2,l] X[0.8,c] X[1.1,l]},
 }
 \textbf{Fase} & \textbf{Semanas} & \textbf{N.º muestras} & \textbf{Virus analizados} \\
-Prospectiva (SARS-CoV-2) & 1--42 & --- & SARS-CoV-2 \\
-Prospectiva (multipatógeno) & 43--56 & 14 & SARS-CoV-2, poliovirus, RSV \\
-Retrospectiva conservada & 17--20 & 4 & Poliovirus, RSV \\
-Retrospectiva conservada & 34--37 & 4 & Poliovirus, RSV \\
+Prospectiva (SARS-CoV-2) & 1--42 & 42 & SARS-CoV-2 \\
+Prospectiva (multipatógeno) & 43--56 & 14 & Poliovirus, RSV \\
+Retrospectiva conservada & 17--20 & 4 & SARS-CoV-2, Poliovirus, RSV \\
+Retrospectiva conservada & 34--37 & 4 & SARS-CoV-2, Poliovirus, RSV \\
 \end{longtblr}
 
 \subsection{Conservación y recuperación de muestras retrospectivas}
 
-Las muestras retrospectivas de las semanas 17 a 20 y 34 a 37 se conservaron para su análisis posterior de poliovirus y RSV mediante tres métodos de preservación: solución DNA/RNA Shield 2X, solución salina tamponada con fosfato (PBS) y congelación del ARN. Estos métodos se aplicaron exclusivamente a las muestras retrospectivas destinadas al análisis de poliovirus y RSV, con el objetivo de preservar la integridad del material genético hasta su procesamiento. La recuperación de estas muestras conservadas permitió incorporar al estudio periodos previos a la fase prospectiva multipatógeno.
+Las muestras retrospectivas de las semanas 17 a 20 y 34 a 37 se conservaron para su análisis posterior de poliovirus y RSV mediante dos métodos de preservación: solución DNA/RNA Shield 2X y solución salina tamponada con fosfato (PBS). Estos métodos se aplicaron exclusivamente a las muestras retrospectivas destinadas al análisis de poliovirus y RSV, con el objetivo de preservar la integridad del material genético hasta su procesamiento. La recuperación de estas muestras conservadas permitió incorporar al estudio periodos previos a la fase prospectiva multipatógeno.
 
 \subsection{Preconcentración viral}
 
@@ -116,7 +116,7 @@ Extensión & 60~°C & 30 segundos (+ lectura de placa) & 45 \\
 
 \subsection{Amplificación genómica multiplex de SARS-CoV-2}
 
-La amplificación del genoma de SARS-CoV-2 se realizó mediante PCR multiplex basada en el módulo NEBNext ARTIC SARS-CoV-2 RT-PCR, con inclusión de controles positivos y negativos para verificar la validez de los resultados y descartar contaminación \cite{NEB_2021}. El ADN complementario (ADNc) se sintetizó a partir del ARN viral con LunaScript RT SuperMix (Tabla~\ref{tab:cdna_mezcla} y Tabla~\ref{tab:cdna_ciclos}). El ADNc se amplificó con esquemas de cebadores ARTIC o VarSkip distribuidos en dos pools complementarios (A y B), que en conjunto cubren el genoma viral mediante amplicones solapados (Tabla~\ref{tab:pool_mezcla}). Las reacciones de ambos pools se combinaron por muestra y se amplificaron bajo condiciones térmicas específicas en un termociclador Thermo Fisher Scientific (Tabla~\ref{tab:pool_ciclos}). La amplificación dirigida por paneles de amplicones aumenta la probabilidad de recuperar información genómica a partir de muestras con ARN degradado o baja abundancia relativa, característica frecuente en aguas residuales; la adaptación de los esquemas ARTIC a la matriz ambiental compleja ha permitido alcanzar una cobertura casi completa del genoma de SARS-CoV-2, y la secuenciación por PCR dirigida supera a los métodos metagenómicos y de captura híbrida cuando la abundancia viral es baja \cite{Barbe_2022,Child_2023}.
+La amplificación del genoma de SARS-CoV-2 se realizó mediante PCR multiplex basada en el módulo NEBNext ARTIC SARS-CoV-2 RT-PCR, con inclusión de controles positivos y negativos para verificar la validez de los resultados y descartar contaminación \cite{NEB_2021}. El ADN complementario (ADNc) se sintetizó a partir del ARN viral con LunaScript RT SuperMix (Tabla~\ref{tab:cdna_mezcla} y Tabla~\ref{tab:cdna_ciclos}). El ADNc se amplificó con esquemas de cebadores ARTIC o VarSkip distribuidos en dos pools complementarios (A y B), que en conjunto cubren el genoma viral mediante amplicones solapados (Tabla~\ref{tab:pool_mezcla}), se amplificaron bajo condiciones térmicas específicas en un termociclador Thermo Fisher Scientific (Tabla~\ref{tab:pool_ciclos}). La amplificación dirigida por paneles de amplicones aumenta la probabilidad de recuperar información genómica a partir de muestras con ARN degradado o baja abundancia relativa, característica frecuente en aguas residuales; la adaptación de los esquemas ARTIC a la matriz ambiental compleja ha permitido alcanzar una cobertura casi completa del genoma de SARS-CoV-2, y la secuenciación por PCR dirigida supera a los métodos metagenómicos y de captura híbrida cuando la abundancia viral es baja \cite{Barbe_2022,Child_2023}.
 
 \begin{longtblr}[
   caption={Mezcla de reacción para la síntesis de ADNc de SARS-CoV-2},
@@ -260,8 +260,8 @@ La parte inicial del procesamiento de los datos de secuenciación se realizó co
 
 Distinguir la amplificación real de la contaminación y del ruido es más exigente en el influente por su baja carga e inhibidores; por eso cada corrida incluyó controles y la selección combinó el Cq y la banda de amplificación:
 \begin{enumerate}[label=\arabic*.]
-  \item En la RT-qPCR se corrió un control positivo de hisopados faríngeos con carga viral conocida, que rindió Cq tempranos, y un control sin molde (NTC) cuya ausencia de señal en los canales HEX (N1) y FAM (N2) confirmó reactivos sin contaminación.
-  \item La amplificación multiplex con el módulo NEBNext ARTIC se ejecutó con los controles positivo y negativo del propio kit \cite{NEB_2021}.
+  \item La RT-qPCR se ejecutó el control positivo del propio kit, que rindió Cq tempranos, y un control sin molde (NTC) cuya ausencia de señal en los canales HEX (N1) y FAM (N2) confirmó reactivos sin contaminación.
+  \item La amplificación multiplex con el módulo NEBNext ARTIC se ejecutó con un control positivo de hisopados faríngeos con carga viral conocida \cite{NEB_2021}.
   \item Una muestra avanzó a secuenciación si presentó banda del tamaño esperado en electroforesis y Cq inferior a 35; las de Cq mayor o sin banda se descartaron o reprocesaron \cite{MejiaCalle_2024}.
 \end{enumerate}
 
