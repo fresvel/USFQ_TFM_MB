@@ -22,7 +22,7 @@
 \contentsline {subsection}{Contexto epidemiológico del estudio}{28}{subsection*.21}%
 \contentsline {subsubsection}{Situación en Ecuador}{28}{subsubsection*.22}%
 \contentsline {subsection}{Justificación}{28}{subsection*.23}%
-\contentsline {subsection}{Problema de investigación, pregunta y objetivos}{30}{subsection*.24}%
+\contentsline {subsection}{Problema de investigación, pregunta y objetivos}{29}{subsection*.24}%
 \contentsline {section}{METODOLOGÍA Y DISEÑO DE LA INVESTIGACIÓN}{31}{section*.25}%
 \contentsline {subsection}{Justificación y diseño del estudio}{31}{subsection*.26}%
 \contentsline {subsection}{Área y periodo de estudio}{32}{subsection*.28}%
@@ -35,7 +35,7 @@
 \contentsline {subsection}{Amplificación genómica multiplex de SARS-CoV-2}{38}{subsection*.39}%
 \contentsline {subsection}{Detección y amplificación de poliovirus por PCR anidada de VP1}{40}{subsection*.40}%
 \contentsline {subsection}{Detección y amplificación de RSV por PCR multiplex}{41}{subsection*.42}%
-\contentsline {subsection}{Electroforesis y criterios de selección para secuenciación}{43}{subsection*.44}%
+\contentsline {subsection}{Electroforesis y criterios de selección para secuenciación}{42}{subsection*.44}%
 \contentsline {subsection}{Preparación de bibliotecas y secuenciación por nanoporos}{43}{subsection*.45}%
 \contentsline {subsection}{Procesamiento y análisis bioinformático}{45}{subsection*.46}%
 \contentsline {subsection}{Controles de calidad, controles experimentales e interpretación}{45}{subsection*.47}%

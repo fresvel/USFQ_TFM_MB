@@ -49,6 +49,12 @@
 \usepackage{bookmark}
 \usepackage[notocbib]{apacite}
 \providecommand{\sptext}[1]{\textsuperscript{#1}}
+% apacite en español (spanish.apc) traduce «et al.» a «y cols.»; se restaura «et al.»
+% en texto y en la lista de referencias. El hook corre tras cargar spanish.apc.
+\AtBeginDocument{%
+  \renewcommand{\BOthers}[1]{et~al.\hbox{}}%
+  \renewcommand{\BOthersPeriod}[1]{et~al.\hbox{}}%
+}
 
 \graphicspath{{assets/figuras/}{assets/figuras/usfq/}}
 
