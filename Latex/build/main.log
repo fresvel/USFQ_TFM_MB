@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.27)  8 AUG 2026 22:04
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.27)  12 AUG 2026 20:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -940,124 +940,124 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 [28]
 
-[29]
+[29])
 
-[30])
-
-[31] (./secciones/02_cuerpo/03_metodologia_diseno.tex
+[30] (./secciones/02_cuerpo/03_metodologia_diseno.tex
 File: assets/figuras/metodologia/metodologia_general.png Graphic file (type bmp
 )
 <assets/figuras/metodologia/metodologia_general.png>
 
 
-[32
+[31
 
 ]
 
-[33]
+[32]
 File: assets/figuras/metodologia/dispositivo.png Graphic file (type bmp)
 <assets/figuras/metodologia/dispositivo.png>
 
 
-[34]
+[33]
 
-[35]
+[34]
 File: assets/figuras/metodologia/preconcentracion.png Graphic file (type bmp)
 <assets/figuras/metodologia/preconcentracion.png>
 
 
-[36]
+[35]
 File: assets/figuras/metodologia/extraccion_ARN.png Graphic file (type bmp)
 <assets/figuras/metodologia/extraccion_ARN.png>
 
 
-[37]
+[36]
 
-[38]
+[37]
 File: assets/figuras/metodologia/rt_qpcr.png Graphic file (type bmp)
 <assets/figuras/metodologia/rt_qpcr.png>
 
 
+[38]
+
 [39]
 
 [40]
-
-[41]
 File: assets/figuras/metodologia/polio_flujo.pdf Graphic file (type pdf)
 <use assets/figuras/metodologia/polio_flujo.pdf>
 
 
-[42]
+[41]
 File: assets/figuras/metodologia/rsv_flujo.pdf Graphic file (type pdf)
 <use assets/figuras/metodologia/rsv_flujo.pdf>
 
 
+[42]
+
 [43]
 
-[44]
+[44])
 
-[45])
+[45]
 
-[46]
-
-[47] (./secciones/02_cuerpo/04_analisis_datos.tex
+[46] (./secciones/02_cuerpo/04_analisis_datos.tex
 File: assets/figuras/resultados/f3_rendimiento.pdf Graphic file (type pdf)
 <use assets/figuras/resultados/f3_rendimiento.pdf>
 
 
-[48
+[47
 
 ]
 
-[49]
+[48]
 File: assets/figuras/resultados/f5_cq_sars.pdf Graphic file (type pdf)
 <use assets/figuras/resultados/f5_cq_sars.pdf>
 
 
-[50]
+[49]
 File: assets/figuras/resultados/f2_linajes_sars.pdf Graphic file (type pdf)
 <use assets/figuras/resultados/f2_linajes_sars.pdf>
 
 
-[51]
+[50]
 
-[52]
+[51]
 File: assets/figuras/resultados/f4_conservacion.pdf Graphic file (type pdf)
 <use assets/figuras/resultados/f4_conservacion.pdf>
 
 
-[53]
+[52]
 File: assets/figuras/resultados/f1_heatmap_temporal.pdf Graphic file (type pdf)
 
 <use assets/figuras/resultados/f1_heatmap_temporal.pdf>
 
 
-[54])
+[53])
 
-[55] (./secciones/02_cuerpo/05_discusion.tex
+[54] (./secciones/02_cuerpo/05_discusion.tex
 
-[56
+[55
 
 ]
+
+[56]
 
 [57]
 
-[58]
+[58])
 
-[59])
+[59] (./secciones/02_cuerpo/06_conclusiones.tex
 
-[60] (./secciones/02_cuerpo/06_conclusiones.tex
-
-[61
+[60
 
 ])
 
-[62]) (./secciones/03_finales/00_main.tex
+[61]) (./secciones/03_finales/00_main.tex
 (./secciones/03_finales/01_referencias.tex (build/main.bbl
 
-[63
+[62
 
 ]
+
+[63]
 
 [64]
 
@@ -1069,47 +1069,21 @@ File: assets/figuras/resultados/f1_heatmap_temporal.pdf Graphic file (type pdf)
 
 [68]
 
-[69]
+[69])))
 
-[70]))
-
-[71] (./secciones/03_finales/02_indice_anexos.tex (build/main.loa)
-\tf@loa=\write6
-\openout6 = `main.loa'.
-
-)
-
-[72
-
-] (./secciones/03_finales/03_anexos_i.tex
-Package hyperref Info: bookmark level for unknown usfqanexo defaults to 0 on in
-put line 3.
-
-
-[73
-
-
-]
-
-[74
-
-]))
-
-[75
-
-] (build/main.aux)
+[70] (build/main.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-07-19>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 21435 strings out of 468457
- 430099 string characters out of 5445913
- 915813 words of memory out of 5000000
- 49540 multiletter control sequences out of 15000+600000
+ 21446 strings out of 468457
+ 430420 string characters out of 5445913
+ 914735 words of memory out of 5000000
+ 49560 multiletter control sequences out of 15000+600000
  650510 words of font info for 138 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 78i,13n,118p,2083b,1311s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 78i,13n,118p,2083b,1356s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on build/main.pdf (75 pages).
+Output written on build/main.pdf (70 pages).
