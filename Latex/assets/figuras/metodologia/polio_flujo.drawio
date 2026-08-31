@@ -1,67 +1,67 @@
-<mxfile host="app.diagrams.net" type="device">
+<mxfile host="Electron">
   <diagram name="Poliovirus" id="polio-flujo">
-    <mxGraphModel dx="900" dy="900" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="700" pageHeight="900" math="0" shadow="0">
+    <mxGraphModel dx="1106" dy="803" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="700" pageHeight="900" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="leg1" value="Procesamiento común a los tres virus" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="430" y="40" width="230" height="30" as="geometry" />
+        <mxCell id="leg1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;" value="Procesamiento común a los tres virus" vertex="1">
+          <mxGeometry height="30" width="230" x="430" y="40" as="geometry" />
         </mxCell>
-        <mxCell id="leg2" value="Etapas específicas de poliovirus" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="430" y="78" width="230" height="30" as="geometry" />
+        <mxCell id="leg2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=13;" value="Etapas específicas de poliovirus" vertex="1">
+          <mxGeometry height="30" width="230" x="430" y="78" as="geometry" />
         </mxCell>
-        <mxCell id="b1" value="&lt;b&gt;1. Muestreo pasivo&lt;/b&gt;&lt;br&gt;Dispositivo tipo torpedo en el influente (24 h)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;verticalAlign=middle;" vertex="1" parent="1">
-          <mxGeometry x="40" y="40" width="320" height="60" as="geometry" />
+        <mxCell id="b1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=15;verticalAlign=middle;" value="&lt;b&gt;1. Muestreo pasivo&lt;/b&gt;&lt;br&gt;Dispositivo tipo torpedo en el influente (24 h)" vertex="1">
+          <mxGeometry height="60" width="320" x="40" y="40" as="geometry" />
         </mxCell>
-        <mxCell id="b2" value="&lt;b&gt;2. Preconcentración viral&lt;/b&gt;&lt;br&gt;Precipitación con polietilenglicol (PEG)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;verticalAlign=middle;" vertex="1" parent="1">
-          <mxGeometry x="40" y="140" width="320" height="60" as="geometry" />
+        <mxCell id="b2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=15;verticalAlign=middle;" value="&lt;b&gt;2. Preconcentración viral&lt;/b&gt;&lt;br&gt;Precipitación con polietilenglicol (PEG)" vertex="1">
+          <mxGeometry height="60" width="320" x="40" y="140" as="geometry" />
         </mxCell>
-        <mxCell id="b3" value="&lt;b&gt;3. Extracción de ARN&lt;/b&gt;&lt;br&gt;Kit Quick-RNA Viral (Zymo Research)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;verticalAlign=middle;" vertex="1" parent="1">
-          <mxGeometry x="40" y="240" width="320" height="60" as="geometry" />
+        <mxCell id="b3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=15;verticalAlign=middle;" value="&lt;b&gt;3. Extracción de ARN&lt;/b&gt;&lt;br&gt;Kit Quick-RNA Viral (Zymo Research)" vertex="1">
+          <mxGeometry height="60" width="320" x="40" y="240" as="geometry" />
         </mxCell>
-        <mxCell id="b4" value="&lt;b&gt;4. PCR anidada — Ronda 1 (PanEV)&lt;/b&gt;&lt;br&gt;2X Master Mix ABM One-Step + MegaFi; cebadores 5'NTR y Cre" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;verticalAlign=middle;" vertex="1" parent="1">
-          <mxGeometry x="40" y="340" width="320" height="60" as="geometry" />
+        <mxCell id="b4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=15;verticalAlign=middle;" value="&lt;b&gt;4. PCR anidada — Ronda 1 (PanEV)&lt;/b&gt;&lt;br&gt;2X Master Mix ABM One-Step + MegaFi; cebadores 5&#39;NTR y Cre" vertex="1">
+          <mxGeometry height="60" width="320" x="40" y="340" as="geometry" />
         </mxCell>
-        <mxCell id="b5" value="&lt;b&gt;5. PCR anidada — Ronda 2 (VP1)&lt;/b&gt;&lt;br&gt;Q5 Master Mix; cebadores Y7 y Q8" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;verticalAlign=middle;" vertex="1" parent="1">
-          <mxGeometry x="40" y="440" width="320" height="60" as="geometry" />
+        <mxCell id="b5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=15;verticalAlign=middle;" value="&lt;b&gt;5. PCR anidada — Ronda 2 (VP1)&lt;/b&gt;&lt;br&gt;Q5 Master Mix; cebadores Y7 y Q8" vertex="1">
+          <mxGeometry height="60" width="320" x="40" y="440" as="geometry" />
         </mxCell>
-        <mxCell id="b6" value="&lt;b&gt;6. Electroforesis en gel de agarosa&lt;/b&gt;&lt;br&gt;Confirmación de amplificación" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;verticalAlign=middle;" vertex="1" parent="1">
-          <mxGeometry x="40" y="540" width="320" height="60" as="geometry" />
+        <mxCell id="b6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=15;verticalAlign=middle;" value="&lt;b&gt;6. Electroforesis en gel de agarosa&lt;/b&gt;&lt;br&gt;Confirmación de amplificación" vertex="1">
+          <mxGeometry height="60" width="320" x="40" y="540" as="geometry" />
         </mxCell>
-        <mxCell id="b7" value="&lt;b&gt;7. Bibliotecas y secuenciación Nanopore&lt;/b&gt;&lt;br&gt;Native Barcoding Kit (Oxford Nanopore)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;verticalAlign=middle;" vertex="1" parent="1">
-          <mxGeometry x="40" y="640" width="320" height="60" as="geometry" />
+        <mxCell id="b7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=15;verticalAlign=middle;" value="&lt;b&gt;7. Bibliotecas y secuenciación Nanopore&lt;/b&gt;&lt;br&gt;Native Barcoding Kit (Oxford Nanopore)" vertex="1">
+          <mxGeometry height="60" width="320" x="40" y="640" as="geometry" />
         </mxCell>
-        <mxCell id="b8" value="&lt;b&gt;8. Análisis bioinformático&lt;/b&gt;&lt;br&gt;filtlong · Minimap · Tablet · BLAST — amplicón en VP4 → Coxsackie A" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;verticalAlign=middle;" vertex="1" parent="1">
-          <mxGeometry x="40" y="740" width="320" height="60" as="geometry" />
+        <mxCell id="b8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=15;verticalAlign=middle;" value="&lt;b&gt;8. Análisis bioinformático&lt;/b&gt;&lt;br&gt;filtlong · Minimap · Tablet · BLAST — amplicón en VP4 → Coxsackie A" vertex="1">
+          <mxGeometry height="60" width="320" x="40" y="740" as="geometry" />
         </mxCell>
-        <mxCell id="n4" value="Arita et al. (2015)" style="text;html=1;align=left;fontSize=11;fontStyle=2;fontColor=#666666;" vertex="1" parent="1">
-          <mxGeometry x="375" y="350" width="180" height="40" as="geometry" />
+        <mxCell id="n4" parent="1" style="text;html=1;align=left;fontSize=13;fontStyle=2;fontColor=#666666;" value="Arita et al. (2015)" vertex="1">
+          <mxGeometry height="40" width="180" x="375" y="350" as="geometry" />
         </mxCell>
-        <mxCell id="n5" value="Kilpatrick et al. (2011)&lt;br&gt;Yang et al. (1991)" style="text;html=1;align=left;fontSize=11;fontStyle=2;fontColor=#666666;" vertex="1" parent="1">
-          <mxGeometry x="375" y="450" width="180" height="40" as="geometry" />
+        <mxCell id="n5" parent="1" style="text;html=1;align=left;fontSize=13;fontStyle=2;fontColor=#666666;" value="Kilpatrick et al. (2011)&lt;br&gt;Yang et al. (1991)" vertex="1">
+          <mxGeometry height="40" width="180" x="375" y="450" as="geometry" />
         </mxCell>
-        <mxCell id="n7" value="Shaw et al. (2020); DDNS con sustitución de enzima (MegaFi)" style="text;html=1;align=left;fontSize=11;fontStyle=2;fontColor=#666666;" vertex="1" parent="1">
-          <mxGeometry x="375" y="650" width="200" height="40" as="geometry" />
+        <mxCell id="n7" parent="1" style="text;html=1;align=left;fontSize=13;fontStyle=2;fontColor=#666666;" value="Shaw et al. (2020)" vertex="1">
+          <mxGeometry height="40" width="382" x="375" y="650" as="geometry" />
         </mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#444444;strokeWidth=2;" edge="1" parent="1" source="b1" target="b2">
+        <mxCell id="e1" edge="1" parent="1" source="b1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#444444;strokeWidth=2;fontSize=13;" target="b2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#444444;strokeWidth=2;" edge="1" parent="1" source="b2" target="b3">
+        <mxCell id="e2" edge="1" parent="1" source="b2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#444444;strokeWidth=2;fontSize=13;" target="b3">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#444444;strokeWidth=2;" edge="1" parent="1" source="b3" target="b4">
+        <mxCell id="e3" edge="1" parent="1" source="b3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#444444;strokeWidth=2;fontSize=13;" target="b4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#444444;strokeWidth=2;" edge="1" parent="1" source="b4" target="b5">
+        <mxCell id="e4" edge="1" parent="1" source="b4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#444444;strokeWidth=2;fontSize=13;" target="b5">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#444444;strokeWidth=2;" edge="1" parent="1" source="b5" target="b6">
+        <mxCell id="e5" edge="1" parent="1" source="b5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#444444;strokeWidth=2;fontSize=13;" target="b6">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#444444;strokeWidth=2;" edge="1" parent="1" source="b6" target="b7">
+        <mxCell id="e6" edge="1" parent="1" source="b6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#444444;strokeWidth=2;fontSize=13;" target="b7">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#444444;strokeWidth=2;" edge="1" parent="1" source="b7" target="b8">
+        <mxCell id="e7" edge="1" parent="1" source="b7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#444444;strokeWidth=2;fontSize=13;" target="b8">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
