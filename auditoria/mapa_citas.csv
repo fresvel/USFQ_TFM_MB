@@ -1,20 +1,67 @@
-clave,estado,categoria,archivo,nota
-Sims_2020,EN_REPO,sustantiva,Recursos/fuentes/Sars-cov2/sims-2020-wbe-future-perspectives.pdf,Descargado (PMC7128895) en esta auditoria.
-Ahmed_2020,EN_REPO,sustantiva,Recursos/fuentes/Sars-cov2/ahmed-2020-first-detection-sarscov2-wastewater-australia.pdf,Descargado (PMC7165106) en esta auditoria.
-Medema_2020,EN_REPO,sustantiva,Recursos/fuentes/Sars-cov2/medema.pdf,"Descargado preprint medRxiv (10.1101/2020.03.29.20045880); mismos autores/datos que ESTLett. Verificado en auditoria."
-Asghar_2014,EN_REPO,sustantiva,Recursos/fuentes/polio/asghar-2014-environmental-surveillance-poliovirus-gpei.pdf,Descargado (PMC10578309) en esta auditoria.
-Crits_Christoph_2021,EN_REPO,sustantiva,Recursos/fuentes/Sars-cov2/crits-christoph-2021-sewage-sequencing-variants.pdf,Descargado (PMC7845645) en esta auditoria.
-Islam_2025,FALTA,sustantiva,,"NO descargable (revista menor, bibliomed). RECOMENDAR reemplazo: los clados 24A/24H de JN.1 son asignacion Nextclade (fuente primaria) o via Bruno_2025."
-Lu_2020,FALTA,metodologia,,Ensayo CDC N1/N2. Conseguir o tratar como primaria.
-Arita_2015,FALTA,metodologia,,Cebadores pan-enterovirus 5'NTR/Cre. Conseguir.
-Kilpatrick_2011,FALTA,metodologia,,Cebador Y7 (VP1). Conseguir.
-Yang_1991,FALTA,metodologia,,Cebador Q8 (VP1). Conseguir.
-OBrien_2021,FALTA,metodologia,,Comparacion extraccion ARN viral. Conseguir.
-Schang_2021,FALTA,metodologia,,Validacion muestreo pasivo. Conseguir.
-NEB_2020,FABRICANTE,fabricante,,New England Biolabs (protocolo online). OK sin PDF.
-NEB_2021,FABRICANTE,fabricante,,New England Biolabs (protocolo online). OK sin PDF.
-ONT_2025,FABRICANTE,fabricante,,Oxford Nanopore (protocolo online). OK sin PDF.
-Zymo_2023,FABRICANTE,fabricante,,Zymo Research (protocolo kit). OK sin PDF.
-WHO_2020,OFICIAL,oficial,,WHO bioseguridad (documento oficial online). OK.
-Bruno_2025,EN_REPO,sustantiva,Recursos/fuentes/Sars-cov2/bruno-2025-andean-community-sarscov2.pdf,Descargado en esta auditoria; claim corregido.
-MSP_2023,EN_REPO,sustantiva,Recursos/fuentes/polio/msp-ecuador-esquema-nacional-vacunacion-2023.pdf,"Fuente oficial MSP descargada y auditada en D2: Ecuador usa bOPV oral (6/18 meses y 5 anios) + IPV en hexavalente (2/4 meses). Corrige claim falso uso vacuna inactivada exclusiva."
+clave,doi,titulo,fichero_pdf,en_repo,n_usos,ubicaciones
+Acosta_2022,10.1016/j.watres.2022.118611,Longitudinal {SARS-CoV-2,,N,3,01_introduccion.tex:39; 01_introduccion.tex:55; Borrador.tex:15
+Ahmed_2020,10.1016/j.scitotenv.2020.138764,First confirmed detection of {SARS-CoV-2,,N,7,01_introduccion.tex:7; 01_introduccion.tex:39; 01_introduccion.tex:83; 03_metodologia_diseno.tex:79; 05_discusion.tex:7; 06_conclusiones.tex:13; Borrador.tex:7
+Aksamentov_2021,10.21105/joss.03773,"Nextclade: clade assignment, mutation calling and quality control for viral genomes",,N,1,03_metodologia_diseno.tex:257
+Arita_2015,10.1128/JCM.02384-14,Development of an efficient entire-capsid-coding-region amplification method for direct detection of poliovirus from sto,,N,1,03_metodologia_diseno.tex:180
+Asghar_2014,10.1093/infdis/jiu384,Environmental surveillance for polioviruses in the Global Polio Eradication Initiative,,N,8,01_introduccion.tex:9; 01_introduccion.tex:17; 01_introduccion.tex:77; 01_introduccion.tex:134; 01_introduccion.tex:146; 01_introduccion.tex:146; 03_metodologia_diseno.tex:178; Borrador.tex:9
+Barbe_2022,10.3389/fmicb.2022.889811,{SARS-CoV-2,,N,4,03_metodologia_diseno.tex:119; 03_metodologia_diseno.tex:202; 03_metodologia_diseno.tex:208; 05_discusion.tex:31
+Bottcher_2025,10.2807/1560-7917.ES.2025.30.3.2500037,Detection of circulating vaccine-derived poliovirus type 2 ({cVDPV2,,N,5,01_introduccion.tex:75; 01_introduccion.tex:112; 01_introduccion.tex:134; 01_introduccion.tex:142; Borrador.tex:17
+Bruno_2025,10.3389/fpubh.2025.1623413,Genomic surveillance of {SARS-CoV-2,,N,6,01_introduccion.tex:132; 01_introduccion.tex:140; 05_discusion.tex:15; 05_discusion.tex:17; 05_discusion.tex:17; 06_conclusiones.tex:13
+Bubba_2023,10.3390/microorganisms11102496,Wastewater surveillance in Europe for non-polio enteroviruses and beyond,,N,7,01_introduccion.tex:13; 01_introduccion.tex:138; 03_metodologia_diseno.tex:5; 05_discusion.tex:7; 05_discusion.tex:21; 05_discusion.tex:21; Borrador.tex:13
+Camacho_2009,10.1186/1471-2105-10-421,{BLAST+,,N,1,03_metodologia_diseno.tex:263
+Chan_2025,10.1021/acsestwater.4c01013,Respiratory virus season surveillance in the {United States,,N,2,01_introduccion.tex:31; 01_introduccion.tex:138
+Child_2023,10.1128/mbio.01468-23,Comparison of metagenomic and targeted methods for sequencing human pathogenic viruses from wastewater,,N,13,01_introduccion.tex:29; 01_introduccion.tex:93; 01_introduccion.tex:95; 01_introduccion.tex:114; 01_introduccion.tex:120; 01_introduccion.tex:126; 01_introduccion.tex:146; 03_metodologia_diseno.tex:119
+Crits_Christoph_2021,10.1128/mBio.02703-20,Genome sequencing of sewage detects regionally prevalent {SARS-CoV-2,,N,5,01_introduccion.tex:7; 01_introduccion.tex:114; 01_introduccion.tex:142; 05_discusion.tex:15; Borrador.tex:7
+Danecek_2021,10.1093/gigascience/giab008,Twelve years of {SAMtools,,N,2,03_metodologia_diseno.tex:259; 03_metodologia_diseno.tex:263
+Dash_2024,,Next Generation Sequencing ({NGS,,N,10,01_introduccion.tex:99; 01_introduccion.tex:99; 01_introduccion.tex:99; 01_introduccion.tex:99; 01_introduccion.tex:103; 01_introduccion.tex:107; 01_introduccion.tex:114; 01_introduccion.tex:118
+Falman_2019,10.1007/s12560-018-09364-y,Evaluation of secondary concentration methods for poliovirus detection in wastewater,Recursos/fuentes/polio/s12560-018-09364-y.pdf,S,1,03_metodologia_diseno.tex:57
+Geissler_2025,10.1038/s41598-025-13998-x,Methodic aspects of influenza and respiratory syncytial virus detection in raw wastewater and presence in treatment plan,Recursos/fuentes/RSV/s41598-025-13998-x.pdf,S,1,05_discusion.tex:27
+Haque_2023,10.1186/s40246-023-00505-4,Monitoring {SARS-CoV-2,Recursos/fuentes/Sars-cov2/s40246-023-00505-4.pdf,S,1,05_discusion.tex:11
+Hughes_2022,10.1021/acs.estlett.1c00963,Respiratory Syncytial Virus ({RSV,,N,12,01_introduccion.tex:9; 01_introduccion.tex:19; 01_introduccion.tex:63; 01_introduccion.tex:85; 01_introduccion.tex:134; 01_introduccion.tex:142; 01_introduccion.tex:146; 05_discusion.tex:27
+Islam_2025,10.5455/JBPH.2025.06,Emerging {SARS-CoV-2,,N,0,
+Itokawa_2020,10.1371/journal.pone.0239403,Disentangling primer interactions improves {SARS-CoV-2,,N,1,05_discusion.tex:11
+Karthikeyan_2022,10.1038/s41586-022-05049-6,Wastewater sequencing reveals early cryptic {SARS-CoV-2,Recursos/fuentes/Sars-cov2/s41586-022-05049-6.pdf,S,9,01_introduccion.tex:53; 01_introduccion.tex:57; 01_introduccion.tex:112; 01_introduccion.tex:114; 03_metodologia_diseno.tex:259; 03_metodologia_diseno.tex:259; 05_discusion.tex:11; 05_discusion.tex:15
+Katoh_2013,10.1093/molbev/mst010,{MAFFT,,N,1,03_metodologia_diseno.tex:263
+Kilpatrick_2011,10.1016/j.jviromet.2011.03.020,Poliovirus serotype-specific {VP1,,N,1,03_metodologia_diseno.tex:180
+Kissova_2022,10.3390/v14081599,History of the wastewater assessment of polio and non-polio enteroviruses in the {Slovak,,N,3,01_introduccion.tex:69; 01_introduccion.tex:75; 05_discusion.tex:23
+Klapsa_2022,10.1016/S0140-6736(22)01804-9,Sustained detection of type 2 poliovirus in {London,,N,5,01_introduccion.tex:75; 01_introduccion.tex:77; 01_introduccion.tex:105; 05_discusion.tex:23; 06_conclusiones.tex:13
+Lansivaara_2024,10.1021/acsestwater.3c00752,Wastewater-based surveillance of respiratory syncytial virus epidemic at the national level in {Finland,,N,2,01_introduccion.tex:61; 01_introduccion.tex:63
+Le_2025,10.1038/s41598-025-20371-5,Whole-genome nanopore sequencing and automatic downstream analysis of respiratory syncytial virus using {RSVTyper,Recursos/fuentes/RSV/s41598-025-20371-5.pdf,S,12,01_introduccion.tex:65; 01_introduccion.tex:65; 01_introduccion.tex:91; 01_introduccion.tex:93; 01_introduccion.tex:105; 01_introduccion.tex:112; 01_introduccion.tex:146; 05_discusion.tex:27
+Lesenfants_2026,10.1016/S2468-2667(26)00051-4,Public health responses following identification of poliovirus in wastewater,,N,1,01_introduccion.tex:75
+Li_2018,10.1093/bioinformatics/bty191,Minimap2: pairwise alignment for nucleotide sequences,,N,3,03_metodologia_diseno.tex:259; 03_metodologia_diseno.tex:261; 03_metodologia_diseno.tex:263
+Lu_2020,10.3201/eid2608.201246,{US CDC,,N,1,03_metodologia_diseno.tex:79
+MSP_2023,,Esquema Nacional de Vacunaci{\'o,,N,1,05_discusion.tex:23
+Maloney_2025,10.12688/wellcomeopenres.24311.1,{ARTIC,,N,5,01_introduccion.tex:140; 03_metodologia_diseno.tex:191; 03_metodologia_diseno.tex:261; 04_analisis_datos.tex:136; 05_discusion.tex:27
+Martin_2016,10.1007/978-1-4939-3292-4,Poliovirus: Methods and Protocols,,N,6,01_introduccion.tex:69; 03_metodologia_diseno.tex:263; 04_analisis_datos.tex:123; 04_analisis_datos.tex:123; 05_discusion.tex:21; 05_discusion.tex:21
+MasLago_2003,10.1093/ije/dyg185,Poliovirus detection in wastewater and stools following an immunization campaign in {Havana,,N,2,01_introduccion.tex:69; 05_discusion.tex:23
+Medema_2020,10.1101/2020.03.29.20045880,Presence of {SARS-Coronavirus-2,Recursos/fuentes/Sars-cov2/medema.pdf,S,4,01_introduccion.tex:7; 01_introduccion.tex:39; 05_discusion.tex:7; Borrador.tex:7
+MejiaCalle_2024,,Analysis of {SARS-CoV-2,,N,22,01_introduccion.tex:21; 01_introduccion.tex:21; 01_introduccion.tex:45; 01_introduccion.tex:47; 01_introduccion.tex:87; 01_introduccion.tex:95; 01_introduccion.tex:105; 01_introduccion.tex:132
+Mercier_2025,10.1080/13696998.2025.2473810,Cost-effectiveness of wastewater and environmental monitoring of respiratory syncytial virus to guide universal infant i,,N,2,01_introduccion.tex:61; 01_introduccion.tex:138
+Minh_2020,10.1093/molbev/msaa015,{IQ-TREE,,N,1,03_metodologia_diseno.tex:263
+Murray_2021,,Microbiolog{\'i,,N,2,01_introduccion.tex:53; 01_introduccion.tex:61
+NEB_2020,,Instruction Manual: Luna {SARS-CoV-2,,N,2,03_metodologia_diseno.tex:79; 03_metodologia_diseno.tex:267
+NEB_2021,,Instruction Manual: {NEBNext,,N,3,03_metodologia_diseno.tex:119; 03_metodologia_diseno.tex:202; 03_metodologia_diseno.tex:267
+OBrien_2021,10.1016/j.scitotenv.2021.149595,A comparison of four commercially available {RNA,,N,0,
+ONT_2025,,Ligation Sequencing Amplicons -- Native Barcoding Kit 96 {V14,,N,2,03_metodologia_diseno.tex:208; 03_metodologia_diseno.tex:210
+OReilly_2020,10.1016/S2666-5247(20)30100-2,The challenges of informative wastewater sampling for {SARS-CoV-2,,N,1,05_discusion.tex:21
+OToole_2021,10.1093/ve/veab064,Assignment of epidemiological lineages in an emerging pandemic using the pangolin tool,,N,1,03_metodologia_diseno.tex:257
+Parkins_2023,10.1128/cmr.00103-22,Wastewater-based surveillance as a tool for public health action: {SARS-CoV-2,,N,32,01_introduccion.tex:13; 01_introduccion.tex:13; 01_introduccion.tex:15; 01_introduccion.tex:15; 01_introduccion.tex:23; 01_introduccion.tex:27; 01_introduccion.tex:29; 01_introduccion.tex:31
+RoldanHernandez_2023,10.1021/acs.est.3c03376,"Adsorption of respiratory syncytial virus, rhinovirus, {SARS-CoV-2",,N,4,01_introduccion.tex:43; 01_introduccion.tex:61; 05_discusion.tex:27; 06_conclusiones.tex:13
+Rozanec_2026,10.3390/microorganisms14040861,Sampling schemes in poliovirus wastewater surveillance studies from {European,,N,0,
+Sangsanont_2022,10.1016/j.scitotenv.2021.151169,{SARS-CoV-2,,N,2,01_introduccion.tex:39; Borrador.tex:15
+Schang_2021,10.1021/acs.est.1c01530,Passive sampling of {SARS-CoV-2,,N,1,03_metodologia_diseno.tex:22
+Seo_2025,10.1038/s41598-025-92912-x,Sporadic detection of vaccine-derived poliovirus type 2 using next-generation sequencing in {Canadian,Recursos/fuentes/polio/s41598-025-92912-x.pdf,S,2,05_discusion.tex:23; 05_discusion.tex:23
+Shaw_2020,10.1128/JCM.00920-20,Rapid and sensitive direct detection and identification of poliovirus from stool and environmental surveillance samples ,,N,3,03_metodologia_diseno.tex:178; 03_metodologia_diseno.tex:180; 03_metodologia_diseno.tex:210
+Shaw_2022,10.1093/infdis/jiab518,Time taken to detect and respond to polio outbreaks in Africa and the potential impact of direct molecular detection and,Recursos/fuentes/polio/jiab518.pdf,S,2,01_introduccion.tex:77; 03_metodologia_diseno.tex:180
+Shaw_2022_protocol,10.17504/protocols.io.81wgbpkmovpk/v3,Nested {VP1,Recursos/fuentes/Sars-cov2/pathogens-10-01271-v3.pdf,S,3,03_metodologia_diseno.tex:178; 03_metodologia_diseno.tex:180; 03_metodologia_diseno.tex:210
+Sims_2020,10.1016/j.envint.2020.105689,Future perspectives of wastewater-based epidemiology: Monitoring infectious disease spread and resistance to the communi,,N,4,01_introduccion.tex:5; 01_introduccion.tex:23; 01_introduccion.tex:126; Borrador.tex:5
+Subedi_2019,10.1021/bk-2019-1319.ch001,Wastewater-Based Epidemiology as a Complementary Approach to the Conventional Survey-Based Approach for the Estimation o,,N,3,01_introduccion.tex:35; 01_introduccion.tex:35; 03_metodologia_diseno.tex:275
+ToribioAvedillo_2024,10.1016/j.scitotenv.2024.170636,Adapted methods for monitoring influenza virus and respiratory syncytial virus in sludge and wastewater,,N,1,05_discusion.tex:27
+WHO_2020,,Laboratory Biosafety Manual,,N,1,03_metodologia_diseno.tex:275
+Yang_1991,10.1016/0168-1702(91)90107-7,Detection and identification of vaccine-related polioviruses by the polymerase chain reaction,,N,1,03_metodologia_diseno.tex:180
+Yousif_2023,10.1038/s41467-023-41369-5,{SARS-CoV-2,Recursos/fuentes/Sars-cov2/s41467-023-41369-5.pdf,S,2,01_introduccion.tex:138; 01_introduccion.tex:140
+Zahmatkesh_2022,10.1016/j.hazadv.2022.100140,Review of concerned {SARS-CoV-2,,N,1,01_introduccion.tex:53
+Zambrana_2024,10.1128/msphere.00224-24,Spatial and temporal variation in respiratory syncytial virus ({RSV,,N,5,01_introduccion.tex:61; 01_introduccion.tex:61; 01_introduccion.tex:61; 01_introduccion.tex:65; 05_discusion.tex:33
+Zulli_2024,10.1021/acsestwater.3c00725,Observations of respiratory syncytial virus ({RSV,,N,3,01_introduccion.tex:61; 01_introduccion.tex:63; 05_discusion.tex:27
+Zurbriggen_2008,10.1128/AEM.02764-07,Isolation of Sabin-like polioviruses from wastewater in a country using inactivated polio vaccine,,N,7,01_introduccion.tex:17; 01_introduccion.tex:71; 01_introduccion.tex:73; 01_introduccion.tex:75; 03_metodologia_diseno.tex:178; 05_discusion.tex:23; Borrador.tex:17
+Zymo_2023,,{Quick-RNA,,N,1,03_metodologia_diseno.tex:68
