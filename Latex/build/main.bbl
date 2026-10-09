@@ -524,6 +524,44 @@ Dash, H\BPBI R.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+de Korne-Elenbaas%
+\ \protect \BOthers {.}}{%
+de Korne-Elenbaas%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2025}}%
+}]{%
+deKorne_2025}
+\APACinsertmetastar {%
+deKorne_2025}%
+\begin{APACrefauthors}%
+de Korne-Elenbaas, J.%
+, Rimaite, A.%
+, Topolsky, I.%
+, Dreifuss, D.%
+, B{\"u}rki, C.%
+, Fuhrmann, L.%
+\BDBL {}Julian, T\BPBI R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2025}{}{}.
+\newblock
+\APACrefbtitle {Wastewater-based sequencing of {Respiratory Syncytial Virus}
+  enables tracking of lineages and identifying mutations at antigenic sites.}
+  {Wastewater-based sequencing of {Respiratory Syncytial Virus} enables
+  tracking of lineages and identifying mutations at antigenic sites.}
+\newblock
+\APAChowpublished {medRxiv}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1101/2025.02.28.25321637}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{Preprint}
+\newblock
+\begin{APACrefDOI} \doi{10.1101/2025.02.28.25321637} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 {Empresa P{\'u}blica Metropolitana de Agua Potable y Saneamiento}%
 }{%
 {Empresa P{\'u}blica Metropolitana de Agua Potable y Saneamiento}%
@@ -586,6 +624,38 @@ Falman, J\BPBI C.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1007/s12560-018-09364-y} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Gallardo-Esc{\'a}rate%
+\ \protect \BOthers {.}}{%
+Gallardo-Esc{\'a}rate%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2021}}%
+}]{%
+Gallardo_2021}
+\APACinsertmetastar {%
+Gallardo_2021}%
+\begin{APACrefauthors}%
+Gallardo-Esc{\'a}rate, C.%
+, Valenzuela-Mu{\~n}oz, V.%
+, N{\'u}{\~n}ez-Acu{\~n}a, G.%
+, Valenzuela-Miranda, D.%
+, Benaventel, B\BPBI P.%
+, S{\'a}ez-Vera, C.%
+\BDBL {}Bravo, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The wastewater microbiome: A novel insight for
+  {COVID-19} surveillance} {The wastewater microbiome: A novel insight for
+  {COVID-19} surveillance}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Science of the Total Environment}{764}{}{142867}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.scitotenv.2020.142867} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

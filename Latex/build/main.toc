@@ -6,61 +6,61 @@
 \contentsline {subsection}{Problemática}{15}{subsection*.5}%
 \contentsline {subsection}{Vigilancia basada en aguas residuales}{16}{subsection*.6}%
 \contentsline {subsubsection}{Importancia y aplicaciones}{17}{subsubsection*.7}%
-\contentsline {subsubsection}{Muestreo pasivo en aguas residuales}{17}{subsubsection*.8}%
+\contentsline {subsubsection}{Muestreo pasivo en aguas residuales}{18}{subsubsection*.8}%
 \contentsline {subsection}{Virus de interés}{18}{subsection*.9}%
 \contentsline {subsubsection}{SARS-CoV-2}{18}{subsubsection*.10}%
-\contentsline {subsubsection}{Virus sincitial respiratorio (RSV)}{19}{subsubsection*.11}%
-\contentsline {subsubsection}{\textit {Enterovirus}}{20}{subsubsection*.12}%
-\contentsline {subsection}{Técnicas de detección molecular}{22}{subsection*.13}%
-\contentsline {subsubsection}{RT-qPCR}{22}{subsubsection*.14}%
-\contentsline {subsubsection}{PCR multiplex}{23}{subsubsection*.15}%
-\contentsline {subsection}{Secuenciación y caracterización genómica}{24}{subsection*.16}%
-\contentsline {subsubsection}{Nanopore (ONT)}{24}{subsubsection*.17}%
-\contentsline {subsubsection}{Variabilidad genética y vigilancia genómica}{24}{subsubsection*.18}%
-\contentsline {subsubsection}{Procesamiento de secuencias}{25}{subsubsection*.19}%
-\contentsline {subsubsection}{Interpretación de resultados y limitaciones}{26}{subsubsection*.20}%
-\contentsline {subsection}{Contexto epidemiológico del estudio}{26}{subsection*.21}%
-\contentsline {subsubsection}{Situación en Ecuador}{26}{subsubsection*.22}%
-\contentsline {subsection}{Justificación}{27}{subsection*.23}%
-\contentsline {subsection}{Problema de investigación, pregunta y objetivos}{28}{subsection*.24}%
-\contentsline {section}{METODOLOGÍA Y DISEÑO DE LA INVESTIGACIÓN}{30}{section*.25}%
-\contentsline {subsection}{Diseño del estudio}{30}{subsection*.26}%
-\contentsline {subsection}{Área y periodo de estudio}{31}{subsection*.28}%
-\contentsline {subsection}{Estrategia de muestreo pasivo}{32}{subsection*.29}%
-\contentsline {subsection}{Diseño temporal y distribución de las muestras}{33}{subsection*.31}%
-\contentsline {subsection}{Conservación y recuperación de muestras retrospectivas}{33}{subsection*.32}%
-\contentsline {subsection}{Preconcentración viral}{34}{subsection*.33}%
-\contentsline {subsection}{Extracción de ARN}{35}{subsection*.35}%
-\contentsline {subsection}{Detección molecular de SARS-CoV-2 por RT-qPCR}{36}{subsection*.38}%
-\contentsline {subsection}{Amplificación genómica multiplex de SARS-CoV-2}{38}{subsection*.40}%
-\contentsline {subsection}{Detección de enterovirus y poliovirus por PCR anidada de VP1}{40}{subsection*.41}%
-\contentsline {subsection}{Detección y amplificación de RSV por PCR multiplex}{41}{subsection*.42}%
-\contentsline {subsection}{Electroforesis y criterios de selección para secuenciación}{41}{subsection*.43}%
-\contentsline {subsection}{Preparación de bibliotecas y secuenciación por nanoporos}{42}{subsection*.44}%
-\contentsline {subsection}{Procesamiento y análisis bioinformático}{43}{subsection*.45}%
-\contentsline {subsection}{Análisis estadístico}{45}{subsection*.46}%
-\contentsline {subsection}{Controles de calidad y criterios de interpretación}{45}{subsection*.47}%
-\contentsline {subsection}{Consideraciones éticas y de bioseguridad}{46}{subsection*.48}%
-\contentsline {section}{RESULTADOS}{47}{section*.49}%
-\contentsline {subsection}{Detección molecular por RT-qPCR}{48}{subsection*.51}%
-\contentsline {subsection}{Controles de laboratorio}{49}{subsection*.53}%
-\contentsline {subsection}{Linajes de SARS-CoV-2}{50}{subsection*.54}%
-\contentsline {subsection}{\textit {Enterovirus}}{53}{subsection*.56}%
-\contentsline {subsection}{Virus sincitial respiratorio}{56}{subsection*.58}%
-\contentsline {subsection}{Comparación temporal entre virus}{57}{subsection*.60}%
-\contentsline {section}{DISCUSIÓN}{59}{section*.62}%
-\contentsline {subsection}{Detección molecular en una matriz ambiental compleja}{59}{subsection*.63}%
-\contentsline {subsection}{Carga viral, valores de Cq y rendimiento de la secuenciación}{59}{subsection*.64}%
-\contentsline {subsection}{Linajes de SARS-CoV-2 y contexto epidemiológico}{60}{subsection*.65}%
-\contentsline {subsection}{\textit {Enterovirus}}{61}{subsection*.66}%
-\contentsline {subsection}{RSV}{62}{subsection*.67}%
-\contentsline {subsection}{Conservación de muestras retrospectivas como factor crítico}{63}{subsection*.68}%
-\contentsline {section}{CONCLUSIONES}{65}{section*.69}%
-\contentsline {subsection}{Limitaciones del estudio}{65}{subsection*.70}%
-\contentsline {subsection}{Importancia y recomendaciones}{66}{subsection*.71}%
-\contentsline {section}{REFERENCIAS}{67}{section*.72}%
-\contentsline {section}{ÍNDICE DE ANEXOS}{77}{section*.73}%
-\contentsline {section}{ANEXO A: DATOS POR MUESTRA SEMANAL DE SARS-CoV-2}{78}{section*.74}%
-\contentsline {section}{ANEXO B: MÉTRICAS DE CALIDAD DE LA SECUENCIACIÓN POR BIBLIOTECA}{81}{section*.75}%
-\contentsline {section}{ANEXO C: CONTROLES DE LA RT-qPCR POR ANÁLISIS}{84}{section*.76}%
-\contentsline {section}{ANEXO D: PROGRAMAS, VERSIONES Y BASES DE DATOS}{85}{section*.77}%
+\contentsline {subsubsection}{Virus sincitial respiratorio (RSV)}{20}{subsubsection*.11}%
+\contentsline {subsubsection}{\textit {Enterovirus}}{21}{subsubsection*.12}%
+\contentsline {subsection}{Técnicas de detección molecular}{23}{subsection*.13}%
+\contentsline {subsubsection}{RT-qPCR}{23}{subsubsection*.14}%
+\contentsline {subsubsection}{PCR multiplex}{24}{subsubsection*.15}%
+\contentsline {subsection}{Secuenciación y caracterización genómica}{25}{subsection*.16}%
+\contentsline {subsubsection}{Nanopore (ONT)}{25}{subsubsection*.17}%
+\contentsline {subsubsection}{Variabilidad genética y vigilancia genómica}{26}{subsubsection*.18}%
+\contentsline {subsubsection}{Procesamiento de secuencias}{26}{subsubsection*.19}%
+\contentsline {subsubsection}{Interpretación de resultados y limitaciones}{27}{subsubsection*.20}%
+\contentsline {subsection}{Contexto epidemiológico del estudio}{27}{subsection*.21}%
+\contentsline {subsubsection}{Situación en Ecuador}{27}{subsubsection*.22}%
+\contentsline {subsection}{Justificación}{28}{subsection*.23}%
+\contentsline {subsection}{Problema de investigación, pregunta y objetivos}{29}{subsection*.24}%
+\contentsline {section}{METODOLOGÍA Y DISEÑO DE LA INVESTIGACIÓN}{31}{section*.25}%
+\contentsline {subsection}{Diseño del estudio}{31}{subsection*.26}%
+\contentsline {subsection}{Área y periodo de estudio}{32}{subsection*.28}%
+\contentsline {subsection}{Estrategia de muestreo pasivo}{33}{subsection*.29}%
+\contentsline {subsection}{Diseño temporal y distribución de las muestras}{34}{subsection*.31}%
+\contentsline {subsection}{Conservación y recuperación de muestras retrospectivas}{34}{subsection*.32}%
+\contentsline {subsection}{Preconcentración viral}{35}{subsection*.33}%
+\contentsline {subsection}{Extracción de ARN}{36}{subsection*.35}%
+\contentsline {subsection}{Detección molecular de SARS-CoV-2 por RT-qPCR}{37}{subsection*.38}%
+\contentsline {subsection}{Amplificación genómica multiplex de SARS-CoV-2}{39}{subsection*.40}%
+\contentsline {subsection}{Detección de enterovirus y poliovirus por PCR anidada de VP1}{41}{subsection*.41}%
+\contentsline {subsection}{Detección y amplificación de RSV por PCR multiplex}{42}{subsection*.42}%
+\contentsline {subsection}{Electroforesis y criterios de selección para secuenciación}{42}{subsection*.43}%
+\contentsline {subsection}{Preparación de bibliotecas y secuenciación por nanoporos}{43}{subsection*.44}%
+\contentsline {subsection}{Procesamiento y análisis bioinformático}{44}{subsection*.45}%
+\contentsline {subsection}{Análisis estadístico}{46}{subsection*.46}%
+\contentsline {subsection}{Controles de calidad y criterios de interpretación}{46}{subsection*.47}%
+\contentsline {subsection}{Consideraciones éticas y de bioseguridad}{47}{subsection*.48}%
+\contentsline {section}{RESULTADOS}{48}{section*.49}%
+\contentsline {subsection}{Detección molecular por RT-qPCR}{49}{subsection*.51}%
+\contentsline {subsection}{Controles de laboratorio}{50}{subsection*.53}%
+\contentsline {subsection}{Linajes de SARS-CoV-2}{51}{subsection*.54}%
+\contentsline {subsection}{\textit {Enterovirus}}{54}{subsection*.56}%
+\contentsline {subsection}{Virus sincitial respiratorio}{57}{subsection*.58}%
+\contentsline {subsection}{Comparación temporal entre virus}{58}{subsection*.60}%
+\contentsline {section}{DISCUSIÓN}{60}{section*.62}%
+\contentsline {subsection}{Detección molecular en una matriz ambiental compleja}{60}{subsection*.63}%
+\contentsline {subsection}{Carga viral, valores de Cq y rendimiento de la secuenciación}{60}{subsection*.64}%
+\contentsline {subsection}{Linajes de SARS-CoV-2 y contexto epidemiológico}{61}{subsection*.65}%
+\contentsline {subsection}{\textit {Enterovirus}}{62}{subsection*.66}%
+\contentsline {subsection}{RSV}{63}{subsection*.67}%
+\contentsline {subsection}{Conservación de muestras retrospectivas como factor crítico}{64}{subsection*.68}%
+\contentsline {section}{CONCLUSIONES}{66}{section*.69}%
+\contentsline {subsection}{Limitaciones del estudio}{66}{subsection*.70}%
+\contentsline {subsection}{Importancia y recomendaciones}{67}{subsection*.71}%
+\contentsline {section}{REFERENCIAS}{68}{section*.72}%
+\contentsline {section}{ÍNDICE DE ANEXOS}{78}{section*.73}%
+\contentsline {section}{ANEXO A: DATOS POR MUESTRA SEMANAL DE SARS-CoV-2}{79}{section*.74}%
+\contentsline {section}{ANEXO B: MÉTRICAS DE CALIDAD DE LA SECUENCIACIÓN POR BIBLIOTECA}{82}{section*.75}%
+\contentsline {section}{ANEXO C: CONTROLES DE LA RT-qPCR POR ANÁLISIS}{85}{section*.76}%
+\contentsline {section}{ANEXO D: PROGRAMAS, VERSIONES Y BASES DE DATOS}{86}{section*.77}%

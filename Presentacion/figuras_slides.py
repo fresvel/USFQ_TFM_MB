@@ -12,8 +12,8 @@ sns.set_theme(style="whitegrid", rc={"font.size": 17, "axes.labelsize": 17, "xti
                                      "legend.fontsize": 15, "axes.edgecolor": "#bbbbbb", "grid.color": "#e6e6e6"})
 TINTA = "#231F20"
 plt.rcParams.update({"text.color": TINTA, "axes.labelcolor": TINTA, "xtick.color": TINTA, "ytick.color": TINTA})
-COL = {"No analizado": "#e6e6e6", "No secuenciado": "#9ecae1", "Secuenciado: no determinado": "#fdae6b",
-       "Secuenciado: determinado": "#74c476", "Secuenciado: Coxsackie A": "#9e9ac8"}
+COL = {"No analizado": "#e6e6e6", "No secuenciado": "#9ecae1", "Secuenciado: sin caracterización": "#fdae6b",
+       "Secuenciado: linaje determinado": "#74c476", "Secuenciado: Coxsackievirus A1": "#9e9ac8"}
 ORDER = list(COL.keys())
 sars = pd.read_csv(D/"sars_cov2.csv"); pol = pd.read_csv(D/"poliovirus.csv"); rsv = pd.read_csv(D/"rsv.csv")
 lon = pd.read_csv(D/"vigilancia_long.csv"); cq = pd.read_csv(D/"cq_sars_por_semana.csv")
@@ -28,8 +28,8 @@ for v, df in [("SARS-CoV-2", sars), ("Enterovirus", pol), ("RSV", rsv)]:
         det = (df.estado == "determinado").sum(); nod = (df.estado == "no_determinado").sum(); cox = 0
     else:
         det = 0; nod = (df.hallazgo == "no_determinado").sum(); cox = df.hallazgo.str.contains("Coxsackie").sum()
-    rows.append(dict(virus=v, **{"No secuenciado": no_seq, "Secuenciado: no determinado": nod,
-                                 "Secuenciado: determinado": det, "Secuenciado: Coxsackie A": cox}))
+    rows.append(dict(virus=v, **{"No secuenciado": no_seq, "Secuenciado: sin caracterización": nod,
+                                 "Secuenciado: linaje determinado": det, "Secuenciado: Coxsackievirus A1": cox}))
 eff = pd.DataFrame(rows).set_index("virus")[ORDER[1:]]
 fig, ax = plt.subplots(figsize=(6.4, 4.9)); bottom = np.zeros(len(eff))
 for s_ in eff.columns:
@@ -55,25 +55,32 @@ ax.set_xticks(range(2, 43, 4))
 h1 = [Line2D([0], [0], marker=m, color="w", markerfacecolor="#dddddd", markeredgecolor="k", markersize=11, label=l)
       for m, l in [("o", "Gen N1"), ("s", "Gen N2")]]
 h2 = [Line2D([0], [0], marker="o", color="w", markerfacecolor=estado_color[k], markeredgecolor="k", markersize=12, label=v)
-      for k, v in [("determinado", "Linaje determinado"), ("no_determinado", "Secuenciado, sin determinar"),
+      for k, v in [("determinado", "Linaje determinado"), ("no_determinado", "Secuenciado, sin caracterización"),
                    ("no_secuenciado", "No secuenciado")]]
 banda = [Patch(facecolor="#74c476", alpha=0.25, edgecolor="none", label="Rango con linaje (Cq 33–36)")]
 ax.legend(handles=h2 + h1 + banda, loc="upper center", bbox_to_anchor=(0.5, -0.2), ncol=3, frameon=False, fontsize=13,
           columnspacing=1.4, handletextpad=0.4)
 guardar(fig, "cq_sars.png")
 
-# F2 linajes (línea de tiempo)
-det = sars[sars.estado == "determinado"].copy().sort_values("semana")
-cladecol = {"24A": "#3182bd", "24H": "#de2d26"}
-fig, ax = plt.subplots(figsize=(6.6, 4.6))
-ax.plot(det.semana, range(len(det)), color="#bbbbbb", lw=1.5, zorder=1)
-for i, (_, r) in enumerate(det.iterrows()):
-    ax.scatter(r.semana, i, s=260, color=cladecol.get(r.clado, "#666"), zorder=3, edgecolor="k", lw=0.6)
-    ax.text(r.semana + 0.3, i, f" {r.linaje}", va="center", ha="left", fontsize=16)
-ax.set_yticks(range(len(det))); ax.set_yticklabels([f"Sem. {w}" for w in det.semana])
-ax.set_xlim(2, 11.5); ax.set_xlabel("Semana de muestreo (abr – jun 2025)"); ax.grid(axis="y", visible=False)
-ax.legend(handles=[Patch(facecolor=c, edgecolor="k", label=f"Clado {k}") for k, c in cladecol.items()],
-          loc="lower right", frameon=True, fontsize=14)
+# F2 linajes: abundancia por biblioteca (Freyja) y linaje del consenso, como f2_linajes_sars de la tesis (09/10/2026:
+# la tesis reemplazó la línea de tiempo, que sugería una sucesión de linajes que los datos no sostienen)
+fr = pd.read_csv(D/"freyja_sars.csv").sort_values(["semana", "cebadores"])
+fr["etq"] = [f"{s}{'A' if c.startswith('ARTIC') else 'V'}" for s, c in zip(fr.semana, fr.cebadores)]
+xs = []; x = 0; prev = None
+for s_ in fr.semana:
+    if prev is not None and s_ != prev: x += 0.5
+    xs.append(x); x += 1; prev = s_
+comp = [("QA4", "QA.4 (24H)", "#de2d26"), ("LZ5", "LZ.5 (24A)", "#3182bd"), ("otros", "Otros", "#bdbdbd")]
+fig, ax = plt.subplots(figsize=(7.2, 4.6)); bottom = np.zeros(len(fr))
+for col, lbl, c in comp:
+    ax.bar(xs, fr[col], bottom=bottom, color=c, edgecolor="white", lw=0.8, width=0.8, label=lbl)
+    bottom += fr[col].values
+for xi, (_, r) in zip(xs, fr.iterrows()):
+    ax.text(xi, 103, r.linaje_consenso, ha="center", va="bottom", fontsize=13, rotation=90, color=TINTA)
+ax.set_xticks(xs); ax.set_xticklabels(fr.etq, fontsize=14)
+ax.set_xlabel("Semana (A: ARTIC V3 · V: VarSkip)"); ax.set_ylim(0, 140); ax.set_yticks(range(0, 101, 20))
+ax.set_ylabel("Abundancia relativa (%)"); ax.grid(axis="x", visible=False)
+ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.24), ncol=3, frameon=False, fontsize=14)
 guardar(fig, "linajes_sars.png")
 
 # F4 conservación
