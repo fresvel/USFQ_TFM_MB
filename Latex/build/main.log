@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.27)  9 OCT 2026 00:51
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.27)  9 OCT 2026 07:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -981,14 +981,13 @@ File: assets/figuras/metodologia/rt_qpcr.png Graphic file (type bmp)
 [39]
 File: assets/figuras/metodologia/polio_flujo.pdf Graphic file (type pdf)
 <use assets/figuras/metodologia/polio_flujo.pdf>
+File: assets/figuras/metodologia/rsv_flujo.pdf Graphic file (type pdf)
+<use assets/figuras/metodologia/rsv_flujo.pdf>
 
 
 [40]
 
 [41]
-File: assets/figuras/metodologia/rsv_flujo.pdf Graphic file (type pdf)
-<use assets/figuras/metodologia/rsv_flujo.pdf>
-
 
 [42]
 
@@ -998,9 +997,9 @@ File: assets/figuras/metodologia/rsv_flujo.pdf Graphic file (type pdf)
 
 [45]
 
-[46])
+[46]
 
-[47]
+[47])
 
 [48] (./secciones/02_cuerpo/04_analisis_datos.tex
 File: assets/figuras/resultados/f3_rendimiento.pdf Graphic file (type pdf)
@@ -1142,7 +1141,7 @@ L3 programming layer <2025-07-19>
 Here is how much of TeX's memory you used:
  28470 strings out of 468457
  588726 string characters out of 5445913
- 1297706 words of memory out of 5000000
+ 1297714 words of memory out of 5000000
  56573 multiletter control sequences out of 15000+600000
  671490 words of font info for 154 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
