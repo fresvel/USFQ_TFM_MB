@@ -1,15 +1,172 @@
 \setcounter{usfqanexo}{0}
+\DefTblrTemplate{contfoot-text}{default}{Continúa en la página siguiente}
+\DefTblrTemplate{conthead-text}{default}{(continuación)}
 
-\USFQAnexo{\USFQCampo{TÍTULO}}{anexo:a}
+\USFQAnexo{DATOS POR MUESTRA SEMANAL DE SARS-CoV-2}{anexo:a}
 
-\USFQCampo{Si hubiere anexos. Ver requerimientos de anexos obligatorios para trabajos de carreras relacionadas a las artes.}
+La Tabla~\ref{tab:anexo_sars} reúne, para cada una de las 42 muestras semanales, los valores de Cq de los blancos N1 y N2 y del control interno RP, la corrida y los códigos de barras con que se secuenció la muestra, el número de lecturas asignadas a SARS-CoV-2 y el resultado de la caracterización. Los valores de Cq corresponden a la corrida de RT-qPCR indicada en la columna «Análisis»; cuando una semana se midió en dos corridas se conservó la que detectó más blancos.
 
-\USFQAnexo{\USFQCampo{TÍTULO}}{anexo:b}
+\begin{longtblr}[
+  caption={Datos por muestra semanal de SARS-CoV-2},
+  label={tab:anexo_sars}
+]{
+  width=\textwidth,
+  colspec={X[0.55,c] X[1.1,c] X[0.7,c] X[0.75,c] X[0.75,c] X[0.75,c] X[0.75,c] X[1.35,c] X[0.95,c] X[1.75,l]},
+  cells={font=\scriptsize}, row{1}={font=\bfseries\scriptsize},
+}
+Sem. & Fecha de inicio & Análisis & Cq N1 & Cq N2 & Cq RP & Secuenc. & Corrida (barcodes) & Lecturas SARS-CoV-2 & Resultado \\
+1 & 14/04/2025 & 1 & NA & NA & NA & No & — & — & No secuenciada \\
+2 & 21/04/2025 & 1 & NA & NA & NA & No & — & — & No secuenciada \\
+3 & 28/04/2025 & 2 & 35,80 & 35,77 & NA & Sí & Run01 (73) & 735 & 24A / JN.1 \\
+4 & 05/05/2025 & 2 & 42,89 & NA & NA & No & — & — & No secuenciada \\
+5 & 12/05/2025 & 2 & 33,96 & 34,70 & NA & Sí & Run01 (74) & 1334 & 24A / LZ.5 \\
+6 & 19/05/2025 & 2 & 34,18 & 44,13 & NA & Sí & Run01 (75, 79) & 3531 & 24A / JN.1 \\
+7 & 26/05/2025 & 2 & 33,14 & 34,17 & NA & Sí & Run01 (76, 80) & 2776 & 24A / LZ.5 \\
+8 & 02/06/2025 & 2 & 33,18 & 32,30 & NA & Sí & Run01 (77, 81) & 2606 & 24A / LU.2.1.1 \\
+9 & 09/06/2025 & 2 & 34,02 & 33,81 & NA & Sí & Run01 (78, 82) & 9565 & 24H / LF.7.1.3 \\
+10 & 16/06/2025 & 3 & 36,35 & 34,02 & NA & Sí & Run2 (57, 65) & 0 & Sin cobertura del genoma \\
+11 & 23/06/2025 & 3 & 36,12 & 32,79 & NA & Sí & Run2 (58, 66) & 0 & Sin cobertura del genoma \\
+12 & 30/06/2025 & 3 & 37,10 & 33,89 & 35,60 & Sí & Run2 (59, 67) & 0 & Sin cobertura del genoma \\
+13 & 07/07/2025 & 3 & 33,89 & 31,83 & 33,59 & Sí & Run2 (60, 68) & 0 & Sin cobertura del genoma \\
+14 & 14/07/2025 & 3 & 34,92 & 31,65 & NA & Sí & Run2 (61, 69) & 0 & Sin cobertura del genoma \\
+15 & 21/07/2025 & 3 & NA & NA & NA & No & — & — & No secuenciada \\
+16 & 28/07/2025 & 3 & 36,41 & 33,20 & NA & Sí & Run2 (62, 70) & 0 & Sin cobertura del genoma \\
+17 & 04/08/2025 & 3 & 35,27 & NA & NA & Sí & Run2 (63, 71) & 0 & Sin cobertura del genoma \\
+18 & 11/08/2025 & 4 & NA & NA & 32,22 & No & — & — & No secuenciada \\
+19 & 18/08/2025 & 4 & NA & NA & 40,32 & No & — & — & No secuenciada \\
+20 & 25/08/2025 & 4 & NA & NA & 31,23 & No & — & — & No secuenciada \\
+21 & 01/09/2025 & 4 & 36,61 & NA & 17,20 & No & — & — & No secuenciada \\
+22 & 08/09/2025 & 5 & NA & NA & NA & No & — & — & No secuenciada \\
+23 & 15/09/2025 & 5 & 37,36 & NA & NA & Sí & Run03 (94) & 1 & Sin cobertura del genoma \\
+24 & 22/09/2025 & 5 & 36,17 & 35,43 & NA & Sí & Run03 (95) & 0 & Sin cobertura del genoma \\
+25 & 29/09/2025 & 5 & 42,28 & NA & NA & Sí & Run03 (93) & 1 & Sin cobertura del genoma \\
+26 & 06/10/2025 & 5 & NA & NA & NA & No & — & — & No secuenciada \\
+27 & 13/10/2025 & 5 & NA & NA & NA & No & — & — & No secuenciada \\
+28 & 20/10/2025 & 6 & 37,34 & NA & 28,10 & Sí & Run04 (68) & 0 & Sin cobertura del genoma \\
+29 & 27/10/2025 & 6 & 36,37 & 37,28 & 32,12 & Sí & Run04 (69) & 0 & Sin cobertura del genoma \\
+30 & 03/11/2025 & 6 & 37,01 & NA & 27,26 & Sí & Run04 (70) & 0 & Sin cobertura del genoma \\
+31 & 10/11/2025 & 6 & NA & NA & 21,15 & Sí & Run04 (71) & 0 & Sin cobertura del genoma \\
+32 & 17/11/2025 & 6 & 36,37 & 39,46 & 31,05 & Sí & Run04 (72) & 0 & Sin cobertura del genoma \\
+33 & 24/11/2025 & 7 & NA & 44,30 & NA & No & — & — & No secuenciada \\
+34 & 01/12/2025 & 7 & 38,96 & NA & NA & No & — & — & No secuenciada \\
+35 & 08/12/2025 & 7 & 39,21 & NA & 36,43 & No & — & — & No secuenciada \\
+36 & 15/12/2025 & 7 & 40,49 & 40,13 & 36,23 & No & — & — & No secuenciada \\
+37 & 22/12/2025 & 7 & 38,63 & 40,33 & 38,10 & No & — & — & No secuenciada \\
+38 & 29/12/2025 & 7 & 38,53 & NA & 38,29 & No & — & — & No secuenciada \\
+39 & 05/01/2026 & 8 & 34,37 & 34,08 & 33,03 & No & — & — & No secuenciada \\
+40 & 12/01/2026 & 8 & 38,07 & NA & 23,98 & No & — & — & No secuenciada \\
+41 & 19/01/2026 & 8 & 36,42 & 38,63 & 35,32 & No & — & — & No secuenciada \\
+42 & 26/01/2026 & 8 & 37,50 & 39,87 & 39,46 & No & — & — & No secuenciada \\
+\end{longtblr}
 
-\USFQCampo{Si hubiere anexos. Ver requerimientos de anexos obligatorios para trabajos de carreras relacionadas a las artes.}
+\noindent\footnotesize{NA: sin amplificación del blanco. Los valores de Cq de las semanas 39 a 42 (análisis 8) provienen del registro fotográfico de la pantalla del termociclador. Las lecturas de SARS-CoV-2 son lecturas primarias con calidad de mapeo $\geq$20 frente a la referencia MN908947.3, sumadas entre las bibliotecas de cada semana. El clado y el linaje provienen de los consensos de EPI2ME analizados con Nextclade (conjunto de datos del 9 de junio de 2025).}\normalsize
 
-\USFQAnexo{\USFQCampo{TÍTULO}}{anexo:c}
+\USFQAnexo{MÉTRICAS DE CALIDAD DE LA SECUENCIACIÓN POR BIBLIOTECA}{anexo:b}
 
-\USFQCampo{Si hubiere anexos. Ver requerimientos de anexos obligatorios para trabajos de carreras relacionadas a las artes.}
+La Tabla~\ref{tab:anexo_qc} presenta las métricas de cada biblioteca secuenciada de los tres virus. Las lecturas corresponden a las que superaron el filtro de calidad del secuenciador; las lecturas del blanco, la profundidad media y la fracción del blanco cubierta a 10 y 20 lecturas se calcularon sobre el genoma de referencia de cada virus (SARS-CoV-2 y RSV) o sobre el amplicón de VP1 (enterovirus), según el procedimiento descrito en la metodología.
 
-\USFQCampo{Se recomienda iniciar cada anexo en una nueva hoja. Se puede incluir anexos adicionales, por ejemplo ANEXO D: TÍTULO, ANEXO E: TÍTULO, ANEXO F: TÍTULO, etc., conforme la necesidad de presentación de los mismos en el trabajo. Ver requerimientos de anexos obligatorios para trabajos de carreras relacionadas a las artes.}
+\begin{longtblr}[
+  caption={Métricas de calidad de la secuenciación por biblioteca},
+  label={tab:anexo_qc}
+]{
+  width=\textwidth,
+  colspec={X[1.2,l] X[0.55,c] X[1.25,c] X[0.75,c] X[1.1,c] X[1,r] X[1,r] X[0.9,r] X[0.75,r] X[0.75,r] X[0.65,r]},
+  cells={font=\scriptsize}, row{1}={font=\bfseries\scriptsize,halign=c},
+}
+Virus & Sem. & Corrida & Barcode & Cebadores & Lecturas & Lecturas del blanco & Prof. media & $\geq$10x (\%) & $\geq$20x (\%) & N (\%) \\
+SARS-CoV-2 & 3 & Run01 & 73 & ARTIC & 65\,978 & 735 & 9,5 & 24,8 & 16,1 & 96,9 \\
+SARS-CoV-2 & 5 & Run01 & 74 & ARTIC & 65\,169 & 1\,334 & 16,9 & 29,1 & 21,2 & 95,5 \\
+SARS-CoV-2 & 6 & Run01 & 75 & ARTIC & 76\,998 & 1\,709 & 20,6 & 28,0 & 22,8 & 95,1 \\
+SARS-CoV-2 & 7 & Run01 & 76 & ARTIC & 214\,970 & 2\,085 & 29,3 & 34,2 & 28,1 & 95,4 \\
+SARS-CoV-2 & 8 & Run01 & 77 & ARTIC & 148\,732 & 1\,772 & 23,1 & 32,5 & 23,5 & 94,2 \\
+SARS-CoV-2 & 9 & Run01 & 78 & ARTIC & 328\,560 & 8\,409 & 98,4 & 42,2 & 39,1 & 82,8 \\
+SARS-CoV-2 & 6 & Run01 & 79 & VarSkip & 38\,113 & 1\,822 & 27,5 & 22,0 & 15,7 & 94,2 \\
+SARS-CoV-2 & 7 & Run01 & 80 & VarSkip & 37\,996 & 691 & 8,8 & 22,3 & 15,3 & 96,9 \\
+SARS-CoV-2 & 8 & Run01 & 81 & VarSkip & 36\,547 & 834 & 10,6 & 24,9 & 19,5 & 96,0 \\
+SARS-CoV-2 & 9 & Run01 & 82 & VarSkip & 30\,173 & 1\,156 & 17,4 & 25,2 & 17,1 & 95,9 \\
+SARS-CoV-2 & 10 & Run2 & 57 & VarSkip & 137\,678 & 0 & 0,0 & 0,0 & 0,0 & 100,0 \\
+SARS-CoV-2 & 11 & Run2 & 58 & VarSkip & 11\,387 & 0 & 0,0 & 0,0 & 0,0 & 100,0 \\
+SARS-CoV-2 & 12 & Run2 & 59 & VarSkip & 29\,304 & 0 & 0,0 & 0,0 & 0,0 & 100,0 \\
+SARS-CoV-2 & 13 & Run2 & 60 & VarSkip & 30\,427 & 0 & 0,0 & 0,0 & 0,0 & 100,0 \\
+SARS-CoV-2 & 14 & Run2 & 61 & VarSkip & 26\,073 & 0 & 0,0 & 0,0 & 0,0 & 100,0 \\
+SARS-CoV-2 & 16 & Run2 & 62 & VarSkip & 33\,553 & 0 & 0,0 & 0,0 & 0,0 & 100,0 \\
+SARS-CoV-2 & 17 & Run2 & 63 & VarSkip & 18\,369 & 0 & 0,0 & 0,0 & 0,0 & 100,0 \\
+SARS-CoV-2 & 10 & Run2 & 65 & VarSkip & 173\,030 & 0 & 0,0 & 0,0 & 0,0 & 100,0 \\
+SARS-CoV-2 & 11 & Run2 & 66 & VarSkip & 19\,363 & 0 & 0,0 & 0,0 & 0,0 & 100,0 \\
+SARS-CoV-2 & 12 & Run2 & 67 & VarSkip & 23\,302 & 0 & 0,0 & 0,0 & 0,0 & 100,0 \\
+SARS-CoV-2 & 13 & Run2 & 68 & VarSkip & 26\,819 & 0 & 0,0 & 0,0 & 0,0 & 100,0 \\
+SARS-CoV-2 & 14 & Run2 & 69 & VarSkip & 24\,374 & 0 & 0,0 & 0,0 & 0,0 & 100,0 \\
+SARS-CoV-2 & 16 & Run2 & 70 & VarSkip & 28\,820 & 0 & 0,0 & 0,0 & 0,0 & 100,0 \\
+SARS-CoV-2 & 17 & Run2 & 71 & VarSkip & 20\,087 & 0 & 0,0 & 0,0 & 0,0 & 100,0 \\
+SARS-CoV-2 & 23 & Run03 & 94 & VarSkip & 20\,437 & 1 & 0,0 & 0,0 & 0,0 & 100,0 \\
+SARS-CoV-2 & 24 & Run03 & 95 & VarSkip & 19\,092 & 0 & 0,0 & 0,0 & 0,0 & 100,0 \\
+SARS-CoV-2 & 25 & Run03 & 93 & VarSkip & 53\,300 & 1 & 0,0 & 0,0 & 0,0 & 100,0 \\
+SARS-CoV-2 & 28 & Run04 & 68 & ARTIC & 15\,264 & 0 & 0,0 & 0,0 & 0,0 & 100,0 \\
+SARS-CoV-2 & 29 & Run04 & 69 & ARTIC & 21\,339 & 0 & 0,0 & 0,0 & 0,0 & 100,0 \\
+SARS-CoV-2 & 30 & Run04 & 70 & ARTIC & 29\,740 & 0 & 0,0 & 0,0 & 0,0 & 100,0 \\
+SARS-CoV-2 & 31 & Run04 & 71 & ARTIC & 27\,469 & 0 & 0,0 & 0,0 & 0,0 & 100,0 \\
+SARS-CoV-2 & 32 & Run04 & 72 & ARTIC & 19\,176 & 0 & 0,0 & 0,0 & 0,0 & 100,0 \\
+RSV & 50 & RSV (sin diluir) & 25 & ARTIC RSV & 32\,244 & 0 & 0,0 & 0,0 & 0,0 & 100,0 \\
+RSV & 52 & RSV (sin diluir) & 26 & ARTIC RSV & 51\,540 & 0 & 0,0 & 0,0 & 0,0 & 100,0 \\
+RSV & 53 & RSV (sin diluir) & 27 & ARTIC RSV & 80\,528 & 0 & 0,0 & 0,0 & 0,0 & 100,0 \\
+RSV & 54 & RSV (sin diluir) & 28 & ARTIC RSV & 66\,552 & 0 & 0,0 & 0,0 & 0,0 & 100,0 \\
+RSV & 50 & RSV (diluida) & 29 & ARTIC RSV & 28\,012 & 0 & 0,0 & 0,0 & 0,0 & 100,0 \\
+RSV & 52 & RSV (diluida) & 30 & ARTIC RSV & 106\,662 & 0 & 0,0 & 0,0 & 0,0 & 100,0 \\
+RSV & 53 & RSV (diluida) & 31 & ARTIC RSV & 116\,000 & 0 & 0,0 & 0,0 & 0,0 & 100,0 \\
+RSV & 54 & RSV (diluida) & 32 & ARTIC RSV & 100\,288 & 0 & 0,0 & 0,0 & 0,0 & 100,0 \\
+Enterovirus & 45 & Enterovirus & 48 & Y7/Q8 (VP1) & 66\,738 & 47\,416 & 43\,650,0 & 98,0 & 98,0 & 2,0 \\
+Enterovirus & 45 & Enterovirus & 49 & Y7/Q8 (VP1) & 7\,898 & 5\,629 & 4\,964,0 & 97,4 & 97,3 & 2,7 \\
+Enterovirus & 46 & Enterovirus & 50 & Y7/Q8 (VP1) & 23\,480 & 2\,482 & 2\,175,0 & 97,4 & 97,2 & 2,7 \\
+Enterovirus & 46 & Enterovirus & 51 & Y7/Q8 (VP1) & 23\,879 & 3\,145 & 2\,755,0 & 97,3 & 97,3 & 2,8 \\
+\end{longtblr}
+
+\noindent\footnotesize{El porcentaje de N de las bibliotecas de la corrida Run01 corresponde a los consensos generados por EPI2ME, sobre los que se asignó el linaje. En las bibliotecas sin lecturas del blanco el consenso no contiene bases determinadas. En enterovirus, las métricas se refieren al amplicón de VP1 (1094 pb, posiciones 2392--3485 de Coxsackievirus A1, AF499635.1).}\normalsize
+
+\USFQAnexo{CONTROLES DE LA RT-qPCR POR ANÁLISIS}{anexo:c}
+
+La Tabla~\ref{tab:anexo_controles} registra los valores de Cq de los controles incluidos en cada análisis de RT-qPCR de SARS-CoV-2. Los valores de los análisis 1 a 7 provienen de la bitácora de laboratorio y los del análisis 8, del registro fotográfico de la pantalla del termociclador tomado el 24 de febrero de 2026.
+
+\begin{longtblr}[
+  caption={Controles de la RT-qPCR de SARS-CoV-2 por análisis},
+  label={tab:anexo_controles}
+]{
+  width=\textwidth,
+  colspec={X[0.7,c] X[1,c] X[1.4,c] X[1.8,c] X[1,c]},
+}
+Análisis & Fecha & Control positivo del kit (Cq N1 / N2) & Control positivo de extracción (hisopado: Cq N1 / N2) & NTC \\
+1 & 28/05/2025 & 25,52 / 24,47 & No incluido & Sin señal \\
+2 & n.r. & 21,66 / 21,25 & 5104: 11,28 / 10,59 & Sin señal \\
+3 & 14/08/2025 & 22,47 / 20,03 & 5106: 11,91 / 9,53 & Sin señal \\
+4 & 18/09/2025 & 22,07 / 21,40 & 5107: 18,50 / 18,41 & Sin señal \\
+5 & 23/10/2025 & 21,98 / 20,81 & 5109: 20,65 / 19,16 & Sin señal \\
+6 & 27/11/2025 & 22,47 / 21,40 & 5111: 12,91 / 11,43 & Sin señal \\
+7 & 08/01/2026 & 21,59 / 20,98 & 5109: 20,83 / 19,97 & Sin señal \\
+8 & 24/02/2026 & 20,38 / 20,36 & 5112: n.r. & Sin señal en N1 y N2; RP 40,84 \\
+\end{longtblr}
+
+\noindent\footnotesize{NTC: control sin molde. n.r.: valor no registrado. En el análisis 1 no se incluyó control de extracción y ninguna muestra amplificó, por lo que sus resultados se descartaron.}\normalsize
+
+\USFQAnexo{PROGRAMAS, VERSIONES Y BASES DE DATOS}{anexo:d}
+
+La Tabla~\ref{tab:anexo_software} detalla los programas, las versiones y las bases de datos empleados en el procesamiento de las secuencias y en el análisis estadístico.
+
+\begin{longtblr}[
+  caption={Programas, versiones y bases de datos empleados},
+  label={tab:anexo_software}
+]{
+  width=\textwidth,
+  colspec={X[1.3,l] X[1.4,l] X[2.3,l]},
+}
+Etapa & Programa y versión & Parámetros y bases de datos \\
+Adquisición y basecalling & MinKNOW 24.02.16; Dorado 7.3.11 & Versiones registradas en los reportes de las corridas Run03 y Run04; filtro de calidad del secuenciador (fastq\_pass) \\
+Consenso de SARS-CoV-2 & EPI2ME wf-artic v1.3.0 (artic minion con medaka) & Esquema ARTIC/V3; modelo dna\_r10.4.1\_e8.2\_400bps\_sup@v4.3.0; normalización a 200 lecturas \\
+Linaje de SARS-CoV-2 & Nextclade & Conjunto de datos sars-cov-2 del 9 de junio de 2025 \\
+Linaje de SARS-CoV-2 (control) & Pangolin 4.3.1 & Datos PUSHER-v1.34; ejecutado dentro de wf-artic \\
+Mapeo de lecturas & minimap2 2.31 & Modo map-ont; referencias MN908947.3, RSV-A y RSV-B del esquema ARTIC RSV, AF499635.1 \\
+Recorte de cebadores, profundidad y consenso & samtools 1.24 & ampliconclip (ARTIC V3 y VarSkip vss2a); depth; consensus ($\geq$20x, $\geq$60\,\%) \\
+Abundancia de linajes en la mezcla & Freyja 2.0.5 (iVar 1.4.4; UShER 0.6.6) & Barcodes de linajes del 20 de junio de 2025; profundidad mínima 10 \\
+Comparación de VP1 & BLAST+ 2.17.0 & blastn megablast frente a core\_nt (NCBI), octubre de 2026 \\
+Filogenia de VP1 & MAFFT 7.526; IQ-TREE 2.4.0 & ModelFinder; 1000 réplicas UFBoot y SH-aLRT; raíz en enterovirus A \\
+Pruebas estadísticas & SciPy (Python) & Kruskal-Wallis, Mann-Whitney con corrección de Bonferroni, Spearman; intervalo de Wilson \\
+\end{longtblr}
+
