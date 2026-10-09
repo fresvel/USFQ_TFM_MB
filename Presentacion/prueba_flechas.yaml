@@ -1,0 +1,995 @@
+titulo: 'Prueba: flechas con lápiz (vs. conectores)'
+marca: usfq
+pie: Eliana Viscarra · Maestría en Microbiología · USFQ
+diapositivas:
+- diseno: portada
+  titulo: “Análisis genómico de SARS-CoV-2, enterovirus y virus sincitial respiratorio en aguas residuales”
+  datos:
+  - '**Candidata:** Eliana Viscarra'
+  - '**Programa:** Maestría en Microbiología'
+  columnas:
+  - titulo: Director de tesis
+    items:
+    - Paúl Cárdenas, PhD — USFQ
+  - titulo: Miembros del comité
+    items:
+    - Verónica Barragán, PhD — USFQ
+    - Henry Vaca, Mgtr. — PTAR Quitumbe
+    - Shazia Ruybal, PhD — Universitat de Barcelona
+  notas: 'Saludo al tribunal y agradecimiento al director y al comité. (30 s)
+
+    '
+- diseno: lienzo
+  numero: '02'
+  titulo: Objetivos · antes
+  elementos:
+  - tipo: caja
+    x: 70
+    y: 145
+    w: 1140
+    h: 90
+    contenido: <p style="text-align:center"><strong>Analizar la presencia molecular y la caracterización genómica de SARS-CoV-2, enterovirus y
+      RSV en la PTAR Quitumbe</strong></p>
+    fondo: negro_usfq
+    borde: null
+    grosor: 0
+    radio: 10
+    tam: 85
+    color: blanco
+  - tipo: conector
+    x1: 640
+    y1: 235
+    x2: 200
+    y2: 318
+    color: beige
+    grosor: 3
+  - tipo: forma
+    x: 70
+    y: 320
+    w: 260
+    h: 14
+    tipo_forma: rect
+    relleno: rojo
+  - tipo: caja
+    x: 70
+    y: 334
+    w: 260
+    h: 230
+    contenido: <p style="text-align:center"><strong>1 · Identificar</strong></p><p style="text-align:center">material genético de los tres virus</p>
+    fondo: crema
+    borde: beige
+    grosor: 2
+    radio: 0
+    tam: 87
+    color: negro_usfq
+    anim:
+    - slide-up
+    - 0.5
+    - 0.0
+  - tipo: conector
+    x1: 640
+    y1: 235
+    x2: 490
+    y2: 318
+    color: beige
+    grosor: 3
+  - tipo: forma
+    x: 360
+    y: 320
+    w: 260
+    h: 14
+    tipo_forma: rect
+    relleno: rojo
+  - tipo: caja
+    x: 360
+    y: 334
+    w: 260
+    h: 230
+    contenido: <p style="text-align:center"><strong>2 · Caracterizar</strong></p><p style="text-align:center">las señales genómicas con secuenciación</p>
+    fondo: crema
+    borde: beige
+    grosor: 2
+    radio: 0
+    tam: 87
+    color: negro_usfq
+    anim:
+    - slide-up
+    - 0.5
+    - 0.2
+  - tipo: conector
+    x1: 640
+    y1: 235
+    x2: 780
+    y2: 318
+    color: beige
+    grosor: 3
+  - tipo: forma
+    x: 650
+    y: 320
+    w: 260
+    h: 14
+    tipo_forma: rect
+    relleno: rojo
+  - tipo: caja
+    x: 650
+    y: 334
+    w: 260
+    h: 230
+    contenido: <p style="text-align:center"><strong>3 · Interpretar</strong></p><p style="text-align:center">frente a la vigilancia y al contexto
+      local</p>
+    fondo: crema
+    borde: beige
+    grosor: 2
+    radio: 0
+    tam: 87
+    color: negro_usfq
+    anim:
+    - slide-up
+    - 0.5
+    - 0.4
+  - tipo: conector
+    x1: 640
+    y1: 235
+    x2: 1070
+    y2: 318
+    color: beige
+    grosor: 3
+  - tipo: forma
+    x: 940
+    y: 320
+    w: 260
+    h: 14
+    tipo_forma: rect
+    relleno: rojo
+  - tipo: caja
+    x: 940
+    y: 334
+    w: 260
+    h: 230
+    contenido: <p style="text-align:center"><strong>4 · Delimitar</strong></p><p style="text-align:center">alcances y límites del análisis multipatógeno</p>
+    fondo: crema
+    borde: beige
+    grosor: 2
+    radio: 0
+    tam: 87
+    color: negro_usfq
+    anim:
+    - slide-up
+    - 0.5
+    - 0.6000000000000001
+  notas: '(40 s)
+
+    Texto de la versión 1 (para decirlo en voz alta): 1. Identificar material genético de los tres virus en el influente de la PTAR Quitumbe.
+    2. Caracterizar, cuando la calidad de los datos lo permita, las señales genómicas mediante secuenciación y bioinformática. 3. Interpretar
+    los resultados frente a la vigilancia en aguas residuales y al contexto local. 4. Identificar alcances y limitaciones del análisis multipatógeno
+    en una matriz ambiental compleja.'
+- diseno: lienzo
+  numero: '02'
+  titulo: Objetivos · lápiz
+  elementos:
+  - tipo: caja
+    x: 70
+    y: 145
+    w: 1140
+    h: 90
+    contenido: <p style="text-align:center"><strong>Analizar la presencia molecular y la caracterización genómica de SARS-CoV-2, enterovirus y
+      RSV en la PTAR Quitumbe</strong></p>
+    fondo: negro_usfq
+    borde: null
+    grosor: 0
+    radio: 10
+    tam: 85
+    color: blanco
+  - tipo: construccion
+    nombre: arbol
+    origen:
+    - 640
+    - 235
+    destinos:
+    - - 200
+      - 316
+    - - 490
+      - 316
+    - - 780
+      - 316
+    - - 1070
+      - 316
+    y_barra: 275
+    color: gris_usfq
+    grosor: 4
+    radio: 16
+    punta: 16
+  - tipo: forma
+    x: 70
+    y: 320
+    w: 260
+    h: 14
+    tipo_forma: rect
+    relleno: rojo
+  - tipo: caja
+    x: 70
+    y: 334
+    w: 260
+    h: 230
+    contenido: <p style="text-align:center"><strong>1 · Identificar</strong></p><p style="text-align:center">material genético de los tres virus</p>
+    fondo: crema
+    borde: beige
+    grosor: 2
+    radio: 0
+    tam: 87
+    color: negro_usfq
+    anim:
+    - slide-up
+    - 0.5
+    - 0.0
+  - tipo: forma
+    x: 360
+    y: 320
+    w: 260
+    h: 14
+    tipo_forma: rect
+    relleno: rojo
+  - tipo: caja
+    x: 360
+    y: 334
+    w: 260
+    h: 230
+    contenido: <p style="text-align:center"><strong>2 · Caracterizar</strong></p><p style="text-align:center">las señales genómicas con secuenciación</p>
+    fondo: crema
+    borde: beige
+    grosor: 2
+    radio: 0
+    tam: 87
+    color: negro_usfq
+    anim:
+    - slide-up
+    - 0.5
+    - 0.2
+  - tipo: forma
+    x: 650
+    y: 320
+    w: 260
+    h: 14
+    tipo_forma: rect
+    relleno: rojo
+  - tipo: caja
+    x: 650
+    y: 334
+    w: 260
+    h: 230
+    contenido: <p style="text-align:center"><strong>3 · Interpretar</strong></p><p style="text-align:center">frente a la vigilancia y al contexto
+      local</p>
+    fondo: crema
+    borde: beige
+    grosor: 2
+    radio: 0
+    tam: 87
+    color: negro_usfq
+    anim:
+    - slide-up
+    - 0.5
+    - 0.4
+  - tipo: forma
+    x: 940
+    y: 320
+    w: 260
+    h: 14
+    tipo_forma: rect
+    relleno: rojo
+  - tipo: caja
+    x: 940
+    y: 334
+    w: 260
+    h: 230
+    contenido: <p style="text-align:center"><strong>4 · Delimitar</strong></p><p style="text-align:center">alcances y límites del análisis multipatógeno</p>
+    fondo: crema
+    borde: beige
+    grosor: 2
+    radio: 0
+    tam: 87
+    color: negro_usfq
+    anim:
+    - slide-up
+    - 0.5
+    - 0.6000000000000001
+  notas: '(40 s)
+
+    Texto de la versión 1 (para decirlo en voz alta): 1. Identificar material genético de los tres virus en el influente de la PTAR Quitumbe.
+    2. Caracterizar, cuando la calidad de los datos lo permita, las señales genómicas mediante secuenciación y bioinformática. 3. Interpretar
+    los resultados frente a la vigilancia en aguas residuales y al contexto local. 4. Identificar alcances y limitaciones del análisis multipatógeno
+    en una matriz ambiental compleja.'
+- diseno: lienzo
+  numero: '03'
+  titulo: Flujo multipatógeno · antes
+  elementos:
+  - tipo: caja
+    x: 70
+    y: 325
+    w: 175
+    h: 110
+    contenido: <p style="text-align:center"><strong>Muestreo</strong></p><p style="text-align:center">torpedo, 24 h</p>
+    fondo: '#dbe8f7'
+    borde: '#5a9bd4'
+    grosor: 2
+    radio: 8
+    tam: 64
+    color: negro_usfq
+  - tipo: caja
+    x: 260
+    y: 325
+    w: 175
+    h: 110
+    contenido: <p style="text-align:center"><strong>Concentración</strong></p><p style="text-align:center">PEG</p>
+    fondo: '#dbe8f7'
+    borde: '#5a9bd4'
+    grosor: 2
+    radio: 8
+    tam: 64
+    color: negro_usfq
+  - tipo: conector
+    x1: 245
+    y1: 380
+    x2: 258
+    y2: 380
+    color: '#5a9bd4'
+    grosor: 3
+  - tipo: caja
+    x: 450
+    y: 325
+    w: 175
+    h: 110
+    contenido: <p style="text-align:center"><strong>Extracción</strong></p><p style="text-align:center">ARN (Zymo)</p>
+    fondo: '#dbe8f7'
+    borde: '#5a9bd4'
+    grosor: 2
+    radio: 8
+    tam: 64
+    color: negro_usfq
+  - tipo: conector
+    x1: 435
+    y1: 380
+    x2: 448
+    y2: 380
+    color: '#5a9bd4'
+    grosor: 3
+  - tipo: conector
+    x1: 625
+    y1: 380
+    x2: 675
+    y2: 215
+    color: gris_usfq
+    grosor: 3
+  - tipo: caja
+    x: 680
+    y: 160
+    w: 310
+    h: 110
+    contenido: <p style="text-align:center"><strong>SARS-CoV-2</strong></p><p style="text-align:center">RT-qPCR N1/N2 · PCR ARTIC/VarSkip</p>
+    fondo: '#ece7f2'
+    borde: '#8c86c0'
+    grosor: 3
+    radio: 8
+    tam: 64
+    color: negro_usfq
+  - tipo: conector
+    x1: 990
+    y1: 215
+    x2: 1025
+    y2: 380
+    color: gris_usfq
+    grosor: 3
+  - tipo: conector
+    x1: 625
+    y1: 380
+    x2: 675
+    y2: 380
+    color: gris_usfq
+    grosor: 3
+  - tipo: caja
+    x: 680
+    y: 325
+    w: 310
+    h: 110
+    contenido: <p style="text-align:center"><strong>Enterovirus</strong></p><p style="text-align:center">PCR anidada 5'NTR-Cre → VP1</p>
+    fondo: '#fde5cc'
+    borde: '#f08a2c'
+    grosor: 3
+    radio: 8
+    tam: 64
+    color: negro_usfq
+  - tipo: conector
+    x1: 990
+    y1: 380
+    x2: 1025
+    y2: 380
+    color: gris_usfq
+    grosor: 3
+  - tipo: conector
+    x1: 625
+    y1: 380
+    x2: 675
+    y2: 545
+    color: gris_usfq
+    grosor: 3
+  - tipo: caja
+    x: 680
+    y: 490
+    w: 310
+    h: 110
+    contenido: <p style="text-align:center"><strong>RSV</strong></p><p style="text-align:center">PCR multiplex RSV-A y RSV-B</p>
+    fondo: '#dff1da'
+    borde: '#4fae55'
+    grosor: 3
+    radio: 8
+    tam: 64
+    color: negro_usfq
+  - tipo: conector
+    x1: 990
+    y1: 545
+    x2: 1025
+    y2: 380
+    color: gris_usfq
+    grosor: 3
+  - tipo: caja
+    x: 1030
+    y: 315
+    w: 180
+    h: 130
+    contenido: <p style="text-align:center"><strong>Nanopore</strong></p><p style="text-align:center">gel + Cq < 35</p><p style="text-align:center">R10.4.1</p>
+    fondo: negro_usfq
+    borde: null
+    grosor: 0
+    radio: 10
+    tam: 64
+    color: blanco
+  - tipo: texto
+    x: 1020
+    y: 455
+    w: 200
+    html: <p style="text-align:center">EPI2ME → Nextclade · BLAST</p>
+    tam: 57
+    color: gris_usfq
+  - tipo: texto
+    x: 70
+    y: 600
+    w: 600
+    html: '<p style="text-align:left">Azul: etapas comunes · color: etapas propias de cada virus</p>'
+    tam: 57
+    color: gris_usfq
+  notas: 'Concentración: 4 g de muestra, PEG con NaCl, centrifugación y resuspensión en DNA/RNA Shield 2X. (1,5 min)
+
+    Extracción: kit Quick-RNA Viral (Zymo Research).
+
+    SARS-CoV-2: RT-qPCR Luna (N1-HEX, N2-FAM, RP-Cy5) y PCR multiplex NEBNext ARTIC con cebadores ARTIC o VarSkip.
+
+    Enterovirus: PCR anidada, primera ronda pan-enterovirus (5''NTR y Cre), segunda ronda VP1 (Y7 y Q8), protocolo DDNS (Shaw et al., 2020).
+
+    RSV: PCR multiplex con cebadores para RSV-A y RSV-B.
+
+    '
+- diseno: lienzo
+  numero: '03'
+  titulo: Flujo multipatógeno · lápiz
+  elementos:
+  - tipo: caja
+    x: 70
+    y: 325
+    w: 175
+    h: 110
+    contenido: <p style="text-align:center"><strong>Muestreo</strong></p><p style="text-align:center">torpedo, 24 h</p>
+    fondo: '#dbe8f7'
+    borde: '#5a9bd4'
+    grosor: 2
+    radio: 8
+    tam: 64
+    color: negro_usfq
+  - tipo: caja
+    x: 260
+    y: 325
+    w: 175
+    h: 110
+    contenido: <p style="text-align:center"><strong>Concentración</strong></p><p style="text-align:center">PEG</p>
+    fondo: '#dbe8f7'
+    borde: '#5a9bd4'
+    grosor: 2
+    radio: 8
+    tam: 64
+    color: negro_usfq
+  - tipo: conector
+    x1: 245
+    y1: 380
+    x2: 258
+    y2: 380
+    color: '#5a9bd4'
+    grosor: 3
+  - tipo: caja
+    x: 450
+    y: 325
+    w: 175
+    h: 110
+    contenido: <p style="text-align:center"><strong>Extracción</strong></p><p style="text-align:center">ARN (Zymo)</p>
+    fondo: '#dbe8f7'
+    borde: '#5a9bd4'
+    grosor: 2
+    radio: 8
+    tam: 64
+    color: negro_usfq
+  - tipo: conector
+    x1: 435
+    y1: 380
+    x2: 448
+    y2: 380
+    color: '#5a9bd4'
+    grosor: 3
+  - tipo: caja
+    x: 680
+    y: 160
+    w: 310
+    h: 110
+    contenido: <p style="text-align:center"><strong>SARS-CoV-2</strong></p><p style="text-align:center">RT-qPCR N1/N2 · PCR ARTIC/VarSkip</p>
+    fondo: '#ece7f2'
+    borde: '#8c86c0'
+    grosor: 3
+    radio: 8
+    tam: 64
+    color: negro_usfq
+  - tipo: caja
+    x: 680
+    y: 325
+    w: 310
+    h: 110
+    contenido: <p style="text-align:center"><strong>Enterovirus</strong></p><p style="text-align:center">PCR anidada 5'NTR-Cre → VP1</p>
+    fondo: '#fde5cc'
+    borde: '#f08a2c'
+    grosor: 3
+    radio: 8
+    tam: 64
+    color: negro_usfq
+  - tipo: caja
+    x: 680
+    y: 490
+    w: 310
+    h: 110
+    contenido: <p style="text-align:center"><strong>RSV</strong></p><p style="text-align:center">PCR multiplex RSV-A y RSV-B</p>
+    fondo: '#dff1da'
+    borde: '#4fae55'
+    grosor: 3
+    radio: 8
+    tam: 64
+    color: negro_usfq
+  - tipo: caja
+    x: 1030
+    y: 315
+    w: 180
+    h: 130
+    contenido: <p style="text-align:center"><strong>Nanopore</strong></p><p style="text-align:center">gel + Cq < 35</p><p style="text-align:center">R10.4.1</p>
+    fondo: negro_usfq
+    borde: null
+    grosor: 0
+    radio: 10
+    tam: 64
+    color: blanco
+  - tipo: texto
+    x: 1020
+    y: 455
+    w: 200
+    html: <p style="text-align:center">EPI2ME → Nextclade · BLAST</p>
+    tam: 57
+    color: gris_usfq
+  - tipo: texto
+    x: 70
+    y: 600
+    w: 600
+    html: '<p style="text-align:left">Azul: etapas comunes · color: etapas propias de cada virus</p>'
+    tam: 57
+    color: gris_usfq
+  - tipo: construccion
+    nombre: rutas
+    color: gris_usfq
+    grosor: 3.5
+    radio: 16
+    punta: 14
+    caminos:
+    - - - 625
+        - 380
+      - - 652
+        - 380
+      - - 652
+        - 215
+      - - 677
+        - 215
+    - - - 625
+        - 380
+      - - 652
+        - 380
+      - - 652
+        - 380
+      - - 677
+        - 380
+    - - - 625
+        - 380
+      - - 652
+        - 380
+      - - 652
+        - 545
+      - - 677
+        - 545
+  - tipo: construccion
+    nombre: rutas
+    color: gris_usfq
+    grosor: 3.5
+    radio: 16
+    punta: 14
+    caminos:
+    - - - 990
+        - 215
+      - - 1008
+        - 215
+      - - 1008
+        - 380
+      - - 1028
+        - 380
+    - - - 990
+        - 380
+      - - 1008
+        - 380
+      - - 1008
+        - 380
+      - - 1028
+        - 380
+    - - - 990
+        - 545
+      - - 1008
+        - 545
+      - - 1008
+        - 380
+      - - 1028
+        - 380
+  notas: 'Concentración: 4 g de muestra, PEG con NaCl, centrifugación y resuspensión en DNA/RNA Shield 2X. (1,5 min)
+
+    Extracción: kit Quick-RNA Viral (Zymo Research).
+
+    SARS-CoV-2: RT-qPCR Luna (N1-HEX, N2-FAM, RP-Cy5) y PCR multiplex NEBNext ARTIC con cebadores ARTIC o VarSkip.
+
+    Enterovirus: PCR anidada, primera ronda pan-enterovirus (5''NTR y Cre), segunda ronda VP1 (Y7 y Q8), protocolo DDNS (Shaw et al., 2020).
+
+    RSV: PCR multiplex con cebadores para RSV-A y RSV-B.
+
+    '
+- diseno: lienzo
+  numero: '03'
+  titulo: Selección y controles · antes
+  elementos:
+  - tipo: caja
+    x: 70
+    y: 320
+    w: 170
+    h: 120
+    contenido: <p style="text-align:center"><strong>RT-qPCR</strong></p><p style="text-align:center">control + y NTC</p>
+    fondo: '#dbe8f7'
+    borde: '#5a9bd4'
+    grosor: 2
+    radio: 8
+    tam: 61
+    color: negro_usfq
+  - tipo: forma
+    x: 275
+    y: 300
+    w: 160
+    h: 160
+    tipo_forma: diamond
+    relleno: blanco
+    borde: rojo
+    grosor: 3
+  - tipo: texto
+    x: 275
+    y: 358
+    w: 160
+    html: <p style="text-align:center"><strong>Cq < 35</strong></p>
+    tam: 83
+    color: negro_usfq
+  - tipo: caja
+    x: 475
+    y: 315
+    w: 200
+    h: 130
+    contenido: <p style="text-align:center"><strong>PCR de amplicones</strong></p><p style="text-align:center">control + hisopados</p>
+    fondo: '#dbe8f7'
+    borde: '#5a9bd4'
+    grosor: 2
+    radio: 8
+    tam: 61
+    color: negro_usfq
+  - tipo: forma
+    x: 705
+    y: 280
+    w: 200
+    h: 200
+    tipo_forma: diamond
+    relleno: blanco
+    borde: rojo
+    grosor: 3
+  - tipo: texto
+    x: 725
+    y: 340
+    w: 160
+    html: <p style="text-align:center"><strong>¿Banda<br>esperada?</strong></p>
+    tam: 68
+    color: negro_usfq
+  - tipo: caja
+    x: 940
+    y: 325
+    w: 270
+    h: 110
+    contenido: <p style="text-align:center"><strong>Nanopore R10.4.1</strong></p><p style="text-align:center">EPI2ME → consenso</p>
+    fondo: negro_usfq
+    borde: null
+    grosor: 0
+    radio: 10
+    tam: 76
+    color: blanco
+  - tipo: caja
+    x: 420
+    y: 540
+    w: 360
+    h: 70
+    contenido: <p style="text-align:center"><strong>Descartar o reprocesar</strong></p>
+    fondo: crema
+    borde: beige
+    grosor: 2
+    radio: 8
+    tam: 83
+    color: negro_usfq
+  - tipo: conector
+    x1: 240
+    y1: 380
+    x2: 272
+    y2: 380
+    color: gris_usfq
+    grosor: 3
+  - tipo: conector
+    x1: 435
+    y1: 380
+    x2: 477
+    y2: 380
+    color: gris_usfq
+    grosor: 3
+  - tipo: conector
+    x1: 670
+    y1: 380
+    x2: 702
+    y2: 380
+    color: gris_usfq
+    grosor: 3
+  - tipo: conector
+    x1: 905
+    y1: 380
+    x2: 937
+    y2: 380
+    color: gris_usfq
+    grosor: 3
+  - tipo: texto
+    x: 442
+    y: 342
+    w: 40
+    html: <p style="text-align:center"><strong>sí</strong></p>
+    tam: 65
+    color: '#4fae55'
+  - tipo: texto
+    x: 895
+    y: 342
+    w: 40
+    html: <p style="text-align:center"><strong>sí</strong></p>
+    tam: 65
+    color: '#4fae55'
+  - tipo: conector
+    x1: 355
+    y1: 460
+    x2: 470
+    y2: 540
+    color: rojo
+    grosor: 3
+  - tipo: conector
+    x1: 805
+    y1: 470
+    x2: 730
+    y2: 540
+    color: rojo
+    grosor: 3
+  - tipo: texto
+    x: 360
+    y: 490
+    w: 60
+    html: <p style="text-align:center"><strong>no</strong></p>
+    tam: 65
+    color: rojo
+  - tipo: texto
+    x: 790
+    y: 490
+    w: 60
+    html: <p style="text-align:center"><strong>no</strong></p>
+    tam: 65
+    color: rojo
+  - tipo: texto
+    x: 70
+    y: 175
+    w: 1140
+    html: <p style="text-align:left">Una muestra pasa a secuenciación solo si supera los dos filtros</p>
+    tam: 83
+    color: negro_usfq
+  notas: 'El influente tiene baja carga e inhibidores: por eso la selección combina Cq y banda. (1 min)
+
+    Texto de la versión 1 (para decirlo en voz alta): RT-qPCR con el control positivo del kit y un control sin molde, sin señal en N1 ni en N2.
+    PCR multiplex con un control positivo de hisopados faríngeos de carga conocida. A secuenciación, solo las muestras con banda del tamaño esperado
+    y Cq < 35. Oxford Nanopore (SQK-NBD114.96, celdas R10.4.1); consenso en EPI2ME, linajes con Nextclade e identificación por BLAST.'
+- diseno: lienzo
+  numero: '03'
+  titulo: Selección y controles · lápiz
+  elementos:
+  - tipo: caja
+    x: 70
+    y: 320
+    w: 170
+    h: 120
+    contenido: <p style="text-align:center"><strong>RT-qPCR</strong></p><p style="text-align:center">control + y NTC</p>
+    fondo: '#dbe8f7'
+    borde: '#5a9bd4'
+    grosor: 2
+    radio: 8
+    tam: 61
+    color: negro_usfq
+  - tipo: forma
+    x: 275
+    y: 300
+    w: 160
+    h: 160
+    tipo_forma: diamond
+    relleno: blanco
+    borde: rojo
+    grosor: 3
+  - tipo: texto
+    x: 275
+    y: 358
+    w: 160
+    html: <p style="text-align:center"><strong>Cq < 35</strong></p>
+    tam: 83
+    color: negro_usfq
+  - tipo: caja
+    x: 475
+    y: 315
+    w: 200
+    h: 130
+    contenido: <p style="text-align:center"><strong>PCR de amplicones</strong></p><p style="text-align:center">control + hisopados</p>
+    fondo: '#dbe8f7'
+    borde: '#5a9bd4'
+    grosor: 2
+    radio: 8
+    tam: 61
+    color: negro_usfq
+  - tipo: forma
+    x: 705
+    y: 280
+    w: 200
+    h: 200
+    tipo_forma: diamond
+    relleno: blanco
+    borde: rojo
+    grosor: 3
+  - tipo: texto
+    x: 725
+    y: 340
+    w: 160
+    html: <p style="text-align:center"><strong>¿Banda<br>esperada?</strong></p>
+    tam: 68
+    color: negro_usfq
+  - tipo: caja
+    x: 940
+    y: 325
+    w: 270
+    h: 110
+    contenido: <p style="text-align:center"><strong>Nanopore R10.4.1</strong></p><p style="text-align:center">EPI2ME → consenso</p>
+    fondo: negro_usfq
+    borde: null
+    grosor: 0
+    radio: 10
+    tam: 76
+    color: blanco
+  - tipo: caja
+    x: 420
+    y: 540
+    w: 360
+    h: 70
+    contenido: <p style="text-align:center"><strong>Descartar o reprocesar</strong></p>
+    fondo: crema
+    borde: beige
+    grosor: 2
+    radio: 8
+    tam: 83
+    color: negro_usfq
+  - tipo: conector
+    x1: 240
+    y1: 380
+    x2: 272
+    y2: 380
+    color: gris_usfq
+    grosor: 3
+  - tipo: conector
+    x1: 435
+    y1: 380
+    x2: 477
+    y2: 380
+    color: gris_usfq
+    grosor: 3
+  - tipo: conector
+    x1: 670
+    y1: 380
+    x2: 702
+    y2: 380
+    color: gris_usfq
+    grosor: 3
+  - tipo: conector
+    x1: 905
+    y1: 380
+    x2: 937
+    y2: 380
+    color: gris_usfq
+    grosor: 3
+  - tipo: texto
+    x: 442
+    y: 342
+    w: 40
+    html: <p style="text-align:center"><strong>sí</strong></p>
+    tam: 65
+    color: '#4fae55'
+  - tipo: texto
+    x: 895
+    y: 342
+    w: 40
+    html: <p style="text-align:center"><strong>sí</strong></p>
+    tam: 65
+    color: '#4fae55'
+  - tipo: texto
+    x: 360
+    y: 490
+    w: 60
+    html: <p style="text-align:center"><strong>no</strong></p>
+    tam: 65
+    color: rojo
+  - tipo: texto
+    x: 808
+    y: 490
+    w: 60
+    html: <p style="text-align:center"><strong>no</strong></p>
+    tam: 65
+    color: rojo
+  - tipo: texto
+    x: 70
+    y: 175
+    w: 1140
+    html: <p style="text-align:left">Una muestra pasa a secuenciación solo si supera los dos filtros</p>
+    tam: 83
+    color: negro_usfq
+  - tipo: construccion
+    nombre: rutas
+    color: rojo
+    grosor: 3.5
+    radio: 16
+    punta: 14
+    caminos:
+    - - - 355
+        - 460
+      - - 355
+        - 575
+      - - 418
+        - 575
+    - - - 805
+        - 480
+      - - 805
+        - 575
+      - - 782
+        - 575
+  notas: 'El influente tiene baja carga e inhibidores: por eso la selección combina Cq y banda. (1 min)
+
+    Texto de la versión 1 (para decirlo en voz alta): RT-qPCR con el control positivo del kit y un control sin molde, sin señal en N1 ni en N2.
+    PCR multiplex con un control positivo de hisopados faríngeos de carga conocida. A secuenciación, solo las muestras con banda del tamaño esperado
+    y Cq < 35. Oxford Nanopore (SQK-NBD114.96, celdas R10.4.1); consenso en EPI2ME, linajes con Nextclade e identificación por BLAST.'

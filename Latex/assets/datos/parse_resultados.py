@@ -54,6 +54,10 @@ def parse_sars(res):
     return (clado, lin, "determinado" if (clado or lin) else "otro")
 sdf[["clado","linaje","estado"]] = sdf["resultado_raw"].apply(lambda x: pd.Series(parse_sars(x)))
 sdf.loc[(~sdf.secuenciado),"estado"]="no_secuenciado"
+# Correccion confirmada por la autora (06/10/2026): la semana 15 no se secuencio (el barcode rotulado
+# WW015 en la bitacora correspondia a WW016) y la semana 21 solo paso por el analisis 4, cuya corrida
+# no tiene lecturas ni barcodes registrados. Resultados.xlsx las marca como secuenciadas.
+sdf.loc[sdf.semana.isin([15,21]),["secuenciado","resultado_raw","estado"]]=[False,"","no_secuenciado"]
 sdf["virus"]="SARS-CoV-2"; sdf["tipo_muestra"]="prospectiva"; sdf["conservacion"]="fresca"
 sdf.to_csv(OUT/"sars_cov2.csv", index=False)
 
@@ -69,7 +73,7 @@ def parse_other(res):
     r=res.lower()
     if not res: return "no_determinado_o_sin_dato"
     if "no se logra" in r: return "no_determinado"
-    if "coxsackie" in r: return "Coxsackie A (enterovirus no polio)"
+    if "coxsackie" in r: return "Coxsackievirus A1 (enterovirus no polio)"
     return res
 pdf["hallazgo"]=pdf["resultado_raw"].apply(parse_other)
 pdf.loc[(~pdf.secuenciado),"hallazgo"]="no_secuenciado"
@@ -96,10 +100,10 @@ def estado_unif(row):
     if not row["secuenciado"]: return "No secuenciado"
     h = str(row.get("estado", row.get("hallazgo","")))
     if "determinado" == h or h=="determinado": return "Secuenciado: determinado"
-    if h=="no_determinado": return "Secuenciado: no determinado"
-    if "Coxsackie" in h: return "Secuenciado: Coxsackie A"
+    if h=="no_determinado": return "Secuenciado: sin caracterización"
+    if "Coxsackie" in h: return "Secuenciado: Coxsackievirus A1"
     return "Secuenciado: "+h
-s_long = sdf.assign(estado_unif=sdf.apply(lambda r: "No secuenciado" if not r.secuenciado else ("Secuenciado: determinado" if r.estado=="determinado" else "Secuenciado: no determinado"), axis=1))
+s_long = sdf.assign(estado_unif=sdf.apply(lambda r: "No secuenciado" if not r.secuenciado else ("Secuenciado: determinado" if r.estado=="determinado" else "Secuenciado: sin caracterización"), axis=1))
 def long_from(df, estadocol):
     rec=[]
     for _,r in df.iterrows():
@@ -107,8 +111,8 @@ def long_from(df, estadocol):
         else:
             h=r[estadocol]
             if h=="determinado": e="Secuenciado: determinado"
-            elif h=="no_determinado": e="Secuenciado: no determinado"
-            elif "Coxsackie" in str(h): e="Secuenciado: Coxsackie A"
+            elif h=="no_determinado": e="Secuenciado: sin caracterización"
+            elif "Coxsackie" in str(h): e="Secuenciado: Coxsackievirus A1"
             else: e="Secuenciado: "+str(h)
         rec.append(dict(virus=r["virus"], semana=r["semana"], fecha_inicio=r["fecha_inicio"],
                         tipo_muestra=r["tipo_muestra"], conservacion=r["conservacion"],

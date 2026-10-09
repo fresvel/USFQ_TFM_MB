@@ -1,0 +1,45 @@
+virus,semana,corrida,barcode,cebadores,lecturas,lecturas_blanco,prof_media,cob10,cob20,pct_N,fuente_N
+SARS-CoV-2,3,Run01,73,ARTIC,65978,735,9.5,24.8,16.1,96.9,EPI2ME
+SARS-CoV-2,5,Run01,74,ARTIC,65169,1334,16.9,29.1,21.2,95.5,EPI2ME
+SARS-CoV-2,6,Run01,75,ARTIC,76998,1709,20.6,28.0,22.8,95.1,EPI2ME
+SARS-CoV-2,7,Run01,76,ARTIC,214970,2085,29.3,34.2,28.1,95.4,EPI2ME
+SARS-CoV-2,8,Run01,77,ARTIC,148732,1772,23.1,32.5,23.5,94.2,EPI2ME
+SARS-CoV-2,9,Run01,78,ARTIC,328560,8409,98.4,42.2,39.1,82.8,EPI2ME
+SARS-CoV-2,6,Run01,79,VarSkip,38113,1822,27.5,22.0,15.7,94.2,EPI2ME
+SARS-CoV-2,7,Run01,80,VarSkip,37996,691,8.8,22.3,15.3,96.9,EPI2ME
+SARS-CoV-2,8,Run01,81,VarSkip,36547,834,10.6,24.9,19.5,96.0,EPI2ME
+SARS-CoV-2,9,Run01,82,VarSkip,30173,1156,17.4,25.2,17.1,95.9,EPI2ME
+SARS-CoV-2,10,Run2,57,VarSkip,137678,0,0.0,0.0,0.0,100.0,sin lecturas
+SARS-CoV-2,11,Run2,58,VarSkip,11387,0,0.0,0.0,0.0,100.0,sin lecturas
+SARS-CoV-2,12,Run2,59,VarSkip,29304,0,0.0,0.0,0.0,100.0,sin lecturas
+SARS-CoV-2,13,Run2,60,VarSkip,30427,0,0.0,0.0,0.0,100.0,sin lecturas
+SARS-CoV-2,14,Run2,61,VarSkip,26073,0,0.0,0.0,0.0,100.0,sin lecturas
+SARS-CoV-2,16,Run2,62,VarSkip,33553,0,0.0,0.0,0.0,100.0,sin lecturas
+SARS-CoV-2,17,Run2,63,VarSkip,18369,0,0.0,0.0,0.0,100.0,sin lecturas
+SARS-CoV-2,10,Run2,65,VarSkip,173030,0,0.0,0.0,0.0,100.0,sin lecturas
+SARS-CoV-2,11,Run2,66,VarSkip,19363,0,0.0,0.0,0.0,100.0,sin lecturas
+SARS-CoV-2,12,Run2,67,VarSkip,23302,0,0.0,0.0,0.0,100.0,sin lecturas
+SARS-CoV-2,13,Run2,68,VarSkip,26819,0,0.0,0.0,0.0,100.0,sin lecturas
+SARS-CoV-2,14,Run2,69,VarSkip,24374,0,0.0,0.0,0.0,100.0,sin lecturas
+SARS-CoV-2,16,Run2,70,VarSkip,28820,0,0.0,0.0,0.0,100.0,sin lecturas
+SARS-CoV-2,17,Run2,71,VarSkip,20087,0,0.0,0.0,0.0,100.0,sin lecturas
+SARS-CoV-2,23,Run03,94,VarSkip,20437,1,0.0,0.0,0.0,100.0,sin lecturas
+SARS-CoV-2,24,Run03,95,VarSkip,19092,0,0.0,0.0,0.0,100.0,sin lecturas
+SARS-CoV-2,25,Run03,93,VarSkip,53300,1,0.0,0.0,0.0,100.0,sin lecturas
+SARS-CoV-2,28,Run04,68,ARTIC,15264,0,0.0,0.0,0.0,100.0,sin lecturas
+SARS-CoV-2,29,Run04,69,ARTIC,21339,0,0.0,0.0,0.0,100.0,sin lecturas
+SARS-CoV-2,30,Run04,70,ARTIC,29740,0,0.0,0.0,0.0,100.0,sin lecturas
+SARS-CoV-2,31,Run04,71,ARTIC,27469,0,0.0,0.0,0.0,100.0,sin lecturas
+SARS-CoV-2,32,Run04,72,ARTIC,19176,0,0.0,0.0,0.0,100.0,sin lecturas
+RSV,50,RSV (sin diluir),25,ARTIC RSV,32244,0,0.0,0.0,0.0,100.0,sin lecturas
+RSV,52,RSV (sin diluir),26,ARTIC RSV,51540,0,0.0,0.0,0.0,100.0,sin lecturas
+RSV,53,RSV (sin diluir),27,ARTIC RSV,80528,0,0.0,0.0,0.0,100.0,sin lecturas
+RSV,54,RSV (sin diluir),28,ARTIC RSV,66552,0,0.0,0.0,0.0,100.0,sin lecturas
+RSV,50,RSV (diluida),29,ARTIC RSV,28012,0,0.0,0.0,0.0,100.0,sin lecturas
+RSV,52,RSV (diluida),30,ARTIC RSV,106662,0,0.0,0.0,0.0,100.0,sin lecturas
+RSV,53,RSV (diluida),31,ARTIC RSV,116000,0,0.0,0.0,0.0,100.0,sin lecturas
+RSV,54,RSV (diluida),32,ARTIC RSV,100288,0,0.0,0.0,0.0,100.0,sin lecturas
+Enterovirus,45,Enterovirus,48,Y7/Q8 (VP1),66738,47416,43650.0,98.0,98.0,2.0,reanalisis VP1
+Enterovirus,45,Enterovirus,49,Y7/Q8 (VP1),7898,5629,4964.0,97.4,97.3,2.7,reanalisis VP1
+Enterovirus,46,Enterovirus,50,Y7/Q8 (VP1),23480,2482,2175.0,97.4,97.2,2.7,reanalisis VP1
+Enterovirus,46,Enterovirus,51,Y7/Q8 (VP1),23879,3145,2755.0,97.3,97.3,2.8,reanalisis VP1

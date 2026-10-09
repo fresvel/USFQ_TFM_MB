@@ -1,0 +1,333 @@
+# Guion de la defensa del TFM (skill slides-puce, marca USFQ).
+# Cada dato sale del manuscrito (Latex/secciones/02_cuerpo) y de sus fuentes citadas.
+titulo: Defensa TFM — Análisis genómico de SARS-CoV-2, enterovirus y RSV en aguas residuales
+marca: usfq
+pie: "Eliana Viscarra · Maestría en Microbiología · USFQ"
+diapositivas:
+
+  - diseno: portada
+    titulo: "“Análisis genómico de SARS-CoV-2, enterovirus y virus sincitial respiratorio en aguas residuales”"
+    datos: ["**Candidata:** Eliana Viscarra", "**Programa:** Maestría en Microbiología"]
+    columnas:
+      - {titulo: "Director de tesis", items: ["Paúl Cárdenas, PhD — USFQ"]}
+      - {titulo: "Miembros del comité", items: ["Verónica Barragán, PhD — USFQ", "Henry Vaca, Mgtr. — PTAR Quitumbe", "Shazia Ruybal, PhD — Universitat de Barcelona"]}
+    notas: |
+      Saludo al tribunal y agradecimiento al director y al comité. (30 s)
+
+  - diseno: indice
+    items:
+      - {titulo: Antecedentes y problema, texto: "Vigilancia en aguas residuales y el antecedente de la PTAR Quitumbe"}
+      - {titulo: Pregunta y objetivos, texto: "Qué evidencia molecular y genómica puede recuperarse"}
+      - {titulo: Metodología, texto: "Muestreo pasivo, PEG, extracción de ARN, PCR y secuenciación Nanopore"}
+      - {titulo: "Resultados I: SARS-CoV-2", texto: "Rendimiento, valores de Cq y linajes"}
+      - {titulo: "Resultados II: enterovirus", texto: "Coxsackievirus A en la región VP4"}
+      - {titulo: "Resultados III: RSV y conservación", texto: "Señal sin subgrupo y muestras retrospectivas"}
+      - {titulo: Discusión y limitaciones, texto: "Carga viral, especificidad y conservación"}
+      - {titulo: Conclusiones y aporte, texto: "Respuesta a la pregunta y recomendaciones"}
+    notas: Recorrer el índice en 20 segundos.
+
+  # ------------------------------------------------------------------ 01
+  - diseno: contenido
+    numero: "01"
+    titulo: Vigilancia en aguas residuales
+    texto: |
+      Las aguas residuales reúnen el material que excreta la población conectada al alcantarillado, con o sin síntomas, sin depender de la consulta ni de la notificación de casos (Sims & Kasprzyk-Hordern, 2020; Parkins et al., 2023).
+
+      En las primeras semanas de la pandemia, el ARN de SARS-CoV-2 se detectó en aguas residuales de Australia y de Países Bajos mientras la vigilancia clínica estaba limitada (Ahmed et al., 2020; Medema et al., 2020).
+    notas: |
+      Idea: el alcantarillado ofrece una lectura poblacional independiente del sistema de salud. (1 min)
+
+  - diseno: contenido
+    numero: "01"
+    titulo: Antecedente en Quitumbe
+    texto: |
+      Mejía Calle (2024) instaló un muestreo pasivo semanal de 24 h con un dispositivo impreso en 3D en el influente de la PTAR Quitumbe, que recibe las aguas de once barrios de Quito (75 L/s). La secuenciación Nanopore detectó el linaje JN.1 en el agua antes que en pacientes.
+
+      Ecuador depositó 12 619 genomas de SARS-CoV-2 entre 2020 y 2024, y solo 744 en 2024 (Bruno et al., 2025). Para RSV y poliovirus no hay datos ambientales ecuatorianos.
+    notas: |
+      Esta tesis parte de ese sitio centinela ya validado y lo amplía a otros virus. (1 min)
+      El aporte anual de genomas cayó de 5 102 en 2022 a 744 en 2024: la vigilancia genómica clínica se redujo.
+
+  - diseno: columnas
+    numero: "01"
+    titulo: Por qué estos tres virus
+    columnas:
+      - titulo: SARS-CoV-2
+        texto: "La secuenciación del agua residual reconstruye los linajes que circulan en la población (Crits-Christoph et al., 2021)."
+      - titulo: Enterovirus
+        texto: "El poliovirus causa parálisis en 1 de cada 100 infecciones o menos; el agua detecta su circulación silenciosa (Zurbriggen et al., 2008)."
+      - titulo: RSV
+        texto: "Su ARN en aguas residuales acompaña la positividad clínica, con τ de Kendall de 0,65 a 0,77 (Hughes et al., 2022)."
+    notas: |
+      En 2024 se halló poliovirus derivado de vacuna tipo 2 en aguas residuales de Finlandia, Alemania, Polonia, España y Reino Unido (Böttcher et al., 2025). (1 min)
+      RSV: alta carga en lactantes, adultos mayores e inmunocomprometidos.
+
+  # ------------------------------------------------------------------ 02
+  - diseno: contenido
+    numero: "02"
+    titulo: Pregunta y objetivo general
+    subtitulo: Pregunta de investigación
+    texto: |
+      ¿Qué evidencia molecular y genómica de SARS-CoV-2, enterovirus y virus sincitial respiratorio puede identificarse en las aguas residuales de la PTAR Quitumbe, en Quito?
+
+      **Objetivo general.** Analizar la presencia molecular y la caracterización genómica de los tres virus en esas aguas residuales, como aporte a la vigilancia viral ambiental en Quito.
+    notas: Leer la pregunta completa; las conclusiones la responden al final. (40 s)
+
+  - diseno: contenido
+    numero: "02"
+    titulo: Objetivos específicos
+    texto:
+      - "1. Identificar material genético de los tres virus en el influente de la PTAR Quitumbe."
+      - "2. Caracterizar, cuando la calidad de los datos lo permita, las señales genómicas mediante secuenciación y bioinformática."
+      - "3. Interpretar los resultados frente a la vigilancia en aguas residuales y al contexto local."
+      - "4. Identificar alcances y limitaciones del análisis multipatógeno en una matriz ambiental compleja."
+    notas: (40 s)
+
+  # ------------------------------------------------------------------ 03
+  - diseno: tabla
+    numero: "03"
+    titulo: Diseño del estudio
+    encabezados: [Fase, Semanas, Muestras, Virus analizados]
+    filas:
+      - [Prospectiva, "1–42", "42", SARS-CoV-2]
+      - [Prospectiva multipatógeno, "43–56", "14", "Enterovirus y RSV"]
+      - [Retrospectiva conservada, "17–20 y 34–37", "8", "Enterovirus y RSV"]
+    texto: |
+      Estudio observacional, descriptivo y longitudinal: 56 semanas consecutivas en el influente de la PTAR Quitumbe, del 14 de abril de 2025 al 10 de mayo de 2026.
+    notas: |
+      Enterovirus y RSV suman 22 muestras cada uno: 14 prospectivas y 8 retrospectivas. (1 min)
+      Las retrospectivas se conservaron en DNA/RNA Shield 2X y en PBS 1X.
+
+  - diseno: imagen
+    numero: "03"
+    titulo: Muestreo pasivo
+    imagen: figuras/dispositivo.png
+    lado: derecha
+    ancho: 680
+    texto: |
+      Dispositivo tipo torpedo con gasas, membrana de nailon e hisopo, sumergido 24 h en el pozo de entrada, antes de cualquier tratamiento.
+
+      Se transporta a 4 °C al Instituto de Microbiología de la USFQ (Mejía Calle, 2024).
+    notas: |
+      El muestreo pasivo no requiere equipos automáticos y funciona en sitios con infraestructura limitada (Parkins et al., 2023). (1 min)
+
+  - diseno: imagen
+    numero: "03"
+    titulo: Flujo multipatógeno
+    imagen: figuras/flujo_multipatogeno.png
+    pie: "Etapas comunes en azul; en color, las específicas de cada virus."
+    notas: |
+      Concentración: 4 g de muestra, PEG con NaCl, centrifugación y resuspensión en DNA/RNA Shield 2X. (1,5 min)
+      Extracción: kit Quick-RNA Viral (Zymo Research).
+      SARS-CoV-2: RT-qPCR Luna (N1-HEX, N2-FAM, RP-Cy5) y PCR multiplex NEBNext ARTIC con cebadores ARTIC o VarSkip.
+      Enterovirus: PCR anidada, primera ronda pan-enterovirus (5'NTR y Cre), segunda ronda VP1 (Y7 y Q8), protocolo DDNS (Shaw et al., 2020).
+      RSV: PCR multiplex con cebadores para RSV-A y RSV-B.
+
+  - diseno: contenido
+    numero: "03"
+    titulo: Selección y controles
+    texto:
+      - "RT-qPCR con el control positivo del kit y un control sin molde, sin señal en N1 ni en N2."
+      - "PCR multiplex con un control positivo de hisopados faríngeos de carga conocida."
+      - "A secuenciación, solo las muestras con banda del tamaño esperado y Cq < 35."
+      - "Oxford Nanopore (SQK-NBD114.96, celdas R10.4.1); consenso en EPI2ME, linajes con Nextclade e identificación por BLAST."
+    notas: |
+      El influente tiene baja carga e inhibidores: por eso la selección combina Cq y banda. (1 min)
+
+  # ------------------------------------------------------------------ 04
+  - diseno: imagen
+    numero: "04"
+    titulo: Rendimiento por virus
+    imagen: figuras/rendimiento.png
+    lado: izquierda
+    ancho: 600
+    texto: |
+      **SARS-CoV-2:** 23 de 42 muestras secuenciadas y 6 con linaje.
+
+      **Enterovirus:** 2 de 22 caracterizadas, ambas Coxsackievirus A.
+
+      **RSV:** 4 de 22 secuenciadas, sin subgrupo.
+    notas: |
+      Panorama antes de entrar a cada virus: la secuenciación rindió de forma desigual entre virus. (1 min)
+
+  - diseno: imagen
+    numero: "04"
+    titulo: Valores de Cq de SARS-CoV-2
+    imagen: figuras/cq_sars.png
+    pie: "El eje está invertido: más arriba, más carga viral. Genes N1 (HEX) y N2 (FAM)."
+    notas: |
+      31 de las 42 muestras dieron Cq para N1. En las semanas 15, 18–20, 22, 26, 27 y 31 no amplificó N1 ni N2. (1 min)
+
+  - diseno: tabla
+    numero: "04"
+    titulo: Cq y caracterización genómica
+    encabezados: [Resultado de la secuenciación, n, "Cq N1 (rango)", Cq N1 medio]
+    filas:
+      - [Linaje determinado, "6", "33,1–35,8", "34,0"]
+      - ["Secuenciado, sin determinar", "15", "33,9–42,3", "36,6"]
+      - [No secuenciado (con Cq), "10", "34,4–42,9", "38,5"]
+    texto: |
+      Las medias crecen con la pérdida de información genómica, pero los rangos se solapan: el Cq acompaña la probabilidad de caracterizar sin determinarla por sí solo.
+    notas: (1 min)
+
+  - diseno: imagen
+    numero: "04"
+    titulo: Linajes de SARS-CoV-2
+    imagen: figuras/linajes_sars.png
+    lado: derecha
+    ancho: 640
+    texto: |
+      Seis muestras de las semanas 3 a 9 (28 abr – 9 jun 2025), todas descendientes de JN.1: clado 24A (JN.1, LZ.5, LU.2.1.1) y clado 24H (LF.7.1.3).
+
+      Desde la semana 10, 17 secuencias sin linaje por cobertura insuficiente.
+    notas: |
+      Asignación con Nextclade. La detección de JN.1 reproduce el antecedente local (Mejía Calle, 2024). (1 min)
+
+  # ------------------------------------------------------------------ 05
+  - diseno: contenido
+    numero: "05"
+    titulo: Enterovirus
+    subtitulo: Coxsackievirus A, sin poliovirus
+    texto: |
+      Las muestras de las semanas 45 y 46 (febrero de 2026) dieron amplicones de 1 100 a 1 200 pb en la segunda ronda de la PCR anidada.
+
+      El análisis los ubicó en la región VP4 (posiciones 529 a 1 049), no en VP1, y BLAST los asignó a Coxsackievirus A. Ninguna de las 22 muestras rindió poliovirus.
+    notas: |
+      El contraste con las referencias de poliovirus 1, 2 y 3 no cambió el resultado: especificidad de los cebadores de VP1 menor que la esperada. (1 min)
+
+  # ------------------------------------------------------------------ 06
+  - diseno: contenido
+    numero: "06"
+    titulo: Virus sincitial respiratorio
+    subtitulo: Señal sin subgrupo
+    texto: |
+      Cuatro de 22 muestras se secuenciaron, todas prospectivas: semanas 50, 52, 53 y 54 (marzo y abril de 2026).
+
+      EPI2ME no alineó las lecturas con la referencia de RSV de la plataforma, de modo que no se asignó subgrupo ni clado.
+    notas: (45 s)
+
+  - diseno: imagen
+    numero: "06"
+    titulo: Conservación y secuencia
+    imagen: figuras/conservacion.png
+    lado: derecha
+    ancho: 720
+    texto: |
+      Ninguna de las 8 muestras retrospectivas, en DNA/RNA Shield 2X o en PBS 1X, rindió secuencia.
+
+      Todas las secuencias vinieron de muestras frescas.
+    notas: (45 s)
+
+  - diseno: imagen
+    numero: "06"
+    titulo: Ventanas de análisis
+    imagen: figuras/heatmap_temporal.png
+    pie: "Linajes de SARS-CoV-2 en 2025; Coxsackievirus A en febrero de 2026; señal de RSV en marzo y abril de 2026."
+    notas: |
+      SARS-CoV-2 no se analizó en las semanas 43 a 56: no se puede evaluar la co-circulación de los tres virus. (1 min)
+
+  # ------------------------------------------------------------------ 07
+  - diseno: contenido
+    numero: "07"
+    titulo: La carga viral decide
+    texto: |
+      Las seis muestras con linaje tuvieron los Cq de N1 más bajos, como en el antecedente de Quitumbe (Mejía Calle, 2024).
+
+      En aguas residuales, solo las muestras con Cq < 33 dieron genomas completos (Crits-Christoph et al., 2021); en Dhaka, Cq de 28,8 a 32,1 dieron 94,2–99,8 % de cobertura (Haque et al., 2023).
+    notas: |
+      Mecanismo: con poca carga, los dímeros entre cebadores sesgan la cobertura de la PCR por amplicones (Itokawa et al., 2020). (1,5 min)
+      Un Cq tardío no invalida la detección: confirma presencia y tendencia.
+
+  - diseno: columnas
+    numero: "07"
+    titulo: Enterovirus y RSV
+    columnas:
+      - titulo: Enterovirus
+        texto: "Se recuperó en 2 de 22 muestras (9 %), bajo el 10 % que se espera con muestreo instrumental (O'Reilly et al., 2020; Bubba et al., 2023)."
+      - titulo: RSV
+        texto: "Los genomas completos exigen más de 10 000 copias/mL (Le et al., 2025); al ser envuelto, su recuperación cae del 71 % al 17 % (Toribio-Avedillo et al., 2024)."
+    notas: |
+      Enterovirus: la amplificación de VP4 apunta a cebadores de VP1 poco específicos en esta matriz. (1,5 min)
+      La ausencia de poliovirus apunta a la baja sensibilidad del muestreo pasivo antes que a una circulación nula: Ecuador aplica bOPV.
+      RSV: 71 % con ARN desnudo frente a 17 % con partículas envueltas.
+
+  - diseno: contenido
+    numero: "07"
+    titulo: La conservación de la muestra
+    texto: |
+      Con secuenciación Nanopore de SARS-CoV-2, la cobertura mediana fue del 94 % con ARN fresco, del 88 % con el extracto congelado y del 55 % con agua residual congelada (Barbé et al., 2022).
+
+      Las muestras retrospectivas se conservaron sobre la matriz completa, la vía de peor rendimiento, y no rindieron secuencia.
+    notas: (1 min)
+
+  - diseno: contenido
+    numero: "07"
+    titulo: Limitaciones
+    texto:
+      - "Poco material viral en una matriz diluida: Cq altos y cobertura insuficiente."
+      - "Muestras retrospectivas sin secuencia en ambos métodos de conservación."
+      - "Ventanas temporales con poco solapamiento entre virus."
+      - "22 muestras de un único sitio para enterovirus y RSV."
+      - "Cebadores de VP1 que amplificaron VP4 y no confirmaron el serotipo."
+    notas: |
+      Además: pocos datos genómicos clínicos de SARS-CoV-2 en Ecuador para comparar (Bruno et al., 2025). (1 min)
+
+  # ------------------------------------------------------------------ 08
+  - diseno: contenido
+    numero: "08"
+    titulo: Conclusiones
+    texto: |
+      Un solo flujo de muestreo y procesamiento recuperó los tres virus en un sitio centinela urbano.
+
+      SARS-CoV-2 se caracterizó con alta carga, con linajes descendientes de JN.1; enterovirus y RSV quedaron en detección o presencia.
+
+      La carga viral y la conservación de la muestra gobiernan hasta dónde llega la caracterización genómica.
+    notas: |
+      Esta es la respuesta a la pregunta de investigación. (1 min)
+
+  - diseno: columnas
+    numero: "08"
+    titulo: Aporte y recomendaciones
+    columnas:
+      - titulo: Aporte
+        texto: "Primera línea de base molecular y genómica multipatógeno de aguas residuales en Quito, que incluye un Coxsackievirus A que la vigilancia de parálisis flácida no registra."
+      - titulo: Recomendaciones
+        texto: "Procesar el material poco después de recogerlo, seleccionar por Cq, enriquecer RSV antes de secuenciar y ampliar muestras y réplicas."
+    notas: |
+      Cruzar con secuencias clínicas y de repositorios, y mantener la vigilancia de enterovirus por la región VP1. (1 min)
+
+  - diseno: referencias
+    titulo: "Referencias (1/3)"
+    notas: "Autores abreviados con et al.; la lista completa está en la tesis."
+    items:
+      - "Ahmed, W., et al. (2020). First confirmed detection of SARS-CoV-2 in untreated wastewater in Australia: A proof of concept for the wastewater surveillance of COVID-19 in the community. *Science of The Total Environment*, *728*, 138764. https://doi.org/10.1016/j.scitotenv.2020.138764"
+      - "Barbé, L., et al. (2022). SARS-CoV-2 whole-genome sequencing using Oxford Nanopore technology for variant monitoring in wastewaters. *Frontiers in Microbiology*, *13*, 889811. https://doi.org/10.3389/fmicb.2022.889811"
+      - "Böttcher, S., et al. (2025). Detection of circulating vaccine-derived poliovirus type 2 (cVDPV2) in wastewater samples: A wake-up call, Finland, Germany, Poland, Spain, the United Kingdom, 2024. *Euro Surveillance*, *30*(3), 2500037. https://doi.org/10.2807/1560-7917.ES.2025.30.3.2500037"
+      - "Bruno, A., et al. (2025). Genomic surveillance of SARS-CoV-2 in the Andean Community (2020–2024): integrating regional sequencing efforts from Colombia, Ecuador, Peru, and Bolivia through ORAS-CONHU program. *Frontiers in Public Health*, *13*, 1623413. https://doi.org/10.3389/fpubh.2025.1623413"
+      - "Bubba, L., et al. (2023). Wastewater surveillance in Europe for non-polio enteroviruses and beyond. *Microorganisms*, *11*(10), 2496. https://doi.org/10.3390/microorganisms11102496"
+      - "Crits-Christoph, A., et al. (2021). Genome sequencing of sewage detects regionally prevalent SARS-CoV-2 variants. *mBio*, *12*(1). https://doi.org/10.1128/mBio.02703-20"
+
+  - diseno: referencias
+    titulo: "Referencias (2/3)"
+    items:
+      - "Haque, R., et al. (2023). Monitoring SARS-CoV-2 variants in wastewater of Dhaka City, Bangladesh: approach to complement public health surveillance systems. *Human Genomics*, *17*, 58. https://doi.org/10.1186/s40246-023-00505-4"
+      - "Hughes, B., et al. (2022). Respiratory Syncytial Virus (RSV) RNA in wastewater settled solids reflects RSV clinical positivity rates. *Environmental Science & Technology Letters*, *9*(2), 173–178. https://doi.org/10.1021/acs.estlett.1c00963"
+      - "Itokawa, K., et al. (2020). Disentangling primer interactions improves SARS-CoV-2 genome sequencing by multiplex tiling PCR. *PLOS ONE*, *15*(9), e0239403. https://doi.org/10.1371/journal.pone.0239403"
+      - "Le, D. B., et al. (2025). Whole-genome nanopore sequencing and automatic downstream analysis of respiratory syncytial virus using RSVTyper. *Scientific Reports*. https://doi.org/10.1038/s41598-025-20371-5"
+      - "Medema, G., et al. (2020). Presence of SARS-Coronavirus-2 RNA in sewage and correlation with reported COVID-19 prevalence in the early stage of the epidemic in The Netherlands. *Environmental Science & Technology Letters*, *7*(7), 511–516. https://doi.org/10.1021/acs.estlett.0c00357"
+      - "Mejía Calle, P. E. (2024). *Analysis of SARS-CoV-2 variants in wastewater from the Metropolitan District of Quito using a passive sampling 3D printed device* [Trabajo de titulacion de posgrado, Universidad San Francisco de Quito USFQ]."
+
+  - diseno: referencias
+    titulo: "Referencias (3/3)"
+    items:
+      - "O'Reilly, K. M., et al. (2020). The challenges of informative wastewater sampling for SARS-CoV-2 must be met: lessons from polio eradication. *The Lancet Microbe*, *1*(5), e189–e190. https://doi.org/10.1016/S2666-5247(20)30100-2"
+      - "Parkins, M. D., et al. (2023). Wastewater-based surveillance as a tool for public health action: SARS-CoV-2 and beyond. *Clinical Microbiology Reviews*, *37*(1). https://doi.org/10.1128/cmr.00103-22"
+      - "Shaw, A. G., et al. (2020). Rapid and sensitive direct detection and identification of poliovirus from stool and environmental surveillance samples by use of nanopore sequencing. *Journal of Clinical Microbiology*, *58*(9), e00920-20. https://doi.org/10.1128/JCM.00920-20"
+      - "Sims, N., & Kasprzyk-Hordern, B. (2020). Future perspectives of wastewater-based epidemiology: Monitoring infectious disease spread and resistance to the community level. *Environment International*, *139*, 105689. https://doi.org/10.1016/j.envint.2020.105689"
+      - "Toribio-Avedillo, D., et al. (2024). Adapted methods for monitoring influenza virus and respiratory syncytial virus in sludge and wastewater. *Science of the Total Environment*, *918*, 170636. https://doi.org/10.1016/j.scitotenv.2024.170636"
+      - "Zurbriggen, S., et al. (2008). Isolation of Sabin-like polioviruses from wastewater in a country using inactivated polio vaccine. *Applied and Environmental Microbiology*, *74*(18), 5608–5614. https://doi.org/10.1128/AEM.02764-07"
+
+  - diseno: cierre
+    titulo: Gracias
+    acento: "¿Preguntas?"
+    texto: "Eliana Viscarra · Maestría en Microbiología · USFQ"

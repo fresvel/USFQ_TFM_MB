@@ -13,13 +13,13 @@ semana,fecha_inicio,secuenciado,resultado_raw,clado,linaje,estado,virus,tipo_mue
 12,2025-06-30,True,No se logra determinar,,,no_determinado,SARS-CoV-2,prospectiva,fresca
 13,2025-07-07,True,No se logra determinar,,,no_determinado,SARS-CoV-2,prospectiva,fresca
 14,2025-07-14,True,No se logra determinar,,,no_determinado,SARS-CoV-2,prospectiva,fresca
-15,2025-07-21,True,No se logra determinar,,,no_determinado,SARS-CoV-2,prospectiva,fresca
+15,2025-07-21,False,,,,no_secuenciado,SARS-CoV-2,prospectiva,fresca
 16,2025-07-28,True,No se logra determinar,,,no_determinado,SARS-CoV-2,prospectiva,fresca
 17,2025-08-04,True,No se logra determinar,,,no_determinado,SARS-CoV-2,prospectiva,fresca
 18,2025-08-11,False,,,,no_secuenciado,SARS-CoV-2,prospectiva,fresca
 19,2025-08-18,False,,,,no_secuenciado,SARS-CoV-2,prospectiva,fresca
 20,2025-08-25,False,,,,no_secuenciado,SARS-CoV-2,prospectiva,fresca
-21,2025-09-01,True,No se logra determinar,,,no_determinado,SARS-CoV-2,prospectiva,fresca
+21,2025-09-01,False,,,,no_secuenciado,SARS-CoV-2,prospectiva,fresca
 22,2025-09-08,False,,,,no_secuenciado,SARS-CoV-2,prospectiva,fresca
 23,2025-09-15,True,No se logra determinar,,,no_determinado,SARS-CoV-2,prospectiva,fresca
 24,2025-09-22,True,No se logra determinar,,,no_determinado,SARS-CoV-2,prospectiva,fresca

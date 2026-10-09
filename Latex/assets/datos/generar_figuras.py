@@ -15,9 +15,9 @@ OUT = Path("Latex/assets/figuras/resultados"); OUT.mkdir(parents=True, exist_ok=
 COL = {
     "No analizado":               "#e6e6e6",
     "No secuenciado":             "#9ecae1",
-    "Secuenciado: no determinado":"#fdae6b",
+    "Secuenciado: sin caracterización":"#fdae6b",
     "Secuenciado: determinado":   "#74c476",
-    "Secuenciado: Coxsackie A":   "#9e9ac8",
+    "Secuenciado: Coxsackievirus A1":   "#9e9ac8",
 }
 ORDER = list(COL.keys())
 
@@ -54,19 +54,26 @@ axes[1].legend(handles=handles, bbox_to_anchor=(0.5,-0.55), loc="upper center",
 plt.tight_layout()
 fig.savefig(OUT/"f1_heatmap_temporal.pdf", bbox_inches="tight"); plt.close(fig)
 
-# ---------- F2: linea de tiempo de linajes SARS-CoV-2 ----------
-det = sars[sars.estado=="determinado"].copy().sort_values("semana")
-cladecol = {"24A":"#3182bd","24H":"#de2d26"}
-fig,ax = plt.subplots(figsize=(7.5,3.3))
-ax.plot(det.semana, range(len(det)), color="#bbbbbb", lw=1.2, zorder=1)
-for i,(_,r) in enumerate(det.iterrows()):
-    ax.scatter(r.semana, i, s=180, color=cladecol.get(r.clado,"#666"), zorder=3, edgecolor="k", lw=0.5)
-    ax.text(r.semana+0.25, i, f"  {r.linaje}", va="center", ha="left", fontsize=10)
-ax.set_yticks(range(len(det))); ax.set_yticklabels([f"Sem. {w}" for w in det.semana])
-ax.set_xlim(2, 11); ax.set_xlabel("Semana de muestreo (abr – jun 2025)")
-ax.set_title("Linajes de SARS-CoV-2 identificados en aguas residuales", fontsize=11, weight="bold")
-handles=[Patch(facecolor=c,edgecolor="k",label=f"Clado {k}") for k,c in cladecol.items()]
-ax.legend(handles=handles, loc="lower right", frameon=True, fontsize=9)
+# ---------- F2: abundancia de linajes por biblioteca (Freyja) y linaje del consenso ----------
+fr = pd.read_csv(D/"freyja_sars.csv").sort_values(["semana","cebadores"])
+fr["etq"] = [f"Sem. {s}\n{'ARTIC' if c.startswith('ARTIC') else 'VarSkip'}" for s,c in zip(fr.semana, fr.cebadores)]
+xs = []; x = 0; prev = None
+for s in fr.semana:
+    if prev is not None and s != prev: x += 0.5
+    xs.append(x); x += 1; prev = s
+comp = [("QA4","QA.4 (24H)","#de2d26"),("LZ5","LZ.5 (24A)","#3182bd"),("otros","Otros linajes","#bdbdbd")]
+fig, ax = plt.subplots(figsize=(8.5,3.8))
+bottom = np.zeros(len(fr))
+for col,lbl,c in comp:
+    ax.bar(xs, fr[col], bottom=bottom, color=c, edgecolor="white", lw=0.6, width=0.8, label=lbl)
+    bottom += fr[col].values
+for xi,(_,r) in zip(xs, fr.iterrows()):
+    ax.text(xi, 103, r.linaje_consenso, ha="center", va="bottom", fontsize=7.5, rotation=90)
+ax.set_xticks(xs); ax.set_xticklabels(fr.etq, fontsize=7.5)
+ax.set_ylim(0,130); ax.set_yticks(range(0,101,20)); ax.set_ylabel("Abundancia relativa (%)")
+ax.set_title("Abundancia de linajes de SARS-CoV-2 por biblioteca (Freyja)", fontsize=11, weight="bold")
+ax.legend(loc="upper left", bbox_to_anchor=(1.01,1.0), fontsize=8, frameon=True, title="Freyja")
+ax.text(1.01, 0.42, "Texto sobre la barra:\nlinaje del consenso\n(EPI2ME + Nextclade)", transform=ax.transAxes, fontsize=7.5, va="top")
 plt.tight_layout(); fig.savefig(OUT/"f2_linajes_sars.pdf", bbox_inches="tight"); plt.close(fig)
 
 # ---------- F3: esfuerzo y rendimiento de secuenciacion por virus ----------
@@ -80,9 +87,9 @@ for v,df,col in [("SARS-CoV-2",sars,"estado"),("Enterovirus",pol,"hallazgo"),("R
         det_n=(df.estado=="determinado").sum(); nod=(df.estado=="no_determinado").sum(); cox=0
     else:
         det_n=0; nod=(df.hallazgo=="no_determinado").sum(); cox=df.hallazgo.str.contains("Coxsackie").sum()
-    rows.append(dict(virus=v, **{"No secuenciado":no_seq,"Secuenciado: no determinado":nod,
-                                 "Secuenciado: determinado":det_n,"Secuenciado: Coxsackie A":cox}))
-eff=pd.DataFrame(rows).set_index("virus")[["No secuenciado","Secuenciado: no determinado","Secuenciado: determinado","Secuenciado: Coxsackie A"]]
+    rows.append(dict(virus=v, **{"No secuenciado":no_seq,"Secuenciado: sin caracterización":nod,
+                                 "Secuenciado: determinado":det_n,"Secuenciado: Coxsackievirus A1":cox}))
+eff=pd.DataFrame(rows).set_index("virus")[["No secuenciado","Secuenciado: sin caracterización","Secuenciado: determinado","Secuenciado: Coxsackievirus A1"]]
 fig,ax=plt.subplots(figsize=(6.5,4))
 bottom=np.zeros(len(eff))
 for s in eff.columns:
@@ -96,7 +103,7 @@ plt.tight_layout(); fig.savefig(OUT/"f3_rendimiento.pdf", bbox_inches="tight"); 
 
 # ---------- F4: polio/RSV por conservacion y desenlace ----------
 pr = pd.concat([pol.assign(grupo="Enterovirus"), rsv.assign(grupo="RSV")])
-cons_lbl={"fresca":"Fresca\n(prospectiva)","shield_2x":"Shield 2X\n(retrospectiva)","pbs_1x":"PBS 1X\n(retrospectiva)"}
+cons_lbl={"fresca":"−20 °C\n(prospectiva)","shield_2x":"Shield 2X\n(retrospectiva)","pbs_1x":"PBS 1X\n(retrospectiva)"}
 pr["cons"]=pr.conservacion.map(cons_lbl)
 pr["estado_simple"]=np.where(pr.secuenciado,"Secuenciada","No secuenciada")
 order_c=[cons_lbl["fresca"],cons_lbl["shield_2x"],cons_lbl["pbs_1x"]]
@@ -136,13 +143,14 @@ ax.set_xlabel("Semana de muestreo (abr 2025 – ene 2026)"); ax.set_ylabel("Valo
 ax.set_title("Valores de Cq de SARS-CoV-2 por semana (genes N1 y N2)", fontsize=11, weight="bold")
 ax.set_xticks(range(2,43,2))
 from matplotlib.lines import Line2D
-leg1 = ax.legend(loc="upper right", fontsize=8, frameon=True, title="Marcador")
+leg1 = ax.legend(loc="upper left", bbox_to_anchor=(1.01,1.0), fontsize=8, frameon=True, title="Marcador")
 ax.add_artist(leg1)
 est_handles=[Line2D([0],[0],marker='o',color='w',markerfacecolor=estado_color[k],markeredgecolor='k',
              markersize=9,label=v) for k,v in
-             [("determinado","Linaje determinado"),("no_determinado","Secuenciado, no determinado"),
+             [("determinado","Linaje determinado"),("no_determinado","Secuenciado, sin caracterización"),
               ("no_secuenciado","No secuenciado")]]
-ax.legend(handles=est_handles, loc="lower left", fontsize=8, frameon=True, title="Resultado")
-ax.text(0.5,34.5,"Rango de las muestras\ncon linaje determinado", fontsize=7.5, color="#3d8b3d", ha="left")
+ax.legend(handles=est_handles, loc="upper left", bbox_to_anchor=(1.01,0.62), fontsize=8, frameon=True, title="Resultado")
+ax.set_xlim(1,43)
+ax.text(17.6,33.5,"Rango de las muestras con linaje determinado", fontsize=7.5, color="#3d8b3d", ha="left")
 plt.tight_layout(); fig.savefig(OUT/"f5_cq_sars.pdf", bbox_inches="tight"); plt.close(fig)
 print("F5 generada:", (OUT/"f5_cq_sars.pdf").stat().st_size, "B")

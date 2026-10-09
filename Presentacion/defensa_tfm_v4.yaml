@@ -1,0 +1,4389 @@
+titulo: Defensa TFM (v4, mixta) — Análisis genómico de SARS-CoV-2, enterovirus y RSV en aguas residuales
+marca: usfq
+pie: Eliana Viscarra · Maestría en Microbiología · USFQ
+diapositivas:
+- diseno: portada
+  titulo: “Análisis genómico de SARS-CoV-2, enterovirus y virus sincitial respiratorio en aguas residuales”
+  datos:
+  - '**Candidata:** Eliana Viscarra'
+  - '**Programa:** Maestría en Microbiología'
+  columnas:
+  - titulo: Director de tesis
+    items:
+    - Paúl Cárdenas, PhD — USFQ
+  - titulo: Miembros del comité
+    items:
+    - Verónica Barragán, PhD — USFQ
+    - Henry Vaca, Mgtr. — PTAR Quitumbe
+    - Shazia Ruybal, PhD — Universitat de Barcelona
+  notas: 'Saludo al tribunal y agradecimiento al director y al comité. (30 s)
+
+    '
+- diseno: indice
+  items:
+  - titulo: Antecedentes y problema
+    texto: Vigilancia en aguas residuales y el antecedente de la PTAR Quitumbe
+  - titulo: Pregunta y objetivos
+    texto: Qué evidencia molecular y genómica puede recuperarse
+  - titulo: Metodología
+    texto: Muestreo pasivo, PEG, extracción de ARN, PCR y secuenciación Nanopore
+  - titulo: 'Resultados I: SARS-CoV-2'
+    texto: Rendimiento, valores de Cq y linajes
+  - titulo: 'Resultados II: enterovirus'
+    texto: Coxsackievirus A en la región VP4
+  - titulo: 'Resultados III: RSV y conservación'
+    texto: Señal sin subgrupo y muestras retrospectivas
+  - titulo: Discusión y limitaciones
+    texto: Carga viral, especificidad y conservación
+  - titulo: Conclusiones y aporte
+    texto: Respuesta a la pregunta y recomendaciones
+  notas: Recorrer el índice en 20 segundos.
+- diseno: lienzo
+  numero: '01'
+  titulo: Vigilancia en aguas residuales
+  elementos:
+  - tipo: texto
+    x: 70
+    y: 140
+    w: 500
+    html: <p style="text-align:left"><strong>Vigilancia clínica</strong></p>
+    tam: 94
+    color: negro_usfq
+  - tipo: caja
+    x: 70
+    y: 190
+    w: 205
+    h: 70
+    contenido: <p style="text-align:center"><strong>Síntomas</strong></p>
+    fondo: crema
+    borde: beige
+    grosor: 2
+    radio: 8
+    tam: 83
+    color: negro_usfq
+  - tipo: caja
+    x: 315
+    y: 190
+    w: 205
+    h: 70
+    contenido: <p style="text-align:center"><strong>Consulta</strong></p>
+    fondo: crema
+    borde: beige
+    grosor: 2
+    radio: 8
+    tam: 83
+    color: negro_usfq
+  - tipo: conector
+    x1: 275
+    y1: 225
+    x2: 311
+    y2: 225
+    color: gris_usfq
+    grosor: 3
+  - tipo: caja
+    x: 560
+    y: 190
+    w: 205
+    h: 70
+    contenido: <p style="text-align:center"><strong>Diagnóstico</strong></p>
+    fondo: crema
+    borde: beige
+    grosor: 2
+    radio: 8
+    tam: 83
+    color: negro_usfq
+  - tipo: conector
+    x1: 520
+    y1: 225
+    x2: 556
+    y2: 225
+    color: gris_usfq
+    grosor: 3
+  - tipo: caja
+    x: 805
+    y: 190
+    w: 205
+    h: 70
+    contenido: <p style="text-align:center"><strong>Notificación</strong></p>
+    fondo: crema
+    borde: beige
+    grosor: 2
+    radio: 8
+    tam: 83
+    color: negro_usfq
+  - tipo: conector
+    x1: 765
+    y1: 225
+    x2: 801
+    y2: 225
+    color: gris_usfq
+    grosor: 3
+  - tipo: caja
+    x: 1050
+    y: 190
+    w: 160
+    h: 70
+    contenido: <p style="text-align:center">Casos registrados</p>
+    fondo: null
+    borde: null
+    grosor: 0
+    radio: 8
+    tam: 73
+    color: gris_usfq
+  - tipo: conector
+    x1: 1010
+    y1: 225
+    x2: 1046
+    y2: 225
+    color: gris_usfq
+    grosor: 3
+  - tipo: texto
+    x: 70
+    y: 270
+    w: 1100
+    html: '<p style="text-align:left">Cada paso filtra: las infecciones leves o asintomáticas no llegan al registro</p>'
+    tam: 73
+    color: rojo
+  - tipo: texto
+    x: 70
+    y: 360
+    w: 500
+    html: <p style="text-align:left"><strong>Aguas residuales</strong></p>
+    tam: 94
+    color: negro_usfq
+  - tipo: caja
+    x: 70
+    y: 410
+    w: 250
+    h: 80
+    contenido: <p style="text-align:center"><strong>Toda la población conectada</strong></p>
+    fondo: '#dbe8f7'
+    borde: '#5a9bd4'
+    grosor: 2
+    radio: 8
+    tam: 83
+    color: negro_usfq
+  - tipo: caja
+    x: 370
+    y: 410
+    w: 250
+    h: 80
+    contenido: <p style="text-align:center"><strong>Alcantarillado</strong></p>
+    fondo: '#dbe8f7'
+    borde: '#5a9bd4'
+    grosor: 2
+    radio: 8
+    tam: 83
+    color: negro_usfq
+  - tipo: conector
+    x1: 324
+    y1: 450
+    x2: 366
+    y2: 450
+    color: '#5a9bd4'
+    grosor: 4
+  - tipo: caja
+    x: 670
+    y: 410
+    w: 250
+    h: 80
+    contenido: <p style="text-align:center"><strong>Influente de la PTAR</strong></p>
+    fondo: '#dbe8f7'
+    borde: '#5a9bd4'
+    grosor: 2
+    radio: 8
+    tam: 83
+    color: negro_usfq
+  - tipo: conector
+    x1: 624
+    y1: 450
+    x2: 666
+    y2: 450
+    color: '#5a9bd4'
+    grosor: 4
+  - tipo: conector
+    x1: 920
+    y1: 450
+    x2: 970
+    y2: 450
+    color: '#5a9bd4'
+    grosor: 4
+  - tipo: caja
+    x: 975
+    y: 405
+    w: 230
+    h: 90
+    contenido: <p style="text-align:center"><strong>Señal poblacional</strong></p>
+    fondo: '#5a9bd4'
+    borde: null
+    grosor: 0
+    radio: 8
+    tam: 88
+    color: blanco
+    sombra: negro
+  - tipo: texto
+    x: 70
+    y: 520
+    w: 1140
+    html: <p style="text-align:left">con y sin síntomas, sin depender de la consulta (Sims & Kasprzyk-Hordern, 2020; Parkins et al., 2023)</p>
+    tam: 65
+    color: gris_usfq
+  notas: 'Idea: el alcantarillado ofrece una lectura poblacional independiente del sistema de salud. (1 min)
+
+    Texto de la versión 1 (para decirlo en voz alta): Las aguas residuales reúnen el material que excreta la población conectada al alcantarillado,
+    con o sin síntomas, sin depender de la consulta ni de la notificación de casos (Sims & Kasprzyk-Hordern, 2020; Parkins et al., 2023).  En
+    las primeras semanas de la pandemia, el ARN de SARS-CoV-2 se detectó en aguas residuales de Australia y de Países Bajos mientras la vigilancia
+    clínica estaba limitada (Ahmed et al., 2020; Medema et al., 2020).'
+- diseno: lienzo
+  numero: '01'
+  titulo: Antecedente en Quitumbe
+  elementos:
+  - tipo: texto
+    x: 70
+    y: 138
+    w: 800
+    html: <p style="text-align:left"><strong>PTAR Quitumbe · Mejía Calle (2024)</strong></p>
+    tam: 83
+    color: negro_usfq
+  - tipo: caja
+    x: 70
+    y: 190
+    w: 260
+    h: 150
+    contenido: <h2 style="text-align:center; color:rgb(35, 31, 32)"><strong>11</strong></h2><p style="text-align:center">barrios de Quito</p>
+    fondo: crema
+    borde: beige
+    grosor: 2
+    radio: 10
+    tam: 73
+    color: negro_usfq
+    anim:
+    - fade-in
+    - 0.5
+    - 0.0
+  - tipo: caja
+    x: 360
+    y: 190
+    w: 260
+    h: 150
+    contenido: <h2 style="text-align:center; color:rgb(35, 31, 32)"><strong>75 L/s</strong></h2><p style="text-align:center">caudal del influente</p>
+    fondo: crema
+    borde: beige
+    grosor: 2
+    radio: 10
+    tam: 73
+    color: negro_usfq
+    anim:
+    - fade-in
+    - 0.5
+    - 0.15
+  - tipo: caja
+    x: 650
+    y: 190
+    w: 260
+    h: 150
+    contenido: <h2 style="text-align:center; color:rgb(35, 31, 32)"><strong>24 h</strong></h2><p style="text-align:center">muestreo pasivo semanal</p>
+    fondo: crema
+    borde: beige
+    grosor: 2
+    radio: 10
+    tam: 73
+    color: negro_usfq
+    anim:
+    - fade-in
+    - 0.5
+    - 0.3
+  - tipo: caja
+    x: 940
+    y: 190
+    w: 260
+    h: 150
+    contenido: <h2 style="text-align:center; color:rgb(237, 28, 36)"><strong>JN.1</strong></h2><p style="text-align:center">en el agua antes que
+      en pacientes</p>
+    fondo: crema
+    borde: beige
+    grosor: 2
+    radio: 10
+    tam: 73
+    color: negro_usfq
+    anim:
+    - fade-in
+    - 0.5
+    - 0.44999999999999996
+  - tipo: texto
+    x: 70
+    y: 380
+    w: 900
+    html: <p style="text-align:left"><strong>Genomas de SARS-CoV-2 depositados por Ecuador (Bruno et al., 2025)</strong></p>
+    tam: 77
+    color: negro_usfq
+  - tipo: texto
+    x: 70
+    y: 446
+    w: 90
+    html: <p style="text-align:left">2022</p>
+    tam: 83
+    color: negro_usfq
+  - tipo: forma
+    x: 160
+    y: 440
+    w: 620.0
+    h: 46
+    tipo_forma: rect
+    relleno: negro_usfq
+    radio: 4
+    anim: &id001
+    - slide-right
+    - 0.8
+  - tipo: texto
+    x: 790.0
+    y: 446
+    w: 160
+    html: <p style="text-align:left"><strong>5 102</strong></p>
+    tam: 83
+    color: negro_usfq
+  - tipo: texto
+    x: 70
+    y: 516
+    w: 90
+    html: <p style="text-align:left">2024</p>
+    tam: 83
+    color: negro_usfq
+  - tipo: forma
+    x: 160
+    y: 510
+    w: 90.41160329282634
+    h: 46
+    tipo_forma: rect
+    relleno: rojo
+    radio: 4
+    anim: *id001
+  - tipo: texto
+    x: 260.4116032928263
+    y: 516
+    w: 160
+    html: <p style="text-align:left"><strong>744</strong></p>
+    tam: 83
+    color: negro_usfq
+  - tipo: caja
+    x: 870
+    y: 430
+    w: 340
+    h: 130
+    contenido: <p style="text-align:center"><strong>Sin datos ambientales de RSV ni poliovirus en Ecuador</strong></p>
+    fondo: null
+    borde: rojo
+    grosor: 3
+    radio: 12
+    tam: 80
+    color: rojo
+    estilo_borde: dashed
+  notas: 'Esta tesis parte de ese sitio centinela ya validado y lo amplía a otros virus. (1 min)
+
+    El aporte anual de genomas cayó de 5 102 en 2022 a 744 en 2024: la vigilancia genómica clínica se redujo.
+
+    Texto de la versión 1 (para decirlo en voz alta): Mejía Calle (2024) instaló un muestreo pasivo semanal de 24 h con un dispositivo impreso
+    en 3D en el influente de la PTAR Quitumbe, que recibe las aguas de once barrios de Quito (75 L/s). La secuenciación Nanopore detectó el linaje
+    JN.1 en el agua antes que en pacientes.  Ecuador depositó 12 619 genomas de SARS-CoV-2 entre 2020 y 2024, y solo 744 en 2024 (Bruno et al.,
+    2025). Para RSV y poliovirus no hay datos ambientales ecuatorianos.'
+- diseno: lienzo
+  numero: '01'
+  titulo: Por qué estos tres virus
+  elementos:
+  - tipo: caja
+    x: 70
+    y: 145
+    w: 355
+    h: 435
+    contenido: ''
+    fondo: '#ece7f2'
+    borde: '#8c86c0'
+    grosor: 3
+    radio: 14
+    tam: 94
+    color: negro_usfq
+  - tipo: texto
+    x: 70
+    y: 165
+    w: 355
+    html: <p style="text-align:center"><strong>SARS-CoV-2</strong></p>
+    tam: 110
+    color: negro_usfq
+  - tipo: conector
+    x1: 283.0
+    y1: 282.0
+    x2: 304.0
+    y2: 282.0
+    color: '#8c86c0'
+    grosor: 4
+    inicio: none
+    fin: circle
+    estilo: solid-rounded
+  - tipo: conector
+    x1: 279.4348792444871
+    y1: 297.6198146082321
+    x2: 298.3552254704379
+    y2: 306.73137312970084
+    color: '#8c86c0'
+    grosor: 4
+    inicio: none
+    fin: circle
+    estilo: solid-rounded
+  - tipo: conector
+    x1: 269.4456328669144
+    y1: 310.14593336884906
+    x2: 282.5389187059478
+    y2: 326.5643945006777
+    color: '#8c86c0'
+    grosor: 4
+    inicio: none
+    fin: circle
+    estilo: solid-rounded
+  - tipo: conector
+    x1: 255.01075362242733
+    y1: 317.09740483854563
+    x2: 259.6836932355099
+    y2: 337.57089099436394
+    color: '#8c86c0'
+    grosor: 4
+    inicio: none
+    fin: circle
+    estilo: solid-rounded
+  - tipo: conector
+    x1: 238.98924637757267
+    y1: 317.09740483854563
+    x2: 234.3163067644901
+    y2: 337.57089099436394
+    color: '#8c86c0'
+    grosor: 4
+    inicio: none
+    fin: circle
+    estilo: solid-rounded
+  - tipo: conector
+    x1: 224.5543671330856
+    y1: 310.14593336884906
+    x2: 211.46108129405218
+    y2: 326.56439450067774
+    color: '#8c86c0'
+    grosor: 4
+    inicio: none
+    fin: circle
+    estilo: solid-rounded
+  - tipo: conector
+    x1: 214.5651207555129
+    y1: 297.6198146082321
+    x2: 195.6447745295621
+    y2: 306.73137312970084
+    color: '#8c86c0'
+    grosor: 4
+    inicio: none
+    fin: circle
+    estilo: solid-rounded
+  - tipo: conector
+    x1: 211.0
+    y1: 282.0
+    x2: 190.0
+    y2: 282.0
+    color: '#8c86c0'
+    grosor: 4
+    inicio: none
+    fin: circle
+    estilo: solid-rounded
+  - tipo: conector
+    x1: 214.5651207555129
+    y1: 266.3801853917679
+    x2: 195.6447745295621
+    y2: 257.2686268702992
+    color: '#8c86c0'
+    grosor: 4
+    inicio: none
+    fin: circle
+    estilo: solid-rounded
+  - tipo: conector
+    x1: 224.55436713308558
+    y1: 253.85406663115094
+    x2: 211.46108129405218
+    y2: 237.43560549932232
+    color: '#8c86c0'
+    grosor: 4
+    inicio: none
+    fin: circle
+    estilo: solid-rounded
+  - tipo: conector
+    x1: 238.98924637757267
+    y1: 246.90259516145434
+    x2: 234.31630676449007
+    y2: 226.42910900563606
+    color: '#8c86c0'
+    grosor: 4
+    inicio: none
+    fin: circle
+    estilo: solid-rounded
+  - tipo: conector
+    x1: 255.01075362242727
+    y1: 246.90259516145434
+    x2: 259.68369323550985
+    y2: 226.42910900563604
+    color: '#8c86c0'
+    grosor: 4
+    inicio: none
+    fin: circle
+    estilo: solid-rounded
+  - tipo: conector
+    x1: 269.4456328669144
+    y1: 253.8540666311509
+    x2: 282.5389187059478
+    y2: 237.4356054993223
+    color: '#8c86c0'
+    grosor: 4
+    inicio: none
+    fin: circle
+    estilo: solid-rounded
+  - tipo: conector
+    x1: 279.4348792444871
+    y1: 266.38018539176795
+    x2: 298.3552254704379
+    y2: 257.2686268702992
+    color: '#8c86c0'
+    grosor: 4
+    inicio: none
+    fin: circle
+    estilo: solid-rounded
+  - tipo: forma
+    x: 207
+    y: 242
+    w: 80
+    h: 80
+    tipo_forma: circle
+    relleno: '#ffffff'
+    borde: '#8c86c0'
+    grosor: 4
+  - tipo: forma
+    x: 277.2368169802919
+    y: 294.4875820864672
+    w: 8
+    h: 8
+    tipo_forma: circle
+    relleno: '#8c86c0'
+  - tipo: forma
+    x: 251.45579549033994
+    y: 315.0472606629093
+    w: 8
+    h: 8
+    tipo_forma: circle
+    relleno: '#8c86c0'
+  - tipo: forma
+    x: 219.30738752936813
+    y: 307.70959633378516
+    w: 8
+    h: 8
+    tipo_forma: circle
+    relleno: '#8c86c0'
+  - tipo: forma
+    x: 205.0
+    y: 278.0
+    w: 8
+    h: 8
+    tipo_forma: circle
+    relleno: '#8c86c0'
+  - tipo: forma
+    x: 219.30738752936813
+    y: 248.29040366621487
+    w: 8
+    h: 8
+    tipo_forma: circle
+    relleno: '#8c86c0'
+  - tipo: forma
+    x: 251.4557954903399
+    y: 240.9527393370907
+    w: 8
+    h: 8
+    tipo_forma: circle
+    relleno: '#8c86c0'
+  - tipo: forma
+    x: 277.2368169802919
+    y: 261.51241791353283
+    w: 8
+    h: 8
+    tipo_forma: circle
+    relleno: '#8c86c0'
+  - tipo: dibujo
+    x: 219
+    y: 266
+    w: 56
+    h: 32
+    trazos:
+    - d: M 4.0 16.0 L 4.6 18.4 L 5.2 20.7 L 5.8 22.6 L 6.4 24.0 L 7.0 24.8 L 7.6 25.0 L 8.2 24.4 L 8.8 23.3 L 9.4 21.6 L 10.0 19.4 L 10.6 17.1
+        L 11.2 14.6 L 11.8 12.2 L 12.4 10.2 L 13.0 8.5 L 13.6 7.4 L 14.2 7.0 L 14.8 7.2 L 15.4 8.1 L 16.0 9.6 L 16.6 11.6 L 17.2 13.9 L 17.8 16.4
+        L 18.4 18.8 L 19.0 21.0 L 19.6 22.8 L 20.2 24.2 L 20.8 24.9 L 21.4 24.9 L 22.0 24.3 L 22.6 23.1 L 23.2 21.3 L 23.8 19.1 L 24.4 16.7 L
+        25.0 14.2 L 25.6 11.9 L 26.2 9.9 L 26.8 8.3 L 27.4 7.3 L 28.0 7.0 L 28.6 7.3 L 29.2 8.3 L 29.8 9.9 L 30.4 11.9 L 31.0 14.2 L 31.6 16.7
+        L 32.2 19.1 L 32.8 21.3 L 33.4 23.1 L 34.0 24.3 L 34.6 24.9 L 35.2 24.9 L 35.8 24.2 L 36.4 22.8 L 37.0 21.0 L 37.6 18.8 L 38.2 16.4 L
+        38.8 13.9 L 39.4 11.6 L 40.0 9.6 L 40.6 8.1 L 41.2 7.2 L 41.8 7.0 L 42.4 7.4 L 43.0 8.5 L 43.6 10.2 L 44.2 12.2 L 44.8 14.6 L 45.4 17.1
+        L 46.0 19.4 L 46.6 21.6 L 47.2 23.3 L 47.8 24.4 L 48.4 25.0 L 49.0 24.8 L 49.6 24.0 L 50.2 22.6 L 50.8 20.7 L 51.4 18.4 L 52.0 16.0
+      borde: '#8c86c0'
+      grosor: 3
+  - tipo: texto
+    x: 90
+    y: 355
+    w: 315
+    html: <p style="text-align:center">Coronavirus envuelto · ARN (+), 27–30 kb</p>
+    tam: 73
+    color: negro_usfq
+  - tipo: forma
+    x: 110
+    y: 450
+    w: 275
+    h: 2
+    tipo_forma: rect
+    relleno: '#8c86c0'
+  - tipo: texto
+    x: 90
+    y: 470
+    w: 315
+    html: <p style="text-align:center"><strong>Linajes y variantes que circulan</strong></p>
+    tam: 76
+    color: negro_usfq
+  - tipo: caja
+    x: 455
+    y: 145
+    w: 355
+    h: 435
+    contenido: ''
+    fondo: '#fde5cc'
+    borde: '#f08a2c'
+    grosor: 3
+    radio: 14
+    tam: 94
+    color: negro_usfq
+  - tipo: texto
+    x: 455
+    y: 165
+    w: 355
+    html: <p style="text-align:center"><strong>Enterovirus</strong></p>
+    tam: 110
+    color: negro_usfq
+  - tipo: dibujo
+    x: 582
+    y: 232
+    w: 100
+    h: 100
+    trazos:
+    - d: M 93.3 75.0 L 50.0 100.0 L 70.8 62.0 Z
+      relleno: '#fde5cc'
+      borde: '#ffffff'
+      grosor: 2
+    - d: M 50.0 100.0 L 6.7 75.0 L 29.2 62.0 Z
+      relleno: '#f7b877'
+      borde: '#ffffff'
+      grosor: 2
+    - d: M 50.0 100.0 L 70.8 62.0 L 29.2 62.0 Z
+      relleno: '#f7b877'
+      borde: '#ffffff'
+      grosor: 2
+    - d: M 6.7 75.0 L 6.7 25.0 L 29.2 62.0 Z
+      relleno: '#fde5cc'
+      borde: '#ffffff'
+      grosor: 2
+    - d: M 6.7 25.0 L 50.0 0.0 L 50.0 26.0 Z
+      relleno: '#f7b877'
+      borde: '#ffffff'
+      grosor: 2
+    - d: M 6.7 25.0 L 29.2 62.0 L 50.0 26.0 Z
+      relleno: '#f7b877'
+      borde: '#ffffff'
+      grosor: 2
+    - d: M 50.0 0.0 L 93.3 25.0 L 50.0 26.0 Z
+      relleno: '#fde5cc'
+      borde: '#ffffff'
+      grosor: 2
+    - d: M 93.3 25.0 L 93.3 75.0 L 70.8 62.0 Z
+      relleno: '#f7b877'
+      borde: '#ffffff'
+      grosor: 2
+    - d: M 93.3 25.0 L 50.0 26.0 L 70.8 62.0 Z
+      relleno: '#f7b877'
+      borde: '#ffffff'
+      grosor: 2
+    - d: M 50.0 26.0 L 70.8 62.0 L 29.2 62.0 Z
+      relleno: '#f08a2c'
+      borde: '#ffffff'
+      grosor: 2
+    - d: M 93.3 75.0 L 50.0 100.0 L 6.7 75.0 L 6.7 25.0 L 50.0 0.0 L 93.3 25.0 Z
+      relleno: none
+      borde: '#f08a2c'
+      grosor: 3
+  - tipo: texto
+    x: 475
+    y: 355
+    w: 315
+    html: <p style="text-align:center">Picornaviridae sin envoltura · ARN (+), ~7,5 kb</p>
+    tam: 73
+    color: negro_usfq
+  - tipo: forma
+    x: 495
+    y: 450
+    w: 275
+    h: 2
+    tipo_forma: rect
+    relleno: '#f08a2c'
+  - tipo: texto
+    x: 475
+    y: 470
+    w: 315
+    html: <p style="text-align:center"><strong>Parálisis en ≤ 1 de cada 100 infecciones por polio</strong></p>
+    tam: 76
+    color: negro_usfq
+  - tipo: caja
+    x: 840
+    y: 145
+    w: 355
+    h: 435
+    contenido: ''
+    fondo: '#dff1da'
+    borde: '#4fae55'
+    grosor: 3
+    radio: 14
+    tam: 94
+    color: negro_usfq
+  - tipo: texto
+    x: 840
+    y: 165
+    w: 355
+    html: <p style="text-align:center"><strong>RSV</strong></p>
+    tam: 110
+    color: negro_usfq
+  - tipo: conector
+    x1: 1062.0
+    y1: 282.0
+    x2: 1077.0
+    y2: 282.0
+    color: '#4fae55'
+    grosor: 2.5
+    inicio: none
+    fin: square
+    estilo: solid-rounded
+  - tipo: conector
+    x1: 1059.406275308898
+    y1: 293.00293193159683
+    x2: 1075.600098241852
+    y2: 300.86169130036046
+    color: '#4fae55'
+    grosor: 3
+    inicio: none
+    fin: circle
+    estilo: solid-rounded
+  - tipo: conector
+    x1: 1051.7708938754354
+    y1: 302.90360589755335
+    x2: 1061.7670908468124
+    y2: 314.08734615336374
+    color: '#4fae55'
+    grosor: 2.5
+    inicio: none
+    fin: square
+    estilo: solid-rounded
+  - tipo: conector
+    x1: 1039.8079208786414
+    y1: 310.42392572979304
+    x2: 1046.9603956067926
+    y2: 326.9418585684735
+    color: '#4fae55'
+    grosor: 3
+    inicio: none
+    fin: circle
+    estilo: solid-rounded
+  - tipo: conector
+    x1: 1024.9418011864536
+    y1: 314.47897316066275
+    x2: 1026.9083578942482
+    y2: 329.34950289954656
+    color: '#4fae55'
+    grosor: 2.5
+    inicio: none
+    fin: square
+    estilo: solid-rounded
+  - tipo: conector
+    x1: 1009.0581988135463
+    y1: 314.47897316066275
+    x2: 1006.6983307641926
+    y2: 332.3236088473233
+    color: '#4fae55'
+    grosor: 3
+    inicio: none
+    fin: circle
+    estilo: solid-rounded
+  - tipo: conector
+    x1: 994.1920791213586
+    y1: 310.42392572979304
+    x2: 988.2316835145658
+    y2: 324.18886976202674
+    color: '#4fae55'
+    grosor: 2.5
+    inicio: none
+    fin: square
+    estilo: solid-rounded
+  - tipo: conector
+    x1: 982.2291061245644
+    y1: 302.90360589755335
+    x2: 970.2336697589121
+    y2: 316.32409420452586
+    color: '#4fae55'
+    grosor: 3
+    inicio: none
+    fin: circle
+    estilo: solid-rounded
+  - tipo: conector
+    x1: 974.5937246911021
+    y1: 293.00293193159683
+    x2: 961.0988722469737
+    y2: 299.55189807223314
+    color: '#4fae55'
+    grosor: 2.5
+    inicio: none
+    fin: square
+    estilo: solid-rounded
+  - tipo: conector
+    x1: 972.0
+    y1: 282.0
+    x2: 954.0
+    y2: 282.0
+    color: '#4fae55'
+    grosor: 3
+    inicio: none
+    fin: circle
+    estilo: solid-rounded
+  - tipo: conector
+    x1: 974.5937246911021
+    y1: 270.99706806840317
+    x2: 961.0988722469737
+    y2: 264.44810192776686
+    color: '#4fae55'
+    grosor: 2.5
+    inicio: none
+    fin: square
+    estilo: solid-rounded
+  - tipo: conector
+    x1: 982.2291061245644
+    y1: 261.09639410244665
+    x2: 970.2336697589121
+    y2: 247.67590579547416
+    color: '#4fae55'
+    grosor: 3
+    inicio: none
+    fin: circle
+    estilo: solid-rounded
+  - tipo: conector
+    x1: 994.1920791213586
+    y1: 253.57607427020696
+    x2: 988.2316835145658
+    y2: 239.81113023797326
+    color: '#4fae55'
+    grosor: 2.5
+    inicio: none
+    fin: square
+    estilo: solid-rounded
+  - tipo: conector
+    x1: 1009.0581988135463
+    y1: 249.52102683933728
+    x2: 1006.6983307641926
+    y2: 231.6763911526767
+    color: '#4fae55'
+    grosor: 3
+    inicio: none
+    fin: circle
+    estilo: solid-rounded
+  - tipo: conector
+    x1: 1024.9418011864536
+    y1: 249.52102683933725
+    x2: 1026.9083578942482
+    y2: 234.65049710045344
+    color: '#4fae55'
+    grosor: 2.5
+    inicio: none
+    fin: square
+    estilo: solid-rounded
+  - tipo: conector
+    x1: 1039.8079208786414
+    y1: 253.57607427020696
+    x2: 1046.9603956067926
+    y2: 237.0581414315265
+    color: '#4fae55'
+    grosor: 3
+    inicio: none
+    fin: circle
+    estilo: solid-rounded
+  - tipo: conector
+    x1: 1051.7708938754354
+    y1: 261.09639410244665
+    x2: 1061.7670908468124
+    y2: 249.91265384663623
+    color: '#4fae55'
+    grosor: 2.5
+    inicio: none
+    fin: square
+    estilo: solid-rounded
+  - tipo: conector
+    x1: 1059.406275308898
+    y1: 270.99706806840317
+    x2: 1075.600098241852
+    y2: 263.1383086996396
+    color: '#4fae55'
+    grosor: 3
+    inicio: none
+    fin: circle
+    estilo: solid-rounded
+  - tipo: forma
+    x: 969.0
+    y: 246.0
+    w: 96.0
+    h: 72.0
+    tipo_forma: circle
+    relleno: '#ffffff'
+    borde: '#4fae55'
+    grosor: 4
+  - tipo: dibujo
+    x: 984.0
+    y: 268
+    w: 66.0
+    h: 28
+    trazos:
+    - d: M 2.0 14.0 L 2.4 16.7 L 2.9 19.1 L 3.3 21.2 L 3.8 22.8 L 4.2 23.7 L 4.7 24.0 L 5.1 23.5 L 5.5 22.3 L 6.0 20.6 L 6.4 18.3 L 6.9 15.8 L
+        7.3 13.1 L 7.8 10.5 L 8.2 8.1 L 8.6 6.2 L 9.1 4.8 L 9.5 4.1 L 10.0 4.1 L 10.4 4.8 L 10.9 6.2 L 11.3 8.1 L 11.7 10.5 L 12.2 13.1 L 12.6
+        15.8 L 13.1 18.3 L 13.5 20.6 L 14.0 22.3 L 14.4 23.5 L 14.8 24.0 L 15.3 23.7 L 15.7 22.8 L 16.2 21.2 L 16.6 19.1 L 17.1 16.7 L 17.5 14.0
+        L 17.9 11.3 L 18.4 8.9 L 18.8 6.8 L 19.3 5.2 L 19.7 4.3 L 20.2 4.0 L 20.6 4.5 L 21.0 5.7 L 21.5 7.4 L 21.9 9.7 L 22.4 12.2 L 22.8 14.9
+        L 23.3 17.5 L 23.7 19.9 L 24.1 21.8 L 24.6 23.2 L 25.0 23.9 L 25.5 23.9 L 25.9 23.2 L 26.4 21.8 L 26.8 19.9 L 27.2 17.5 L 27.7 14.9 L
+        28.1 12.2 L 28.6 9.7 L 29.0 7.4 L 29.5 5.7 L 29.9 4.5 L 30.3 4.0 L 30.8 4.3 L 31.2 5.2 L 31.7 6.8 L 32.1 8.9 L 32.6 11.3 L 33.0 14.0 L
+        33.4 16.7 L 33.9 19.1 L 34.3 21.2 L 34.8 22.8 L 35.2 23.7 L 35.7 24.0 L 36.1 23.5 L 36.5 22.3 L 37.0 20.6 L 37.4 18.3 L 37.9 15.8 L 38.3
+        13.1 L 38.8 10.5 L 39.2 8.1 L 39.6 6.2 L 40.1 4.8 L 40.5 4.1 L 41.0 4.1 L 41.4 4.8 L 41.9 6.2 L 42.3 8.1 L 42.7 10.5 L 43.2 13.1 L 43.6
+        15.8 L 44.1 18.3 L 44.5 20.6 L 45.0 22.3 L 45.4 23.5 L 45.8 24.0 L 46.3 23.7 L 46.7 22.8 L 47.2 21.2 L 47.6 19.1 L 48.1 16.7 L 48.5 14.0
+        L 48.9 11.3 L 49.4 8.9 L 49.8 6.8 L 50.3 5.2 L 50.7 4.3 L 51.2 4.0 L 51.6 4.5 L 52.0 5.7 L 52.5 7.4 L 52.9 9.7 L 53.4 12.2 L 53.8 14.9
+        L 54.3 17.5 L 54.7 19.9 L 55.1 21.8 L 55.6 23.2 L 56.0 23.9 L 56.5 23.9 L 56.9 23.2 L 57.4 21.8 L 57.8 19.9 L 58.2 17.5 L 58.7 14.9 L
+        59.1 12.2 L 59.6 9.7 L 60.0 7.4 L 60.5 5.7 L 60.9 4.5 L 61.3 4.0 L 61.8 4.3 L 62.2 5.2 L 62.7 6.8 L 63.1 8.9 L 63.6 11.3 L 64.0 14.0
+      borde: '#4fae55'
+      grosor: 2.5
+  - tipo: texto
+    x: 860
+    y: 355
+    w: 315
+    html: <p style="text-align:center">Pneumoviridae envuelto · ARN (−), subgrupos A y B</p>
+    tam: 73
+    color: negro_usfq
+  - tipo: forma
+    x: 880
+    y: 450
+    w: 275
+    h: 2
+    tipo_forma: rect
+    relleno: '#4fae55'
+  - tipo: texto
+    x: 860
+    y: 470
+    w: 315
+    html: <p style="text-align:center"><strong>Alta carga en lactantes y adultos mayores</strong></p>
+    tam: 76
+    color: negro_usfq
+  - tipo: texto
+    x: 70
+    y: 592
+    w: 1140
+    html: <p style="text-align:left">Crits-Christoph et al., 2021; Zurbriggen et al., 2008; Hughes et al., 2022</p>
+    tam: 59
+    color: gris_usfq
+  notas: 'En 2024 se halló poliovirus derivado de vacuna tipo 2 en aguas residuales de Finlandia, Alemania, Polonia, España y Reino Unido (Böttcher
+    et al., 2025). (1 min)
+
+    RSV: alta carga en lactantes, adultos mayores e inmunocomprometidos.
+
+    Texto de la versión 1 (para decirlo en voz alta): SARS-CoV-2: La secuenciación del agua residual reconstruye los linajes que circulan en la
+    población (Crits-Christoph et al., 2021). Enterovirus: El poliovirus causa parálisis en 1 de cada 100 infecciones o menos; el agua detecta
+    su circulación silenciosa (Zurbriggen et al., 2008). RSV: Su ARN en aguas residuales acompaña la positividad clínica, con τ de Kendall de
+    0,65 a 0,77 (Hughes et al., 2022).'
+- diseno: contenido
+  numero: '02'
+  titulo: Pregunta de investigación
+  texto: ¿Qué evidencia molecular y genómica de SARS-CoV-2, enterovirus y virus sincitial respiratorio puede identificarse en las aguas residuales
+    de la PTAR Quitumbe, en Quito?
+  notas: 'Leer la pregunta completa; las conclusiones la responden al final. (40 s)
+
+    El objetivo general está en la siguiente diapositiva, sobre los cuatro objetivos específicos.'
+- diseno: lienzo
+  numero: '02'
+  titulo: Objetivos
+  elementos:
+  - tipo: caja
+    x: 70
+    y: 145
+    w: 1140
+    h: 90
+    contenido: <p style="text-align:center"><strong>Analizar la presencia molecular y la caracterización genómica de SARS-CoV-2, enterovirus y
+      RSV en la PTAR Quitumbe</strong></p>
+    fondo: negro_usfq
+    borde: null
+    grosor: 0
+    radio: 10
+    tam: 85
+    color: blanco
+  - tipo: construccion
+    nombre: arbol
+    origen:
+    - 640
+    - 235
+    destinos:
+    - - 200
+      - 316
+    - - 490
+      - 316
+    - - 780
+      - 316
+    - - 1070
+      - 316
+    y_barra: 275
+    color: gris_usfq
+    grosor: 4
+    radio: 16
+    punta: 16
+  - tipo: forma
+    x: 70
+    y: 320
+    w: 260
+    h: 14
+    tipo_forma: rect
+    relleno: rojo
+  - tipo: caja
+    x: 70
+    y: 334
+    w: 260
+    h: 230
+    contenido: <p style="text-align:center"><strong>1 · Identificar</strong></p><p style="text-align:center">material genético de los tres virus</p>
+    fondo: crema
+    borde: beige
+    grosor: 2
+    radio: 0
+    tam: 87
+    color: negro_usfq
+    anim:
+    - slide-up
+    - 0.5
+    - 0.0
+  - tipo: forma
+    x: 360
+    y: 320
+    w: 260
+    h: 14
+    tipo_forma: rect
+    relleno: rojo
+  - tipo: caja
+    x: 360
+    y: 334
+    w: 260
+    h: 230
+    contenido: <p style="text-align:center"><strong>2 · Caracterizar</strong></p><p style="text-align:center">las señales genómicas con secuenciación</p>
+    fondo: crema
+    borde: beige
+    grosor: 2
+    radio: 0
+    tam: 87
+    color: negro_usfq
+    anim:
+    - slide-up
+    - 0.5
+    - 0.2
+  - tipo: forma
+    x: 650
+    y: 320
+    w: 260
+    h: 14
+    tipo_forma: rect
+    relleno: rojo
+  - tipo: caja
+    x: 650
+    y: 334
+    w: 260
+    h: 230
+    contenido: <p style="text-align:center"><strong>3 · Interpretar</strong></p><p style="text-align:center">frente a la vigilancia y al contexto
+      local</p>
+    fondo: crema
+    borde: beige
+    grosor: 2
+    radio: 0
+    tam: 87
+    color: negro_usfq
+    anim:
+    - slide-up
+    - 0.5
+    - 0.4
+  - tipo: forma
+    x: 940
+    y: 320
+    w: 260
+    h: 14
+    tipo_forma: rect
+    relleno: rojo
+  - tipo: caja
+    x: 940
+    y: 334
+    w: 260
+    h: 230
+    contenido: <p style="text-align:center"><strong>4 · Delimitar</strong></p><p style="text-align:center">alcances y límites del análisis multipatógeno</p>
+    fondo: crema
+    borde: beige
+    grosor: 2
+    radio: 0
+    tam: 87
+    color: negro_usfq
+    anim:
+    - slide-up
+    - 0.5
+    - 0.6000000000000001
+  notas: '(40 s)
+
+    Texto de la versión 1 (para decirlo en voz alta): 1. Identificar material genético de los tres virus en el influente de la PTAR Quitumbe.
+    2. Caracterizar, cuando la calidad de los datos lo permita, las señales genómicas mediante secuenciación y bioinformática. 3. Interpretar
+    los resultados frente a la vigilancia en aguas residuales y al contexto local. 4. Identificar alcances y limitaciones del análisis multipatógeno
+    en una matriz ambiental compleja.'
+- diseno: tabla
+  numero: '03'
+  titulo: Diseño del estudio
+  encabezados:
+  - Fase
+  - Semanas
+  - Muestras
+  - Virus analizados
+  filas:
+  - - Prospectiva
+    - 1–42
+    - '42'
+    - SARS-CoV-2
+  - - Prospectiva multipatógeno
+    - 43–56
+    - '14'
+    - Enterovirus y RSV
+  - - Retrospectiva conservada
+    - 17–20 y 34–37
+    - '8'
+    - Enterovirus y RSV
+  texto: 'Estudio observacional, descriptivo y longitudinal: 56 semanas consecutivas en el influente de la PTAR Quitumbe, del 14 de abril de 2025
+    al 10 de mayo de 2026.
+
+    '
+  notas: 'Enterovirus y RSV suman 22 muestras cada uno: 14 prospectivas y 8 retrospectivas. (1 min)
+
+    Las retrospectivas se conservaron en DNA/RNA Shield 2X y en PBS 1X.
+
+    '
+- diseno: imagen
+  numero: '03'
+  titulo: Muestreo pasivo
+  imagen: figuras/dispositivo.png
+  lado: derecha
+  ancho: 680
+  texto: '**Torpedo** con gasas, nailon e hisopo
+
+
+    **24 h** en el pozo de entrada
+
+
+    **4 °C** hasta el laboratorio'
+  notas: 'El muestreo pasivo no requiere equipos automáticos y funciona en sitios con infraestructura limitada (Parkins et al., 2023). (1 min)
+
+
+    Texto de la v1: Dispositivo tipo torpedo con gasas, membrana de nailon e hisopo, sumergido 24 h en el pozo de entrada, antes de cualquier
+    tratamiento.  Se transporta a 4 °C al Instituto de Microbiología de la USFQ (Mejía Calle, 2024).'
+- diseno: lienzo
+  numero: '03'
+  titulo: Flujo multipatógeno
+  elementos:
+  - tipo: caja
+    x: 70
+    y: 325
+    w: 175
+    h: 110
+    contenido: <p style="text-align:center"><strong>Muestreo</strong></p><p style="text-align:center">torpedo, 24 h</p>
+    fondo: '#dbe8f7'
+    borde: '#5a9bd4'
+    grosor: 2
+    radio: 8
+    tam: 64
+    color: negro_usfq
+  - tipo: caja
+    x: 260
+    y: 325
+    w: 175
+    h: 110
+    contenido: <p style="text-align:center"><strong>Concentración</strong></p><p style="text-align:center">PEG</p>
+    fondo: '#dbe8f7'
+    borde: '#5a9bd4'
+    grosor: 2
+    radio: 8
+    tam: 64
+    color: negro_usfq
+  - tipo: conector
+    x1: 245
+    y1: 380
+    x2: 258
+    y2: 380
+    color: '#5a9bd4'
+    grosor: 3
+  - tipo: caja
+    x: 450
+    y: 325
+    w: 175
+    h: 110
+    contenido: <p style="text-align:center"><strong>Extracción</strong></p><p style="text-align:center">ARN (Zymo)</p>
+    fondo: '#dbe8f7'
+    borde: '#5a9bd4'
+    grosor: 2
+    radio: 8
+    tam: 64
+    color: negro_usfq
+  - tipo: conector
+    x1: 435
+    y1: 380
+    x2: 448
+    y2: 380
+    color: '#5a9bd4'
+    grosor: 3
+  - tipo: caja
+    x: 680
+    y: 160
+    w: 310
+    h: 110
+    contenido: <p style="text-align:center"><strong>SARS-CoV-2</strong></p><p style="text-align:center">RT-qPCR N1/N2 · PCR ARTIC/VarSkip</p>
+    fondo: '#ece7f2'
+    borde: '#8c86c0'
+    grosor: 3
+    radio: 8
+    tam: 64
+    color: negro_usfq
+  - tipo: caja
+    x: 680
+    y: 325
+    w: 310
+    h: 110
+    contenido: <p style="text-align:center"><strong>Enterovirus</strong></p><p style="text-align:center">PCR anidada 5'NTR-Cre → VP1</p>
+    fondo: '#fde5cc'
+    borde: '#f08a2c'
+    grosor: 3
+    radio: 8
+    tam: 64
+    color: negro_usfq
+  - tipo: caja
+    x: 680
+    y: 490
+    w: 310
+    h: 110
+    contenido: <p style="text-align:center"><strong>RSV</strong></p><p style="text-align:center">PCR multiplex RSV-A y RSV-B</p>
+    fondo: '#dff1da'
+    borde: '#4fae55'
+    grosor: 3
+    radio: 8
+    tam: 64
+    color: negro_usfq
+  - tipo: caja
+    x: 1030
+    y: 315
+    w: 180
+    h: 130
+    contenido: <p style="text-align:center"><strong>Nanopore</strong></p><p style="text-align:center">gel + Cq < 35</p><p style="text-align:center">R10.4.1</p>
+    fondo: negro_usfq
+    borde: null
+    grosor: 0
+    radio: 10
+    tam: 64
+    color: blanco
+  - tipo: texto
+    x: 1020
+    y: 455
+    w: 200
+    html: <p style="text-align:center">EPI2ME → Nextclade · BLAST</p>
+    tam: 57
+    color: gris_usfq
+  - tipo: texto
+    x: 70
+    y: 600
+    w: 600
+    html: '<p style="text-align:left">Azul: etapas comunes · color: etapas propias de cada virus</p>'
+    tam: 57
+    color: gris_usfq
+  - tipo: construccion
+    nombre: rutas
+    color: gris_usfq
+    grosor: 3.5
+    radio: 16
+    punta: 14
+    caminos:
+    - - - 625
+        - 380
+      - - 652
+        - 380
+      - - 652
+        - 215
+      - - 677
+        - 215
+    - - - 625
+        - 380
+      - - 652
+        - 380
+      - - 652
+        - 380
+      - - 677
+        - 380
+    - - - 625
+        - 380
+      - - 652
+        - 380
+      - - 652
+        - 545
+      - - 677
+        - 545
+  - tipo: construccion
+    nombre: rutas
+    color: gris_usfq
+    grosor: 3.5
+    radio: 16
+    punta: 14
+    caminos:
+    - - - 990
+        - 215
+      - - 1008
+        - 215
+      - - 1008
+        - 380
+      - - 1028
+        - 380
+    - - - 990
+        - 380
+      - - 1008
+        - 380
+      - - 1008
+        - 380
+      - - 1028
+        - 380
+    - - - 990
+        - 545
+      - - 1008
+        - 545
+      - - 1008
+        - 380
+      - - 1028
+        - 380
+  notas: 'Concentración: 4 g de muestra, PEG con NaCl, centrifugación y resuspensión en DNA/RNA Shield 2X. (1,5 min)
+
+    Extracción: kit Quick-RNA Viral (Zymo Research).
+
+    SARS-CoV-2: RT-qPCR Luna (N1-HEX, N2-FAM, RP-Cy5) y PCR multiplex NEBNext ARTIC con cebadores ARTIC o VarSkip.
+
+    Enterovirus: PCR anidada, primera ronda pan-enterovirus (5''NTR y Cre), segunda ronda VP1 (Y7 y Q8), protocolo DDNS (Shaw et al., 2020).
+
+    RSV: PCR multiplex con cebadores para RSV-A y RSV-B.
+
+    '
+- diseno: lienzo
+  numero: '03'
+  titulo: Selección y controles
+  elementos:
+  - tipo: caja
+    x: 70
+    y: 320
+    w: 170
+    h: 120
+    contenido: <p style="text-align:center"><strong>RT-qPCR</strong></p><p style="text-align:center">control + y NTC</p>
+    fondo: '#dbe8f7'
+    borde: '#5a9bd4'
+    grosor: 2
+    radio: 8
+    tam: 61
+    color: negro_usfq
+  - tipo: forma
+    x: 275
+    y: 300
+    w: 160
+    h: 160
+    tipo_forma: diamond
+    relleno: blanco
+    borde: rojo
+    grosor: 3
+  - tipo: texto
+    x: 275
+    y: 358
+    w: 160
+    html: <p style="text-align:center"><strong>Cq < 35</strong></p>
+    tam: 83
+    color: negro_usfq
+  - tipo: caja
+    x: 475
+    y: 315
+    w: 200
+    h: 130
+    contenido: <p style="text-align:center"><strong>PCR de amplicones</strong></p><p style="text-align:center">control + hisopados</p>
+    fondo: '#dbe8f7'
+    borde: '#5a9bd4'
+    grosor: 2
+    radio: 8
+    tam: 61
+    color: negro_usfq
+  - tipo: forma
+    x: 705
+    y: 280
+    w: 200
+    h: 200
+    tipo_forma: diamond
+    relleno: blanco
+    borde: rojo
+    grosor: 3
+  - tipo: texto
+    x: 725
+    y: 340
+    w: 160
+    html: <p style="text-align:center"><strong>¿Banda<br>esperada?</strong></p>
+    tam: 68
+    color: negro_usfq
+  - tipo: caja
+    x: 940
+    y: 325
+    w: 270
+    h: 110
+    contenido: <p style="text-align:center"><strong>Nanopore R10.4.1</strong></p><p style="text-align:center">EPI2ME → consenso</p>
+    fondo: negro_usfq
+    borde: null
+    grosor: 0
+    radio: 10
+    tam: 76
+    color: blanco
+  - tipo: caja
+    x: 420
+    y: 540
+    w: 360
+    h: 70
+    contenido: <p style="text-align:center"><strong>Descartar o reprocesar</strong></p>
+    fondo: crema
+    borde: beige
+    grosor: 2
+    radio: 8
+    tam: 83
+    color: negro_usfq
+  - tipo: conector
+    x1: 240
+    y1: 380
+    x2: 272
+    y2: 380
+    color: gris_usfq
+    grosor: 3
+  - tipo: conector
+    x1: 435
+    y1: 380
+    x2: 477
+    y2: 380
+    color: gris_usfq
+    grosor: 3
+  - tipo: conector
+    x1: 670
+    y1: 380
+    x2: 702
+    y2: 380
+    color: gris_usfq
+    grosor: 3
+  - tipo: conector
+    x1: 905
+    y1: 380
+    x2: 937
+    y2: 380
+    color: gris_usfq
+    grosor: 3
+  - tipo: texto
+    x: 442
+    y: 342
+    w: 40
+    html: <p style="text-align:center"><strong>sí</strong></p>
+    tam: 65
+    color: '#4fae55'
+  - tipo: texto
+    x: 895
+    y: 342
+    w: 40
+    html: <p style="text-align:center"><strong>sí</strong></p>
+    tam: 65
+    color: '#4fae55'
+  - tipo: texto
+    x: 360
+    y: 490
+    w: 60
+    html: <p style="text-align:center"><strong>no</strong></p>
+    tam: 65
+    color: rojo
+  - tipo: texto
+    x: 808
+    y: 490
+    w: 60
+    html: <p style="text-align:center"><strong>no</strong></p>
+    tam: 65
+    color: rojo
+  - tipo: texto
+    x: 70
+    y: 175
+    w: 1140
+    html: <p style="text-align:left">Una muestra pasa a secuenciación solo si supera los dos filtros</p>
+    tam: 83
+    color: negro_usfq
+  - tipo: construccion
+    nombre: rutas
+    color: rojo
+    grosor: 3.5
+    radio: 16
+    punta: 14
+    caminos:
+    - - - 355
+        - 460
+      - - 355
+        - 575
+      - - 418
+        - 575
+    - - - 805
+        - 480
+      - - 805
+        - 575
+      - - 782
+        - 575
+  notas: 'El influente tiene baja carga e inhibidores: por eso la selección combina Cq y banda. (1 min)
+
+    Texto de la versión 1 (para decirlo en voz alta): RT-qPCR con el control positivo del kit y un control sin molde, sin señal en N1 ni en N2.
+    PCR multiplex con un control positivo de hisopados faríngeos de carga conocida. A secuenciación, solo las muestras con banda del tamaño esperado
+    y Cq < 35. Oxford Nanopore (SQK-NBD114.96, celdas R10.4.1); consenso en EPI2ME, linajes con Nextclade e identificación por BLAST.'
+- diseno: imagen
+  numero: '04'
+  titulo: Rendimiento por virus
+  imagen: figuras/rendimiento.png
+  lado: izquierda
+  ancho: 600
+  texto: '**SARS-CoV-2:** 23 de 42 muestras secuenciadas y 6 con linaje.
+
+
+    **Enterovirus:** 2 de 22 caracterizadas, ambas Coxsackievirus A.
+
+
+    **RSV:** 4 de 22 secuenciadas, sin subgrupo.
+
+    '
+  notas: 'Panorama antes de entrar a cada virus: la secuenciación rindió de forma desigual entre virus. (1 min)
+
+    '
+- diseno: imagen
+  numero: '04'
+  titulo: Valores de Cq de SARS-CoV-2
+  imagen: figuras/cq_sars.png
+  pie: 'El eje está invertido: más arriba, más carga viral. Genes N1 (HEX) y N2 (FAM).'
+  notas: '31 de las 42 muestras dieron Cq para N1. En las semanas 15, 18–20, 22, 26, 27 y 31 no amplificó N1 ni N2. (1 min)
+
+    '
+- diseno: tabla
+  numero: '04'
+  titulo: Cq y caracterización genómica
+  encabezados:
+  - Resultado de la secuenciación
+  - n
+  - Cq N1 (rango)
+  - Cq N1 medio
+  filas:
+  - - Linaje determinado
+    - '6'
+    - 33,1–35,8
+    - 34,0
+  - - Secuenciado, sin determinar
+    - '15'
+    - 33,9–42,3
+    - 36,6
+  - - No secuenciado (con Cq)
+    - '10'
+    - 34,4–42,9
+    - 38,5
+  texto: 'Las medias crecen con la pérdida de información genómica, pero los rangos se solapan: el Cq acompaña la probabilidad de caracterizar
+    sin determinarla por sí solo.
+
+    '
+  notas: (1 min)
+- diseno: imagen
+  numero: '04'
+  titulo: Linajes de SARS-CoV-2
+  imagen: figuras/linajes_sars.png
+  lado: derecha
+  ancho: 640
+  texto: '**6 linajes**, semanas 3–9
+
+
+    Todos descendientes de **JN.1**
+
+
+    Desde la semana 10: sin linaje'
+  notas: 'Asignación con Nextclade. La detección de JN.1 reproduce el antecedente local (Mejía Calle, 2024). (1 min)
+
+
+    Texto de la v1: Seis muestras de las semanas 3 a 9 (28 abr – 9 jun 2025), todas descendientes de JN.1: clado 24A (JN.1, LZ.5, LU.2.1.1) y
+    clado 24H (LF.7.1.3).  Desde la semana 10, 17 secuencias sin linaje por cobertura insuficiente.'
+- diseno: lienzo
+  numero: '05'
+  titulo: Enterovirus
+  elementos:
+  - tipo: texto
+    x: 70
+    y: 150
+    w: 900
+    html: <p style="text-align:left">Genoma de enterovirus (esquema, no a escala)</p>
+    tam: 73
+    color: gris_usfq
+  - tipo: caja
+    x: 90
+    y: 290
+    w: 95
+    h: 70
+    contenido: <p style="text-align:center">5'NTR</p>
+    fondo: '#f3f3f3'
+    borde: '#bbbbbb'
+    grosor: 2
+    radio: 0
+    tam: 73
+    color: negro_usfq
+  - tipo: caja
+    x: 185
+    y: 290
+    w: 80
+    h: 70
+    contenido: <p style="text-align:center"><strong>VP4</strong></p>
+    fondo: '#fde5cc'
+    borde: '#f08a2c'
+    grosor: 2
+    radio: 0
+    tam: 73
+    color: negro_usfq
+  - tipo: caja
+    x: 265
+    y: 290
+    w: 95
+    h: 70
+    contenido: <p style="text-align:center"><strong>VP2</strong></p>
+    fondo: '#fde5cc'
+    borde: '#f08a2c'
+    grosor: 2
+    radio: 0
+    tam: 73
+    color: negro_usfq
+  - tipo: caja
+    x: 360
+    y: 290
+    w: 95
+    h: 70
+    contenido: <p style="text-align:center"><strong>VP3</strong></p>
+    fondo: '#fde5cc'
+    borde: '#f08a2c'
+    grosor: 2
+    radio: 0
+    tam: 73
+    color: negro_usfq
+  - tipo: caja
+    x: 455
+    y: 290
+    w: 105
+    h: 70
+    contenido: <p style="text-align:center"><strong>VP1</strong></p>
+    fondo: '#fde5cc'
+    borde: '#f08a2c'
+    grosor: 2
+    radio: 0
+    tam: 73
+    color: negro_usfq
+  - tipo: caja
+    x: 560
+    y: 290
+    w: 490
+    h: 70
+    contenido: <p style="text-align:center">P2 · P3 (no estructurales)</p>
+    fondo: '#f3f3f3'
+    borde: '#bbbbbb'
+    grosor: 2
+    radio: 0
+    tam: 73
+    color: negro_usfq
+  - tipo: caja
+    x: 1050
+    y: 290
+    w: 50
+    h: 70
+    contenido: <p style="text-align:center">3'</p>
+    fondo: '#f3f3f3'
+    borde: '#bbbbbb'
+    grosor: 2
+    radio: 0
+    tam: 73
+    color: negro_usfq
+  - tipo: caja
+    x: 455
+    y: 215
+    w: 105
+    h: 40
+    contenido: ''
+    fondo: null
+    borde: gris_usfq
+    grosor: 3
+    radio: 4
+    tam: 94
+    color: negro_usfq
+    estilo_borde: dashed
+  - tipo: texto
+    x: 575
+    y: 215
+    w: 520
+    html: '<p style="text-align:left">blanco esperado: VP1 (cebadores Y7/Q8)</p>'
+    tam: 71
+    color: gris_usfq
+  - tipo: forma
+    x: 140
+    y: 395
+    w: 125
+    h: 30
+    tipo_forma: rect
+    relleno: rojo
+    radio: 4
+    anim:
+    - slide-right
+    - 0.6
+  - tipo: texto
+    x: 90
+    y: 440
+    w: 460
+    html: '<p style="text-align:left"><strong>amplicón obtenido: posiciones 529–1049 (VP4)</strong></p>'
+    tam: 73
+    color: rojo
+  - tipo: caja
+    x: 700
+    y: 450
+    w: 510
+    h: 140
+    contenido: <p style="text-align:center"><strong>Coxsackievirus A</strong></p><p style="text-align:center">semanas 45 y 46 · BLAST</p><p style="text-align:center">0
+      de 22 muestras con poliovirus</p>
+    fondo: crema
+    borde: beige
+    grosor: 2
+    radio: 12
+    tam: 78
+    color: negro_usfq
+  notas: 'El contraste con las referencias de poliovirus 1, 2 y 3 no cambió el resultado: especificidad de los cebadores de VP1 menor que la esperada.
+    (1 min)
+
+    Texto de la versión 1 (para decirlo en voz alta): Coxsackievirus A, sin poliovirus Las muestras de las semanas 45 y 46 (febrero de 2026) dieron
+    amplicones de 1 100 a 1 200 pb en la segunda ronda de la PCR anidada.  El análisis los ubicó en la región VP4 (posiciones 529 a 1 049), no
+    en VP1, y BLAST los asignó a Coxsackievirus A. Ninguna de las 22 muestras rindió poliovirus.'
+- diseno: lienzo
+  numero: '06'
+  titulo: Virus sincitial respiratorio
+  elementos:
+  - tipo: caja
+    x: 130.0
+    y: 160
+    w: 700
+    h: 105
+    contenido: <h2 style="text-align:center"><strong>22</strong></h2>
+    fondo: '#e8e8e8'
+    borde: beige
+    grosor: 2
+    radio: 10
+    tam: 100
+    color: negro_usfq
+    anim:
+    - fade-in
+    - 0.5
+    - 0.0
+  - tipo: texto
+    x: 855.0
+    y: 190
+    w: 355.0
+    html: <p style="text-align:left">muestras analizadas</p>
+    tam: 83
+    color: negro_usfq
+  - tipo: caja
+    x: 250.0
+    y: 290
+    w: 460
+    h: 105
+    contenido: <h2 style="text-align:center"><strong>4</strong></h2>
+    fondo: '#dff1da'
+    borde: beige
+    grosor: 2
+    radio: 10
+    tam: 100
+    color: negro_usfq
+    anim:
+    - fade-in
+    - 0.5
+    - 0.3
+  - tipo: texto
+    x: 735.0
+    y: 320
+    w: 475.0
+    html: <p style="text-align:left">secuenciadas (sem. 50, 52, 53 y 54)</p>
+    tam: 83
+    color: negro_usfq
+  - tipo: caja
+    x: 370.0
+    y: 420
+    w: 220
+    h: 105
+    contenido: <h2 style="text-align:center"><strong>0</strong></h2>
+    fondo: crema
+    borde: beige
+    grosor: 2
+    radio: 10
+    tam: 100
+    color: rojo
+    anim:
+    - fade-in
+    - 0.5
+    - 0.6
+  - tipo: texto
+    x: 615.0
+    y: 450
+    w: 595.0
+    html: <p style="text-align:left">con subgrupo o clado</p>
+    tam: 83
+    color: negro_usfq
+  - tipo: texto
+    x: 70
+    y: 575
+    w: 1140
+    html: <p style="text-align:left">EPI2ME no alineó las lecturas con la referencia de RSV de la plataforma</p>
+    tam: 73
+    color: gris_usfq
+  notas: '(45 s)
+
+    Texto de la versión 1 (para decirlo en voz alta): Señal sin subgrupo Cuatro de 22 muestras se secuenciaron, todas prospectivas: semanas 50,
+    52, 53 y 54 (marzo y abril de 2026).  EPI2ME no alineó las lecturas con la referencia de RSV de la plataforma, de modo que no se asignó subgrupo
+    ni clado.'
+- diseno: imagen
+  numero: '06'
+  titulo: Conservación y secuencia
+  imagen: figuras/conservacion.png
+  lado: derecha
+  ancho: 720
+  texto: 'Ninguna de las 8 muestras retrospectivas, en DNA/RNA Shield 2X o en PBS 1X, rindió secuencia.
+
+
+    Todas las secuencias vinieron de muestras frescas.
+
+    '
+  notas: (45 s)
+- diseno: lienzo
+  numero: '06'
+  titulo: Ventanas de análisis
+  elementos:
+  - tipo: texto
+    x: 60
+    y: 152
+    w: 170
+    html: <p style="text-align:right">SARS-CoV-2</p>
+    tam: 65
+    color: negro_usfq
+  - tipo: forma
+    x: 240
+    y: 150
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 276
+    y: 150
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 312
+    y: 150
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#74c476'
+    radio: 3
+  - tipo: forma
+    x: 348
+    y: 150
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 384
+    y: 150
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#74c476'
+    radio: 3
+  - tipo: forma
+    x: 420
+    y: 150
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#74c476'
+    radio: 3
+  - tipo: forma
+    x: 456
+    y: 150
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#74c476'
+    radio: 3
+  - tipo: forma
+    x: 492
+    y: 150
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#74c476'
+    radio: 3
+  - tipo: forma
+    x: 528
+    y: 150
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#74c476'
+    radio: 3
+  - tipo: forma
+    x: 564
+    y: 150
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#fdae6b'
+    radio: 3
+  - tipo: forma
+    x: 600
+    y: 150
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#fdae6b'
+    radio: 3
+  - tipo: forma
+    x: 636
+    y: 150
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#fdae6b'
+    radio: 3
+  - tipo: forma
+    x: 672
+    y: 150
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#fdae6b'
+    radio: 3
+  - tipo: forma
+    x: 708
+    y: 150
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#fdae6b'
+    radio: 3
+  - tipo: forma
+    x: 744
+    y: 150
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#fdae6b'
+    radio: 3
+  - tipo: forma
+    x: 780
+    y: 150
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#fdae6b'
+    radio: 3
+  - tipo: forma
+    x: 816
+    y: 150
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#fdae6b'
+    radio: 3
+  - tipo: forma
+    x: 852
+    y: 150
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 888
+    y: 150
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 924
+    y: 150
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 960
+    y: 150
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#fdae6b'
+    radio: 3
+  - tipo: forma
+    x: 996
+    y: 150
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 1032
+    y: 150
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#fdae6b'
+    radio: 3
+  - tipo: forma
+    x: 1068
+    y: 150
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#fdae6b'
+    radio: 3
+  - tipo: forma
+    x: 1104
+    y: 150
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#fdae6b'
+    radio: 3
+  - tipo: forma
+    x: 1140
+    y: 150
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 1176
+    y: 150
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 1212
+    y: 150
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#fdae6b'
+    radio: 3
+  - tipo: texto
+    x: 60
+    y: 192
+    w: 170
+    html: <p style="text-align:right">Enterovirus</p>
+    tam: 65
+    color: negro_usfq
+  - tipo: forma
+    x: 240
+    y: 190
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 276
+    y: 190
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 312
+    y: 190
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 348
+    y: 190
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 384
+    y: 190
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 420
+    y: 190
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 456
+    y: 190
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 492
+    y: 190
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 528
+    y: 190
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 564
+    y: 190
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 600
+    y: 190
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 636
+    y: 190
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 672
+    y: 190
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 708
+    y: 190
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 744
+    y: 190
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 780
+    y: 190
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 816
+    y: 190
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 852
+    y: 190
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 888
+    y: 190
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 924
+    y: 190
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 960
+    y: 190
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 996
+    y: 190
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 1032
+    y: 190
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 1068
+    y: 190
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 1104
+    y: 190
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 1140
+    y: 190
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 1176
+    y: 190
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 1212
+    y: 190
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: texto
+    x: 60
+    y: 232
+    w: 170
+    html: <p style="text-align:right">RSV</p>
+    tam: 65
+    color: negro_usfq
+  - tipo: forma
+    x: 240
+    y: 230
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 276
+    y: 230
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 312
+    y: 230
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 348
+    y: 230
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 384
+    y: 230
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 420
+    y: 230
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 456
+    y: 230
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 492
+    y: 230
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 528
+    y: 230
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 564
+    y: 230
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 600
+    y: 230
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 636
+    y: 230
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 672
+    y: 230
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 708
+    y: 230
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 744
+    y: 230
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 780
+    y: 230
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 816
+    y: 230
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 852
+    y: 230
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 888
+    y: 230
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 924
+    y: 230
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 960
+    y: 230
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 996
+    y: 230
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 1032
+    y: 230
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 1068
+    y: 230
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 1104
+    y: 230
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 1140
+    y: 230
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 1176
+    y: 230
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 1212
+    y: 230
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: texto
+    x: 220
+    y: 272
+    w: 76
+    html: <p style="text-align:center">1</p>
+    tam: 53
+    color: gris_usfq
+  - tipo: texto
+    x: 328
+    y: 272
+    w: 76
+    html: <p style="text-align:center">4</p>
+    tam: 53
+    color: gris_usfq
+  - tipo: texto
+    x: 436
+    y: 272
+    w: 76
+    html: <p style="text-align:center">7</p>
+    tam: 53
+    color: gris_usfq
+  - tipo: texto
+    x: 544
+    y: 272
+    w: 76
+    html: <p style="text-align:center">10</p>
+    tam: 53
+    color: gris_usfq
+  - tipo: texto
+    x: 652
+    y: 272
+    w: 76
+    html: <p style="text-align:center">13</p>
+    tam: 53
+    color: gris_usfq
+  - tipo: texto
+    x: 760
+    y: 272
+    w: 76
+    html: <p style="text-align:center">16</p>
+    tam: 53
+    color: gris_usfq
+  - tipo: texto
+    x: 868
+    y: 272
+    w: 76
+    html: <p style="text-align:center">19</p>
+    tam: 53
+    color: gris_usfq
+  - tipo: texto
+    x: 976
+    y: 272
+    w: 76
+    html: <p style="text-align:center">22</p>
+    tam: 53
+    color: gris_usfq
+  - tipo: texto
+    x: 1084
+    y: 272
+    w: 76
+    html: <p style="text-align:center">25</p>
+    tam: 53
+    color: gris_usfq
+  - tipo: texto
+    x: 1192
+    y: 272
+    w: 76
+    html: <p style="text-align:center">28</p>
+    tam: 53
+    color: gris_usfq
+  - tipo: texto
+    x: 240
+    y: 300
+    w: 700
+    html: <p style="text-align:left">Semanas 1–28 (abr – oct 2025)</p>
+    tam: 61
+    color: gris_usfq
+  - tipo: texto
+    x: 60
+    y: 362
+    w: 170
+    html: <p style="text-align:right">SARS-CoV-2</p>
+    tam: 65
+    color: negro_usfq
+  - tipo: forma
+    x: 240
+    y: 360
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#fdae6b'
+    radio: 3
+  - tipo: forma
+    x: 276
+    y: 360
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#fdae6b'
+    radio: 3
+  - tipo: forma
+    x: 312
+    y: 360
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#fdae6b'
+    radio: 3
+  - tipo: forma
+    x: 348
+    y: 360
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#fdae6b'
+    radio: 3
+  - tipo: forma
+    x: 384
+    y: 360
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 420
+    y: 360
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 456
+    y: 360
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 492
+    y: 360
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 528
+    y: 360
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 564
+    y: 360
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 600
+    y: 360
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 636
+    y: 360
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 672
+    y: 360
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 708
+    y: 360
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 744
+    y: 360
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 780
+    y: 360
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 816
+    y: 360
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 852
+    y: 360
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 888
+    y: 360
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 924
+    y: 360
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 960
+    y: 360
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 996
+    y: 360
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 1032
+    y: 360
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 1068
+    y: 360
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 1104
+    y: 360
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 1140
+    y: 360
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 1176
+    y: 360
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 1212
+    y: 360
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: texto
+    x: 60
+    y: 402
+    w: 170
+    html: <p style="text-align:right">Enterovirus</p>
+    tam: 65
+    color: negro_usfq
+  - tipo: forma
+    x: 240
+    y: 400
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 276
+    y: 400
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 312
+    y: 400
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 348
+    y: 400
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 384
+    y: 400
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 420
+    y: 400
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 456
+    y: 400
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 492
+    y: 400
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 528
+    y: 400
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 564
+    y: 400
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 600
+    y: 400
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 636
+    y: 400
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 672
+    y: 400
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 708
+    y: 400
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 744
+    y: 400
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 780
+    y: 400
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 816
+    y: 400
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9e9ac8'
+    radio: 3
+  - tipo: forma
+    x: 852
+    y: 400
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9e9ac8'
+    radio: 3
+  - tipo: forma
+    x: 888
+    y: 400
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 924
+    y: 400
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 960
+    y: 400
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 996
+    y: 400
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 1032
+    y: 400
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 1068
+    y: 400
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 1104
+    y: 400
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 1140
+    y: 400
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 1176
+    y: 400
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 1212
+    y: 400
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: texto
+    x: 60
+    y: 442
+    w: 170
+    html: <p style="text-align:right">RSV</p>
+    tam: 65
+    color: negro_usfq
+  - tipo: forma
+    x: 240
+    y: 440
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 276
+    y: 440
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 312
+    y: 440
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 348
+    y: 440
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 384
+    y: 440
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 420
+    y: 440
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 456
+    y: 440
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 492
+    y: 440
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 528
+    y: 440
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 564
+    y: 440
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 600
+    y: 440
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 636
+    y: 440
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 672
+    y: 440
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 708
+    y: 440
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: forma
+    x: 744
+    y: 440
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 780
+    y: 440
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 816
+    y: 440
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 852
+    y: 440
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 888
+    y: 440
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 924
+    y: 440
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 960
+    y: 440
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 996
+    y: 440
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#fdae6b'
+    radio: 3
+  - tipo: forma
+    x: 1032
+    y: 440
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 1068
+    y: 440
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#fdae6b'
+    radio: 3
+  - tipo: forma
+    x: 1104
+    y: 440
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#fdae6b'
+    radio: 3
+  - tipo: forma
+    x: 1140
+    y: 440
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#fdae6b'
+    radio: 3
+  - tipo: forma
+    x: 1176
+    y: 440
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: forma
+    x: 1212
+    y: 440
+    w: 33
+    h: 36
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: texto
+    x: 220
+    y: 482
+    w: 76
+    html: <p style="text-align:center">29</p>
+    tam: 53
+    color: gris_usfq
+  - tipo: texto
+    x: 328
+    y: 482
+    w: 76
+    html: <p style="text-align:center">32</p>
+    tam: 53
+    color: gris_usfq
+  - tipo: texto
+    x: 436
+    y: 482
+    w: 76
+    html: <p style="text-align:center">35</p>
+    tam: 53
+    color: gris_usfq
+  - tipo: texto
+    x: 544
+    y: 482
+    w: 76
+    html: <p style="text-align:center">38</p>
+    tam: 53
+    color: gris_usfq
+  - tipo: texto
+    x: 652
+    y: 482
+    w: 76
+    html: <p style="text-align:center">41</p>
+    tam: 53
+    color: gris_usfq
+  - tipo: texto
+    x: 760
+    y: 482
+    w: 76
+    html: <p style="text-align:center">44</p>
+    tam: 53
+    color: gris_usfq
+  - tipo: texto
+    x: 868
+    y: 482
+    w: 76
+    html: <p style="text-align:center">47</p>
+    tam: 53
+    color: gris_usfq
+  - tipo: texto
+    x: 976
+    y: 482
+    w: 76
+    html: <p style="text-align:center">50</p>
+    tam: 53
+    color: gris_usfq
+  - tipo: texto
+    x: 1084
+    y: 482
+    w: 76
+    html: <p style="text-align:center">53</p>
+    tam: 53
+    color: gris_usfq
+  - tipo: texto
+    x: 1192
+    y: 482
+    w: 76
+    html: <p style="text-align:center">56</p>
+    tam: 53
+    color: gris_usfq
+  - tipo: texto
+    x: 240
+    y: 510
+    w: 700
+    html: <p style="text-align:left">Semanas 29–56 (nov 2025 – may 2026)</p>
+    tam: 61
+    color: gris_usfq
+  - tipo: forma
+    x: 70
+    y: 579
+    w: 24
+    h: 24
+    tipo_forma: rect
+    relleno: '#eeeeee'
+    radio: 3
+  - tipo: texto
+    x: 102
+    y: 575
+    w: 340
+    html: <p style="text-align:left">No analizado</p>
+    tam: 59
+    color: negro_usfq
+  - tipo: forma
+    x: 450
+    y: 579
+    w: 24
+    h: 24
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 3
+  - tipo: texto
+    x: 482
+    y: 575
+    w: 340
+    html: <p style="text-align:left">No secuenciado</p>
+    tam: 59
+    color: negro_usfq
+  - tipo: forma
+    x: 830
+    y: 579
+    w: 24
+    h: 24
+    tipo_forma: rect
+    relleno: '#fdae6b'
+    radio: 3
+  - tipo: texto
+    x: 862
+    y: 575
+    w: 340
+    html: '<p style="text-align:left">Secuenciado: no determinado</p>'
+    tam: 59
+    color: negro_usfq
+  - tipo: forma
+    x: 70
+    y: 611
+    w: 24
+    h: 24
+    tipo_forma: rect
+    relleno: '#74c476'
+    radio: 3
+  - tipo: texto
+    x: 102
+    y: 607
+    w: 340
+    html: '<p style="text-align:left">Secuenciado: determinado</p>'
+    tam: 59
+    color: negro_usfq
+  - tipo: forma
+    x: 450
+    y: 611
+    w: 24
+    h: 24
+    tipo_forma: rect
+    relleno: '#9e9ac8'
+    radio: 3
+  - tipo: texto
+    x: 482
+    y: 607
+    w: 340
+    html: '<p style="text-align:left">Secuenciado: Coxsackie A</p>'
+    tam: 59
+    color: negro_usfq
+  notas: 'SARS-CoV-2 no se analizó en las semanas 43 a 56: no se puede evaluar la co-circulación de los tres virus. (1 min)
+
+    '
+- diseno: lienzo
+  numero: '07'
+  titulo: La carga viral decide
+  elementos:
+  - tipo: texto
+    x: 70
+    y: 174
+    w: 540
+    html: '<p style="text-align:right">Haque et al. (2023), Dhaka: cobertura 94,2–99,8 %</p>'
+    tam: 68
+    color: negro_usfq
+  - tipo: forma
+    x: 756.8
+    y: 170
+    w: 94.05000000000007
+    h: 40
+    tipo_forma: rect
+    relleno: '#4fae55'
+    radio: 6
+    borde: null
+    grosor: 0
+    anim:
+    - slide-right
+    - 0.5
+    - 0.0
+  - tipo: texto
+    x: 70
+    y: 246
+    w: 540
+    html: '<p style="text-align:right">Crits-Christoph et al. (2021): genomas completos</p>'
+    tam: 68
+    color: negro_usfq
+  - tipo: forma
+    x: 620.0
+    y: 242
+    w: 256.5
+    h: 40
+    tipo_forma: rect
+    relleno: '#4fae55'
+    radio: 6
+    borde: null
+    grosor: 0
+    anim:
+    - slide-right
+    - 0.5
+    - 0.15
+  - tipo: texto
+    x: 70
+    y: 318
+    w: 540
+    html: '<p style="text-align:right"><strong>Esta tesis: linaje determinado</strong></p>'
+    tam: 68
+    color: negro_usfq
+  - tipo: forma
+    x: 879.35
+    y: 314
+    w: 76.94999999999993
+    h: 40
+    tipo_forma: rect
+    relleno: '#74c476'
+    radio: 6
+    borde: negro_usfq
+    grosor: 2
+    anim:
+    - slide-right
+    - 0.5
+    - 0.3
+  - tipo: texto
+    x: 70
+    y: 390
+    w: 540
+    html: '<p style="text-align:right"><strong>Esta tesis: secuenciado sin determinar</strong></p>'
+    tam: 68
+    color: negro_usfq
+  - tipo: forma
+    x: 902.15
+    y: 386
+    w: 239.39999999999998
+    h: 40
+    tipo_forma: rect
+    relleno: '#fdae6b'
+    radio: 6
+    borde: negro_usfq
+    grosor: 2
+    anim:
+    - slide-right
+    - 0.5
+    - 0.44999999999999996
+  - tipo: texto
+    x: 70
+    y: 462
+    w: 540
+    html: '<p style="text-align:right"><strong>Esta tesis: no secuenciado</strong></p>'
+    tam: 68
+    color: negro_usfq
+  - tipo: forma
+    x: 916.4
+    y: 458
+    w: 242.2500000000001
+    h: 40
+    tipo_forma: rect
+    relleno: '#9ecae1'
+    radio: 6
+    borde: negro_usfq
+    grosor: 2
+    anim:
+    - slide-right
+    - 0.5
+    - 0.6
+  - tipo: forma
+    x: 620
+    y: 540
+    w: 570
+    h: 2
+    tipo_forma: rect
+    relleno: gris_usfq
+  - tipo: forma
+    x: 619.0
+    y: 540
+    w: 2
+    h: 10
+    tipo_forma: rect
+    relleno: gris_usfq
+  - tipo: texto
+    x: 590.0
+    y: 552
+    w: 60
+    html: <p style="text-align:center">24</p>
+    tam: 61
+    color: gris_usfq
+  - tipo: forma
+    x: 733.0
+    y: 540
+    w: 2
+    h: 10
+    tipo_forma: rect
+    relleno: gris_usfq
+  - tipo: texto
+    x: 704.0
+    y: 552
+    w: 60
+    html: <p style="text-align:center">28</p>
+    tam: 61
+    color: gris_usfq
+  - tipo: forma
+    x: 847.0
+    y: 540
+    w: 2
+    h: 10
+    tipo_forma: rect
+    relleno: gris_usfq
+  - tipo: texto
+    x: 818.0
+    y: 552
+    w: 60
+    html: <p style="text-align:center">32</p>
+    tam: 61
+    color: gris_usfq
+  - tipo: forma
+    x: 961.0
+    y: 540
+    w: 2
+    h: 10
+    tipo_forma: rect
+    relleno: gris_usfq
+  - tipo: texto
+    x: 932.0
+    y: 552
+    w: 60
+    html: <p style="text-align:center">36</p>
+    tam: 61
+    color: gris_usfq
+  - tipo: forma
+    x: 1075.0
+    y: 540
+    w: 2
+    h: 10
+    tipo_forma: rect
+    relleno: gris_usfq
+  - tipo: texto
+    x: 1046.0
+    y: 552
+    w: 60
+    html: <p style="text-align:center">40</p>
+    tam: 61
+    color: gris_usfq
+  - tipo: forma
+    x: 1189.0
+    y: 540
+    w: 2
+    h: 10
+    tipo_forma: rect
+    relleno: gris_usfq
+  - tipo: texto
+    x: 1160.0
+    y: 552
+    w: 60
+    html: <p style="text-align:center">44</p>
+    tam: 61
+    color: gris_usfq
+  - tipo: conector
+    x1: 933.5
+    y1: 160
+    x2: 933.5
+    y2: 540
+    color: rojo
+    grosor: 3
+    fin: none
+    estilo: dashed
+  - tipo: texto
+    x: 941.5
+    y: 140
+    w: 300
+    html: '<p style="text-align:left"><strong>criterio: Cq < 35</strong></p>'
+    tam: 65
+    color: rojo
+  - tipo: texto
+    x: 620
+    y: 590
+    w: 570
+    html: <p style="text-align:center">Valor de Cq (menor = más carga viral)</p>
+    tam: 65
+    color: gris_usfq
+  notas: 'Mecanismo: con poca carga, los dímeros entre cebadores sesgan la cobertura de la PCR por amplicones (Itokawa et al., 2020). (1,5 min)
+
+    Un Cq tardío no invalida la detección: confirma presencia y tendencia.
+
+    Texto de la versión 1 (para decirlo en voz alta): Las seis muestras con linaje tuvieron los Cq de N1 más bajos, como en el antecedente de
+    Quitumbe (Mejía Calle, 2024).  En aguas residuales, solo las muestras con Cq < 33 dieron genomas completos (Crits-Christoph et al., 2021);
+    en Dhaka, Cq de 28,8 a 32,1 dieron 94,2–99,8 % de cobertura (Haque et al., 2023).'
+- diseno: imagen
+  numero: '07'
+  titulo: Enterovirus y RSV
+  imagen: figuras_v2/recuperacion_ev_rsv.png
+  pie: O'Reilly et al., 2020; Bubba et al., 2023; Toribio-Avedillo et al., 2024
+  notas: 'Enterovirus: la amplificación de VP4 apunta a cebadores de VP1 poco específicos en esta matriz. (1,5 min)
+
+    La ausencia de poliovirus apunta a la baja sensibilidad del muestreo pasivo antes que a una circulación nula: Ecuador aplica bOPV.
+
+    RSV: 71 % con ARN desnudo frente a 17 % con partículas envueltas.
+
+    Texto de la versión 1 (para decirlo en voz alta): Enterovirus: Se recuperó en 2 de 22 muestras (9 %), bajo el 10 % que se espera con muestreo
+    instrumental (O''Reilly et al., 2020; Bubba et al., 2023). RSV: Los genomas completos exigen más de 10 000 copias/mL (Le et al., 2025); al
+    ser envuelto, su recuperación cae del 71 % al 17 % (Toribio-Avedillo et al., 2024).'
+- diseno: imagen
+  numero: '07'
+  titulo: La conservación de la muestra
+  imagen: figuras_v2/conservacion_cobertura.png
+  pie: 'Barbé et al., 2022: secuenciación Nanopore de SARS-CoV-2 en aguas residuales'
+  notas: '(1 min)
+
+    Texto de la versión 1 (para decirlo en voz alta): Con secuenciación Nanopore de SARS-CoV-2, la cobertura mediana fue del 94 % con ARN fresco,
+    del 88 % con el extracto congelado y del 55 % con agua residual congelada (Barbé et al., 2022).  Las muestras retrospectivas se conservaron
+    sobre la matriz completa, la vía de peor rendimiento, y no rindieron secuencia.'
+- diseno: lienzo
+  numero: '07'
+  titulo: Limitaciones
+  elementos:
+  - tipo: caja
+    x: 70
+    y: 150
+    w: 555
+    h: 205
+    contenido: ''
+    fondo: crema
+    borde: beige
+    grosor: 2
+    radio: 10
+    tam: 94
+    color: negro_usfq
+  - tipo: forma
+    x: 70
+    y: 150
+    w: 12
+    h: 205
+    tipo_forma: rect
+    relleno: rojo
+  - tipo: icono
+    x: 110
+    y: 180
+    lado: 60
+    nombre: rain
+    color: rojo
+  - tipo: texto
+    x: 190
+    y: 180
+    w: 410
+    html: <p style="text-align:left"><strong>Matriz ambiental</strong></p>
+    tam: 94
+    color: negro_usfq
+  - tipo: texto
+    x: 190
+    y: 245
+    w: 410
+    html: '<p style="text-align:left">Poco material viral y Cq altos: cobertura insuficiente</p>'
+    tam: 76
+    color: gris_usfq
+  - tipo: caja
+    x: 655
+    y: 150
+    w: 555
+    h: 205
+    contenido: ''
+    fondo: crema
+    borde: beige
+    grosor: 2
+    radio: 10
+    tam: 94
+    color: negro_usfq
+  - tipo: forma
+    x: 655
+    y: 150
+    w: 12
+    h: 205
+    tipo_forma: rect
+    relleno: rojo
+  - tipo: icono
+    x: 695
+    y: 180
+    lado: 60
+    nombre: clock
+    color: rojo
+  - tipo: texto
+    x: 775
+    y: 180
+    w: 410
+    html: <p style="text-align:left"><strong>Conservación</strong></p>
+    tam: 94
+    color: negro_usfq
+  - tipo: texto
+    x: 775
+    y: 245
+    w: 410
+    html: <p style="text-align:left">Retrospectivas sin secuencia en Shield 2X y PBS 1X</p>
+    tam: 76
+    color: gris_usfq
+  - tipo: caja
+    x: 70
+    y: 385
+    w: 555
+    h: 205
+    contenido: ''
+    fondo: crema
+    borde: beige
+    grosor: 2
+    radio: 10
+    tam: 94
+    color: negro_usfq
+  - tipo: forma
+    x: 70
+    y: 385
+    w: 12
+    h: 205
+    tipo_forma: rect
+    relleno: rojo
+  - tipo: icono
+    x: 110
+    y: 415
+    lado: 60
+    nombre: denied
+    color: rojo
+  - tipo: texto
+    x: 190
+    y: 415
+    w: 410
+    html: <p style="text-align:left"><strong>Diseño temporal</strong></p>
+    tam: 94
+    color: negro_usfq
+  - tipo: texto
+    x: 190
+    y: 480
+    w: 410
+    html: <p style="text-align:left">Ventanas con poco solapamiento; SARS-CoV-2 no analizado en 43–56</p>
+    tam: 76
+    color: gris_usfq
+  - tipo: caja
+    x: 655
+    y: 385
+    w: 555
+    h: 205
+    contenido: ''
+    fondo: crema
+    borde: beige
+    grosor: 2
+    radio: 10
+    tam: 94
+    color: negro_usfq
+  - tipo: forma
+    x: 655
+    y: 385
+    w: 12
+    h: 205
+    tipo_forma: rect
+    relleno: rojo
+  - tipo: icono
+    x: 695
+    y: 415
+    lado: 60
+    nombre: cog
+    color: rojo
+  - tipo: texto
+    x: 775
+    y: 415
+    w: 410
+    html: <p style="text-align:left"><strong>Métodos</strong></p>
+    tam: 94
+    color: negro_usfq
+  - tipo: texto
+    x: 775
+    y: 480
+    w: 410
+    html: <p style="text-align:left">Cebadores de VP1 que amplificaron VP4; 22 muestras de un solo sitio</p>
+    tam: 76
+    color: gris_usfq
+  notas: 'Además: pocos datos genómicos clínicos de SARS-CoV-2 en Ecuador para comparar (Bruno et al., 2025). (1 min)
+
+    Texto de la versión 1 (para decirlo en voz alta): Poco material viral en una matriz diluida: Cq altos y cobertura insuficiente. Muestras retrospectivas
+    sin secuencia en ambos métodos de conservación. Ventanas temporales con poco solapamiento entre virus. 22 muestras de un único sitio para
+    enterovirus y RSV. Cebadores de VP1 que amplificaron VP4 y no confirmaron el serotipo.'
+- diseno: lienzo
+  numero: 08
+  titulo: Conclusiones
+  elementos:
+  - tipo: texto
+    x: 285
+    y: 150
+    w: 230
+    html: <p style="text-align:center"><strong>Detección</strong></p>
+    tam: 76
+    color: negro_usfq
+  - tipo: texto
+    x: 515
+    y: 150
+    w: 230
+    html: <p style="text-align:center"><strong>Secuencia</strong></p>
+    tam: 76
+    color: negro_usfq
+  - tipo: texto
+    x: 745
+    y: 150
+    w: 230
+    html: <p style="text-align:center"><strong>Caracterización</strong></p>
+    tam: 76
+    color: negro_usfq
+  - tipo: texto
+    x: 70
+    y: 238
+    w: 260
+    html: <p style="text-align:left"><strong>SARS-CoV-2</strong></p>
+    tam: 94
+    color: negro_usfq
+  - tipo: icono
+    x: 366
+    y: 227
+    lado: 68
+    nombre: checkmark-circle
+    color: '#8c86c0'
+    anim:
+    - scale-up
+    - 0.4
+    - 0.0
+  - tipo: forma
+    x: 436
+    y: 257
+    w: 158
+    h: 8
+    tipo_forma: rect
+    relleno: '#8c86c0'
+  - tipo: icono
+    x: 596
+    y: 227
+    lado: 68
+    nombre: checkmark-circle
+    color: '#8c86c0'
+    anim:
+    - scale-up
+    - 0.4
+    - 0.2
+  - tipo: forma
+    x: 666
+    y: 257
+    w: 158
+    h: 8
+    tipo_forma: rect
+    relleno: '#8c86c0'
+  - tipo: icono
+    x: 826
+    y: 227
+    lado: 68
+    nombre: checkmark-circle
+    color: '#8c86c0'
+    anim:
+    - scale-up
+    - 0.4
+    - 0.4
+  - tipo: texto
+    x: 930
+    y: 240
+    w: 280
+    html: <p style="text-align:left">linajes JN.1 (24A, 24H)</p>
+    tam: 73
+    color: gris_usfq
+  - tipo: texto
+    x: 70
+    y: 348
+    w: 260
+    html: <p style="text-align:left"><strong>Enterovirus</strong></p>
+    tam: 94
+    color: negro_usfq
+  - tipo: icono
+    x: 366
+    y: 337
+    lado: 68
+    nombre: checkmark-circle
+    color: '#f08a2c'
+    anim:
+    - scale-up
+    - 0.4
+    - 0.6000000000000001
+  - tipo: forma
+    x: 436
+    y: 367
+    w: 158
+    h: 8
+    tipo_forma: rect
+    relleno: '#f08a2c'
+  - tipo: icono
+    x: 596
+    y: 337
+    lado: 68
+    nombre: checkmark-circle
+    color: '#f08a2c'
+    anim:
+    - scale-up
+    - 0.4
+    - 0.8
+  - tipo: forma
+    x: 666
+    y: 367
+    w: 158
+    h: 8
+    tipo_forma: rect
+    relleno: '#f08a2c'
+  - tipo: icono
+    x: 826
+    y: 337
+    lado: 68
+    nombre: checkmark-circle
+    color: '#f08a2c'
+    anim:
+    - scale-up
+    - 0.4
+    - 1.0
+  - tipo: texto
+    x: 930
+    y: 350
+    w: 280
+    html: <p style="text-align:left">Coxsackievirus A</p>
+    tam: 73
+    color: gris_usfq
+  - tipo: texto
+    x: 70
+    y: 458
+    w: 260
+    html: <p style="text-align:left"><strong>RSV</strong></p>
+    tam: 94
+    color: negro_usfq
+  - tipo: icono
+    x: 366
+    y: 447
+    lado: 68
+    nombre: checkmark-circle
+    color: '#4fae55'
+    anim:
+    - scale-up
+    - 0.4
+    - 1.2000000000000002
+  - tipo: forma
+    x: 436
+    y: 477
+    w: 158
+    h: 8
+    tipo_forma: rect
+    relleno: '#4fae55'
+  - tipo: icono
+    x: 596
+    y: 447
+    lado: 68
+    nombre: checkmark-circle
+    color: '#4fae55'
+    anim:
+    - scale-up
+    - 0.4
+    - 1.4000000000000001
+  - tipo: forma
+    x: 666
+    y: 477
+    w: 158
+    h: 8
+    tipo_forma: rect
+    relleno: beige
+  - tipo: icono
+    x: 826
+    y: 447
+    lado: 68
+    nombre: minus-circle
+    color: beige
+    anim:
+    - scale-up
+    - 0.4
+    - 1.6
+  - tipo: texto
+    x: 930
+    y: 460
+    w: 280
+    html: <p style="text-align:left">sin subgrupo</p>
+    tam: 73
+    color: gris_usfq
+  - tipo: caja
+    x: 70
+    y: 560
+    w: 1140
+    h: 60
+    contenido: <p style="text-align:center"><strong>La carga viral y la conservación de la muestra fijaron hasta dónde llegó cada virus.</strong></p>
+    fondo: negro_usfq
+    borde: null
+    grosor: 0
+    radio: 8
+    tam: 78
+    color: blanco
+  notas: 'Esta es la respuesta a la pregunta de investigación. (1 min)
+
+    Texto de la versión 1 (para decirlo en voz alta): Un solo flujo de muestreo y procesamiento recuperó los tres virus en un sitio centinela
+    urbano.  SARS-CoV-2 se caracterizó con alta carga, con linajes descendientes de JN.1; enterovirus y RSV quedaron en detección o presencia.  La
+    carga viral y la conservación de la muestra gobiernan hasta dónde llega la caracterización genómica.'
+- diseno: lienzo
+  numero: 08
+  titulo: Aporte y recomendaciones
+  elementos:
+  - tipo: forma
+    x: 956.4
+    y: 240
+    w: 207.6
+    h: 160
+    tipo_forma: rect
+    relleno: negro_usfq
+    anim: &id002
+    - slide-right
+    - 0.4
+    - 0.6
+  - tipo: forma
+    x: 1162.0
+    y: 240
+    w: 48
+    h: 160
+    tipo_forma: triangle-right
+    relleno: negro_usfq
+    anim: *id002
+  - tipo: forma
+    x: 954.4
+    y: 239
+    w: 50
+    h: 162
+    tipo_forma: triangle-right
+    relleno: blanco
+    anim: *id002
+  - tipo: forma
+    x: 734.8
+    y: 240
+    w: 207.6
+    h: 160
+    tipo_forma: rect
+    relleno: gris_usfq
+    anim: &id003
+    - slide-right
+    - 0.4
+    - 0.44999999999999996
+  - tipo: forma
+    x: 940.4
+    y: 240
+    w: 48
+    h: 160
+    tipo_forma: triangle-right
+    relleno: gris_usfq
+    anim: *id003
+  - tipo: forma
+    x: 732.8
+    y: 239
+    w: 50
+    h: 162
+    tipo_forma: triangle-right
+    relleno: blanco
+    anim: *id003
+  - tipo: forma
+    x: 513.2
+    y: 240
+    w: 207.6
+    h: 160
+    tipo_forma: rect
+    relleno: negro_usfq
+    anim: &id004
+    - slide-right
+    - 0.4
+    - 0.3
+  - tipo: forma
+    x: 718.8000000000001
+    y: 240
+    w: 48
+    h: 160
+    tipo_forma: triangle-right
+    relleno: negro_usfq
+    anim: *id004
+  - tipo: forma
+    x: 511.20000000000005
+    y: 239
+    w: 50
+    h: 162
+    tipo_forma: triangle-right
+    relleno: blanco
+    anim: *id004
+  - tipo: forma
+    x: 291.6
+    y: 240
+    w: 207.6
+    h: 160
+    tipo_forma: rect
+    relleno: gris_usfq
+    anim: &id005
+    - slide-right
+    - 0.4
+    - 0.15
+  - tipo: forma
+    x: 497.20000000000005
+    y: 240
+    w: 48
+    h: 160
+    tipo_forma: triangle-right
+    relleno: gris_usfq
+    anim: *id005
+  - tipo: forma
+    x: 289.6
+    y: 239
+    w: 50
+    h: 162
+    tipo_forma: triangle-right
+    relleno: blanco
+    anim: *id005
+  - tipo: forma
+    x: 70.0
+    y: 240
+    w: 207.6
+    h: 160
+    tipo_forma: rect
+    relleno: negro_usfq
+    anim: &id006
+    - slide-right
+    - 0.4
+    - 0.0
+  - tipo: forma
+    x: 275.6
+    y: 240
+    w: 48
+    h: 160
+    tipo_forma: triangle-right
+    relleno: negro_usfq
+    anim: *id006
+  - tipo: texto
+    x: 78.0
+    y: 290.0
+    w: 228.8
+    html: <p style="text-align:center"><strong>Procesar pronto</strong></p>
+    tam: 76
+    color: blanco
+  - tipo: texto
+    x: 70.0
+    y: 425
+    w: 205.6
+    html: <p style="text-align:center">sin conservación prolongada</p>
+    tam: 76
+    color: gris_usfq
+  - tipo: texto
+    x: 327.6
+    y: 290.0
+    w: 200.80000000000007
+    html: <p style="text-align:center"><strong>Seleccionar<br>por Cq</strong></p>
+    tam: 76
+    color: blanco
+  - tipo: texto
+    x: 291.6
+    y: 425
+    w: 205.6
+    html: <p style="text-align:center">y amplificar el genoma</p>
+    tam: 76
+    color: gris_usfq
+  - tipo: texto
+    x: 549.2
+    y: 290.0
+    w: 200.80000000000007
+    html: <p style="text-align:center"><strong>Enriquecer RSV</strong></p>
+    tam: 76
+    color: blanco
+  - tipo: texto
+    x: 513.2
+    y: 425
+    w: 205.6
+    html: <p style="text-align:center">antes de secuenciar</p>
+    tam: 76
+    color: gris_usfq
+  - tipo: texto
+    x: 770.8
+    y: 290.0
+    w: 200.80000000000007
+    html: <p style="text-align:center"><strong>Ampliar</strong></p>
+    tam: 76
+    color: blanco
+  - tipo: texto
+    x: 734.8
+    y: 425
+    w: 205.6
+    html: <p style="text-align:center">muestras y réplicas</p>
+    tam: 76
+    color: gris_usfq
+  - tipo: texto
+    x: 992.4
+    y: 290.0
+    w: 200.80000000000007
+    html: <p style="text-align:center"><strong>Cruzar</strong></p>
+    tam: 76
+    color: blanco
+  - tipo: texto
+    x: 956.4
+    y: 425
+    w: 205.6
+    html: <p style="text-align:center">con datos clínicos y repositorios</p>
+    tam: 76
+    color: gris_usfq
+  - tipo: texto
+    x: 70
+    y: 560
+    w: 1140
+    html: '<p style="text-align:center"><em>Aporte: primera línea de base molecular y genómica multipatógeno de aguas residuales en Quito</em></p>'
+    tam: 73
+    color: negro_usfq
+  notas: 'Cruzar con secuencias clínicas y de repositorios, y mantener la vigilancia de enterovirus por la región VP1. (1 min)
+
+    Texto de la versión 1 (para decirlo en voz alta): Aporte: Primera línea de base molecular y genómica multipatógeno de aguas residuales en
+    Quito, que incluye un Coxsackievirus A que la vigilancia de parálisis flácida no registra. Recomendaciones: Procesar el material poco después
+    de recogerlo, seleccionar por Cq, enriquecer RSV antes de secuenciar y ampliar muestras y réplicas.'
+- diseno: referencias
+  titulo: Referencias (1/3)
+  notas: Autores abreviados con et al.; la lista completa está en la tesis.
+  items:
+  - 'Ahmed, W., et al. (2020). First confirmed detection of SARS-CoV-2 in untreated wastewater in Australia: A proof of concept for the wastewater
+    surveillance of COVID-19 in the community. *Science of The Total Environment*, *728*, 138764. https://doi.org/10.1016/j.scitotenv.2020.138764'
+  - Barbé, L., et al. (2022). SARS-CoV-2 whole-genome sequencing using Oxford Nanopore technology for variant monitoring in wastewaters. *Frontiers
+    in Microbiology*, *13*, 889811. https://doi.org/10.3389/fmicb.2022.889811
+  - 'Böttcher, S., et al. (2025). Detection of circulating vaccine-derived poliovirus type 2 (cVDPV2) in wastewater samples: A wake-up call, Finland,
+    Germany, Poland, Spain, the United Kingdom, 2024. *Euro Surveillance*, *30*(3), 2500037. https://doi.org/10.2807/1560-7917.ES.2025.30.3.2500037'
+  - 'Bruno, A., et al. (2025). Genomic surveillance of SARS-CoV-2 in the Andean Community (2020–2024): integrating regional sequencing efforts
+    from Colombia, Ecuador, Peru, and Bolivia through ORAS-CONHU program. *Frontiers in Public Health*, *13*, 1623413. https://doi.org/10.3389/fpubh.2025.1623413'
+  - Bubba, L., et al. (2023). Wastewater surveillance in Europe for non-polio enteroviruses and beyond. *Microorganisms*, *11*(10), 2496. https://doi.org/10.3390/microorganisms11102496
+  - Crits-Christoph, A., et al. (2021). Genome sequencing of sewage detects regionally prevalent SARS-CoV-2 variants. *mBio*, *12*(1). https://doi.org/10.1128/mBio.02703-20
+- diseno: referencias
+  titulo: Referencias (2/3)
+  items:
+  - 'Haque, R., et al. (2023). Monitoring SARS-CoV-2 variants in wastewater of Dhaka City, Bangladesh: approach to complement public health surveillance
+    systems. *Human Genomics*, *17*, 58. https://doi.org/10.1186/s40246-023-00505-4'
+  - Hughes, B., et al. (2022). Respiratory Syncytial Virus (RSV) RNA in wastewater settled solids reflects RSV clinical positivity rates. *Environmental
+    Science & Technology Letters*, *9*(2), 173–178. https://doi.org/10.1021/acs.estlett.1c00963
+  - Itokawa, K., et al. (2020). Disentangling primer interactions improves SARS-CoV-2 genome sequencing by multiplex tiling PCR. *PLOS ONE*, *15*(9),
+    e0239403. https://doi.org/10.1371/journal.pone.0239403
+  - Le, D. B., et al. (2025). Whole-genome nanopore sequencing and automatic downstream analysis of respiratory syncytial virus using RSVTyper.
+    *Scientific Reports*. https://doi.org/10.1038/s41598-025-20371-5
+  - Medema, G., et al. (2020). Presence of SARS-Coronavirus-2 RNA in sewage and correlation with reported COVID-19 prevalence in the early stage
+    of the epidemic in The Netherlands. *Environmental Science & Technology Letters*, *7*(7), 511–516. https://doi.org/10.1021/acs.estlett.0c00357
+  - Mejía Calle, P. E. (2024). *Analysis of SARS-CoV-2 variants in wastewater from the Metropolitan District of Quito using a passive sampling
+    3D printed device* [Trabajo de titulacion de posgrado, Universidad San Francisco de Quito USFQ].
+- diseno: referencias
+  titulo: Referencias (3/3)
+  items:
+  - 'O''Reilly, K. M., et al. (2020). The challenges of informative wastewater sampling for SARS-CoV-2 must be met: lessons from polio eradication.
+    *The Lancet Microbe*, *1*(5), e189–e190. https://doi.org/10.1016/S2666-5247(20)30100-2'
+  - 'Parkins, M. D., et al. (2023). Wastewater-based surveillance as a tool for public health action: SARS-CoV-2 and beyond. *Clinical Microbiology
+    Reviews*, *37*(1). https://doi.org/10.1128/cmr.00103-22'
+  - Shaw, A. G., et al. (2020). Rapid and sensitive direct detection and identification of poliovirus from stool and environmental surveillance
+    samples by use of nanopore sequencing. *Journal of Clinical Microbiology*, *58*(9), e00920-20. https://doi.org/10.1128/JCM.00920-20
+  - 'Sims, N., & Kasprzyk-Hordern, B. (2020). Future perspectives of wastewater-based epidemiology: Monitoring infectious disease spread and resistance
+    to the community level. *Environment International*, *139*, 105689. https://doi.org/10.1016/j.envint.2020.105689'
+  - Toribio-Avedillo, D., et al. (2024). Adapted methods for monitoring influenza virus and respiratory syncytial virus in sludge and wastewater.
+    *Science of the Total Environment*, *918*, 170636. https://doi.org/10.1016/j.scitotenv.2024.170636
+  - Zurbriggen, S., et al. (2008). Isolation of Sabin-like polioviruses from wastewater in a country using inactivated polio vaccine. *Applied
+    and Environmental Microbiology*, *74*(18), 5608–5614. https://doi.org/10.1128/AEM.02764-07
+- diseno: cierre
+  titulo: Gracias
+  acento: ¿Preguntas?
+  texto: Eliana Viscarra · Maestría en Microbiología · USFQ

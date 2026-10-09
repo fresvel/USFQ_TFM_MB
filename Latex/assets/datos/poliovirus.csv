@@ -1,8 +1,8 @@
 semana,fecha_inicio,secuenciado,resultado_raw,tipo_muestra,conservacion,hallazgo,virus
 43,2026-02-02,False,,prospectiva,fresca,no_secuenciado,Poliovirus
 44,2026-02-09,False,,prospectiva,fresca,no_secuenciado,Poliovirus
-45,2026-02-16,True,Coxsackie A,prospectiva,fresca,Coxsackie A (enterovirus no polio),Poliovirus
-46,2026-02-23,True,Coxsackie A,prospectiva,fresca,Coxsackie A (enterovirus no polio),Poliovirus
+45,2026-02-16,True,Coxsackie A,prospectiva,fresca,Coxsackievirus A1 (enterovirus no polio),Poliovirus
+46,2026-02-23,True,Coxsackie A,prospectiva,fresca,Coxsackievirus A1 (enterovirus no polio),Poliovirus
 47,2026-03-02,False,,prospectiva,fresca,no_secuenciado,Poliovirus
 48,2026-03-09,False,,prospectiva,fresca,no_secuenciado,Poliovirus
 49,2026-03-16,False,,prospectiva,fresca,no_secuenciado,Poliovirus

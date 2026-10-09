@@ -75,6 +75,40 @@ Ahmed, W.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Aksamentov%
+, Roemer%
+, Hodcroft%
+\BCBL {}\ \BBA {} Neher%
+}{%
+Aksamentov%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2021}}%
+}]{%
+Aksamentov_2021}
+\APACinsertmetastar {%
+Aksamentov_2021}%
+\begin{APACrefauthors}%
+Aksamentov, I.%
+, Roemer, C.%
+, Hodcroft, E\BPBI B.%
+\BCBL {}\ \BBA {} Neher, R\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Nextclade: clade assignment, mutation calling and
+  quality control for viral genomes} {Nextclade: clade assignment, mutation
+  calling and quality control for viral genomes}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Open Source Software}{6}{67}{3773}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.21105/joss.03773} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.21105/joss.03773} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Arita%
 \ \protect \BOthers {.}}{%
 Arita%
@@ -181,9 +215,9 @@ Barb{\'e}, L.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Bottcher%
+B{\"o}ttcher%
 \ \protect \BOthers {.}}{%
-Bottcher%
+B{\"o}ttcher%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2025}}%
 }]{%
@@ -191,7 +225,7 @@ Bottcher_2025}
 \APACinsertmetastar {%
 Bottcher_2025}%
 \begin{APACrefauthors}%
-Bottcher, S.%
+B{\"o}ttcher, S.%
 , Kreibich, J.%
 , Wilton, T.%
 , Saliba, V.%
@@ -235,7 +269,7 @@ Bruno, A.%
 , Ruiz-Moreno, H\BPBI A.%
 , Guzman-Otazo, J.%
 , C{\'a}ceres, O.%
-\BDBL {}Garcia-Bereguiain, M\BPBI A.%
+\BDBL {}{Grupo Andino de Vigilancia Genómica de SARS-CoV-2}%
 \end{APACrefauthors}%
 \unskip\
 \newblock
@@ -289,6 +323,40 @@ Bubba, L.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.3390/microorganisms11102496} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Camacho%
+\ \protect \BOthers {.}}{%
+Camacho%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2009}}%
+}]{%
+Camacho_2009}
+\APACinsertmetastar {%
+Camacho_2009}%
+\begin{APACrefauthors}%
+Camacho, C.%
+, Coulouris, G.%
+, Avagyan, V.%
+, Ma, N.%
+, Papadopoulos, J.%
+, Bealer, K.%
+\BCBL {}\ \BBA {} Madden, T\BPBI L.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{BLAST+}: architecture and applications} {{BLAST+}:
+  architecture and applications}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{BMC Bioinformatics}{10}{}{421}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1186/1471-2105-10-421}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1186/1471-2105-10-421} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -352,7 +420,7 @@ Child, H\BPBI T.%
   metagenomic and targeted methods for sequencing human pathogenic viruses from
   wastewater}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{mBio}{14}{6}{}.
+\APACjournalVolNumPages{mBio}{14}{6}{e01468-23}.
 \newblock
 \begin{APACrefURL} \url{https://doi.org/10.1128/mbio.01468-23} \end{APACrefURL}
 \newblock
@@ -386,11 +454,45 @@ Crits-Christoph, A.%
   {SARS-CoV-2} variants} {Genome sequencing of sewage detects regionally
   prevalent {SARS-CoV-2} variants}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{mBio}{12}{1}{}.
+\APACjournalVolNumPages{mBio}{12}{1}{e02703-20}.
 \newblock
 \begin{APACrefURL} \url{https://doi.org/10.1128/mBio.02703-20} \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1128/mBio.02703-20} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Danecek%
+\ \protect \BOthers {.}}{%
+Danecek%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2021}}%
+}]{%
+Danecek_2021}
+\APACinsertmetastar {%
+Danecek_2021}%
+\begin{APACrefauthors}%
+Danecek, P.%
+, Bonfield, J\BPBI K.%
+, Liddle, J.%
+, Marshall, J.%
+, Ohan, V.%
+, Pollard, M\BPBI O.%
+\BDBL {}Li, H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Twelve years of {SAMtools} and {BCFtools}} {Twelve years
+  of {SAMtools} and {BCFtools}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{GigaScience}{10}{2}{giab008}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1093/gigascience/giab008}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1093/gigascience/giab008} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -645,6 +747,38 @@ Karthikeyan, S.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Katoh%
+\ \BBA {} Standley%
+}{%
+Katoh%
+\ \BBA {} Standley%
+}{%
+{\protect \APACyear {2013}}%
+}]{%
+Katoh_2013}
+\APACinsertmetastar {%
+Katoh_2013}%
+\begin{APACrefauthors}%
+Katoh, K.%
+\BCBT {}\ \BBA {} Standley, D\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{MAFFT} multiple sequence alignment software version 7:
+  improvements in performance and usability} {{MAFFT} multiple sequence
+  alignment software version 7: improvements in performance and
+  usability}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Molecular Biology and Evolution}{30}{4}{772--780}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1093/molbev/mst010} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1093/molbev/mst010} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Kilpatrick%
 \ \protect \BOthers {.}}{%
 Kilpatrick%
@@ -814,7 +948,7 @@ Le, D\BPBI B.%
   {Whole-genome nanopore sequencing and automatic downstream analysis of
   respiratory syncytial virus using {RSVTyper}}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Scientific Reports}{}{}{}.
+\APACjournalVolNumPages{Scientific Reports}{15}{}{38101}.
 \newblock
 \begin{APACrefURL} \url{https://doi.org/10.1038/s41598-025-20371-5}
   \end{APACrefURL}
@@ -855,6 +989,34 @@ Lesenfants, M.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1016/S2468-2667(26)00051-4} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Li%
+}{%
+Li%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+Li_2018}
+\APACinsertmetastar {%
+Li_2018}%
+\begin{APACrefauthors}%
+Li, H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Minimap2: pairwise alignment for nucleotide sequences}
+  {Minimap2: pairwise alignment for nucleotide sequences}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Bioinformatics}{34}{18}{3094--3100}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1093/bioinformatics/bty191}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1093/bioinformatics/bty191} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -997,8 +1159,7 @@ M{\'a}s~Lago, P.%
 Medema%
 , Heijnen%
 , Elsinga%
-, Italiaander%
-\BCBL {}\ \BBA {} Brouwer%
+\BCBL {}\ \BBA {} Italiaander%
 }{%
 Medema%
 \ \protect \BOthers {.}}{%
@@ -1011,26 +1172,23 @@ Medema_2020}%
 Medema, G.%
 , Heijnen, L.%
 , Elsinga, G.%
-, Italiaander, R.%
-\BCBL {}\ \BBA {} Brouwer, A.%
+\BCBL {}\ \BBA {} Italiaander, R.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
 \APACrefYearMonthDay{2020}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {Presence of {SARS-Coronavirus-2} {RNA} in sewage and
-  correlation with reported {COVID-19} prevalence in the early stage of the
-  epidemic in The Netherlands} {Presence of {SARS-Coronavirus-2} {RNA} in
-  sewage and correlation with reported {COVID-19} prevalence in the early stage
-  of the epidemic in the netherlands}.{\BBCQ}
+\APACrefbtitle {Presence of {SARS-Coronavirus-2} in sewage.} {Presence of
+  {SARS-Coronavirus-2} in sewage.}
 \newblock
-\APACjournalVolNumPages{Environmental Science \& Technology
-  Letters}{7}{7}{511--516}.
+\APAChowpublished {medRxiv}.
 \newblock
-\begin{APACrefURL} \url{https://doi.org/10.1021/acs.estlett.0c00357}
+\begin{APACrefURL} \url{https://doi.org/10.1101/2020.03.29.20045880}
   \end{APACrefURL}
 \newblock
-\begin{APACrefDOI} \doi{10.1021/acs.estlett.0c00357} \end{APACrefDOI}
+\APACrefnote{Preprint}
+\newblock
+\begin{APACrefDOI} \doi{10.1101/2020.03.29.20045880} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1055,7 +1213,7 @@ Mej{\'i}a~Calle, P\BPBI E.%
   Metropolitan District of Quito using a passive sampling 3D printed device}
   {Analysis of {SARS-CoV-2} variants in wastewater from the metropolitan
   district of quito using a passive sampling 3d printed device}\
-  \APACtypeAddressSchool {Trabajo de titulacion de posgrado}{}{}.
+  \APACtypeAddressSchool {Trabajo de titulaci{\'o}n de posgrado}{}{}.
 \unskip\
 \newblock
 \APACaddressSchool {Quito, Ecuador}{Universidad San Francisco de Quito USFQ}.
@@ -1096,6 +1254,41 @@ Mercier, {\'E}.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1080/13696998.2025.2473810} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Minh%
+\ \protect \BOthers {.}}{%
+Minh%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+Minh_2020}
+\APACinsertmetastar {%
+Minh_2020}%
+\begin{APACrefauthors}%
+Minh, B\BPBI Q.%
+, Schmidt, H\BPBI A.%
+, Chernomor, O.%
+, Schrempf, D.%
+, Woodhams, M\BPBI D.%
+, von Haeseler, A.%
+\BCBL {}\ \BBA {} Lanfear, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{IQ-TREE} 2: new models and efficient methods for
+  phylogenetic inference in the genomic era} {{IQ-TREE} 2: new models and
+  efficient methods for phylogenetic inference in the genomic era}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Molecular Biology and Evolution}{37}{5}{1530--1534}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1093/molbev/msaa015}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1093/molbev/msaa015} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1235,6 +1428,40 @@ O'Reilly, K\BPBI M.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+O'Toole%
+\ \protect \BOthers {.}}{%
+O'Toole%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2021}}%
+}]{%
+OToole_2021}
+\APACinsertmetastar {%
+OToole_2021}%
+\begin{APACrefauthors}%
+O'Toole, {\'A}.%
+, Scher, E.%
+, Underwood, A.%
+, Jackson, B.%
+, Hill, V.%
+, McCrone, J\BPBI T.%
+\BDBL {}Rambaut, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Assignment of epidemiological lineages in an emerging
+  pandemic using the pangolin tool} {Assignment of epidemiological lineages in
+  an emerging pandemic using the pangolin tool}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Virus Evolution}{7}{2}{veab064}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1093/ve/veab064} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1093/ve/veab064} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 {Oxford Nanopore Technologies}%
 }{%
 {Oxford Nanopore Technologies}%
@@ -1263,7 +1490,7 @@ Parkins%
 \ \protect \BOthers {.}}{%
 Parkins%
 \ \protect \BOthers {.}}{%
-{\protect \APACyear {2023}}%
+{\protect \APACyear {2024}}%
 }]{%
 Parkins_2023}
 \APACinsertmetastar {%
@@ -1279,13 +1506,13 @@ Parkins, M\BPBI D.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2023}{}{}.
+\APACrefYearMonthDay{2024}{}{}.
 \newblock
 {\BBOQ}\APACrefatitle {Wastewater-based surveillance as a tool for public
   health action: {SARS-CoV-2} and beyond} {Wastewater-based surveillance as a
   tool for public health action: {SARS-CoV-2} and beyond}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Clinical Microbiology Reviews}{37}{1}{}.
+\APACjournalVolNumPages{Clinical Microbiology Reviews}{37}{1}{e00103-22}.
 \newblock
 \begin{APACrefURL} \url{https://doi.org/10.1128/cmr.00103-22} \end{APACrefURL}
 \newblock
@@ -1325,45 +1552,6 @@ Roldan-Hernandez, L.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1021/acs.est.3c03376} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Ro{\v{z}}anec%
-, U{\v{c}}akar%
-, Steyer%
-, Pint{\'o}~Sol{\'e}%
-\BCBL {}\ \BBA {} Gali{\v{c}}i{\v{c}}%
-}{%
-Ro{\v{z}}anec%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2026}}%
-}]{%
-Rozanec_2026}
-\APACinsertmetastar {%
-Rozanec_2026}%
-\begin{APACrefauthors}%
-Ro{\v{z}}anec, J.%
-, U{\v{c}}akar, V.%
-, Steyer, A.%
-, Pint{\'o}~Sol{\'e}, R\BPBI M.%
-\BCBL {}\ \BBA {} Gali{\v{c}}i{\v{c}}, A.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2026}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Sampling schemes in poliovirus wastewater surveillance
-  studies from {European} countries and their comparison to other studies: a
-  literature review} {Sampling schemes in poliovirus wastewater surveillance
-  studies from {European} countries and their comparison to other studies: a
-  literature review}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Microorganisms}{14}{4}{861}.
-\newblock
-\begin{APACrefURL} \url{https://doi.org/10.3390/microorganisms14040861}
-  \end{APACrefURL}
-\newblock
-\begin{APACrefDOI} \doi{10.3390/microorganisms14040861} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

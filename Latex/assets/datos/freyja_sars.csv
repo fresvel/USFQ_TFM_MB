@@ -1,0 +1,11 @@
+semana,barcode,cebadores,linaje_consenso,cobertura10,QA4,LZ5,otros,otros_detalle
+3,73,ARTIC V3,JN.1,23.9,94,6,0,
+5,74,ARTIC V3,LZ.5,28.6,93,6,1,
+6,75,ARTIC V3,JN.1,27.5,94,3,2,MD.3 1%
+6,79,VarSkip,JN.1,20.8,86,13,1,
+7,76,ARTIC V3,LZ.5,33.0,94,5,1,
+7,80,VarSkip,JN.1,21.7,97,3,0,
+8,77,ARTIC V3,LU.2.1.1,31.8,95,0,5,LU.2-like 5%
+8,81,VarSkip,JN.1,24.4,91,7,1,NT.4 1%
+9,78,ARTIC V3,LF.7.1.3,42.1,95,0,5,JN.1.58.2-like 2%
+9,82,VarSkip,JN.1,24.2,89,0,11,LS.2 6%; LB.1.9 3%; NT.5 2%

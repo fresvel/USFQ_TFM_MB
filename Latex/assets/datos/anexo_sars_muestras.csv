@@ -1,0 +1,43 @@
+semana,fecha,analisis,cq_n1,cq_n2,cq_rp,secuenciada,corrida_barcodes,lecturas_sars,resultado
+1,14/04/2025,1,NA,NA,NA,No,—,—,No secuenciada
+2,21/04/2025,1,NA,NA,NA,No,—,—,No secuenciada
+3,28/04/2025,2,"35,80","35,77",NA,Sí,Run01 (73),735,24A / JN.1
+4,05/05/2025,2,"42,89",NA,NA,No,—,—,No secuenciada
+5,12/05/2025,2,"33,96","34,70",NA,Sí,Run01 (74),1334,24A / LZ.5
+6,19/05/2025,2,"34,18","44,13",NA,Sí,"Run01 (75, 79)",3531,24A / JN.1
+7,26/05/2025,2,"33,14","34,17",NA,Sí,"Run01 (76, 80)",2776,24A / LZ.5
+8,02/06/2025,2,"33,18","32,30",NA,Sí,"Run01 (77, 81)",2606,24A / LU.2.1.1
+9,09/06/2025,2,"34,02","33,81",NA,Sí,"Run01 (78, 82)",9565,24H / LF.7.1.3
+10,16/06/2025,3,"36,35","34,02",NA,Sí,"Run2 (57, 65)",0,Sin cobertura del genoma
+11,23/06/2025,3,"36,12","32,79",NA,Sí,"Run2 (58, 66)",0,Sin cobertura del genoma
+12,30/06/2025,3,"37,10","33,89","35,60",Sí,"Run2 (59, 67)",0,Sin cobertura del genoma
+13,07/07/2025,3,"33,89","31,83","33,59",Sí,"Run2 (60, 68)",0,Sin cobertura del genoma
+14,14/07/2025,3,"34,92","31,65",NA,Sí,"Run2 (61, 69)",0,Sin cobertura del genoma
+15,21/07/2025,3,NA,NA,NA,No,—,—,No secuenciada
+16,28/07/2025,3,"36,41","33,20",NA,Sí,"Run2 (62, 70)",0,Sin cobertura del genoma
+17,04/08/2025,3,"35,27",NA,NA,Sí,"Run2 (63, 71)",0,Sin cobertura del genoma
+18,11/08/2025,4,NA,NA,"32,22",No,—,—,No secuenciada
+19,18/08/2025,4,NA,NA,"40,32",No,—,—,No secuenciada
+20,25/08/2025,4,NA,NA,"31,23",No,—,—,No secuenciada
+21,01/09/2025,4,"36,61",NA,"7,20",No,—,—,No secuenciada
+22,08/09/2025,5,NA,NA,NA,No,—,—,No secuenciada
+23,15/09/2025,5,"37,36",NA,NA,Sí,Run03 (94),1,Sin cobertura del genoma
+24,22/09/2025,5,"36,17","35,43",NA,Sí,Run03 (95),0,Sin cobertura del genoma
+25,29/09/2025,5,"42,28",NA,NA,Sí,Run03 (93),1,Sin cobertura del genoma
+26,06/10/2025,5,NA,NA,NA,No,—,—,No secuenciada
+27,13/10/2025,5,NA,NA,NA,No,—,—,No secuenciada
+28,20/10/2025,6,"37,34",NA,"28,10",Sí,Run04 (68),0,Sin cobertura del genoma
+29,27/10/2025,6,"36,37","37,28","32,12",Sí,Run04 (69),0,Sin cobertura del genoma
+30,03/11/2025,6,"37,01",NA,"27,26",Sí,Run04 (70),0,Sin cobertura del genoma
+31,10/11/2025,6,NA,NA,"11,15",Sí,Run04 (71),0,Sin cobertura del genoma
+32,17/11/2025,6,"36,37","39,46","31,05",Sí,Run04 (72),0,Sin cobertura del genoma
+33,24/11/2025,7,NA,"44,30",NA,No,—,—,No secuenciada
+34,01/12/2025,7,"38,96",NA,NA,No,—,—,No secuenciada
+35,08/12/2025,7,"39,21",NA,"36,43",No,—,—,No secuenciada
+36,15/12/2025,7,"40,49","40,13","36,23",No,—,—,No secuenciada
+37,22/12/2025,7,"38,63","40,33","38,10",No,—,—,No secuenciada
+38,29/12/2025,7,"38,53",NA,"38,29",No,—,—,No secuenciada
+39,05/01/2026,8,"34,37","34,08","33,03",No,—,—,No secuenciada
+40,12/01/2026,8,"38,07",NA,"23,98",No,—,—,No secuenciada
+41,19/01/2026,8,"36,42","38,63","35,32",No,—,—,No secuenciada
+42,26/01/2026,8,"37,50","39,87","39,46",No,—,—,No secuenciada
