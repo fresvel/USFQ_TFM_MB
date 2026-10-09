@@ -27,7 +27,7 @@
 \contentsline {subsection}{Diseño del estudio}{30}{subsection*.26}%
 \contentsline {subsection}{Área y periodo de estudio}{31}{subsection*.28}%
 \contentsline {subsection}{Estrategia de muestreo pasivo}{32}{subsection*.29}%
-\contentsline {subsection}{Diseño temporal y distribución de las muestras}{33}{subsection*.31}%
+\contentsline {subsection}{Diseño temporal y distribución de las muestras}{32}{subsection*.31}%
 \contentsline {subsection}{Conservación y recuperación de muestras retrospectivas}{33}{subsection*.32}%
 \contentsline {subsection}{Preconcentración viral}{34}{subsection*.33}%
 \contentsline {subsection}{Extracción de ARN}{35}{subsection*.35}%
