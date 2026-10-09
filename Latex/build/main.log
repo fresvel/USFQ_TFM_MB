@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.27)  9 OCT 2026 00:51
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.27)  9 OCT 2026 07:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -965,6 +965,8 @@ File: assets/figuras/metodologia/preconcentracion.png Graphic file (type bmp)
 [34]
 File: assets/figuras/metodologia/extraccion_ARN.png Graphic file (type bmp)
 <assets/figuras/metodologia/extraccion_ARN.png>
+File: assets/figuras/metodologia/flujo_virus.pdf Graphic file (type pdf)
+<use assets/figuras/metodologia/flujo_virus.pdf>
 
 
 [35]
@@ -979,16 +981,10 @@ File: assets/figuras/metodologia/rt_qpcr.png Graphic file (type bmp)
 [38]
 
 [39]
-File: assets/figuras/metodologia/polio_flujo.pdf Graphic file (type pdf)
-<use assets/figuras/metodologia/polio_flujo.pdf>
-
 
 [40]
 
 [41]
-File: assets/figuras/metodologia/rsv_flujo.pdf Graphic file (type pdf)
-<use assets/figuras/metodologia/rsv_flujo.pdf>
-
 
 [42]
 
@@ -996,91 +992,87 @@ File: assets/figuras/metodologia/rsv_flujo.pdf Graphic file (type pdf)
 
 [44]
 
-[45]
+[45])
 
-[46])
-
-[47]
-
-[48] (./secciones/02_cuerpo/04_analisis_datos.tex
+[46] (./secciones/02_cuerpo/04_analisis_datos.tex
 File: assets/figuras/resultados/f3_rendimiento.pdf Graphic file (type pdf)
 <use assets/figuras/resultados/f3_rendimiento.pdf>
 
 
-[49
+[47
 
 ]
 
-[50]
+[48]
 File: assets/figuras/resultados/f5_cq_sars.pdf Graphic file (type pdf)
 <use assets/figuras/resultados/f5_cq_sars.pdf>
 
 
+[49]
+
+[50]
+
 [51]
+File: assets/figuras/resultados/f2_linajes_sars.pdf Graphic file (type pdf)
+<use assets/figuras/resultados/f2_linajes_sars.pdf>
+
 
 [52]
 
 [53]
-File: assets/figuras/resultados/f2_linajes_sars.pdf Graphic file (type pdf)
-<use assets/figuras/resultados/f2_linajes_sars.pdf>
+File: assets/figuras/resultados/f6_arbol_vp1.pdf Graphic file (type pdf)
+<use assets/figuras/resultados/f6_arbol_vp1.pdf>
 
 
 [54]
 
 [55]
-File: assets/figuras/resultados/f6_arbol_vp1.pdf Graphic file (type pdf)
-<use assets/figuras/resultados/f6_arbol_vp1.pdf>
-
-
-[56]
-
-[57]
 File: assets/figuras/resultados/f4_conservacion.pdf Graphic file (type pdf)
 <use assets/figuras/resultados/f4_conservacion.pdf>
 
 
-[58]
+[56]
 File: assets/figuras/resultados/f1_heatmap_temporal.pdf Graphic file (type pdf)
 
 <use assets/figuras/resultados/f1_heatmap_temporal.pdf>
 )
 
-[59]
+[57]
 
-[60] (./secciones/02_cuerpo/05_discusion.tex
+[58] (./secciones/02_cuerpo/05_discusion.tex
 
-[61
+[59
 
 ]
+
+[60]
+
+[61]
 
 [62]
 
-[63]
+[63])
 
-[64]
+[64] (./secciones/02_cuerpo/06_conclusiones.tex
 
-[65])
-
-[66] (./secciones/02_cuerpo/06_conclusiones.tex
-
-[67
+[65
 
 ])
 
-[68]) (./secciones/03_finales/00_main.tex
+[66]) (./secciones/03_finales/00_main.tex
 (./secciones/03_finales/01_referencias.tex (build/main.bbl
 
-[69
+[67
 
 ]
+
+[68]
+
+[69]
 
 [70]
 
 [71]
-
-[72]
-
-[73]
 Underfull \hbox (badness 10000) in paragraph at lines 1298--1314
 [][][][] [] [][] [] [][] [] [][][][][][] [] [][][] [] [][][][][][][][][][][][] 
 [] [][][] [] [][][][][][] [] [][][][][][][][][][][] [] [][][][][][][][][] [] []
@@ -1089,49 +1081,49 @@ Underfull \hbox (badness 10000) in paragraph at lines 1298--1314
 
 
 
+[72]
+
+[73]
+
 [74]
 
-[75]
+[75]))
 
-[76]
-
-[77]))
-
-[78] (./secciones/03_finales/02_indice_anexos.tex (build/main.loa)
+[76] (./secciones/03_finales/02_indice_anexos.tex (build/main.loa)
 \tf@loa=\write6
 \openout6 = `main.loa'.
 
 )
 
-[79
+[77
 
 ] (./secciones/03_finales/03_anexos_i.tex
 Package hyperref Info: bookmark level for unknown usfqanexo defaults to 0 on in
 put line 5.
 
 
-[80
+[78
 
 
 ]
 
-[81]
+[79]
+
+[80]
+
+[81
+
+]
 
 [82]
 
-[83
+[83]
 
-]
-
-[84]
-
-[85]
-
-[86
+[84
 
 ]))
 
-[87
+[85
 
 ] (build/main.aux)
  ***********
@@ -1140,12 +1132,12 @@ L3 programming layer <2025-07-19>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 28470 strings out of 468457
- 588726 string characters out of 5445913
- 1297706 words of memory out of 5000000
- 56573 multiletter control sequences out of 15000+600000
+ 28458 strings out of 468457
+ 588252 string characters out of 5445913
+ 1297411 words of memory out of 5000000
+ 56562 multiletter control sequences out of 15000+600000
  671490 words of font info for 154 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  78i,13n,118p,2293b,8580s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on build/main.pdf (87 pages).
+Output written on build/main.pdf (85 pages).

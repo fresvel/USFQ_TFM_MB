@@ -1,0 +1,104 @@
+# Flujo de trabajo común y específico para SARS-CoV-2, enterovirus y RSV.
+# Fuente editable: redibujar con `figuras diagrama flujo_virus.yaml -o flujo_virus -f pdf,svg`.
+lienzo: {ancho: 160, alto: 167}
+tam: 8
+
+nodos:
+  - {id: l0, x: 6, y: 5, w: 6, h: 4, texto: "", relleno: "#dfe9f7"}
+  - {id: l1, x: 52, y: 5, w: 6, h: 4, texto: "", relleno: "#f7d6ea"}
+  - {id: l2, x: 86, y: 5, w: 6, h: 4, texto: "", relleno: "#fed7c8"}
+  - {id: l3, x: 120, y: 5, w: 6, h: 4, texto: "", relleno: "#cae9df"}
+  - {id: c1, x: 29, y: 22, w: 42, h: 17, texto: "", relleno: "#dfe9f7"}
+  - {id: c2, x: 80, y: 22, w: 42, h: 17, texto: "", relleno: "#dfe9f7"}
+  - {id: c3, x: 131, y: 22, w: 42, h: 17, texto: "", relleno: "#dfe9f7"}
+  - {id: s4, x: 29, y: 56, w: 48, h: 18, texto: "", relleno: "#f7d6ea"}
+  - {id: s5, x: 29, y: 81, w: 48, h: 18, texto: "", relleno: "#f7d6ea"}
+  - {id: s6, x: 29, y: 106, w: 48, h: 18, texto: "", relleno: "#f7d6ea"}
+  - {id: e4, x: 80, y: 56, w: 48, h: 18, texto: "", relleno: "#fed7c8"}
+  - {id: e5, x: 80, y: 81, w: 48, h: 18, texto: "", relleno: "#fed7c8"}
+  - {id: e6, x: 80, y: 106, w: 48, h: 18, texto: "", relleno: "#fed7c8"}
+  - {id: r4, x: 131, y: 56, w: 48, h: 18, texto: "", relleno: "#cae9df"}
+  - {id: r5, x: 131, y: 81, w: 48, h: 18, texto: "", relleno: "#cae9df"}
+  - {id: r6, x: 131, y: 106, w: 48, h: 18, texto: "", relleno: "#cae9df"}
+  - {id: seq, x: 80, y: 131, w: 150, h: 13, texto: "", relleno: "#dfe9f7"}
+  - {id: sb, x: 29, y: 157, w: 48, h: 18, texto: "", relleno: "#f7d6ea"}
+  - {id: eb, x: 80, y: 157, w: 48, h: 18, texto: "", relleno: "#fed7c8"}
+  - {id: rb, x: 131, y: 157, w: 48, h: 18, texto: "", relleno: "#cae9df"}
+
+textos:
+  - {x: 11, y: 5, texto: "Procesamiento común", alinear: left, tam: 7.6}
+  - {x: 57, y: 5, texto: "SARS-CoV-2", alinear: left, tam: 7.6}
+  - {x: 91, y: 5, texto: "Enterovirus", alinear: left, tam: 7.6}
+  - {x: 125, y: 5, texto: "RSV", alinear: left, tam: 7.6}
+  - {x: 29, y: 18.16, texto: "1. Muestreo pasivo", tam: 8.2, negrita: true}
+  - {x: 29, y: 22.63, texto: "Dispositivo tipo torpedo", tam: 7.4}
+  - {x: 29, y: 26.03, texto: "en el influente (24 h)", tam: 7.4}
+  - {x: 80, y: 18.16, texto: "2. Preconcentración viral", tam: 8.2, negrita: true}
+  - {x: 80, y: 22.63, texto: "Precipitación con", tam: 7.4}
+  - {x: 80, y: 26.03, texto: "polietilenglicol (PEG)", tam: 7.4}
+  - {x: 131, y: 18.16, texto: "3. Extracción de ARN", tam: 8.2, negrita: true}
+  - {x: 131, y: 22.63, texto: "Kit Quick-RNA Viral", tam: 7.4}
+  - {x: 131, y: 26.03, texto: "(Zymo Research)", tam: 7.4}
+  - {x: 31, y: 40.5, texto: "SARS-CoV-2", alinear: left, negrita: true, tam: 8.2}
+  - {x: 29, y: 50.69, texto: "4. RT-qPCR", tam: 7.9, negrita: true}
+  - {x: 29, y: 55.05, texto: "Luna SARS-CoV-2: N1, N2", tam: 7.2}
+  - {x: 29, y: 58.35, texto: "y control interno RP", tam: 7.2}
+  - {x: 29, y: 61.56, texto: "New England Biolabs (2020)", tam: 6.8, color: "#4d4d4d"}
+  - {x: 29, y: 75.69, texto: "5. ADNc y PCR multiplex", tam: 7.9, negrita: true}
+  - {x: 29, y: 80.05, texto: "LunaScript RT; esquemas", tam: 7.2}
+  - {x: 29, y: 83.35, texto: "ARTIC V3 o VarSkip", tam: 7.2}
+  - {x: 29, y: 86.56, texto: "New England Biolabs (2021)", tam: 6.8, color: "#4d4d4d"}
+  - {x: 29, y: 102.25, texto: "6. Electroforesis", tam: 7.9, negrita: true}
+  - {x: 29, y: 106.61, texto: "Selección según Cq", tam: 7.2}
+  - {x: 29, y: 109.91, texto: "y bandas obtenidas", tam: 7.2}
+  - {x: 82, y: 40.5, texto: "Enterovirus", alinear: left, negrita: true, tam: 8.2}
+  - {x: 80, y: 50.69, texto: "4. PCR anidada: ronda 1", tam: 7.9, negrita: true}
+  - {x: 80, y: 55.05, texto: "PanEV; ABM One-Step + MegaFi;", tam: 7.2}
+  - {x: 80, y: 58.35, texto: "cebadores 5'NTR y Cre", tam: 7.2}
+  - {x: 80, y: 61.56, texto: "Arita et al. (2015)", tam: 6.8, color: "#4d4d4d"}
+  - {x: 80, y: 75.69, texto: "5. PCR anidada: ronda 2", tam: 7.9, negrita: true}
+  - {x: 80, y: 80.05, texto: "VP1; Q5 Master Mix;", tam: 7.2}
+  - {x: 80, y: 83.35, texto: "cebadores Y7 y Q8", tam: 7.2}
+  - {x: 80, y: 86.56, texto: "Kilpatrick et al. (2011); Yang et al. (1991)", tam: 6.8, color: "#4d4d4d"}
+  - {x: 80, y: 102.25, texto: "6. Electroforesis", tam: 7.9, negrita: true}
+  - {x: 80, y: 106.61, texto: "Confirmación", tam: 7.2}
+  - {x: 80, y: 109.91, texto: "de amplificación", tam: 7.2}
+  - {x: 133, y: 40.5, texto: "RSV", alinear: left, negrita: true, tam: 8.2}
+  - {x: 131, y: 52.25, texto: "4. Síntesis de ADNc", tam: 7.9, negrita: true}
+  - {x: 131, y: 56.61, texto: "Transcripción reversa", tam: 7.2}
+  - {x: 131, y: 59.91, texto: "del ARN viral", tam: 7.2}
+  - {x: 131, y: 75.69, texto: "5. PCR multiplex ARTIC", tam: 7.9, negrita: true}
+  - {x: 131, y: 80.05, texto: "Amplicones solapados de", tam: 7.2}
+  - {x: 131, y: 83.35, texto: "RSV-A y RSV-B (genoma completo)", tam: 7.2}
+  - {x: 131, y: 86.56, texto: "Maloney et al. (2025)", tam: 6.8, color: "#4d4d4d"}
+  - {x: 131, y: 102.25, texto: "6. Electroforesis", tam: 7.9, negrita: true}
+  - {x: 131, y: 106.61, texto: "Selección según", tam: 7.2}
+  - {x: 131, y: 109.91, texto: "las bandas obtenidas", tam: 7.2}
+  - {x: 80, y: 128.85, texto: "7. Bibliotecas y secuenciación Nanopore", tam: 8.2, negrita: true}
+  - {x: 80, y: 133.33, texto: "Native Barcoding Kit 96 V14 (Oxford Nanopore)", tam: 7.4}
+  - {x: 29, y: 151.69, texto: "8. Análisis bioinformático", tam: 7.9, negrita: true}
+  - {x: 29, y: 156.05, texto: "EPI2ME wf-artic · Nextclade", tam: 7.2}
+  - {x: 29, y: 159.35, texto: "Pangolin · Freyja", tam: 7.2}
+  - {x: 29, y: 162.56, texto: "Aksamentov et al. (2021)", tam: 6.8, color: "#4d4d4d"}
+  - {x: 80, y: 153.25, texto: "8. Análisis bioinformático", tam: 7.9, negrita: true}
+  - {x: 80, y: 157.61, texto: "Filtlong · minimap2 · Tablet · BLAST", tam: 7.2}
+  - {x: 80, y: 160.91, texto: "amplicón de VP4: Coxsackie A", tam: 7.2}
+  - {x: 131, y: 151.69, texto: "8. Análisis bioinformático", tam: 7.9, negrita: true}
+  - {x: 131, y: 156.05, texto: "EPI2ME: subgrupo", tam: 7.2}
+  - {x: 131, y: 159.35, texto: "(RSV-A / RSV-B)", tam: 7.2}
+  - {x: 131, y: 162.56, texto: "Maloney et al. (2025)", tam: 6.8, color: "#4d4d4d"}
+
+conexiones:
+  - {desde: c1, hasta: c2}
+  - {desde: c2, hasta: c3}
+  - {desde: c3, hasta: [s4, e4, r4], codo: 35}
+  - {desde: s4, hasta: s5}
+  - {desde: s5, hasta: s6}
+  - {desde: e4, hasta: e5}
+  - {desde: e5, hasta: e6}
+  - {desde: r4, hasta: r5}
+  - {desde: r5, hasta: r6}
+  - {desde: s6, hasta: seq, entrada: arriba, desp_entrada: -51}
+  - {desde: e6, hasta: seq, entrada: arriba, desp_entrada: 0}
+  - {desde: r6, hasta: seq, entrada: arriba, desp_entrada: 51}
+  - {desde: seq, hasta: [sb, eb, rb], codo: 143}
