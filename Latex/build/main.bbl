@@ -524,6 +524,34 @@ Dash, H\BPBI R.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+{Empresa P{\'u}blica Metropolitana de Agua Potable y Saneamiento}%
+}{%
+{Empresa P{\'u}blica Metropolitana de Agua Potable y Saneamiento}%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+EPMAPS_2017}
+\APACinsertmetastar {%
+EPMAPS_2017}%
+\begin{APACrefauthors}%
+{Empresa P{\'u}blica Metropolitana de Agua Potable y Saneamiento}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+\APACrefbtitle {Termina la construcci{\'o}n de planta de tratamiento de aguas
+  residuales -{PTAR}- {Quitumbe}.} {Termina la construcci{\'o}n de planta de
+  tratamiento de aguas residuales -{PTAR}- {Quitumbe}.}
+\newblock
+\APAChowpublished {EPMAPS-Agua de Quito}.
+\newblock
+\begin{APACrefURL}
+  \url{https://www.aguaquito.gob.ec/planta-de-tratamiento-de-aguas-residuales-ptar-quitumbe-inicia-funcionamiento/}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Falman%
 , Fagnant-Sperati%
 , Kossik%
@@ -1254,6 +1282,34 @@ Mercier, {\'E}.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1080/13696998.2025.2473810} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Merino%
+}{%
+Merino%
+}{%
+{\protect \APACyear {2024}}%
+}]{%
+Merino_2024}
+\APACinsertmetastar {%
+Merino_2024}%
+\begin{APACrefauthors}%
+Merino, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024}{marzo}{}.
+\newblock
+\APACrefbtitle {Planta de Tratamiento de Aguas Residuales {Quitumbe} cumple con
+  normativa ambiental.} {Planta de tratamiento de aguas residuales {Quitumbe}
+  cumple con normativa ambiental.}
+\newblock
+\APAChowpublished {Quito Informa}.
+\newblock
+\begin{APACrefURL}
+  \url{https://www.quitoinforma.gob.ec/2024/03/26/planta-de-tratamiento-de-aguas-residuales-quitumbe-cumple-con-normativa-ambiental/}
+  \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

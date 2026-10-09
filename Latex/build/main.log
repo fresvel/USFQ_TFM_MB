@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.27)  8 OCT 2026 19:56
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.27)  8 OCT 2026 22:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -897,22 +897,22 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 [12
 
-] (./secciones/01_preliminares/11_indice_figuras.tex (build/main.lof
-
-[13
-
-])
+] (./secciones/01_preliminares/11_indice_figuras.tex (build/main.lof)
 \tf@lof=\write5
 \openout5 = `main.lof'.
 
 )
 
-[14]) (./secciones/02_cuerpo/00_main.tex
+[13
+
+]) (./secciones/02_cuerpo/00_main.tex
 (./secciones/02_cuerpo/01_introduccion.tex
 
-[15
+[14
 
 ]
+
+[15]
 
 [16]
 
@@ -938,36 +938,36 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 [27]
 
-[28]
+[28])
 
-[29])
-
-[30] (./secciones/02_cuerpo/03_metodologia_diseno.tex
+[29] (./secciones/02_cuerpo/03_metodologia_diseno.tex
 File: assets/figuras/metodologia/metodologia_general.png Graphic file (type bmp
 )
 <assets/figuras/metodologia/metodologia_general.png>
 
 
-[31
+[30
 
 ]
 
-[32]
+[31]
 File: assets/figuras/metodologia/dispositivo.png Graphic file (type bmp)
 <assets/figuras/metodologia/dispositivo.png>
 
 
-[33]
+[32]
 
-[34]
+[33]
 File: assets/figuras/metodologia/preconcentracion.png Graphic file (type bmp)
 <assets/figuras/metodologia/preconcentracion.png>
 
 
-[35]
+[34]
 File: assets/figuras/metodologia/extraccion_ARN.png Graphic file (type bmp)
 <assets/figuras/metodologia/extraccion_ARN.png>
 
+
+[35]
 
 [36]
 File: assets/figuras/metodologia/rt_qpcr.png Graphic file (type bmp)
@@ -1081,48 +1081,57 @@ File: assets/figuras/resultados/f1_heatmap_temporal.pdf Graphic file (type pdf)
 [72]
 
 [73]
+Underfull \hbox (badness 10000) in paragraph at lines 1298--1314
+[][][][] [] [][] [] [][] [] [][][][][][] [] [][][] [] [][][][][][][][][][][][] 
+[] [][][] [] [][][][][][] [] [][][][][][][][][][][] [] [][][][][][][][][] [] []
+[][][][][][] []
+ []
+
+
 
 [74]
 
 [75]
 
-[76]))
+[76]
 
-[77] (./secciones/03_finales/02_indice_anexos.tex (build/main.loa)
+[77]))
+
+[78] (./secciones/03_finales/02_indice_anexos.tex (build/main.loa)
 \tf@loa=\write6
 \openout6 = `main.loa'.
 
 )
 
-[78
+[79
 
 ] (./secciones/03_finales/03_anexos_i.tex
 Package hyperref Info: bookmark level for unknown usfqanexo defaults to 0 on in
 put line 5.
 
 
-[79
+[80
 
 
 ]
-
-[80]
 
 [81]
 
-[82
+[82]
+
+[83
 
 ]
 
-[83]
-
 [84]
 
-[85
+[85]
+
+[86
 
 ]))
 
-[86
+[87
 
 ] (build/main.aux)
  ***********
@@ -1131,12 +1140,12 @@ L3 programming layer <2025-07-19>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 28464 strings out of 468457
- 588642 string characters out of 5445913
- 1298989 words of memory out of 5000000
- 56567 multiletter control sequences out of 15000+600000
+ 28470 strings out of 468457
+ 588726 string characters out of 5445913
+ 1297727 words of memory out of 5000000
+ 56573 multiletter control sequences out of 15000+600000
  671490 words of font info for 154 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  78i,13n,118p,2308b,8580s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on build/main.pdf (86 pages).
+Output written on build/main.pdf (87 pages).

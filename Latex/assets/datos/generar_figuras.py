@@ -103,7 +103,7 @@ plt.tight_layout(); fig.savefig(OUT/"f3_rendimiento.pdf", bbox_inches="tight"); 
 
 # ---------- F4: polio/RSV por conservacion y desenlace ----------
 pr = pd.concat([pol.assign(grupo="Enterovirus"), rsv.assign(grupo="RSV")])
-cons_lbl={"fresca":"−20 °C\n(prospectiva)","shield_2x":"Shield 2X\n(retrospectiva)","pbs_1x":"PBS 1X\n(retrospectiva)"}
+cons_lbl={"fresca":"ARN a −80 °C\n(prospectiva)","shield_2x":"Shield 2X\n(retrospectiva)","pbs_1x":"PBS 1X\n(retrospectiva)"}
 pr["cons"]=pr.conservacion.map(cons_lbl)
 pr["estado_simple"]=np.where(pr.secuenciado,"Secuenciada","No secuenciada")
 order_c=[cons_lbl["fresca"],cons_lbl["shield_2x"],cons_lbl["pbs_1x"]]
