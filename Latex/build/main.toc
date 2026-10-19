@@ -16,7 +16,7 @@
 \contentsline {subsubsection}{PCR multiplex}{24}{subsubsection*.15}%
 \contentsline {subsection}{Secuenciación y caracterización genómica}{25}{subsection*.16}%
 \contentsline {subsubsection}{Nanopore (ONT)}{25}{subsubsection*.17}%
-\contentsline {subsubsection}{Variabilidad genética y vigilancia genómica}{26}{subsubsection*.18}%
+\contentsline {subsubsection}{Variabilidad genética y vigilancia genómica}{25}{subsubsection*.18}%
 \contentsline {subsubsection}{Procesamiento de secuencias}{26}{subsubsection*.19}%
 \contentsline {subsubsection}{Interpretación de resultados y limitaciones}{27}{subsubsection*.20}%
 \contentsline {subsection}{Contexto epidemiológico del estudio}{27}{subsection*.21}%

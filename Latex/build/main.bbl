@@ -2036,43 +2036,6 @@ WHO_2020}%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Yang%
-, De%
-, Holloway%
-, Pallansch%
-\BCBL {}\ \BBA {} Kew%
-}{%
-Yang%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {1991}}%
-}]{%
-Yang_1991}
-\APACinsertmetastar {%
-Yang_1991}%
-\begin{APACrefauthors}%
-Yang, C\BHBI F.%
-, De, L.%
-, Holloway, B\BPBI P.%
-, Pallansch, M\BPBI A.%
-\BCBL {}\ \BBA {} Kew, O\BPBI M.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{1991}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Detection and identification of vaccine-related
-  polioviruses by the polymerase chain reaction} {Detection and identification
-  of vaccine-related polioviruses by the polymerase chain reaction}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Virus Research}{20}{2}{159--179}.
-\newblock
-\begin{APACrefURL} \url{https://doi.org/10.1016/0168-1702(91)90107-7}
-  \end{APACrefURL}
-\newblock
-\begin{APACrefDOI} \doi{10.1016/0168-1702(91)90107-7} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Yousif%
 \ \protect \BOthers {.}}{%
 Yousif%
