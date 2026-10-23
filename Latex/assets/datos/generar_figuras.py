@@ -143,7 +143,9 @@ ax.set_xlabel("Semana de muestreo (abr 2025 – ene 2026)"); ax.set_ylabel("Valo
 ax.set_title("Valores de Cq de SARS-CoV-2 por semana (genes N1 y N2)", fontsize=11, weight="bold")
 ax.set_xticks(range(2,43,2))
 from matplotlib.lines import Line2D
-leg1 = ax.legend(loc="upper left", bbox_to_anchor=(1.01,1.0), fontsize=8, frameon=True, title="Marcador")
+gen_handles=[Line2D([0],[0],marker=m,color='w',markerfacecolor='white',markeredgecolor='k',
+             markersize=9,label=lbl) for m,lbl in [("o","Gen N1 (HEX)"),("s","Gen N2 (FAM)")]]
+leg1 = ax.legend(handles=gen_handles, loc="upper left", bbox_to_anchor=(1.01,1.0), fontsize=8, frameon=True, title="Marcador")
 ax.add_artist(leg1)
 est_handles=[Line2D([0],[0],marker='o',color='w',markerfacecolor=estado_color[k],markeredgecolor='k',
              markersize=9,label=v) for k,v in

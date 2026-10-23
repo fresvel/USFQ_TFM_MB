@@ -179,6 +179,32 @@ Asghar, H.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+{Bank of Canada}%
+}{%
+{Bank of Canada}%
+}{%
+{\protect \APACyear {2024}}%
+}]{%
+BankCanada_2024}
+\APACinsertmetastar {%
+BankCanada_2024}%
+\begin{APACrefauthors}%
+{Bank of Canada}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024}{}{}.
+\newblock
+\APACrefbtitle {Annual exchange rates.} {Annual exchange rates.}
+\newblock
+\APAChowpublished
+  {\url{https://www.bankofcanada.ca/rates/exchange/annual-average-exchange-rates/}}.
+\newblock
+\APACrefnote{Tipo de cambio promedio anual de 2023: 1,3497 dólares canadienses
+  por dólar estadounidense}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Barb{\'e}%
 \ \protect \BOthers {.}}{%
 Barb{\'e}%
@@ -562,6 +588,34 @@ de Korne-Elenbaas, J.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+de Melo%
+}{%
+de Melo%
+}{%
+{\protect \APACyear {2026}}%
+}]{%
+deMelo_2026}
+\APACinsertmetastar {%
+deMelo_2026}%
+\begin{APACrefauthors}%
+de Melo, T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2026}.
+\unskip\
+\newblock
+\APACrefbtitle {Investigating the dynamics and drivers of human viral pathogens
+  using wastewater-based epidemiology} {Investigating the dynamics and drivers
+  of human viral pathogens using wastewater-based epidemiology}\
+  \APACtypeAddressSchool {Tesis doctoral}{}{}.
+\unskip\
+\newblock
+\APACaddressSchool {Oshawa, Ontario, Canada}{University of Ontario Institute of
+  Technology (Ontario Tech University)}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 {Empresa P{\'u}blica Metropolitana de Agua Potable y Saneamiento}%
 }{%
 {Empresa P{\'u}blica Metropolitana de Agua Potable y Saneamiento}%
@@ -624,38 +678,6 @@ Falman, J\BPBI C.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1007/s12560-018-09364-y} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Gallardo-Esc{\'a}rate%
-\ \protect \BOthers {.}}{%
-Gallardo-Esc{\'a}rate%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2021}}%
-}]{%
-Gallardo_2021}
-\APACinsertmetastar {%
-Gallardo_2021}%
-\begin{APACrefauthors}%
-Gallardo-Esc{\'a}rate, C.%
-, Valenzuela-Mu{\~n}oz, V.%
-, N{\'u}{\~n}ez-Acu{\~n}a, G.%
-, Valenzuela-Miranda, D.%
-, Benaventel, B\BPBI P.%
-, S{\'a}ez-Vera, C.%
-\BDBL {}Bravo, M.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2021}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {The wastewater microbiome: A novel insight for
-  {COVID-19} surveillance} {The wastewater microbiome: A novel insight for
-  {COVID-19} surveillance}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Science of the Total Environment}{764}{}{142867}.
-\newblock
-\begin{APACrefDOI} \doi{10.1016/j.scitotenv.2020.142867} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1052,41 +1074,6 @@ Le, D\BPBI B.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1038/s41598-025-20371-5} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Lesenfants%
-\ \protect \BOthers {.}}{%
-Lesenfants%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2026}}%
-}]{%
-Lesenfants_2026}
-\APACinsertmetastar {%
-Lesenfants_2026}%
-\begin{APACrefauthors}%
-Lesenfants, M.%
-, Suffredini, E.%
-, Mancini, P.%
-, Franco, A.%
-, Congiu, D.%
-, Richter, J.%
-\BDBL {}La~Rosa, G.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2026}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Public health responses following identification of
-  poliovirus in wastewater} {Public health responses following identification
-  of poliovirus in wastewater}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{The Lancet Public Health}{11}{5}{e329--e342}.
-\newblock
-\begin{APACrefURL} \url{https://doi.org/10.1016/S2468-2667(26)00051-4}
-  \end{APACrefURL}
-\newblock
-\begin{APACrefDOI} \doi{10.1016/S2468-2667(26)00051-4} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
