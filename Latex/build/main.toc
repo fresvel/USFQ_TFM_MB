@@ -9,19 +9,19 @@
 \contentsline {subsubsection}{Muestreo pasivo en aguas residuales}{18}{subsubsection*.8}%
 \contentsline {subsection}{Virus de interés}{18}{subsection*.9}%
 \contentsline {subsubsection}{SARS-CoV-2}{18}{subsubsection*.10}%
-\contentsline {subsubsection}{Virus sincitial respiratorio (RSV)}{20}{subsubsection*.11}%
+\contentsline {subsubsection}{Virus sincitial respiratorio (RSV)}{19}{subsubsection*.11}%
 \contentsline {subsubsection}{\textit {Enterovirus}}{21}{subsubsection*.12}%
 \contentsline {subsection}{Técnicas de detección molecular}{23}{subsection*.13}%
 \contentsline {subsubsection}{RT-qPCR}{23}{subsubsection*.14}%
 \contentsline {subsubsection}{PCR multiplex}{24}{subsubsection*.15}%
-\contentsline {subsection}{Secuenciación y caracterización genómica}{25}{subsection*.16}%
+\contentsline {subsection}{Secuenciación y caracterización genómica}{24}{subsection*.16}%
 \contentsline {subsubsection}{Nanopore (ONT)}{25}{subsubsection*.17}%
 \contentsline {subsubsection}{Variabilidad genética y vigilancia genómica}{25}{subsubsection*.18}%
 \contentsline {subsubsection}{Procesamiento de secuencias}{26}{subsubsection*.19}%
-\contentsline {subsubsection}{Interpretación de resultados y limitaciones}{27}{subsubsection*.20}%
+\contentsline {subsubsection}{Interpretación de resultados y limitaciones}{26}{subsubsection*.20}%
 \contentsline {subsection}{Contexto epidemiológico del estudio}{27}{subsection*.21}%
 \contentsline {subsubsection}{Situación en Ecuador}{27}{subsubsection*.22}%
-\contentsline {subsection}{Justificación}{28}{subsection*.23}%
+\contentsline {subsection}{Justificación}{27}{subsection*.23}%
 \contentsline {subsection}{Problema de investigación, pregunta y objetivos}{29}{subsection*.24}%
 \contentsline {section}{METODOLOGÍA Y DISEÑO DE LA INVESTIGACIÓN}{31}{section*.25}%
 \contentsline {subsection}{Diseño del estudio}{31}{subsection*.26}%
