@@ -21,7 +21,7 @@
 \contentsline {subsubsection}{Interpretación de resultados y limitaciones}{26}{subsubsection*.20}%
 \contentsline {subsection}{Contexto epidemiológico del estudio}{27}{subsection*.21}%
 \contentsline {subsubsection}{Situación en Ecuador}{27}{subsubsection*.22}%
-\contentsline {subsection}{Justificación}{27}{subsection*.23}%
+\contentsline {subsection}{Justificación}{28}{subsection*.23}%
 \contentsline {subsection}{Problema de investigación, pregunta y objetivos}{29}{subsection*.24}%
 \contentsline {section}{METODOLOGÍA Y DISEÑO DE LA INVESTIGACIÓN}{31}{section*.25}%
 \contentsline {subsection}{Diseño del estudio}{31}{subsection*.26}%

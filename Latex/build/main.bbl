@@ -562,6 +562,34 @@ de Korne-Elenbaas, J.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+de Melo%
+}{%
+de Melo%
+}{%
+{\protect \APACyear {2026}}%
+}]{%
+deMelo_2026}
+\APACinsertmetastar {%
+deMelo_2026}%
+\begin{APACrefauthors}%
+de Melo, T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2026}.
+\unskip\
+\newblock
+\APACrefbtitle {Investigating the dynamics and drivers of human viral pathogens
+  using wastewater-based epidemiology} {Investigating the dynamics and drivers
+  of human viral pathogens using wastewater-based epidemiology}\
+  \APACtypeAddressSchool {\BUPhD}{}{}.
+\unskip\
+\newblock
+\APACaddressSchool {Oshawa, Ontario, Canada}{University of Ontario Institute of
+  Technology (Ontario Tech University)}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 {Empresa P{\'u}blica Metropolitana de Agua Potable y Saneamiento}%
 }{%
 {Empresa P{\'u}blica Metropolitana de Agua Potable y Saneamiento}%
@@ -624,38 +652,6 @@ Falman, J\BPBI C.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1007/s12560-018-09364-y} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Gallardo-Esc{\'a}rate%
-\ \protect \BOthers {.}}{%
-Gallardo-Esc{\'a}rate%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2021}}%
-}]{%
-Gallardo_2021}
-\APACinsertmetastar {%
-Gallardo_2021}%
-\begin{APACrefauthors}%
-Gallardo-Esc{\'a}rate, C.%
-, Valenzuela-Mu{\~n}oz, V.%
-, N{\'u}{\~n}ez-Acu{\~n}a, G.%
-, Valenzuela-Miranda, D.%
-, Benaventel, B\BPBI P.%
-, S{\'a}ez-Vera, C.%
-\BDBL {}Bravo, M.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2021}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {The wastewater microbiome: A novel insight for
-  {COVID-19} surveillance} {The wastewater microbiome: A novel insight for
-  {COVID-19} surveillance}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Science of the Total Environment}{764}{}{142867}.
-\newblock
-\begin{APACrefDOI} \doi{10.1016/j.scitotenv.2020.142867} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
