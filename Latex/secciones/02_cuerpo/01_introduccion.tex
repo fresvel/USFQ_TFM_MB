@@ -121,7 +121,7 @@ En aguas residuales, la caracterización genómica revela qué variantes present
 
 \subsubsection{Procesamiento de secuencias}
 
-El procesamiento parte del demultiplexado, que separa las lecturas de cada muestra por sus índices i7 e i5 de ocho bases, y sigue con el recorte de adaptadores, el filtrado por calidad y el mapeo o ensamblaje del consenso. Nanopore genera lecturas largas que se filtran por calidad y tamaño, e Illumina produce lecturas cortas pareadas, de 50 a 300 bases por extremo según el equipo \cite{Dash_2024}.
+En el flujo de Nanopore, el procesamiento parte del demultiplexado, que separa las lecturas de cada biblioteca por el código de barras nativo que se le añadió antes de reunir varias bibliotecas en una misma celda de flujo \cite{ONT_2025}, y sigue con el recorte de adaptadores, el filtrado por calidad y tamaño, y el mapeo o ensamblaje del consenso \cite{Dash_2024}.
 
 \citeA{Child_2023} compararon la metagenómica shotgun, la captura híbrida y la PCR por amplicones en el mismo influente. La metagenómica shotgun, con 303 millones de lecturas por muestra, asignó menos del 0,6\,\% a virus y el 99,6\,\% a bacterias, y no detectó un enterovirus D68 del que la PCR por amplicones recuperó el 86\,\% del genoma. La captura híbrida elevó la señal de SARS-CoV-2 entre 3\,000 y 97\,000 veces y superó el 50\,\% de cobertura en ocho muestras.
 
