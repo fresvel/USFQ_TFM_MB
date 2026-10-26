@@ -82,7 +82,7 @@ textos:
   - {x: 29, y: 162.56, texto: "Aksamentov et al. (2021)", tam: 6.8, color: "#4d4d4d"}
   - {x: 80, y: 153.25, texto: "8. Análisis bioinformático", tam: 7.9, negrita: true}
   - {x: 80, y: 157.61, texto: "Filtlong · minimap2 · Tablet · BLAST", tam: 7.2}
-  - {x: 80, y: 160.91, texto: "amplicón de VP4: Coxsackie A", tam: 7.2}
+  - {x: 80, y: 160.91, texto: "amplicón de VP1: Coxsackievirus A1", tam: 7.2}
   - {x: 131, y: 151.69, texto: "8. Análisis bioinformático", tam: 7.9, negrita: true}
   - {x: 131, y: 156.05, texto: "EPI2ME: subgrupo", tam: 7.2}
   - {x: 131, y: 159.35, texto: "(RSV-A / RSV-B)", tam: 7.2}
