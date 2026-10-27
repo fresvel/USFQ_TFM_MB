@@ -51,6 +51,7 @@
 \providecommand{\sptext}[1]{\textsuperscript{#1}}
 % apacite en español (spanish.apc) traduce «et al.» a «y cols.»; se restaura «et al.»
 % en texto y en la lista de referencias. El hook corre tras cargar spanish.apc.
+\makeatletter
 \AtBeginDocument{%
   \renewcommand{\BOthers}[1]{et~al.\hbox{}}%
   \renewcommand{\BOthersPeriod}[1]{et~al.\hbox{}}%
@@ -59,7 +60,19 @@
   \renewcommand{\doiprefix}{}%
   \renewcommand{\doi}[1]{\url{https://doi.org/#1}}%
   \renewcommand{\BRetrievedFrom}{}%
+  % APA 7: la descripción de una tesis va entre corchetes tras el título,
+  % «Título [Tesis doctoral no publicada]. Universidad.», y los manuales de kits
+  % se describen como manual del fabricante, no como manual de software.
+  \renewcommand{\APACtypeAddressSchool}[3]{[{#1}%
+    \ifx\@empty#3\@empty\else\unskip, {#3}\fi
+    \ifx\@empty#2\@empty\else\unskip, {#2}\fi]}%
+  \renewcommand{\BUPhD}{Tesis doctoral no publicada}%
+  \renewcommand{\BPhD}{Tesis doctoral}%
+  \renewcommand{\BUMTh}{Tesis de maestría no publicada}%
+  \renewcommand{\BMTh}{Tesis de maestría}%
+  \renewcommand{\bibcomputersoftwaremanual}{Manual del fabricante}%
 }
+\makeatother
 % APA 7: una obra con tres o más autores se cita con «et al.» desde la primera cita.
 % apacite aplica la regla de APA 6 (lista completa en la primera cita, hasta cinco
 % autores) y decide por la marca flag@<clave>, que crea en la primera cita. Se
