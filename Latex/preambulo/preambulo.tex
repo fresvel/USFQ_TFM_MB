@@ -54,6 +54,11 @@
 \AtBeginDocument{%
   \renewcommand{\BOthers}[1]{et~al.\hbox{}}%
   \renewcommand{\BOthersPeriod}[1]{et~al.\hbox{}}%
+  % APA 7: el DOI se imprime como enlace https://doi.org/… sin la etiqueta «doi:»,
+  % y las URL van sin «Descargado de» (apacite sigue APA 6 en ambos casos).
+  \renewcommand{\doiprefix}{}%
+  \renewcommand{\doi}[1]{\url{https://doi.org/#1}}%
+  \renewcommand{\BRetrievedFrom}{}%
 }
 % APA 7: una obra con tres o más autores se cita con «et al.» desde la primera cita.
 % apacite aplica la regla de APA 6 (lista completa en la primera cita, hasta cinco
